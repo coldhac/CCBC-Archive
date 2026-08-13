@@ -1,0 +1,114 @@
+{
+  "pid": 50,
+  "pgid": 5,
+  "type": 1,
+  "pg_name": "造纸",
+  "title": "造纸",
+  "content": "",
+  "image": "",
+  "html": "<img src=\"https://static.cipherpuzzles.com/static/images/8daff3c4cb3c49c3bec50a1b482208de.webp\" class=\"pimg\"/>\r\n<br>\r\n点击下载 <a href=\"https://static.cipherpuzzles.com/static/images/82637ff8859b446cbbb886a291695140.drawio\" target=\"_blank\">drawio 文件</a>，可以在 <a href=\"https://diagrams.net/\" target=\"_blank\">diagrams.net</a> 导入。<br>\r\n其中的内容和图片完全一致，仅为解题方便，并非必须。\r\n\r\n<style>\r\n.pimg {\r\n    width: 1153px;\r\n}\r\n@media (max-width: 1300px) {\r\n    .pimg {\r\n        width: 100%;\r\n    }\r\n}\r\n</style>",
+  "script": "",
+  "answer_type": 1,
+  "extend_data": "{\"pid\":50,\"imgUrl\":\"6c24dc194c62497ea96dcfd400ce2cf0.webp\",\"color\":\"#000\",\"top\":\"52px\",\"left\":\"1173px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "寻回文化造纸",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus",
+  "analysis": "本区所有小题都没有答案。本题为区域meta，用到小题内部的机制。\n* 叶子戏\n  - 红色⇝箭头（在方片2出现）：表示重排汉字笔画。\n  - 起点为扑克牌形状的箭头：输入为三个字，表示牌（例如「红桃三」），输出为该题的答案。\n* 三字谜\n  - 起点为三重线的箭头：输入为三个字，表示三字谜，输出为该三字谜的答案。\n* 2025年度解谜能力测试\n  - 蓝色箭头（在08出现）：输入为一个国家的中文名，输出为另一个国家的中文名，并且第二个国家的英文名是第一个国家英文名的子串。\n  - 橙色箭头（在24出现）：输入为一个物品，输出为该物品的量词。\n  - 紫色带数字箭头（在43出现）：输入为某有序集合元素，输出为按照数字移动之后的该集合元素。\n* 你说话带括号\n  - 【】：表示反义。\n  - 〔〕：表示同音。\n* 千字谜\n  - 右侧和上侧有小数字的框：表示千字谜中该位置的汉字。\n\n此外，meta还引入了和无箭头连线有关的机制。\n* 无分叉连线：表示两个字相同。\n* T型分叉连线：表示T的横线两端的两个字可以拼成T的竖线端的字。\n\n填完后的图片如下。读红字得到答案「寻回文化造纸」。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/f3e7f94db56949a7a0504c8325990fdd.webp\"/>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "在格中填入汉字。本题使用了本区域小题内部的机制。",
+      "desc": "",
+      "point_cost": 4000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 2,
+      "title": "红色⇝箭头是什么",
+      "content": "在「叶子戏」方片2出现。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 3,
+      "title": "蓝色箭头是什么",
+      "content": "在「2025年度解谜能力测试」08出现。输入和输出都是国家名。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 4,
+      "title": "橙色箭头是什么",
+      "content": "在「2025年度解谜能力测试」24出现。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 5,
+      "title": "【】是什么",
+      "content": "在「你说话带括号」中出现。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 6,
+      "title": "〔〕是什么",
+      "content": "在「你说话带括号」中出现。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 7,
+      "title": "起点是圆角矩形的箭头是什么",
+      "content": "输入为三个字，表示一张扑克牌，输出为这张牌在「叶子戏」中的答案。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 8,
+      "title": "起点是三条线的箭头是什么",
+      "content": "输入为三个字。输出是：假设这三个字是一道「三字谜」中的三字谜，此时它的答案。",
+      "desc": "",
+      "point_cost": 5000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 9,
+      "title": "两个格子用一条线直接相连是什么",
+      "content": "相同的汉字",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 10,
+      "title": "三个格子以T字线相连是什么",
+      "content": "T的横连接的两个格子里的字，组合成第三个字",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 11,
+      "title": "方框上面和右侧的数字是什么？",
+      "content": "方框需要填入千字谜里对应行列的字。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "本区所有小题都没有答案。本题为区域meta，用到小题内部的机制。\n* 叶子戏\n  - 红色⇝箭头（在方片2出现）：表示重排汉字笔画。\n  - 起点为扑克牌形状的箭头：输入为三个字，表示牌（例如「红桃三」），输出为该题的答案。\n* 三字谜\n  - 起点为三重线的箭头：输入为三个字，表示三字谜，输出为该三字谜的答案。\n* 2025年度解谜能力测试\n  - 蓝色箭头（在08出现）：输入为一个国家的中文名，输出为另一个国家的中文名，并且第二个国家的英文名是第一个国家英文名的子串。\n  - 橙色箭头（在24出现）：输入为一个物品，输出为该物品的量词。\n  - 紫色带数字箭头（在43出现）：输入为某有序集合元素，输出为按照数字移动之后的该集合元素。\n* 你说话带括号\n  - 【】：表示反义。\n  - 〔〕：表示同音。\n* 千字谜\n  - 右侧和上侧有小数字的框：表示千字谜中该位置的汉字。\n\n此外，meta还引入了和无箭头连线有关的机制。\n* 无分叉连线：表示两个字相同。\n* T型分叉连线：表示T的横线两端的两个字可以拼成T的竖线端的字。\n\n填完后的图片如下。读红字得到答案「寻回文化造纸」。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/f3e7f94db56949a7a0504c8325990fdd.webp\"/>",
+  "additional_answers": []
+}

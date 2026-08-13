@@ -1,0 +1,57 @@
+---
+record_id: "ccbc12:problem:f-p1995"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线F"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/f/p1995.yaml"
+---
+
+# #1995 沾染墨水的清单 - CCBC 12
+
+## 题面
+
+你的队伍走进一间休息室，看到桌子上留有一张特殊的纸条，其中一部分沾上了墨水看不清。这个不是 CCBC12 的 checklist 吗？明明有这么多×，怎么还是上线了！你们左顾右盼想找到写纸条的人，但很显然，放字条的人已经出了这间屋子了。
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/b6485505344c4291accd902b4c906260.webp" width="600px"/>
+
+## 答案
+
+`CONTEXT`
+
+## 解析
+
+通过观察，可以推理出纸上的每一列勾叉对应汉字是否有一个性质：
+
+1. 笔画数大于等于9
+1. 单一结构
+1. 动词
+1. 韵母只有一个字母（a，e，i，o，u，ü）
+1. 出现在剧情文字中
+
+推测出被墨水覆盖的勾叉，然后通过二进制（√=1，×=0）转化成字母得到：**THE ANSWER IS CONTEXT**。
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1995.png" style="width: 600px" />
+
+## 提示
+
+### 1. 我毫无头绪
+
+每一列的勾和叉表示对应的汉字有无某个性质，需要推测出这些性质是什么然后把被墨水盖住的格子填上。
+
+### 2. 能简化一下吗
+
+这道题和“笔画”、“结构”、“词性”、“拼音”、“剧情”有关。
+
+### 3. 该如何提取
+
+把×√分别用01表示然后二进制转成字母。
+
+
+## 本地附件
+
+- [f-1995.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1995.png)
+- [b6485505344c4291accd902b4c906260.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/b6485505344c4291accd902b4c906260.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/f/p1995.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/f/p1995.yaml)

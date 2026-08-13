@@ -1,0 +1,50 @@
+{
+  "pid": 36,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "淡黄又蓬松",
+  "content": "押……三押！",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":36,\"imgUrl\":\"ec38bb480bbc438eba6b99dec1eeed4c.svg\",\"color\":\"#000\",\"top\":\"140px\",\"left\":\"902px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "CALICO",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25、Sevenkplus",
+  "analysis": "<style>\n#audio_solution img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#audio_solution b {\ncolor: #c00;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"audio_solution\">\n<img src=\"https://static.cipherpuzzles.com/static/images/de1ae2fed1854839acc3bffaca4f0de3.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/3a7f0158b909494b8e4072ef2454fce9.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/4d681eb50b9e4302b922ac0a2858ca50.webp\">\n\n朗诵内容两句一组，可以听到每个下句的结尾戛然而止，少了些什么。根据FT里“三押”的提示，我们先需要补上能跟上句三押的四字成语。\n\nFT里“押……三押”提示四字成语的押韵其实是被拆成了一个字和三个字，也就是说在上句里还有一个字能跟成语第一个字押韵：\n\n<table>\n<tr><th style=\"width: 300px\">句子</th><th>缺少的成语</th></tr>\n<tr><td>想玩解谜<b>请</b>读规则再去题海中航行</td></tr>\n<tr><td>不要作弊会成为反例敲响这</td><td><b>警</b>钟长鸣</td></tr>\n<tr><td>通过puzzle了解世界<b>提</b>取中英暗号</td></tr>\n<tr><td>乖小孩搞密码也不算什么</td><td><b>离</b>经叛道</td></tr>\n<tr><td>跟新<b>交</b>的队友讲讲题目再聊聊挚爱</td></tr>\n<tr><td>一边hunt一边八卦就是这么的</td><td><b>逍</b>遥自在</td></tr>\n<tr><td><b>三</b>五队员协力才能保证推塔足够</td></tr>\n<tr><td>比赛就是群殴没人跟你</td><td><b>单</b>打独斗</td></tr>\n<tr><td>反爆难题<b>花</b>样逃课要懂得趋福避祸</td></tr>\n<tr><td>一切努力智慧都将在最终</td><td><b>瓜</b>熟蒂落</td></tr>\n<tr><td>这三脚<b>猫</b>的填词不带任何双关隐喻</td></tr>\n<tr><td>我说上句你接下句也是种</td><td><b>抛</b>砖引玉</td></tr>\n<tr><td>押韵押得这么<b>6</b>我也花了些许心思</td></tr>\n<tr><td>不管认不认识欢迎各路</td><td><b>旧</b>雨新知</td></tr>\n<tr><td>找到<b>字</b>句里的线索这乐趣好比赢钱</td></tr>\n<tr><td>于细微处见真章真是句</td><td><b>至</b>理名言</td></tr>\n<tr><td>就算比赛只能当个分<b>母</b>的匆匆过客</td></tr>\n<tr><td>愈挫愈勇玩的就是极致的</td><td><b>苦</b>中作乐</td></tr>\n</table>\n\n连起来是“请提交三花猫六字母”，三花猫的英文`CALICO`就是本题答案。\n</div>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": " 这道题需要哪些碎片？",
+      "content": "<style>\n#audio_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"audio_hint\">\n<img src=\"https://static.cipherpuzzles.com/static/images/4d681eb50b9e4302b922ac0a2858ca50.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/de1ae2fed1854839acc3bffaca4f0de3.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/3a7f0158b909494b8e4072ef2454fce9.webp\">\n</div>",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我毫无头绪",
+      "content": "每段补上结尾的成语成为三押。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "该如何提取",
+      "content": "成语的第一个字也和上句另一个字押韵。找到那些字",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#audio_solution img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#audio_solution b {\ncolor: #c00;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"audio_solution\">\n<img src=\"https://static.cipherpuzzles.com/static/images/de1ae2fed1854839acc3bffaca4f0de3.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/3a7f0158b909494b8e4072ef2454fce9.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/4d681eb50b9e4302b922ac0a2858ca50.webp\">\n\n朗诵内容两句一组，可以听到每个下句的结尾戛然而止，少了些什么。根据FT里“三押”的提示，我们先需要补上能跟上句三押的四字成语。\n\nFT里“押……三押”提示四字成语的押韵其实是被拆成了一个字和三个字，也就是说在上句里还有一个字能跟成语第一个字押韵：\n\n<table>\n<tr><th style=\"width: 300px\">句子</th><th>缺少的成语</th></tr>\n<tr><td>想玩解谜<b>请</b>读规则再去题海中航行</td></tr>\n<tr><td>不要作弊会成为反例敲响这</td><td><b>警</b>钟长鸣</td></tr>\n<tr><td>通过puzzle了解世界<b>提</b>取中英暗号</td></tr>\n<tr><td>乖小孩搞密码也不算什么</td><td><b>离</b>经叛道</td></tr>\n<tr><td>跟新<b>交</b>的队友讲讲题目再聊聊挚爱</td></tr>\n<tr><td>一边hunt一边八卦就是这么的</td><td><b>逍</b>遥自在</td></tr>\n<tr><td><b>三</b>五队员协力才能保证推塔足够</td></tr>\n<tr><td>比赛就是群殴没人跟你</td><td><b>单</b>打独斗</td></tr>\n<tr><td>反爆难题<b>花</b>样逃课要懂得趋福避祸</td></tr>\n<tr><td>一切努力智慧都将在最终</td><td><b>瓜</b>熟蒂落</td></tr>\n<tr><td>这三脚<b>猫</b>的填词不带任何双关隐喻</td></tr>\n<tr><td>我说上句你接下句也是种</td><td><b>抛</b>砖引玉</td></tr>\n<tr><td>押韵押得这么<b>6</b>我也花了些许心思</td></tr>\n<tr><td>不管认不认识欢迎各路</td><td><b>旧</b>雨新知</td></tr>\n<tr><td>找到<b>字</b>句里的线索这乐趣好比赢钱</td></tr>\n<tr><td>于细微处见真章真是句</td><td><b>至</b>理名言</td></tr>\n<tr><td>就算比赛只能当个分<b>母</b>的匆匆过客</td></tr>\n<tr><td>愈挫愈勇玩的就是极致的</td><td><b>苦</b>中作乐</td></tr>\n</table>\n\n连起来是“请提交三花猫六字母”，三花猫的英文`CALICO`就是本题答案。\n</div>",
+  "additional_answers": []
+}

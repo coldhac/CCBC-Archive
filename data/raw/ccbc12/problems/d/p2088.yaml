@@ -1,0 +1,24 @@
+answer: YUMMY
+answer-analysis: |
+  把绳串水平放置后绳子会受重力自然下垂，象形得到答案：**YUMMY**。
+
+  ![答案参考](/ccbc12/images/answer/d-2088.jpg)
+
+  你也可以查看视频题解： https://www.bilibili.com/video/BV1JP4y1m7J6
+content:
+- '一串被固定在杆子上的绳子在风中摇曳。
+
+
+  <img src="/ccbc12/images/d/943ba0e7c77446be9bacd903f733f92a.webp" width="200px"/>'
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 如果整个绳串以黄色钉子为轴，向右侧旋转至水平位置，会发生什么呢？
+  title: 我毫无头绪
+title: '#2088 绳串 - CCBC 12'
+type: problem

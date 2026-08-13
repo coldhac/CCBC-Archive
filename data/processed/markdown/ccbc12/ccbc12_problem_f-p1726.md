@@ -1,0 +1,151 @@
+---
+record_id: "ccbc12:problem:f-p1726"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线F"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/f/p1726.yaml"
+---
+
+# #1726 旧报纸 - CCBC 12
+
+## 题面
+
+报纸上的谜题专栏刊登的谜题，总觉得有点眼熟……
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/dddb3de0d8f849329582803e3a3c0254.webp" width="800px"/>
+<br><br>
+<table id="pz-table" width="900px">
+</table>
+
+## 交互源码
+
+### javascript
+
+```javascript
+(function () {
+    let index1 = [
+        "a.",
+        "b.",
+        "c.",
+        "d.",
+        "e.",
+        "f.",
+        "g.",
+        "h.",
+        "i.",
+        "j.",
+    ];
+    let data1 = [
+        "英超球队，获得过九次英国顶级联赛冠军",
+        "经常与凉并用",
+        "收入最高的运动员之一",
+        "第一位荷裔美国总统",
+        "为911事件特别修建的监狱",
+        "一种气鸣乐器",
+        "动物园常见动物，尾巴展开后非常好看",
+        "双臂和双腿的统称",
+        " 一周中的一天",
+        "“小球转动大球”的运动",
+    ];
+    let index2 = [
+        "一、",
+        "二、",
+        "三、",
+        "四、",
+        "五、",
+        "六、",
+        "七、",
+        "八、",
+        "九、",
+        "十、",
+        "十一、",
+        "十二、",
+    ]
+    let data2 = [
+        "日本最著名的山",
+        "一种黑白相间的马",
+        "斯德哥尔摩省内的一个城市，有一支参加瑞典乙级联赛的足球队",
+        "北京地铁的一个站，从珠市口站不用换乘坐几站就能到达",
+        "十二星座之一",
+        "位于北半球的一个大洲",
+        "显像管玻璃制造时的催化澄清剂中的某种元素",
+        "英雄联盟中的一名英雄",
+        "不下雨的某种天气",
+        "本题所用到的一种逻辑计算",
+        "人类赖以生存的家园",
+        "与瘦相对",
+    ];
+    if (data1.length > data2.length) {
+        let temp = data1;
+        data1 = data2
+        data2 = temp;
+    }
+
+    const pz_table = document.getElementById("pz-table");
+    //清除原有的内容：
+    while (pz_table.firstChild) pz_table.removeChild(pz_table.firstChild);
+    data2.forEach((o, i) => {
+        let row = document.createElement("tr");
+        let td_1 = document.createElement("td");
+        td_1.style.textAlign = "center";
+        let td_2 = document.createElement("td");
+        let td_3 = document.createElement("td");
+        td_3.style.textAlign = "right";
+        let td_4 = document.createElement("td");
+        if (index1[i]) {
+            td_1.innerHTML = index1[i];
+            td_2.innerHTML = data1[i];
+        }
+        td_3.innerHTML = index2[i];
+        td_4.innerHTML = data2[i];
+        row.appendChild(td_1);
+        row.appendChild(td_2);
+        row.appendChild(td_3);
+        row.appendChild(td_4);
+        pz_table.appendChild(row);
+    });
+})();
+```
+
+
+## 答案
+
+`OPPOSITE EFFECT`
+
+## 解析
+
+这道crossword题能用拼音和英文两种方式解，而且有些答案是不同的东西。
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1726-1.png)
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1726-2.png)
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1726-3.png)
+
+根据纵向第十条提示，本题的提取方式是bitwiseor或huojisuan，所以对两个答案中用数字标注的格子的ascii值（或二进制值）进行或计算，按顺序转成字母后得到结果：**OPPOSITE EFFECT**。
+
+## 提示
+
+### 1. 我毫无头绪
+
+这个是crossword，也叫横纵字谜，需要根据下面的条件来找到对应的东西，然后填到上面对应的格子中。e对应的答案是GUANTANAMO（关塔那摩）。
+
+### 2. 我基本填完了，但不知道接下来怎么做
+
+这道题用拼音和英文都能做，所以换个语言试试？
+
+### 3. 该如何提取
+
+提取方法是二进制下的“或计算”（bitwise or），每个标数字的格子提取一个字母。
+
+
+## 本地附件
+
+- [f-1726-1.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1726-1.png)
+- [f-1726-2.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1726-2.png)
+- [f-1726-3.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1726-3.png)
+- [dddb3de0d8f849329582803e3a3c0254.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/dddb3de0d8f849329582803e3a3c0254.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/f/p1726.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/f/p1726.yaml)

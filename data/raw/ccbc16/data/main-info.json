@@ -1,0 +1,102 @@
+{
+    "powerpoint_name": "信用点",
+    "stage": 2,
+    "nav_items": [
+        {
+            "title": "序章",
+            "path": "/article/g1-prologue"
+        },
+        {
+            "title": "飞船",
+            "path": "/spaceship"
+        },
+        {
+            "title": "晶冠星球",
+            "path": "/main"
+        },
+        {
+            "title": "最终结局",
+            "path": "/article/finalend"
+        }
+    ],
+    "nav_items2": [
+        {
+            "title": "返回主站",
+            "path": "/"
+        }
+    ],
+    "puzzle_basic_info": [
+        {
+            "pgid": 1,
+            "title": "序章",
+            "is_finished": 1,
+            "is_unlocked": 1,
+            "difficulty": 1,
+            "stage": 0,
+            "content": "{\"route\":\"spaceship\",\"colorConfig\":{\"main\":{\"bg\":[\"#0E2657\",\"#251a31\",\"#3B0D0A\"]},\"nav\":{\"bg\":\"#000\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#1aa4ca\"}},\"list\":{\"bg\":\"#dff6ff\",\"border\":\"#dff6ff\",\"item\":{\"bg\":{\"unsolved\":\"#B9E5F1\",\"solved\":\"#1ACA95\"},\"border\":\"#dff6ff\"}},\"pz\":{\"bg\":\"#1aa4ca\",\"inner\":\"#fff\",\"text\":\"#000\"}}}"
+        },
+        {
+            "pgid": 2,
+            "title": "指南",
+            "is_finished": 1,
+            "is_unlocked": 1,
+            "difficulty": 1,
+            "stage": 1,
+            "content": "{\"route\":\"compass\",\"imgHash\":\"1c826ea8703049f386ae6865405b77b3.webp\",\"position\":[1,2],\"colorConfig\":{\"main\":{\"bg\":[\"#00044b\",\"#084e96\",\"#0f97e0\"]},\"nav\":{\"bg\":\"#2B5ECD\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#DF6F3D\"}},\"list\":{\"bg\":\"#DF6F3D\",\"border\":\"#DF6F3D\",\"item\":{\"bg\":{\"unsolved\":\"#B9E5F1\",\"solved\":\"#00044B\"},\"border\":\"#DF6F3D\"}},\"pz\":{\"bg\":\"#1b459e\",\"inner\":\"#fff\",\"text\":\"#000\"}}}"
+        },
+        {
+            "pgid": 3,
+            "title": "印刷",
+            "is_finished": 1,
+            "is_unlocked": 1,
+            "difficulty": 1,
+            "stage": 1,
+            "content": "{\"route\":\"printing\",\"imgHash\":\"2c0a03569b0242c5aa4189954a6c93ff.webp\",\"position\":[2,1],\"colorConfig\":{\"main\":{\"bg\":[\"#56D562\",\"#56D562\",\"#56D562\"]},\"nav\":{\"bg\":\"#DF7126\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#000\"}},\"list\":{\"bg\":\"#DFF6FF\",\"border\":\"#000\",\"item\":{\"bg\":{\"unsolved\":\"#C1DFFF\",\"solved\":\"#56D562\"},\"border\":\"#000\"}},\"pz\":{\"bg\":\"#4CA1FE\",\"inner\":\"#fff\",\"text\":\"#000\"}}}"
+        },
+        {
+            "pgid": 4,
+            "title": "火药",
+            "is_finished": 1,
+            "is_unlocked": 1,
+            "difficulty": 1,
+            "stage": 1,
+            "content": "{\"route\":\"gunpowder\",\"imgHash\":\"06e87d8be04849f7827cb3b44e09b438.webp\",\"position\":[2,3],\"colorConfig\":{\"main\":{\"bg\":[\"#000\",\"#000\",\"#000\"]},\"nav\":{\"bg\":\"#9A53CE\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#F21500\"}},\"list\":{\"bg\":\"#fff\",\"border\":\"#fff\",\"item\":{\"bg\":{\"unsolved\":\"#CDCDCD\",\"solved\":\"#F21500\"},\"border\":\"#fff\"}},\"pz\":{\"bg\":\"#000\",\"inner\":\"#fff\",\"text\":\"#000\"}}}"
+        },
+        {
+            "pgid": 5,
+            "title": "造纸",
+            "is_finished": 1,
+            "is_unlocked": 1,
+            "difficulty": 1,
+            "stage": 1,
+            "content": "{\"route\":\"papermaking\",\"imgHash\":\"6a4ab16aad1540198b58fa7d5022f306.webp\",\"position\":[3,2],\"colorConfig\":{\"main\":{\"bg\":[\"#262523\",\"#4c6772\",\"#e2d1b5\"]},\"nav\":{\"bg\":\"#2A2C2B\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#917F64\"}},\"list\":{\"bg\":\"#C7B59A\",\"border\":\"#C7B59A\",\"item\":{\"bg\":{\"unsolved\":\"#C9C9C9\",\"solved\":\"#917F64\"},\"border\":\"#C7B59A\"}},\"pz\":{\"bg\":\"#E2D1B5\",\"inner\":\"#fff\",\"text\":\"#000\"}}}"
+        },
+        {
+            "pgid": 6,
+            "title": "终章",
+            "is_finished": 0,
+            "is_unlocked": 1,
+            "difficulty": 1,
+            "stage": 1,
+            "content": "{\"route\":\"seed\",\"imgHash\":\"badec07195ca40d58496b7819946ad5f.webp\",\"position\":[2,2],\"colorConfig\":{\"main\":{\"bg\":[\"#000\",\"#000\",\"#000\"]},\"nav\":{\"bg\":\"#310F0C\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#841920\"}},\"list\":{\"bg\":\"#841920\",\"border\":\"#841920\",\"item\":{\"bg\":{\"unsolved\":\"#F2BE97\",\"solved\":\"#D79E00\"},\"border\":\"#841920\"}},\"pz\":{\"bg\":\"#000\",\"inner\":\"rgba(0, 0, 0, 0.8)\",\"text\":\"#fff\"}}}"
+        }
+    ],
+    "library_ids": [
+        "g1-prologue",
+        "g1-end",
+        "main-open",
+        "g2-prologue",
+        "g2-end",
+        "g3-prologue",
+        "g3-end",
+        "g4-prologue",
+        "g4-end",
+        "g5-prologue",
+        "g5-end",
+        "g6-prologue"
+    ],
+    "show_analysis": 1,
+    "status": 1,
+    "message": null,
+    "location": null
+}

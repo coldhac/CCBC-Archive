@@ -1,0 +1,50 @@
+{
+  "pid": 34,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "五色方圆",
+  "content": "",
+  "image": "https://static.cipherpuzzles.com/static/images/07e0e370c771453fa285ee9db0b03d89.webp",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":34,\"imgUrl\":\"fa8905d8a3c443f9afb83ca507c7aac3.svg\",\"color\":\"#000\",\"top\":\"244px\",\"left\":\"910px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "OLYMPICS",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "<style>\n#ol_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"ol_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/7594e058cc0c4786aadf4a09a570bd5b.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/83ace155aab8437488658c572d6cd619.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/277b90dc8f674d2eae96f306c8d29062.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/76d08fa26edf4bedaab03e335aa89445.webp\">\n\n根据题目里的拼接提示，可以拼成以下图形：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/49cc3d2635f4481da0d99bb49a4959f5.webp\">\n\n可以看出这幅图被灰色实线分成了8块，并且每块有一个参加运动的人。另外背景里有一些黑块，数量正好跟每个运动英文名字一致，提取白色圆里的字母，得到答案 `OLYMPICS`。\n</div>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "这道题需要哪些碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/277b90dc8f674d2eae96f306c8d29062.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/7594e058cc0c4786aadf4a09a570bd5b.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/83ace155aab8437488658c572d6cd619.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/76d08fa26edf4bedaab03e335aa89445.webp\">\n</div>",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我毫无头绪",
+      "content": "正确组合碎片后，每块有一个正在做运动的人。人是黄色和红色的色块。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "该如何提取",
+      "content": "每块都有一些黑格以及一个黑格上的白圆。在黑格中填入对应运动的英文单词，每格一个字母。然后提取白圈上的字母。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#ol_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"ol_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/7594e058cc0c4786aadf4a09a570bd5b.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/83ace155aab8437488658c572d6cd619.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/277b90dc8f674d2eae96f306c8d29062.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/76d08fa26edf4bedaab03e335aa89445.webp\">\n\n根据题目里的拼接提示，可以拼成以下图形：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/49cc3d2635f4481da0d99bb49a4959f5.webp\">\n\n可以看出这幅图被灰色实线分成了8块，并且每块有一个参加运动的人。另外背景里有一些黑块，数量正好跟每个运动英文名字一致，提取白色圆里的字母，得到答案 `OLYMPICS`。\n</div>\n",
+  "additional_answers": []
+}

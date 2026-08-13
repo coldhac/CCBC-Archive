@@ -1,0 +1,157 @@
+---
+record_id: "ccbc11:problem:15"
+event_id: "ccbc11"
+editions: ["CCBC 11"]
+year: 2021
+area: "案情分析板"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc11/problems/15.yaml"
+---
+
+# #15 - CCBC 11
+
+## 题面
+
+看着眼前的这些，想必就是之前在现场找到的神秘的画作和诗词手稿了。
+
+这画的是。。。草丛？弓箭？火焰？双剑？图腾？这些画作和诗篇这到底有什么联系呢？
+<style>
+    .linebg{
+        background-color: wheat;
+    }
+    .vertrtl{
+        writing-mode: vertical-rl;
+        color: black;
+        font-family: FangSong, STFangsong, Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        top: 13%;
+        left: 1%;
+        border: 3px black solid;
+        height: 74%;
+        width: 98%;
+    }
+    .vertrtl>p{
+        border-left: 1px black solid;
+        height: 100%;
+        padding-top: 8px;
+    }
+    .vert-s{
+        font-size: 2.5vw;
+    }
+    @media (min-width: 576px) {
+        .vert-s{
+            font-size: 2.5vw;
+        }
+    }
+    @media (min-width: 768px) {
+        .vert-s{
+            font-size: 18px;
+        }
+    }
+    @media (min-width: 992px) {
+        .vert-s{
+            font-size: 25px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .vert-s{
+            font-size: 30px;
+        }
+    }
+    @media (min-width: 1400px) {
+        .vert-s{
+            font-size: 35px;
+        }
+    }
+</style>
+<div class="ratio ratio-16x9 linebg">
+    <div class="vertrtl vert-s">
+        <p>快乐异乡忘故国 长城万里今犹在</p>
+        <p>天子呼来不上船 铁骑临风忆战酣</p>
+        <p>皎若太阳升朝霞 雄兵十万脱征衣</p>
+        <p>虎牢关上声先震 汉宫长有隔生春</p>
+        <p>气挟风雷无匹敌 遗臭流芳本一身</p>
+        <p>不道妒深同芮母 长星昨夜坠前营</p>
+        <p>白头深目凹鼻唇 直与审慤弯强弓</p>
+        <p>风萧萧兮易水寒 浮游万顷思悠然</p>
+        <p>将略兵机命世雄 须知薄命是佳人</p>
+        <p>梧叶萧萧墓草长 托名助汉岂私权</p>
+        <p>天理何曾一日亡 安能辨我是雄雌</p>
+        <p>锦瑟无端五十弦 淡妆浓抹总相宜</p>
+        <p>劈碎崤潼坼太行 手执三尖两刃枪</p>
+        <p>仪秦尚学先生术 蠛蠓何足知天高</p>
+    </div>
+</div>
+<div class="d-sm-none">
+    <p>请注意：小屏幕下诗句可能显示不全，请尝试将手机横屏。</p>
+</div>
+
+![题图](../../../assets/archive.cipherpuzzles.com/ccbc11/images/problems/0f97533b950c48d1a7772606d9e29748.jpg)
+
+## 答案
+
+`XBOX THREE SIXTY`
+
+## 解析
+
+这些诗词原作均描写了一位古典人物，而画作中的图案是《王者荣耀》游戏中的分路图标（野下中上辅），查询游戏中的分路关系将人物进行两两分组，结果如下：
+
+-------------
+
+```
+快乐异乡忘故国——刘禅(辅)        长城万里今犹在——嬴政(中)
+
+天子呼来不上船——李白(野)        铁骑临风忆战酣——黄忠(下)
+
+皎若太阳升朝霞——甄姬(中)        雄兵十万脱征衣——吕布(上)
+
+虎牢关上声先震——张飞(辅)        汉宫长有隔生春——王昭君(中)
+
+气挟风雷无匹敌——关羽(上)        遗臭流芳本一身——曹操(上)
+
+不道妒深同芮母——伽罗(下)        长星昨夜坠前营——诸葛亮(中)
+
+白头深目凹鼻唇——钟无艳(上)     直与审慤弯强弓——后羿(下)
+
+风萧萧兮易水寒——荆轲(野)        浮游万顷思悠然——太乙真人(辅)
+
+将略兵机命世雄——韩信(野)        须知薄命是佳人——蔡文姬(辅)
+
+梧叶萧萧墓草长——孙策(上)        托名助汉岂私权——周瑜(中)
+
+天理何曾一日亡——狄仁杰(下)     安能辨我是雄雌——花木兰(上)
+
+锦瑟无端五十弦——庄周(辅)        淡妆浓抹总相宜——西施(中)
+
+劈碎崤潼坼太行——蒙恬(上)        手执三尖两刃枪——杨戬(上)
+
+仪秦尚学先生术——鬼谷子(辅)     蠛蠓何足知天高——老夫子(上)
+```
+
+-------------
+
+将分组结果带入棋盘密码：辅中 野下 中上 辅中 上上 下中 上下 野辅 野辅 上中 下上 辅中 上上 辅上，可解出最终答案：**XBOX THREE SIXTY**。
+
+![填好后的结果](../../../assets/archive.cipherpuzzles.com/ccbc11/images/answer/answer15.jpg)
+
+## 提示
+
+### 1. 这些诗词有什么联系？
+
+这些诗词原作都描写了一位古典人物
+
+### 2. 这幅画作是什么？
+
+画作中的图案是王者荣耀游戏中的分路图标
+
+### 3. 诗词和图片都知道了，接下来怎么办
+
+画作共用5种，诗词按顺序两两分组，对应棋盘密码
+
+
+## 本地附件
+
+- [answer15.jpg](../../../assets/archive.cipherpuzzles.com/ccbc11/images/answer/answer15.jpg)
+- [0f97533b950c48d1a7772606d9e29748.jpg](../../../assets/archive.cipherpuzzles.com/ccbc11/images/problems/0f97533b950c48d1a7772606d9e29748.jpg)
+
+来源：[https://archive.cipherpuzzles.com/ccbc11/problems/15.yaml](https://archive.cipherpuzzles.com/ccbc11/problems/15.yaml)

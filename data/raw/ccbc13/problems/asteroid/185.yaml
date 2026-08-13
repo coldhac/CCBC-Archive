@@ -1,0 +1,18 @@
+answer: CROCODILE
+content: []
+content-type: 0
+desc: Col
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/b3250cdf56984abf8bc1feecee4b53e4.webp
+tips:
+- content: 四种颜色对应了四个季节。
+  title: 我毫无头绪
+title: ⭐
+type: problem

@@ -1,0 +1,50 @@
+{
+  "pid": 7,
+  "pgid": 1,
+  "type": 1,
+  "pg_name": "序章",
+  "title": "数字",
+  "content": "",
+  "image": "",
+  "html": "<style>\r\n    .puzzle_section {\r\n        white-space: pre;\r\n        margin: 0;\r\n        padding: 10px 0;\r\n    }\r\n    .puzzle_section:not(:first-child) {\r\n        border-top: 1px solid #ccc;\r\n    }\r\n\r\n</style>\r\n<div>\r\n<p class='puzzle_section'>云 5\r\n鲲 3\r\n树 ？</p>\r\n<p class='puzzle_section'>闰 27\r\n猹 7\r\n人 ？</p>\r\n<p class='puzzle_section'>秦 10\r\n六 6\r\n兀 1\r\n人 ？</p>\r\n<p class='puzzle_section'>青 4\r\n凫 1\r\n巉 1\r\n问 ？</p>\r\n<p class='puzzle_section'>笑 14\r\n偷 10\r\n茴 6\r\n又 ？</p>\r\n<p class='puzzle_section'>兮 187\r\n皇 10\r\n修 ？</p>\r\n<p class='puzzle_section'>唧 4\r\n霍 2\r\n闻 ？</p>\r\n<p class='puzzle_section'>溯 6\r\n阻 3\r\n方 ？</p>\r\n<p class='puzzle_section'>莲 12\r\n曲 5\r\n风 4\r\n梵 1\r\n着 ？</p>\r\n<p class='puzzle_section'>我 8\r\n相 6\r\n不 5\r\n信 ?</p>\r\n</div>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":7,\"imgUrl\":\"1d71e302daf641eb989d5c3b5afe9cea.webp\",\"color\":\"#000\",\"top\":\"320px\",\"left\":\"972px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "EXPATRIATE",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n每段对应一篇中学语文中涉及的文章，数字表示该字出现次数。得到问号处的数字后 A1Z26 提取。最终答案为 `EXPATRIATE`。\n\n<table id=\"answerkey\">\n<tr><th>题目</th><th>出处</th><th>出现次数</th><th>对应字母</th></tr>\n<tr><td>云 5 鲲 3 树 ？</td><td>庄子《逍遥游》</td><td>5</td><td>E</td></tr>\n<tr><td>闰 27 猹 7 人 ？</td><td>鲁迅《故乡》</td><td>24</td><td>X</td></tr>\n<tr><td>秦 10 六 6 兀 1 人 ？</td><td>杜牧《阿房宫赋》</td><td>16</td><td>P</td></tr>\n<tr><td>青 4 凫 1 巉 1 问 ？</td><td>李白《蜀道难》</td><td>1</td><td>A</td></tr>\n<tr><td>笑 14 偷 10 茴 6 又 ？</td><td>鲁迅《孔乙己》</td><td>20</td><td>T</td></tr>\n<tr><td>兮 187 皇 10 修 ？</td><td>屈原《离骚》</td><td>18</td><td>R</td></tr>\n<tr><td>唧 4 霍 2 闻 ？</td><td>《木兰诗》</td><td>9</td><td>I</td></tr>\n<tr><td>溯 6 阻 3 方 ？</td><td>《秦风·蒹葭》</td><td>1</td><td>A</td></tr>\n<tr><td>莲 12 曲 5 风 4 梵 1 着 ？</td><td>朱自清《荷塘月色》</td><td>20</td><td>T</td></tr>\n<tr><td>我 8 相 6 不 5 信 ?</td><td>北岛《回答》</td><td>5</td><td>E</td></tr>\n</table>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "每段对应一篇中学语文中会涉及的文章。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "数字是什么意思？",
+      "content": "数字表示该汉字的出现次数。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "能否给我全部的资料来源？",
+      "content": "庄子《逍遥游》\n鲁迅《故乡》\n杜牧《阿房宫赋》\n李白《蜀道难》\n鲁迅《孔乙己》\n屈原《离骚》\n《木兰诗》\n《秦风·蒹葭》\n朱自清《荷塘月色》\n北岛《回答》",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n每段对应一篇中学语文中涉及的文章，数字表示该字出现次数。得到问号处的数字后 A1Z26 提取。最终答案为 `EXPATRIATE`。\n\n<table id=\"answerkey\">\n<tr><th>题目</th><th>出处</th><th>出现次数</th><th>对应字母</th></tr>\n<tr><td>云 5 鲲 3 树 ？</td><td>庄子《逍遥游》</td><td>5</td><td>E</td></tr>\n<tr><td>闰 27 猹 7 人 ？</td><td>鲁迅《故乡》</td><td>24</td><td>X</td></tr>\n<tr><td>秦 10 六 6 兀 1 人 ？</td><td>杜牧《阿房宫赋》</td><td>16</td><td>P</td></tr>\n<tr><td>青 4 凫 1 巉 1 问 ？</td><td>李白《蜀道难》</td><td>1</td><td>A</td></tr>\n<tr><td>笑 14 偷 10 茴 6 又 ？</td><td>鲁迅《孔乙己》</td><td>20</td><td>T</td></tr>\n<tr><td>兮 187 皇 10 修 ？</td><td>屈原《离骚》</td><td>18</td><td>R</td></tr>\n<tr><td>唧 4 霍 2 闻 ？</td><td>《木兰诗》</td><td>9</td><td>I</td></tr>\n<tr><td>溯 6 阻 3 方 ？</td><td>《秦风·蒹葭》</td><td>1</td><td>A</td></tr>\n<tr><td>莲 12 曲 5 风 4 梵 1 着 ？</td><td>朱自清《荷塘月色》</td><td>20</td><td>T</td></tr>\n<tr><td>我 8 相 6 不 5 信 ?</td><td>北岛《回答》</td><td>5</td><td>E</td></tr>\n</table>\n",
+  "additional_answers": []
+}

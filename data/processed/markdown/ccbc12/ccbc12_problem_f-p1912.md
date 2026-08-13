@@ -1,0 +1,56 @@
+---
+record_id: "ccbc12:problem:f-p1912"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线F"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/f/p1912.yaml"
+---
+
+# #1912 车票 - CCBC 12
+
+## 题面
+
+看着散落在地上的一堆车票，你的脑内就像25对缠在一起的电线一样混乱不堪。
+
+![题图](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/630eb7276bcf476da5b748b81ecca0f9.webp)
+
+## 答案
+
+`OCEAN BEACON`
+
+## 解析
+
+图中的车票都是地铁票，而出发和到达站都是某条地铁的首尾两站：
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1912-1.png" style="width: 400px" />
+
+除了成都2号线之外，其他的线路都出现了两次
+
+剧情中提示“缠绕导线”，而车票上也有两条缠绕着的导线。通过网上可以搜索和成对缠绕导线相关的密码可以得到“25对色码”。
+
+https://www.so.studiodahu.com/baike-25对色码
+
+将地铁线路的颜色和已经给出的黑/白导线合在一起可以得到字母，然后按照背景颜色，同样按照25对色码排序得到答案：**OCEAN BEACON**。
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1912-2.png" style="width: 450px" />
+
+## 提示
+
+### 1. 我毫无头绪
+
+每一张车票对应一条地铁线路。一共有六条不同的地铁线路，我们只需要这些线路在地铁线路图里的颜色。
+
+### 2. 该如何提取
+
+可以搜索25-pair color code（用于识别不同电线的色码）。这个编码既用于提取字母又用于排序。顺带一提，答案一共11个字母，但只有6个不同的字母。
+
+
+## 本地附件
+
+- [f-1912-1.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1912-1.png)
+- [f-1912-2.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1912-2.png)
+- [630eb7276bcf476da5b748b81ecca0f9.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/630eb7276bcf476da5b748b81ecca0f9.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/f/p1912.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/f/p1912.yaml)

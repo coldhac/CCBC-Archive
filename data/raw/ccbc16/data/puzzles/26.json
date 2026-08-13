@@ -1,0 +1,58 @@
+{
+  "pid": 26,
+  "pgid": 3,
+  "type": 1,
+  "pg_name": "印刷",
+  "title": "图寻",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">修改于 2025/08/11 12:16</span>\n<span>题面增加了文字内容</span>\n</div>\n",
+  "image": "",
+  "html": "<style>\r\n    #tuxun {\r\n        overflow-x: scroll;\r\n        width: inherit;\r\n        scrollbar-width: thin;\r\n    }\r\n</style>\r\n<p>(3 2 3) -> 3</p>\r\n<div id=\"tuxun\"><img id=\"tuxun_img\" src=\"https://static.cipherpuzzles.com/static/images/eb4b6dc866fd421b8275e62e955213d8.png\" style=\"border: 1px solid black\"></div>\r\n\r\n<script>\r\nif (document.getElementById(\"tuxun_img\").complete) {\r\n    document.getElementById(\"tuxun\").scrollLeft = 22000;\r\n} else {\r\n    document.getElementById(\"tuxun_img\").onload = () => {\r\n        document.getElementById(\"tuxun\").scrollLeft = 22000;\r\n    };\r\n} \r\n</script>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":26,\"imgUrl\":\"95566727de4840f8a2ea1bc045d22286.webp\",\"color\":\"#000\",\"top\":\"682px\",\"left\":\"1268px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "TAN",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "根据这幅图的超宽比例（约 21:1）可以猜到是名画《清明上河图》，跟《清明上河图》叠加会发现数字都落在某个汉字上，按照数字提取汉字拼音，按照古画浏览顺序从右到左可得 ANS IS TAN，所以本题答案是 `TAN`。\n\n数字与汉字的重叠的部分如下：\n\n![img-Screenshot 2025-08-02 163749.png](https://static.cipherpuzzles.com/static/images/e063d499c52d4488a433787442c04f23.png)\n\n- 第一个字母：天3 = A\n- 第二个字母：店4 = N\n\n![img-Screenshot 2025-08-02 163859.png](https://static.cipherpuzzles.com/static/images/6522c808944648a7b4e72799249855d7.png)\n\n- 第三个字母：神1 = S\n- 第四个字母：命2 = I\n\n![img-Screenshot 2025-08-02 164006.png](https://static.cipherpuzzles.com/static/images/e2942acdc60f49b4a8e4ee8d619958cc.png)\n\n- 第五个字母：孙1 = S\n- 第六个字母：檀1 = T\n\n![img-Screenshot 2025-08-02 164054.png](https://static.cipherpuzzles.com/static/images/852e0edd19a346e2a5f2292ea3e0fba1.png)\n\n- 第七个字母：太2 = A\n- 第八个字母：丸3 = N",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "空白的图片原为一幅名画。长宽比是入手点",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "该如何提取",
+      "content": "令数字与汉字重叠，以数字提取拼音的第n个字母，从右往左读。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我知道要找什么但是找不到",
+      "content": "这是《清明上河图》，可以访问以下两个地址看到全图：\n\nhttps://upload.wikimedia.org/wikipedia/commons/8/86/Alongtheriver_QingMing.jpg\n\nhttps://www.dpm.org.cn/collection/paint/228226.html",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "请给我所有需要的字",
+      "content": "从右往左分别为：天 店 神 命 孙 檀 太 丸 ",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "根据这幅图的超宽比例（约 21:1）可以猜到是名画《清明上河图》，跟《清明上河图》叠加会发现数字都落在某个汉字上，按照数字提取汉字拼音，按照古画浏览顺序从右到左可得 ANS IS TAN，所以本题答案是 `TAN`。\n\n数字与汉字的重叠的部分如下：\n\n![img-Screenshot 2025-08-02 163749.png](https://static.cipherpuzzles.com/static/images/e063d499c52d4488a433787442c04f23.png)\n\n- 第一个字母：天3 = A\n- 第二个字母：店4 = N\n\n![img-Screenshot 2025-08-02 163859.png](https://static.cipherpuzzles.com/static/images/6522c808944648a7b4e72799249855d7.png)\n\n- 第三个字母：神1 = S\n- 第四个字母：命2 = I\n\n![img-Screenshot 2025-08-02 164006.png](https://static.cipherpuzzles.com/static/images/e2942acdc60f49b4a8e4ee8d619958cc.png)\n\n- 第五个字母：孙1 = S\n- 第六个字母：檀1 = T\n\n![img-Screenshot 2025-08-02 164054.png](https://static.cipherpuzzles.com/static/images/852e0edd19a346e2a5f2292ea3e0fba1.png)\n\n- 第七个字母：太2 = A\n- 第八个字母：丸3 = N",
+  "additional_answers": []
+}

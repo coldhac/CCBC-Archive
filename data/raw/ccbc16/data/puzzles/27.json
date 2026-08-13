@@ -1,0 +1,138 @@
+{
+  "pid": 27,
+  "pgid": 3,
+  "type": 1,
+  "pg_name": "印刷",
+  "title": "烫烫烫",
+  "content": "所以你不光搞错了这个“初学者练习”的编码，还把打印机搞漏墨了？\n\n…………没办法，靠工具和脑补也不是不能做…………",
+  "image": "",
+  "html": "<style>\r\ndiv.cccc {\r\n    font-style: monospaced;\r\n}\r\n\r\n.cccc em {\r\n    color: transparent;\r\n    background-color: dimgray;\r\n}\r\n</style>\r\n\r\n<div class=\"cccc\">\r\n<h3> 場ѧÕß┴╖ﾏｰ </h3>\r\n\r\n<p><pre>\r\n1. (二/9)\r\n\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>2x2<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>\r\nオ<em>&nbsp;&nbsp;</em>よ<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>Θ<em>&nbsp;&nbsp;</em>︹\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>遏额<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>︹\r\nオ<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>Θ<em>&nbsp;&nbsp;</em>︹\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>よ<em>&nbsp;&nbsp;</em>额<em>&nbsp;&nbsp;</em>︹\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>logo琌?\r\n</pre></p>\r\n\r\n<p><pre>\r\n2. (四)\r\n\r\n鍥涘瓧鐚滀竴\r\n閫犻挓姹囩粐\r\n搴忛噷娴佷华\r\n姣嶆枃璁虹梾\r\n璁烘祦璋庤緸\r\n</pre></p>\r\n\r\n<p><pre>\r\n3. (8 2)\r\n\r\n瞧S漠-16\r\n杨<em>&nbsp;&nbsp;</em>泳<em>&nbsp;&nbsp;</em> 茚\r\n</pre></p>\r\n\r\n<p><pre>\r\n4. (1)\r\n\r\n赏淹淹送淹淹话\r\n喊<em>&nbsp;&nbsp;</em>嘲喊嘲嘲喊\r\n悄拍拍啄拍拍栋\r\n<em>&nbsp;&nbsp;</em>嘲嘲酣<em>&nbsp;&nbsp;</em>嘲喊\r\n掏赝赝瓮赝赝拱\r\n喊嘲<em>&nbsp;&nbsp;</em>喊嘲嘲喊\r\n悄拍拍啄拍拍栋\r\n喊嘲嘲<em>&nbsp;&nbsp;</em>嘲嘲喊\r\n掏赝赝瓮赝赝拱\r\n喊<em>&nbsp;&nbsp;</em>嘲喊嘲<em>&nbsp;&nbsp;</em>喊\r\n悄拍拍啄拍拍栋\r\n喊嘲嘲喊<em>&nbsp;&nbsp;</em>嘲喊\r\n韧贤贤释贤贤及\r\n</pre></p>\r\n\r\n<p><pre>\r\n5. (8)\r\n\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺傾億僩乕僔僗\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺儂儊僆僗僞僔僗\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺僱僋儘乕僔僗\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺儊儖僩\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺傾億僩乕僔僗\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺僾儘儘乕僌\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺僱僋儘乕僔僗\r\n<em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em><em>&nbsp;&nbsp;</em>偺儔儞僨償乕\r\n</pre></p>\r\n</div>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":27,\"imgUrl\":\"6517488ec3bb4909a8cf4bef7b924efd.webp\",\"color\":\"#000\",\"top\":\"740px\",\"left\":\"1340px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "C SHARP",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "ES8730",
+  "analysis": "像标题“烫烫烫”一样，五道小题的乱码都是其它字符编码被错误解读成GBK的结果。（而标题的乱码“場ѧÕß┴╖ﾏｰ”则是正常GBK编码的“初学者练习”五个字分别被错误解读成五道小题所实际使用的编码得到的结果。）\n\n\n本题的部分信息被墨水所掩盖，导致信息不全，需要用各种方式进行补全。\n（以下统一用[]表示被墨水盖住的字）\n\n小题1：原编码是繁体中文常用的BIG5编码，解码后内容是\n```\n[][][]2x2[][][]\n左[]方[][]成[]色 \n[][][]塊塗[][]色 \n左[]方[][]成[]色 \n[][][][]塗[][]色 \n[][][][]logo是?\n```\n可以看出有个2x2方格的logo，接下来要将四个小方格分别染色，这显然是**微软**的logo.\n\n小题2：原编码是UTF-8，解码后内容是\n```\n四字猜一\n造钟汇织\n序里流仪\n母文论病\n论流谎辞\n```\n和后四行每个字都可以组词的字分别是 **编 程 语 言**。\n\n小题3：原编码是ISO-8859-1，解码后内容是\n```\nÇÆSÄ® -16\nÑî[]Ó¾[] Üá\n```\n可以看出第一行长得很像CAESAR -16，于是将第二行已知的字符ASCII值减去16后得到\n```\nÁÞ[]Ã®[] ÌÑ\n```\n即AP??AR?? IN, 使用QAT或Nutrimatic等工具可以推断出完整答案是**APPEARED IN**.\n\n小题4：原编码是IBM Extended ASCII (Code Page 437)，解码后内容是\n```\n╔═╤═╤═╦═╤═╤═╗░\\n\n║░[]│░║░│░│░║░\\n\n╟─┼─┼─╫─┼─┼─╢░\\n\n[]│░│░║@[]│░║░\\n\n╠═╪═╪═╬═╪═╪═╣░\\n\n║░│░[]║░│░│░║░\\n\n╟─┼─┼─╫─┼─┼─╢░\\n\n║░│░│░[]│░│░║░\\n\n╠═╪═╪═╬═╪═╪═╣░\\n\n║░[]│░║░│░[]║░\\n\n╟─┼─┼─╫─┼─┼─╢░\\n\n║░│░│░║░[]│░║░\\n\n╚═╧═╧═╩═╧═╧═╝░\\n\n```\n可以看出这是一个6x6数独，但所有线索都被墨水盖住了，于是只能知道本题答案是一个1-6的数字。\n\n小题5：原编码是日文常用的Shift-JIS，解码后内容是\n```\n[][][][]のアポトーシス\n[][][][]のホメオスタシス\n[][][][]のネクローシス\n[][][][]のメルト\n[][][][]のアポトーシス\n[][][][]のプロローグ\n[][][][]のネクローシス\n[][][][]のランデヴー\n```\n搜索可知这些是《命运石之门》动漫的各集标题，但由于墨水导致标题只剩下后半部分于是可以对应多个集数。将每一行可能的集数按A1Z26转字母后得到`[st][hij][mnop][uv][st][ax][mnop][de]`, 使用QAT或Nutrimatic搜索可得唯一可能的答案单词是**THOUSAND**.\n\n最终：五道小题答案连起来可以读出**微软 编程语言 APPEARED IN [1-6] THOUSAND**, 可以合理推测出数字是2，于是最终答案是微软在2000年推出的C# (**C SHARP**)语言。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪。",
+      "content": "五道小题都是把其它字符编码理解为GBK导致的乱码。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "所以这些小题的【数据删除】到底是什么？",
+      "content": "分别是：BIG5, UTF-8, ISO-8859-1, IBM Extended ASCII(CP437), Shift-JIS.",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "第2小题怎么做？",
+      "content": "除第一行外每行找一个字和该行的四个字都能组词。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "第3小题怎么做？",
+      "content": "解码后第一行象形成一句指示，这句指示对第二行的ASCII编码使用（举个例子：第二行解码出的第一个字符Ñ会变成Á），最后再将作用后的结果象形为字母。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "第4小题怎么做？",
+      "content": "解码后可以认出是一种纸笔谜题的网格，但由于线索被墨水盖住所以只能得知答案的范围。你并不需要真的解出这道题的答案，当然你也可以在答案验证中通过少量试错确定本题答案",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "第5小题怎么做？",
+      "content": "这些日文有一个共同的出处。如果看不出来可以**一块**放进搜索引擎搜索。最后需要提取的是动漫的集数。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "像标题“烫烫烫”一样，五道小题的乱码都是其它字符编码被错误解读成GBK的结果。（而标题的乱码“場ѧÕß┴╖ﾏｰ”则是正常GBK编码的“初学者练习”五个字分别被错误解读成五道小题所实际使用的编码得到的结果。）\n\n\n本题的部分信息被墨水所掩盖，导致信息不全，需要用各种方式进行补全。\n（以下统一用[]表示被墨水盖住的字）\n\n小题1：原编码是繁体中文常用的BIG5编码，解码后内容是\n```\n[][][]2x2[][][]\n左[]方[][]成[]色 \n[][][]塊塗[][]色 \n左[]方[][]成[]色 \n[][][][]塗[][]色 \n[][][][]logo是?\n```\n可以看出有个2x2方格的logo，接下来要将四个小方格分别染色，这显然是**微软**的logo.\n\n小题2：原编码是UTF-8，解码后内容是\n```\n四字猜一\n造钟汇织\n序里流仪\n母文论病\n论流谎辞\n```\n和后四行每个字都可以组词的字分别是 **编 程 语 言**。\n\n小题3：原编码是ISO-8859-1，解码后内容是\n```\nÇÆSÄ® -16\nÑî[]Ó¾[] Üá\n```\n可以看出第一行长得很像CAESAR -16，于是将第二行已知的字符ASCII值减去16后得到\n```\nÁÞ[]Ã®[] ÌÑ\n```\n即AP??AR?? IN, 使用QAT或Nutrimatic等工具可以推断出完整答案是**APPEARED IN**.\n\n小题4：原编码是IBM Extended ASCII (Code Page 437)，解码后内容是\n```\n╔═╤═╤═╦═╤═╤═╗░\\n\n║░[]│░║░│░│░║░\\n\n╟─┼─┼─╫─┼─┼─╢░\\n\n[]│░│░║@[]│░║░\\n\n╠═╪═╪═╬═╪═╪═╣░\\n\n║░│░[]║░│░│░║░\\n\n╟─┼─┼─╫─┼─┼─╢░\\n\n║░│░│░[]│░│░║░\\n\n╠═╪═╪═╬═╪═╪═╣░\\n\n║░[]│░║░│░[]║░\\n\n╟─┼─┼─╫─┼─┼─╢░\\n\n║░│░│░║░[]│░║░\\n\n╚═╧═╧═╩═╧═╧═╝░\\n\n```\n可以看出这是一个6x6数独，但所有线索都被墨水盖住了，于是只能知道本题答案是一个1-6的数字。\n\n小题5：原编码是日文常用的Shift-JIS，解码后内容是\n```\n[][][][]のアポトーシス\n[][][][]のホメオスタシス\n[][][][]のネクローシス\n[][][][]のメルト\n[][][][]のアポトーシス\n[][][][]のプロローグ\n[][][][]のネクローシス\n[][][][]のランデヴー\n```\n搜索可知这些是《命运石之门》动漫的各集标题，但由于墨水导致标题只剩下后半部分于是可以对应多个集数。将每一行可能的集数按A1Z26转字母后得到`[st][hij][mnop][uv][st][ax][mnop][de]`, 使用QAT或Nutrimatic搜索可得唯一可能的答案单词是**THOUSAND**.\n\n最终：五道小题答案连起来可以读出**微软 编程语言 APPEARED IN [1-6] THOUSAND**, 可以合理推测出数字是2，于是最终答案是微软在2000年推出的C# (**C SHARP**)语言。",
+  "additional_answers": [
+    {
+      "aaid": 63,
+      "answer": "微软",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 64,
+      "answer": "microsoft",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 65,
+      "answer": "编程语言",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 66,
+      "answer": "appeared in",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 67,
+      "answer": "thousand",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 68,
+      "answer": "C#",
+      "message": "请提交 C SHARP。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 84,
+      "answer": "2",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 85,
+      "answer": "two",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 94,
+      "answer": "C＃",
+      "message": "请提交 C SHARP。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

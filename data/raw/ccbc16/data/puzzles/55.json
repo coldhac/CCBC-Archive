@@ -1,0 +1,66 @@
+{
+  "pid": 55,
+  "pgid": 6,
+  "type": 3,
+  "pg_name": "终章",
+  "title": "最后的谜题",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">提示</span>\n<span>如果题目面板卡在“处理中……”难以恢复。可以尝试按下 Ctrl + M 并在弹出的控制条中单击“判定”按钮，即可自行恢复。若仍没有恢复请及时通过站内信联系出题组。</span>\n</div>\n\n四棵树苗的能量汇聚在一起，居然又出现了第五棵树苗！它屹立在晶化土壤的中心，晶莹的枝叶流光溢彩，像是星云的精华凝聚而成。它给@{##u##}一种熟悉的感觉，仿佛早在最初的最初，它就在这里了。原来这四个纪念品是四大科学家留给@{##u##}的锦囊！借助量子云的力量保存了记忆的切片，@{##ta##}可以看到下一代能源设备建造时的场景，并和当时的四大科学家精神交流。@{##u##}知道，@{##ta##}必须先搞懂这四个锦囊的意义，才能帮助@{##ta##}解决最后的谜题。",
+  "image": "",
+  "html": "",
+  "script": "https://static.cipherpuzzles.com/static/images/95b6c54b0cab44a8aadc3737b85dd2f2.vue",
+  "answer_type": 3,
+  "extend_data": "",
+  "extend_content": "<a type=\"button\" class=\"el-button el-button--primary el-button--large finalbutton\" href=\"/article/finalend\">前往结局 →</a>\n<style>\n.finalbutton {\n    text-decoration: none;\n}\n</style>",
+  "adda": 0,
+  "answer": "树中自有黄金乌",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus、welkin25",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n.fm-table {\n    border-collapse: collapse;\n    margin: 0 30px 0 0;\n}\n.fm-table td {\n    text-align: center;\n    width: 30px;\n    height: 30px;\n    border: 1px solid;\n    /* color: black */\n}\n</style>\n\n本题使用四道树题答案如下。\n<table id=\"answerkey\">\n<tr><th>树</th><th>答案</th></tr>\n<tr><td>指南树</td><td>中心思想</td></tr>\n<tr><td>印刷树</td><td>子虚乌有</td></tr>\n<tr><td>火药树</td><td>黄金比例</td></tr>\n<tr><td>造纸树</td><td>自树一帜</td></tr>\n</table>\n\n本题是一个小游戏，要求排列这16个字，使得所有灯都被点亮。根据例子并经过尝试，可以推出每个灯的规则：\n<table id=\"answerkey\">\n<tr><th>灯位置</th><th>规则</th></tr>\n<tr><td>1</td><td>每个答案的四个字需要能够在网格中连续读出（四连通，可以转弯）。</td></tr>\n<tr><td>2</td><td>对角线上的字笔画数都是奇数，反对角线上的字笔画数都是偶数。</td></tr>\n<tr><td>3</td><td>拼音长度沿反对角线对称。</td></tr>\n<tr><td>4</td><td>第三行所有字都是一声。</td></tr>\n</table>\n\n根据这些规则，可以尝试或逻辑推导得到唯一的正确排布方式：\n\n<table class=\"fm-table\">\n    <tr>\n        <td>想</td>\n        <td>树</td>\n        <td>自</td>\n        <td>例</td>\n    </tr>\n    <tr>\n        <td>思</td>\n        <td>一</td>\n        <td>帜</td>\n        <td>比</td>\n    </tr>\n    <tr>\n        <td>心</td>\n        <td>乌</td>\n        <td>虚</td>\n        <td>金</td>\n    </tr>\n    <tr>\n        <td>中</td>\n        <td>有</td>\n        <td>子</td>\n        <td>黄</td>\n    </tr>\n</table>\n\n最后，注意到 CCBC16 Logo 中有一个 4x4 的网格，按照 16 标出的笔画顺序读相应位置的字，得到最终答案「树中自有黄金乌」。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "第一盏灯的规则",
+      "content": "每个答案的四个字需要能够在网格中连续读出（四连通，可以转弯）。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 2,
+      "title": "第二盏灯的规则",
+      "content": "对角线上的字笔画数都是奇数，反对角线上的字笔画数都是偶数。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 3,
+      "title": "第三盏灯的规则",
+      "content": "拼音长度沿反对角线对称。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 4,
+      "title": "第四盏灯的规则",
+      "content": "第三行所有字都是一声。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 5,
+      "title": "该如何提取",
+      "content": "注意 CCBC16 的 logo。",
+      "desc": "",
+      "point_cost": 12000,
+      "unlock_delay": 300.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n.fm-table {\n    border-collapse: collapse;\n    margin: 0 30px 0 0;\n}\n.fm-table td {\n    text-align: center;\n    width: 30px;\n    height: 30px;\n    border: 1px solid;\n    /* color: black */\n}\n</style>\n\n本题使用四道树题答案如下。\n<table id=\"answerkey\">\n<tr><th>树</th><th>答案</th></tr>\n<tr><td>指南树</td><td>中心思想</td></tr>\n<tr><td>印刷树</td><td>子虚乌有</td></tr>\n<tr><td>火药树</td><td>黄金比例</td></tr>\n<tr><td>造纸树</td><td>自树一帜</td></tr>\n</table>\n\n本题是一个小游戏，要求排列这16个字，使得所有灯都被点亮。根据例子并经过尝试，可以推出每个灯的规则：\n<table id=\"answerkey\">\n<tr><th>灯位置</th><th>规则</th></tr>\n<tr><td>1</td><td>每个答案的四个字需要能够在网格中连续读出（四连通，可以转弯）。</td></tr>\n<tr><td>2</td><td>对角线上的字笔画数都是奇数，反对角线上的字笔画数都是偶数。</td></tr>\n<tr><td>3</td><td>拼音长度沿反对角线对称。</td></tr>\n<tr><td>4</td><td>第三行所有字都是一声。</td></tr>\n</table>\n\n根据这些规则，可以尝试或逻辑推导得到唯一的正确排布方式：\n\n<table class=\"fm-table\">\n    <tr>\n        <td>想</td>\n        <td>树</td>\n        <td>自</td>\n        <td>例</td>\n    </tr>\n    <tr>\n        <td>思</td>\n        <td>一</td>\n        <td>帜</td>\n        <td>比</td>\n    </tr>\n    <tr>\n        <td>心</td>\n        <td>乌</td>\n        <td>虚</td>\n        <td>金</td>\n    </tr>\n    <tr>\n        <td>中</td>\n        <td>有</td>\n        <td>子</td>\n        <td>黄</td>\n    </tr>\n</table>\n\n最后，注意到 CCBC16 Logo 中有一个 4x4 的网格，按照 16 标出的笔画顺序读相应位置的字，得到最终答案「树中自有黄金乌」。",
+  "additional_answers": []
+}

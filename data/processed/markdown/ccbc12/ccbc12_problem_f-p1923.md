@@ -1,0 +1,190 @@
+---
+record_id: "ccbc12:problem:f-p1923"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线F"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/f/p1923.yaml"
+---
+
+# #1923 二年级课本 - CCBC 12
+
+## 题面
+
+谁在小学二年级就学过这么多专业的知识点？
+
+<br><br>
+
+**二年级教学大纲（节选，英文版）**
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/d5f93e2e8c8249e18147ce291d7c70ff.webp" width="300px"/>
+
+<ul>
+<li> ? _ _ _ _ _ _ _ _ _ - _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _
+<li> _ - _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ - _ _ _ _ ? _ _ &nbsp;&nbsp; _ _ _ _
+<li> B _ _ _ _ _ _ ? &nbsp;&nbsp; _ _ _ _ _ _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/3203434f1a3447c19ea35aa67cbc5784.webp" width="300px"/>
+
+<ul>
+<li> _ _ _ _ _ _ &nbsp;&nbsp; ? _ _ _ _ I _ _ &nbsp;&nbsp; _ _ _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/ed82026c21f7400680878f77d922e03d.webp" width="300px"/>
+
+<ul>
+<li> _ _ _ _ _ ? _ ' _ &nbsp;&nbsp; _ _ _
+<li> _ _ _ _ ? _ _ _ ' _ &nbsp;&nbsp; _ _ _
+<li> _ _ ? _ _ _ D &nbsp;&nbsp; _ _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/ad94db44d74f4739a35a44b0fb391981.webp" width="300px"/>
+
+<ul>
+<li> _ _ _ _ _ _ &nbsp;&nbsp; _ A _ &nbsp;&nbsp; _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ _ ? _ _ _ _
+<li> _ ? _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/6ff0467988dd467bb05e0f213ccdf294.webp" width="300px"/>
+
+<ul>
+<li> _ O _ _ _ ' _ &nbsp;&nbsp; _ _ _ _ ? _ _ _
+<li> _ _ _ _ _ - _ _ _ _ _ _ ? &nbsp;&nbsp; _ _ _ _ _ _ _ _
+<li> _ _ _ _ ? ' _ &nbsp;&nbsp; _ _ _
+<li> _ _ ? _ _ - _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/9deffe155b7045dfad25f035a8e6bebc.webp" width="300px"/>
+
+<ul>
+<li> _ _ _ _ _ _ _ - _ ? _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _
+<li> T _ _ _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ &nbsp;&nbsp; _ _ ? _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/fe086eec6fed465c86d5207206cf50b0.webp" width="300px"/>
+
+<ul>
+<li> _ _ _ _ _ ? _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ _ _ _
+<li> _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ ? _ _ &nbsp;&nbsp; _ H _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/acd564880d1746d799563ff0a5318187.webp" width="300px"/>
+
+<ul>
+<li> _ _ U _ _ &nbsp;&nbsp; _ ? _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _
+<li> _ _ _ _ _ _ _ _ - _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ ? _ _ _ _ _ _
+</ul>
+
+<br>
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/b1070058b3ac48fa873fd7a1826f3145.webp" width="300px"/>
+
+<ul>
+<li> _ &nbsp;&nbsp; _ ? _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ &nbsp;&nbsp; _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _
+<li> _ &nbsp;&nbsp; ? _ _ _ _ _ _ _ _ _ &nbsp;&nbsp; _ _ _ _ _ _ _ _ _ _ _ _
+</ul>
+
+## 答案
+
+`KINDERGARTEN COURTYARD`
+
+## 解析
+
+题目中给出了BIDAOTHU八个英文字母，提示B站账号@毕导THU。在up主的科普视频中经常会用“我们在小学二年级就学习过”的方式引入专业的知识点，属于在知识区里相对有名的梗。
+
+每张图片提示了up主的某个科普视频，而图片下的空格对应视频里按顺序提到的所有知识点。
+
+```
+红包：《我给自己发了2亿个红包，才发现先抢和后抢差距这么大！》
+(BV1z7411e7qB)
+Kolmogorov-Smirnov test
+k-sample Anderson-Darling test
+Bayesian estimation
+
+猜拳：《记住两句简单口诀，保你石头剪刀布胜率超过80%！》
+(BV18p4y1t76L)
+Markov decision process
+
+沙漏：《偷偷学，如何加速沙漏下落让饭店免单，内部资料勿传》
+(BV1nh411R7A9)
+Janssen's law
+Beverloo's law
+Bagnold number
+
+电池：《危！电量仅剩1%！如何彻底摆脱电量焦虑！》
+(BV1fv41147LM)
+Second law of thermodynamics
+Arrhenius equation
+
+奶粉：《如何冲出没有奶豆豆的完美牛奶？冲完后，我悟透了……》
+(BV1RL4y1h7mz)
+Young's equation
+Young–Laplace equation
+Jurin's law
+Lucas-Washburn equation
+
+火箭：《属于理工男的浪漫，和你一起鉴赏一次火箭发射》
+(BV1Ez4y1d7JT)
+Maxwell-Boltzmann velocity distribution function
+Tsiolkovsky rocket equation
+
+黄色：《搞黄色的科学依据？！为什么黄色才是世间万物的注定归宿！》
+(BV19y4y1v7zZ)
+Electron transitions
+Frontier orbital theory
+
+马桶：《难言之隐！上厕所时如何科学压住水花，防止屁屁被溅湿？》
+(BV1vV411f78y)
+Fluid dynamics dimensionless number group
+Rayleigh-Taylor instability
+
+乌鸦：《科学打假！乌鸦喝水的寓言竟然骗了我们这么多年！》
+(BV1iJ411e7pu)
+7 crystal systems and 14 crystal lattices
+3 dimensions tessellation
+```
+
+把用问号替代的字母从上到下排列得到答案：**KINGDERGARTEN COURTYARD**。
+
+## 提示
+
+### 1. 我毫无头绪
+
+给出的英文字母按顺序是BI DAO THU，试着去Bilibili上搜一下这个up主和他的视频？
+
+### 2. 该如何提取
+
+寻找“小学二年级就学过”的知识点（英文），按照同样的顺序填入空格中，取问号处的字母。
+
+
+## 本地附件
+
+- [3203434f1a3447c19ea35aa67cbc5784.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/3203434f1a3447c19ea35aa67cbc5784.webp)
+- [6ff0467988dd467bb05e0f213ccdf294.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/6ff0467988dd467bb05e0f213ccdf294.webp)
+- [9deffe155b7045dfad25f035a8e6bebc.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/9deffe155b7045dfad25f035a8e6bebc.webp)
+- [acd564880d1746d799563ff0a5318187.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/acd564880d1746d799563ff0a5318187.webp)
+- [ad94db44d74f4739a35a44b0fb391981.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/ad94db44d74f4739a35a44b0fb391981.webp)
+- [b1070058b3ac48fa873fd7a1826f3145.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/b1070058b3ac48fa873fd7a1826f3145.webp)
+- [d5f93e2e8c8249e18147ce291d7c70ff.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/d5f93e2e8c8249e18147ce291d7c70ff.webp)
+- [ed82026c21f7400680878f77d922e03d.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/ed82026c21f7400680878f77d922e03d.webp)
+- [fe086eec6fed465c86d5207206cf50b0.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/fe086eec6fed465c86d5207206cf50b0.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/f/p1923.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/f/p1923.yaml)

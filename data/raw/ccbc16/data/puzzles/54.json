@@ -1,0 +1,58 @@
+{
+  "pid": 54,
+  "pgid": 6,
+  "type": 0,
+  "pg_name": "终章",
+  "title": "造纸树",
+  "content": "@{##u##}看到叶子站在树边，递来一张纸条：「据说这是西方传来的造纸秘诀，我看不懂这是什么，可以翻译一下吗？」",
+  "image": "https://static.cipherpuzzles.com/static/images/4fbf4f48abcb44cf95347ccf156af94b.webp",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":54,\"imgUrl\":\"785327eda61a4afc82b5c8208cb154ae.webp\",\"color\":\"#000\",\"top\":\"-1px\",\"left\":\"1100px\"}",
+  "extend_content": "@{##u##}突然明白过来，前人的知识已经在@{##ta##}脑海里形成了思维定势！我们没有必要追求西方造纸树的种法，要想达到最高的文化造纸水平，就一定得自树一帜，不落窠臼！",
+  "adda": 0,
+  "answer": "自树一帜",
+  "attempts_count": 20,
+  "desc": "造纸树",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n本题对应造纸meta的答案「寻回文化造纸」。根据题目的要求，将英文翻译成中文，并使得结果尽量回文。\n\n<table id=\"answerkey\">\n<tr><th>英文</th><th>中文翻译</th><th>多余汉字</th></tr>\n<tr><td>He didn't ...</td><td>他是只字不提不只是他。</td><td>字</td></tr>\n<tr><td>Among the ...</td><td>语数英中，高考我考高中英语。</td><td>数</td></tr>\n<tr><td>When replying ...</td><td>回复重要部分时，分部要重复一回。</td><td>一</td></tr>\n<tr><td>A provision ...</td><td>一则规定确定规则一致。</td><td>致</td></tr>\n</table>\n\n得到「字数一致」。注意图片两侧的括号是「你说话带括号」中的同音记号〔〕。因此答案为与「字数一致」同音的成语「自树一帜」。\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "翻译了也不知道该做什么！",
+      "content": "“寻回文化造纸”其实是在提示本题翻译后的内容都几乎是“回文”。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我得到了中间答案但是然后呢？",
+      "content": "注意图片两侧的括号是「你说话带括号」中的同音记号〔〕，所以你需要找一个跟这四个字谐音的成语。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我知道该做什么了，但是我做不出来，能给一些提示吗？",
+      "content": "以下是每句话的长度和中心二字：\n10 “不提”\n12 “考我”\n14 “时分”\n10 “确定”",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n本题对应造纸meta的答案「寻回文化造纸」。根据题目的要求，将英文翻译成中文，并使得结果尽量回文。\n\n<table id=\"answerkey\">\n<tr><th>英文</th><th>中文翻译</th><th>多余汉字</th></tr>\n<tr><td>He didn't ...</td><td>他是只字不提不只是他。</td><td>字</td></tr>\n<tr><td>Among the ...</td><td>语数英中，高考我考高中英语。</td><td>数</td></tr>\n<tr><td>When replying ...</td><td>回复重要部分时，分部要重复一回。</td><td>一</td></tr>\n<tr><td>A provision ...</td><td>一则规定确定规则一致。</td><td>致</td></tr>\n</table>\n\n得到「字数一致」。注意图片两侧的括号是「你说话带括号」中的同音记号〔〕。因此答案为与「字数一致」同音的成语「自树一帜」。\n",
+  "additional_answers": [
+    {
+      "aaid": 78,
+      "answer": "字数一致",
+      "message": "这是一个里程碑。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

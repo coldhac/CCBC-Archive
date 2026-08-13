@@ -1,0 +1,42 @@
+{
+  "pid": 5,
+  "pgid": 1,
+  "type": 1,
+  "pg_name": "序章",
+  "title": "通用机器人",
+  "content": "",
+  "image": "",
+  "html": "<p>机器人法则示例：A+D=B+C=E</p>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/50e3514aee46415c9b840ac5e8df0448.webp\" class=\"pimg\">\r\n<style>\r\n.pimg {\r\n    width: 800px;\r\n}\r\n@media (max-width: 940px) {\r\n    .pimg {\r\n        width: 100%;\r\n    }\r\n}\r\n</style>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":5,\"imgUrl\":\"c00c0ebb79ed4abd944ce00984c819f2.webp\",\"color\":\"#000\",\"top\":\"320px\",\"left\":\"452px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "SAD ROBOT",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "每个机器人头其实是一种电源插座。不同的电源插座有不同的字母编号，先找到每个机器人头对应的字母编号，如果有两个头，则按示例将它们的A1Z26值相加再转回字母，得到答案 `SAD ROBOT`。\n\n![image](https://static.cipherpuzzles.com/static/images/4f1c22adcb5a4cbb93131b01676c0579.webp)",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "每个机器人头都是一种插头；不同插头有不同的字母编号。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/94c5ccc065354f388b124ce9a83258b4.webp\">",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "该如何理解等式的意义",
+      "content": "等式的意义是把字母按照 A=1, B=2, ..., Z=26 的规则转换成数字，进行相加后再转回字母。\n\n例如 A + D = 1 + 4 = 5 = E。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "每个机器人头其实是一种电源插座。不同的电源插座有不同的字母编号，先找到每个机器人头对应的字母编号，如果有两个头，则按示例将它们的A1Z26值相加再转回字母，得到答案 `SAD ROBOT`。\n\n![image](https://static.cipherpuzzles.com/static/images/4f1c22adcb5a4cbb93131b01676c0579.webp)",
+  "additional_answers": []
+}

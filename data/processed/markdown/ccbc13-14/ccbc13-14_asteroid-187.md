@@ -1,0 +1,95 @@
+---
+record_id: "ccbc13-14:asteroid-187"
+event_id: "ccbc13-14"
+editions: ["CCBC 13", "CCBC 14"]
+year: 2023
+area: "小行星数据库"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc13/problems/asteroid/187.yaml"
+---
+
+# ⭐
+
+## 题面
+
+<div class="ccbcstylewrapper">
+  <p><a href="https://docs.qq.com/sheet/DVk1GS1V2eUdUdk9R?tab=BB08J2" target="_blank" style="font-size: 20px;">腾讯文档</a></p>
+  <div class="d-flex">
+    <table class="crossword">
+      <tr><td></td><td></td><td class='grid-white'>Q</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td class='grid-white'>U</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td class='grid-white'>A</td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class='grid-white'>D</td><td class='grid-white'>I</td><td class='grid-white'>R</td><td class='grid-white'>E</td><td class='grid-white'>C</td><td class='grid-white'>T</td><td class='grid-white'>I</td><td class='grid-white'>O</td><td class='grid-white'>N</td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td class='grid-white'>K</td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'>➊</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>⑨</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>①</td><td class='grid-white'>➋</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>⑤</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>➌</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>③</td><td class='grid-white'>⑩</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>⑦</td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'>➍</td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>④</td><td class='grid-white'></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>②</td><td></td><td></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>⑧</td><td class='grid-white'></td><td class='grid-white'>➎</td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'>⑥</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'>➏</td><td class='grid-white'></td><td class='grid-white'>⑪</td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'></td><td class='grid-white'>➐</td><td class='grid-white'>⑫</td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='grid-white'></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <p style="margin-left: 30px">?	UP
+      <br>➊	DIAMOND
+      <br>➋	ORANGE
+      <br>➌	BASS
+      <br>➍	CANCER
+        <br>➎	MERCURY
+      <br>➏	QUEEN
+      <br>➐	TURKEY
+    </p>
+  </div>
+  <p style="text-align: center; font-size: 30px; margin-top: 30px;">①②③④⑤ ⑥⑦⑧⑨⑩⑪⑫</p>
+</div>
+
+## 交互源码
+
+### css
+
+```css
+.ccbcstylewrapper {
+  background-color: #efefe5;
+  color: black;
+  padding: 30px;
+  font-size: 20px;
+}
+table.crossword td {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  border-collapse: collapse;
+  text-align: center;
+}
+table.crossword td.grid-white {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+```
+
+
+## 答案
+
+`FIRST CENTURY`
+
+## 解析
+
+_官方存档未填写解析。_
+
+## 提示
+
+### 1. 我毫无头绪
+
+如例所示，UP 既是夸克的一种也是方向之一，右侧每个提示单词属于两种不同的分类，可以分别填入数字对应的横列和纵列。
+
+
+来源：[https://archive.cipherpuzzles.com/ccbc13/problems/asteroid/187.yaml](https://archive.cipherpuzzles.com/ccbc13/problems/asteroid/187.yaml)

@@ -1,0 +1,73 @@
+{
+  "pid": 53,
+  "pgid": 6,
+  "type": 1,
+  "pg_name": "终章",
+  "title": "火药树",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">修改于 2025/08/12 15:18</span>\n<span>增加了【注意有可能是从右到左/从下往上】题目描述</span>\n</div>\n\n@{##u##}见到7k+正在招呼@{##ta##}过去。7k+惊奇地说：「你居然种出了火药树！这实在是个奇迹，我们要用最华丽的烟花来庆祝！我这里有个配方倒是很适合，就是焰色怎么也调不对。@{##u##}，你能一起研究下吗？」",
+  "image": "",
+  "html": "<p>每行和每列各有一个单词/词组，注意有可能是从右到左/从下往上。</p>\r\n\r\n<img src=\"https://static.cipherpuzzles.com/static/images/3b9f7681fa8a48aeba709b4167b98232.webp\">\r\n\r\n<p>（四）",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":53,\"imgUrl\":\"7847cd97b0ab4a1d94166ac4d6237097.webp\",\"color\":\"#000\",\"top\":\"17px\",\"left\":\"960px\"}",
+  "extend_content": "@{##u##}突然明白过来，要做出最好看的烟花，就要在燃料里加入正确比例的黄金，不能因为太多而显得俗气，也不能因为太少而有失身份。@{##u##}找到7k+的配方，计算出了正确的黄金比例，终于做出了低调又不失奢华的黄金烟火。",
+  "adda": 0,
+  "answer": "黄金比例",
+  "attempts_count": 20,
+  "desc": "火药树",
+  "author": "welkin25",
+  "analysis": "首先可以在矩阵里找到一些有明确颜色的物品的词，为了方便确认，所有的词对应的颜色按照字母表顺序给出：\n\n- 紫：BEET\n- 黑：CROW\n- 白：GARDENIA\n- 橙：IRON RUST\n- 绿：LEAF\n- 绿：LIME\n- 红：LIPS\n- 白：MILK\n- 绿：OKRA\n- 黄：OLIVE OIL\n- 蓝：SAPPHIRE\n- 黑：SUMI\n\n![字母颜色grid](https://static.cipherpuzzles.com/static/images/27c05cbaff194912b9ffb4752f468c57.webp)\n\n读未用到的字母得到 TAKE INTERSECTION WITH ORIGINAL GRID。这里 original grid 指的是火药区 meta 所用到的颜色格子：\n\n![焰色](https://static.cipherpuzzles.com/static/images/460c85c5de9949549cd7b404ba900008.webp)\n\n这里 intersection （相交）指的是看字母颜色和格子颜色一致的位置，例如第一行第二格在火药 meta 里为白色，提取其中同为白色的字母 G（来自gardenia）。\n\n![提取](https://static.cipherpuzzles.com/static/images/fa2fee421750424a96ad498edf9ccc74.webp)\n\n从上到下提取的字母为 GOLD RATIO，根据字数提示（四）可以翻译成最终答案`黄金比例`。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我得到了一句很长的英文提示，但是不知道如何理解",
+      "content": "提取本题图里符合【那句英语提示】的字母。这里【相交】指的是**颜色**和原网格一致。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我毫无头绪",
+      "content": "首先要找出8行4列共12个词（可能有倒序的！）。这些词可以对应右边的颜色。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "该如何提取",
+      "content": "每组三字母在确定行列单词后会有两个字母【染上对应单词颜色】，结合那句很长的提示，和火药区meta中的焰色进行操作。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "请直接告诉我【很长的英文提示】是什么",
+      "content": "take intersection with original grid",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "首先可以在矩阵里找到一些有明确颜色的物品的词，为了方便确认，所有的词对应的颜色按照字母表顺序给出：\n\n- 紫：BEET\n- 黑：CROW\n- 白：GARDENIA\n- 橙：IRON RUST\n- 绿：LEAF\n- 绿：LIME\n- 红：LIPS\n- 白：MILK\n- 绿：OKRA\n- 黄：OLIVE OIL\n- 蓝：SAPPHIRE\n- 黑：SUMI\n\n![字母颜色grid](https://static.cipherpuzzles.com/static/images/27c05cbaff194912b9ffb4752f468c57.webp)\n\n读未用到的字母得到 TAKE INTERSECTION WITH ORIGINAL GRID。这里 original grid 指的是火药区 meta 所用到的颜色格子：\n\n![焰色](https://static.cipherpuzzles.com/static/images/460c85c5de9949549cd7b404ba900008.webp)\n\n这里 intersection （相交）指的是看字母颜色和格子颜色一致的位置，例如第一行第二格在火药 meta 里为白色，提取其中同为白色的字母 G（来自gardenia）。\n\n![提取](https://static.cipherpuzzles.com/static/images/fa2fee421750424a96ad498edf9ccc74.webp)\n\n从上到下提取的字母为 GOLD RATIO，根据字数提示（四）可以翻译成最终答案`黄金比例`。",
+  "additional_answers": [
+    {
+      "aaid": 79,
+      "answer": "GOLD RATIO",
+      "message": "这是一个里程碑",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 80,
+      "answer": "TAKE INTERSECTION WITH ORIGINAL GRID",
+      "message": "这是正确的",
+      "extra": "",
+      "not_count": 1
+    }
+  ]
+}

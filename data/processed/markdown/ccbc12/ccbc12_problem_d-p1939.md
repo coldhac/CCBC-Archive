@@ -1,0 +1,59 @@
+---
+record_id: "ccbc12:problem:d-p1939"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线D"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/d/p1939.yaml"
+---
+
+# #1939 五年高考四年模拟 - CCBC 12
+
+## 题面
+
+<!--LOGO居中图片链接：/ccbc12/images/d/1a94b077fbe64ee1891db4257aec3bc7.webp-->
+人难我难，我不畏难。人易我易，我不大意。
+
+![题图](../../../assets/archive.cipherpuzzles.com/ccbc12/images/d/199f2449138c4eebbccf579f2eb9520f.webp)
+
+## 答案
+
+`CURSE WORDS`
+
+## 解析
+
+首先分别检索 五+GGHG 与 四+60212，能够得知字母和数字分别对应汉字的五笔编码和四角号码，能够推理出下方需要填写汉字以及对应的编码。
+
+五笔部分，五角星周边有五个姓氏以及中央黑白圆形共同暗示了五行，给五个姓氏添加五行对应的偏旁部首（钅木  氵火  土），张只有添加氵能组成新汉字，确定五行中水的位置，结合相生相克关系，得到：涨（IXTY）焯（OHJH）镐（QYMK）横（SAMW）圩（FGFH）。
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/d-1939-1.jpg)
+
+笔和行的五笔编码第一个字母都是T，所以四角部分标题中的272也对应这部分的主题汉字，已知其中一个为四角（27227）。四芒星容易联想到方位，从彡入手，联想到彪字，虎与方位推理出四象（27232）；或将已知五笔字母和给出的四角数字叠坐标得到**密、的、密文、是维**这几个字，可以假设是维吉尼亚从而逆推得到亀字也能推理出四象（27232）。将龙鸟虎龟按方位分别与月央彡日结合，得到：胧（73214）鸯（50127）彪（22212）亀（27716）。
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/d-1939-2.png)
+
+右侧作文纸部分，逐行读加粗字“五四重叠得坐标解密文”。将5个长度为4的五笔编码和4个长度为5的四角号码重叠，得到一组坐标：I7，X3，T2，Y1，O4，H5，J0，H1，Q2，Y7，M2，K2，S2，A1，M2，W2，F7，G7，F1，H6。（另外如果尝试把作为标题的五（GGHG）和四（60212）重叠，会得到“不是取这”的错误提示，防止走弯路）。作文的尺寸为10×25，对应四角号码的字符集（0-9）和五笔编码的字符集（A-Y），按坐标提取文字，得“密钥是年轻的英文翻译密文的加密是维吉尼亚”，密钥为young，密文为加粗字对应的字母横坐标ailfkuclqy，解维吉尼亚得到答案：**CURSE WORDS**。
+
+## 提示
+
+### 1. 我毫无头绪
+
+字下面的字母和数字分别是汉字的五笔编码和四角号码。
+
+### 2. 该如何填字
+
+将五行和四象与对应位置给出的汉字结合得到新的汉字。
+
+### 3. 该如何提取
+
+根据表格中加粗字的指示得到一个20个字的信息。把加粗字按行号由小到大顺序排列取对应的坐标字母得到密文。
+
+
+## 本地附件
+
+- [d-1939-1.jpg](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/d-1939-1.jpg)
+- [d-1939-2.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/d-1939-2.png)
+- [199f2449138c4eebbccf579f2eb9520f.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/d/199f2449138c4eebbccf579f2eb9520f.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/d/p1939.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/d/p1939.yaml)

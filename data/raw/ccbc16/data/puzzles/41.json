@@ -1,0 +1,50 @@
+{
+  "pid": 41,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "福尔摩斯探案集",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":41,\"imgUrl\":\"95d0c80a11be4569b263f93928f216f8.svg\",\"color\":\"#000\",\"top\":\"70px\",\"left\":\"830px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "BOOKCASE",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "<style>\n#sherlock_solution img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#sherlock_solution b {\ncolor: red;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"sherlock_solution\">\n<img src=\"https://static.cipherpuzzles.com/static/images/eb220c4948a841d2915d288fff4c4cf7.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/76c62ab95d0740d69bcf18439e441ba5.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/c1192c01ad0c421388300a8d691430ae.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/58ec28fd9a364a878999ccdcdb8f88e2.webp\">\n\n标题提示福尔摩斯故事，经过观察和联想，可以发现每个碎片代表了一个福尔摩斯的故事的标题（去掉了\"The Adventure of\"），但是有一个字母被改动了，依次为：\n<table>\n<tr><th>碎片</th><th style=\"width: 200px\">碎片代表的英文</th><th>福尔摩斯故事</th></tr>\n<tr><td>画着恶魔符号的靴子</td><td>DEVIL'S <b>B</b>OOT</td><td>The Adventure of the Devil's Foot</td></tr>\n<tr><td>五个橙色的冰棍</td><td>FIVE ORANGE P<b>O</b>PS</td><td>The Five Orange Pips</td></tr>\n<tr><td>纸板做的马里奥游戏里的害羞幽灵</td><td>CARDBOARD BO<b>O</b></td><td>The Adventure of the Cardboard Box</td></tr>\n<tr><td>带着斑点的银行</td><td>SPECKLED BAN<b>K</b></td><td>The Adventure of the Speckled Band</td></tr>\n<tr><td>狮子的拐杖</td><td>LION'S <b>C</b>ANE</td><td>The Adventure of the Lion's Mane</td></tr>\n<tr><td>铜的电子排布+沙滩</td><td>COPPER BE<b>A</b>CHES</td><td>The Adventure of the Copper Beeches</td></tr>\n<tr><td>有着酸柠檬的牌子</td><td>SIGN OF THE <b>S</b>OUR</td><td>The Sign of the Four</td></tr>\n<tr><td>围着肚脐签的条约</td><td>NAV<b>E</b>L TREATY</td><td>The Adventure of the Naval Treaty</td></tr>\n</table>\n\n提取修改的字母 BO/OK/CA/SE 再排列得到正确答案 `BOOKCASE` 或者 `CASEBOOK`。\n\n</div>",
+  "check_answer_type": 1,
+  "check_answer_function": "c16-checkanswer-holmes",
+  "tips": [
+    {
+      "num": 1,
+      "title": "这道题需要哪些碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n<img src=\"https://static.cipherpuzzles.com/static/images/eb220c4948a841d2915d288fff4c4cf7.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/c1192c01ad0c421388300a8d691430ae.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/58ec28fd9a364a878999ccdcdb8f88e2.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/76c62ab95d0740d69bcf18439e441ba5.webp\">\n</div>",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我毫无头绪",
+      "content": "每幅画描述了一个福尔摩斯故事但稍有不同。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "能不能再说明白一点？（您应当先购买上一条提示）",
+      "content": "差一个字母",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#sherlock_solution img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#sherlock_solution b {\ncolor: red;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"sherlock_solution\">\n<img src=\"https://static.cipherpuzzles.com/static/images/eb220c4948a841d2915d288fff4c4cf7.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/76c62ab95d0740d69bcf18439e441ba5.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/c1192c01ad0c421388300a8d691430ae.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/58ec28fd9a364a878999ccdcdb8f88e2.webp\">\n\n标题提示福尔摩斯故事，经过观察和联想，可以发现每个碎片代表了一个福尔摩斯的故事的标题（去掉了\"The Adventure of\"），但是有一个字母被改动了，依次为：\n<table>\n<tr><th>碎片</th><th style=\"width: 200px\">碎片代表的英文</th><th>福尔摩斯故事</th></tr>\n<tr><td>画着恶魔符号的靴子</td><td>DEVIL'S <b>B</b>OOT</td><td>The Adventure of the Devil's Foot</td></tr>\n<tr><td>五个橙色的冰棍</td><td>FIVE ORANGE P<b>O</b>PS</td><td>The Five Orange Pips</td></tr>\n<tr><td>纸板做的马里奥游戏里的害羞幽灵</td><td>CARDBOARD BO<b>O</b></td><td>The Adventure of the Cardboard Box</td></tr>\n<tr><td>带着斑点的银行</td><td>SPECKLED BAN<b>K</b></td><td>The Adventure of the Speckled Band</td></tr>\n<tr><td>狮子的拐杖</td><td>LION'S <b>C</b>ANE</td><td>The Adventure of the Lion's Mane</td></tr>\n<tr><td>铜的电子排布+沙滩</td><td>COPPER BE<b>A</b>CHES</td><td>The Adventure of the Copper Beeches</td></tr>\n<tr><td>有着酸柠檬的牌子</td><td>SIGN OF THE <b>S</b>OUR</td><td>The Sign of the Four</td></tr>\n<tr><td>围着肚脐签的条约</td><td>NAV<b>E</b>L TREATY</td><td>The Adventure of the Naval Treaty</td></tr>\n</table>\n\n提取修改的字母 BO/OK/CA/SE 再排列得到正确答案 `BOOKCASE` 或者 `CASEBOOK`。\n\n</div>",
+  "additional_answers": []
+}

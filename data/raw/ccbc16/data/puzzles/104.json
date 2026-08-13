@@ -1,0 +1,34 @@
+{
+  "pid": 104,
+  "pgid": 3,
+  "type": 0,
+  "pg_name": "印刷",
+  "title": "最后致意",
+  "content": "<div  class=\"tip-block custom-block\">\n<span class=\"custom-block-title\">💡</span>\n<span>本题内容缺失</span>\n</div>",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":104,\"imgUrl\":\"333a1a3fa44a41b09e076f9270b158ee.webp\",\"color\":\"#000\",\"top\":\"484px\",\"left\":\"1012px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "F",
+  "attempts_count": 20,
+  "desc": "32解锁时解锁",
+  "author": "Sevenkplus、welkin25",
+  "analysis": "",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "这题真的什么也没有吗？",
+      "content": "是的请先做其他题目",
+      "desc": "",
+      "point_cost": 50,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "",
+  "additional_answers": []
+}

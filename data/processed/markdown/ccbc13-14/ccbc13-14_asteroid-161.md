@@ -1,0 +1,80 @@
+---
+record_id: "ccbc13-14:asteroid-161"
+event_id: "ccbc13-14"
+editions: ["CCBC 13", "CCBC 14"]
+year: 2023
+area: "小行星数据库"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc13/problems/asteroid/161.yaml"
+---
+
+# ⭐
+
+## 题面
+
+<div class="ccbcstylewrapper" style="position: relative;">
+  <span style="color:red;font-size: 50px;position: absolute; left: 250px">♕</span>
+  <table id="board">
+    <tr><td>I</span><td>N</span><td>W</span><td>R</span><td>P</span><td>S</span></tr>
+      <tr><td>E</span><td>O</span><td>H</span><td>D</span><td>S</span><td>E</span></tr>
+      <tr><td>L</span><td>M</span><td>C</span><td>A</span><td>A</span><td>S</span></tr>
+      <tr><td>G</span><td>D</span><td>R</span><td>H</span><td>X</span><td>U</span></tr>
+      <tr><td>N</span><td>H</span><td>A</span><td>O</span><td>I</span><td>U</span></tr>
+      <tr><td>E</span><td>S</span><td>P</span><td>H</span><td>S</span><td>O</span></tr>
+  </table>
+  <span style="color:red;font-size: 50px;padding-left:30px;"  >♕♕♕♕♕</span>
+  <p style="clear: both;padding-top: 30px">将剩下的皇后放入棋盘，皇后之间不得互相攻击。</p>
+  <p>(4 5 4)</p>
+  使用手机查看可能导致题目显示错位，可点击<a href="../../../assets/archive.cipherpuzzles.com/ccbc13/images/asteroid/191afbb46ff346bcb7285ac7a6b065ae.webp" target="_blank">此处看图片</a>。
+</div>
+
+## 交互源码
+
+### css
+
+```css
+.ccbcstylewrapper {
+  background-color: #efefe5;
+  color: black;
+  padding: 30px;
+  font-size: 20px;
+}
+#board {
+  border-collapse: collapse;
+  float: left;
+}
+#board td {
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+```
+
+
+## 答案
+
+`KING HENRY VIII`
+
+## 解析
+
+_官方存档未填写解析。_
+
+## 提示
+
+### 1. 得到中间答案后怎么做？
+
+从左到右按列读，跳过已经用过的格子
+
+
+## 中间答案
+
+| 提交 | 回复 | 附加信息 |
+| --- | --- | --- |
+| read up | 步骤正确，继续推进。 |  |
+
+## 本地附件
+
+- [191afbb46ff346bcb7285ac7a6b065ae.webp](../../../assets/archive.cipherpuzzles.com/ccbc13/images/asteroid/191afbb46ff346bcb7285ac7a6b065ae.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc13/problems/asteroid/161.yaml](https://archive.cipherpuzzles.com/ccbc13/problems/asteroid/161.yaml)

@@ -1,0 +1,474 @@
+{
+  "pid": 45,
+  "pgid": 5,
+  "type": 3,
+  "pg_name": "造纸",
+  "title": "叶子戏",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "https://static.cipherpuzzles.com/static/images/9c64e6c1d2d14dc4adead7be46d77099.vue",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":45,\"imgUrl\":\"460d684a12ef47228e003d6fa930c6c7.webp\",\"color\":\"#000\",\"top\":\"60px\",\"left\":\"776px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "*（无）*",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n<table id = \"answerkey\">\n<tr><th>牌</th><th>答案</th><th>做法</th></tr>\n<tr><td>♠️A</td><td>李白</td><td>上方填入黑桃，黑对白，桃对李。</td></tr>\n<tr><td>♠️2</td><td>二桃杀三士</td><td>两个桃，划掉三个士，联想即可。</td></tr>\n<tr><td>♠️3</td><td>兰</td><td>除了明显被框出的三，“黑”中也含有被框出的“丷”。</td></tr>\n<tr><td>♠️4</td><td>4S店</td><td>按虚线分割开在框中拼好后，空白区域是4个S。</td></tr>\n<tr><td>♠️5</td><td>突围</td><td>声母不变，将韵母和声调分别移位。</td></tr>\n<tr><td>♠️6</td><td>六个核桃</td><td>黑桃变为了核桃。</td></tr>\n<tr><td>♠️7</td><td>黑漆漆</td><td>每三分之一对应“黑桃七”一个字，故牌面为“黑七七”。</td></tr>\n<tr><td>♠️8</td><td>天</td><td>将四对黑桃连线象形。</td></tr>\n<tr><td>♠️9</td><td>杂交</td><td>中间是墨-土=黑，对左上和右下进行同样操作。</td></tr>\n<tr><td>♠️10</td><td>风花雪月</td><td>成语接龙：桃花流水、水中捞月、月黑风高。</td></tr>\n<tr><td>♠️J</td><td>逃之夭夭</td><td>桃之幺幺谐音。</td></tr>\n<tr><td>♠️Q</td><td>安全</td><td>Q代表女王，填入后象形。</td></tr>\n<tr><td>♠️K</td><td>熏陶</td><td>K代表千，千+黑=熏，桃同音为陶。</td></tr>\n<tr><td>♥️A</td><td>夏威夷</td><td>“红”字三部分象形为WIH，加上A组成HAWAII。</td></tr>\n<tr><td>♥️2</td><td>忐忑</td><td>心+上=忐，心+下=忑。</td></tr>\n<tr><td>♥️3</td><td>忠</td><td>心+中=忠。</td></tr>\n<tr><td>♥️4</td><td>缀</td><td>将红桃替换为4，与底部”红桃“的“纟”组合出“缀”。</td></tr>\n<tr><td>♥️5</td><td>三心二意</td><td>心+音=意，三个心两个意。</td></tr>\n<tr><td>♥️6</td><td>红眼病</td><td>三行词语分别是红桃、眼花、病源。</td></tr>\n<tr><td>♥️7</td><td>必</td><td>“七”与“心”重叠得到“必”。</td></tr>\n<tr><td>♥️8</td><td>八心八箭</td><td>八个心八支箭，联想即可。</td></tr>\n<tr><td>♥️9</td><td>红葡萄酒</td><td>红桃九中加入pu，谐音即可。</td></tr>\n<tr><td>♥️10</td><td>志</td><td>十+一+心=志。</td></tr>\n<tr><td>♥️J</td><td>斗</td><td>J也可被称为勾，勾心斗角。</td></tr>\n<tr><td>♥️Q</td><td>术</td><td>从右至左：阿Q正传，刚正不阿，心术不正。</td></tr>\n<tr><td>♥️K</td><td>红木</td><td>K代表千，K²是兆，红桃-兆=红木。</td></tr>\n<tr><td>♣️A</td><td>竹</td><td>下方为松竹梅，箭头表示公母反义。</td></tr>\n<tr><td>♣️2</td><td>梅开二度</td><td>ON为开，°C为度，连读即可。</td></tr>\n<tr><td>♣️3</td><td>梅花三弄</td><td>梅花三+弄。</td></tr>\n<tr><td>♣️4</td><td>菊</td><td>牌表示对应答案。四项分别对应梅兰竹菊。</td></tr>\n<tr><td>♣️5</td><td>大门</td><td>分别是：五花大绑；五花肉；五花八门。</td></tr>\n<tr><td>♣️6</td><td>梅花鹿</td><td>梅花六变为梅花陆，谐音即可。</td></tr>\n<tr><td>♣️7</td><td>杀伤力</td><td>按照图示替换“梅花七”后，翻转得到答案。</td></tr>\n<tr><td>♣️8</td><td>美眉</td><td>分别是：美化、梅花、话梅、画眉。</td></tr>\n<tr><td>♣️9</td><td>移花接木</td><td>将MEI HUA JIU Y重排得到YI HUA JIE MU。</td></tr>\n<tr><td>♣️10</td><td>华</td><td>拼接后为“草花十”，缺少部分为“华”。</td></tr>\n<tr><td>♣️J</td><td>百草枯</td><td>分别是：百，草花，杰克。</td></tr>\n<tr><td>♣️Q</td><td>花甲</td><td>牌面倒置了，左右两列分别填入梅花和甲乙丙丁。</td></tr>\n<tr><td>♣️K</td><td>早</td><td>中间填入三叶草；下方箭头表示多加一竖。</td></tr>\n<tr><td>♦️A</td><td>合</td><td>用口代替方块，左上象形得到合。</td></tr>\n<tr><td>♦️2</td><td>丹</td><td>笔画重排。</td></tr>\n<tr><td>♦️3</td><td>三菱</td><td>可按比例拼出三菱LOGO。</td></tr>\n<tr><td>♦️4</td><td>四四方方</td><td>连读即可。</td></tr>\n<tr><td>♦️5</td><td>毋</td><td>箭头表示封闭区域，需要有4个封闭区域且非矩形。</td></tr>\n<tr><td>♦️6</td><td>体面</td><td>分别表示正六面体和正方体。</td></tr>\n<tr><td>♦️7</td><td>俄罗斯</td><td>俄罗斯方块有七种形状。</td></tr>\n<tr><td>♦️8</td><td>囧</td><td>与方块A相同，用口代替方得到囧。</td></tr>\n<tr><td>♦️9</td><td>药</td><td>分别为：药方、药片、药丸。</td></tr>\n<tr><td>♦️10</td><td>叶</td><td>口（方块）+十=叶。</td></tr>\n<tr><td>♦️J</td><td>打比方</td><td>按比例填入虚线框即可。</td></tr>\n<tr><td>♦️Q</td><td>大后方</td><td>第一字表示大小。</td></tr>\n<tr><td>♦️K</td><td>噩</td><td>王+4*口=噩。</td></tr>\n<tr><td>小王</td><td>三花聚顶</td><td>按每个字出现在几张牌中排序，“三”和“花”在最顶上。</td></tr>\n<tr><td>大王</td><td>方针</td><td>上方是竹+合=答；下方是将黑桃A的上方与红桃A的下方拼接，得到一张新题。新题上方填入方块，下方填入指南针，由箭头提取得到方针。</td></tr>\n</table>",
+  "check_answer_type": 1,
+  "check_answer_function": "c16-checkanswer-noanswer",
+  "tips": [
+    {
+      "num": 1,
+      "title": "调整提交次数价格",
+      "content": "",
+      "desc": "add_attempts_count",
+      "point_cost": 0,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "♠️A该怎么做！",
+      "content": "上方填入黑白，黑对白，桃对李。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "♠️2该怎么做！",
+      "content": "两个桃，划掉三个士，联想即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "♠️3该怎么做！",
+      "content": "除了明显被框出的三，“黑”中也含有被框出的“丷”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "♠️4该怎么做！",
+      "content": "按虚线分割开在框中拼好后，空白区域是4个S。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "♠️5该怎么做！",
+      "content": "声母不变，将韵母和声调分别移位。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "♠️6该怎么做！",
+      "content": "黑桃变为了核桃。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "♠️7该怎么做！",
+      "content": "每三分之一对应“黑桃七”一个字，故牌面为“黑七七”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 9,
+      "title": "♠️8该怎么做！",
+      "content": "将四对黑桃连线象形。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 10,
+      "title": "♠️9该怎么做！",
+      "content": "中间是墨-土=黑，对左上和右下进行同样操作。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 11,
+      "title": "♠️10该怎么做！",
+      "content": "成语接龙：桃花流水、水中捞月、月黑风高。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 12,
+      "title": "♠️J该怎么做！",
+      "content": "桃之幺幺谐音。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 13,
+      "title": "♠️Q该怎么做！",
+      "content": "Q代表女王，填入后象形。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 14,
+      "title": "♠️K该怎么做！",
+      "content": "K代表千，千+黑=熏，桃同音为陶。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 15,
+      "title": "♥️A该怎么做！",
+      "content": "“红”字三部分象形为WIH，加上A组成HAWAII。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 16,
+      "title": "♥️2该怎么做！",
+      "content": "心+上=忐，心+下=忑。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 17,
+      "title": "♥️3该怎么做！",
+      "content": "心+中=忠。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 18,
+      "title": "♥️4该怎么做！",
+      "content": "将红桃替换为4，与底部”红桃“的“纟”组合出“缀”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 19,
+      "title": "♥️5该怎么做！",
+      "content": "心+音=意，三个心两个意。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 20,
+      "title": "♥️6该怎么做！",
+      "content": "三行词语分别是红桃、眼花、病源。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 21,
+      "title": "♥️7该怎么做！",
+      "content": "“七”与“心”重叠得到“必”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 22,
+      "title": "♥️8该怎么做！",
+      "content": "八个心八支箭，联想即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 23,
+      "title": "♥️9该怎么做！",
+      "content": "红桃九中加入pu，谐音即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 24,
+      "title": "♥️10该怎么做！",
+      "content": "十+一+心=志。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 25,
+      "title": "♥️J该怎么做！",
+      "content": "J也可被称为勾，勾心斗角。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 26,
+      "title": "♥️Q该怎么做！",
+      "content": "从右至左：阿Q正传，刚正不阿，心术不正。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 27,
+      "title": "♥️K该怎么做！",
+      "content": "K代表千，K²是兆，红桃-兆=红木。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 28,
+      "title": "♣️A该怎么做！",
+      "content": "下方为松竹梅，箭头表示公母反义。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 29,
+      "title": "♣️2该怎么做！",
+      "content": "ON为开，°C为度，连读即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 30,
+      "title": "♣️3该怎么做！",
+      "content": "梅花三+弄。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 31,
+      "title": "♣️4该怎么做！",
+      "content": "牌表示对应答案。四项分别对应梅兰竹菊。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 32,
+      "title": "♣️5该怎么做！",
+      "content": "分别是：五花大绑；五花肉；五花八门。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 33,
+      "title": "♣️6该怎么做！",
+      "content": "梅花六变为梅花陆，谐音即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 34,
+      "title": "♣️7该怎么做！",
+      "content": "按照图示替换“梅花七”后，翻转得到答案。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 35,
+      "title": "♣️8该怎么做！",
+      "content": "分别是：美化、梅花、话梅、画眉。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 36,
+      "title": "♣️9该怎么做！",
+      "content": "将MEI HUA JIU Y重排得到YI HUA JIE MU。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 37,
+      "title": "♣️10该怎么做！",
+      "content": "拼接后为“草花十”，缺少部分为“华”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 38,
+      "title": "♣️J该怎么做！",
+      "content": "分别是：百，草花，杰克。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 39,
+      "title": "♣️Q该怎么做！",
+      "content": "牌面倒置了，左右两列分别填入梅花和甲乙丙丁。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 40,
+      "title": "♣️K该怎么做！",
+      "content": "中间填入三叶草；下方箭头表示多加一竖。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 41,
+      "title": "♦️A该怎么做！",
+      "content": "用口代替方块，左上象形得到合。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 42,
+      "title": "♦️2该怎么做！",
+      "content": "笔画重排。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 43,
+      "title": "♦️3该怎么做！",
+      "content": "可按比例拼出三菱LOGO。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 44,
+      "title": "♦️4该怎么做！",
+      "content": "连读即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 45,
+      "title": "♦️5该怎么做！",
+      "content": "箭头表示封闭区域，需要有4个封闭区域且非矩形。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 46,
+      "title": "♦️6该怎么做！",
+      "content": "分别表示正六面体和正方体。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 47,
+      "title": "♦️7该怎么做！",
+      "content": "俄罗斯方块有七种形状。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 48,
+      "title": "♦️8该怎么做！",
+      "content": "与方块A相同，用口代替方得到囧。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 49,
+      "title": "♦️9该怎么做！",
+      "content": "分别为：药方、药片、药丸。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 50,
+      "title": "♦️10该怎么做！",
+      "content": "口（方块）+十=叶。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 51,
+      "title": "♦️J该怎么做！",
+      "content": "按比例填入虚线框即可。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 52,
+      "title": "♦️Q该怎么做！",
+      "content": "第一字表示大小。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 53,
+      "title": "♦️K该怎么做！",
+      "content": "王+4*口=噩。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 54,
+      "title": "小王牌不会！教教！",
+      "content": "与答案中含有这些字的牌数有关。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 55,
+      "title": "大王牌不会！教教！",
+      "content": "上方两张并排的牌就是将对应答案拼在一起；下方两张各取一半的牌是将题面各取一半拼接后作答。\n\n拼出的牌中，上方应填的字与黑桃A、红桃A、梅花A同理；下方填中间物品的名字：其形状为圆形，内部为一双色菱形。若仍然无法看出中间物品，可以认为中间的菱形应该更窄，且将红黑看作红蓝。最后提取箭头指向的两个字。",
+      "desc": "",
+      "point_cost": 5000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n<table id = \"answerkey\">\n<tr><th>牌</th><th>答案</th><th>做法</th></tr>\n<tr><td>♠️A</td><td>李白</td><td>上方填入黑桃，黑对白，桃对李。</td></tr>\n<tr><td>♠️2</td><td>二桃杀三士</td><td>两个桃，划掉三个士，联想即可。</td></tr>\n<tr><td>♠️3</td><td>兰</td><td>除了明显被框出的三，“黑”中也含有被框出的“丷”。</td></tr>\n<tr><td>♠️4</td><td>4S店</td><td>按虚线分割开在框中拼好后，空白区域是4个S。</td></tr>\n<tr><td>♠️5</td><td>突围</td><td>声母不变，将韵母和声调分别移位。</td></tr>\n<tr><td>♠️6</td><td>六个核桃</td><td>黑桃变为了核桃。</td></tr>\n<tr><td>♠️7</td><td>黑漆漆</td><td>每三分之一对应“黑桃七”一个字，故牌面为“黑七七”。</td></tr>\n<tr><td>♠️8</td><td>天</td><td>将四对黑桃连线象形。</td></tr>\n<tr><td>♠️9</td><td>杂交</td><td>中间是墨-土=黑，对左上和右下进行同样操作。</td></tr>\n<tr><td>♠️10</td><td>风花雪月</td><td>成语接龙：桃花流水、水中捞月、月黑风高。</td></tr>\n<tr><td>♠️J</td><td>逃之夭夭</td><td>桃之幺幺谐音。</td></tr>\n<tr><td>♠️Q</td><td>安全</td><td>Q代表女王，填入后象形。</td></tr>\n<tr><td>♠️K</td><td>熏陶</td><td>K代表千，千+黑=熏，桃同音为陶。</td></tr>\n<tr><td>♥️A</td><td>夏威夷</td><td>“红”字三部分象形为WIH，加上A组成HAWAII。</td></tr>\n<tr><td>♥️2</td><td>忐忑</td><td>心+上=忐，心+下=忑。</td></tr>\n<tr><td>♥️3</td><td>忠</td><td>心+中=忠。</td></tr>\n<tr><td>♥️4</td><td>缀</td><td>将红桃替换为4，与底部”红桃“的“纟”组合出“缀”。</td></tr>\n<tr><td>♥️5</td><td>三心二意</td><td>心+音=意，三个心两个意。</td></tr>\n<tr><td>♥️6</td><td>红眼病</td><td>三行词语分别是红桃、眼花、病源。</td></tr>\n<tr><td>♥️7</td><td>必</td><td>“七”与“心”重叠得到“必”。</td></tr>\n<tr><td>♥️8</td><td>八心八箭</td><td>八个心八支箭，联想即可。</td></tr>\n<tr><td>♥️9</td><td>红葡萄酒</td><td>红桃九中加入pu，谐音即可。</td></tr>\n<tr><td>♥️10</td><td>志</td><td>十+一+心=志。</td></tr>\n<tr><td>♥️J</td><td>斗</td><td>J也可被称为勾，勾心斗角。</td></tr>\n<tr><td>♥️Q</td><td>术</td><td>从右至左：阿Q正传，刚正不阿，心术不正。</td></tr>\n<tr><td>♥️K</td><td>红木</td><td>K代表千，K²是兆，红桃-兆=红木。</td></tr>\n<tr><td>♣️A</td><td>竹</td><td>下方为松竹梅，箭头表示公母反义。</td></tr>\n<tr><td>♣️2</td><td>梅开二度</td><td>ON为开，°C为度，连读即可。</td></tr>\n<tr><td>♣️3</td><td>梅花三弄</td><td>梅花三+弄。</td></tr>\n<tr><td>♣️4</td><td>菊</td><td>牌表示对应答案。四项分别对应梅兰竹菊。</td></tr>\n<tr><td>♣️5</td><td>大门</td><td>分别是：五花大绑；五花肉；五花八门。</td></tr>\n<tr><td>♣️6</td><td>梅花鹿</td><td>梅花六变为梅花陆，谐音即可。</td></tr>\n<tr><td>♣️7</td><td>杀伤力</td><td>按照图示替换“梅花七”后，翻转得到答案。</td></tr>\n<tr><td>♣️8</td><td>美眉</td><td>分别是：美化、梅花、话梅、画眉。</td></tr>\n<tr><td>♣️9</td><td>移花接木</td><td>将MEI HUA JIU Y重排得到YI HUA JIE MU。</td></tr>\n<tr><td>♣️10</td><td>华</td><td>拼接后为“草花十”，缺少部分为“华”。</td></tr>\n<tr><td>♣️J</td><td>百草枯</td><td>分别是：百，草花，杰克。</td></tr>\n<tr><td>♣️Q</td><td>花甲</td><td>牌面倒置了，左右两列分别填入梅花和甲乙丙丁。</td></tr>\n<tr><td>♣️K</td><td>早</td><td>中间填入三叶草；下方箭头表示多加一竖。</td></tr>\n<tr><td>♦️A</td><td>合</td><td>用口代替方块，左上象形得到合。</td></tr>\n<tr><td>♦️2</td><td>丹</td><td>笔画重排。</td></tr>\n<tr><td>♦️3</td><td>三菱</td><td>可按比例拼出三菱LOGO。</td></tr>\n<tr><td>♦️4</td><td>四四方方</td><td>连读即可。</td></tr>\n<tr><td>♦️5</td><td>毋</td><td>箭头表示封闭区域，需要有4个封闭区域且非矩形。</td></tr>\n<tr><td>♦️6</td><td>体面</td><td>分别表示正六面体和正方体。</td></tr>\n<tr><td>♦️7</td><td>俄罗斯</td><td>俄罗斯方块有七种形状。</td></tr>\n<tr><td>♦️8</td><td>囧</td><td>与方块A相同，用口代替方得到囧。</td></tr>\n<tr><td>♦️9</td><td>药</td><td>分别为：药方、药片、药丸。</td></tr>\n<tr><td>♦️10</td><td>叶</td><td>口（方块）+十=叶。</td></tr>\n<tr><td>♦️J</td><td>打比方</td><td>按比例填入虚线框即可。</td></tr>\n<tr><td>♦️Q</td><td>大后方</td><td>第一字表示大小。</td></tr>\n<tr><td>♦️K</td><td>噩</td><td>王+4*口=噩。</td></tr>\n<tr><td>小王</td><td>三花聚顶</td><td>按每个字出现在几张牌中排序，“三”和“花”在最顶上。</td></tr>\n<tr><td>大王</td><td>方针</td><td>上方是竹+合=答；下方是将黑桃A的上方与红桃A的下方拼接，得到一张新题。新题上方填入方块，下方填入指南针，由箭头提取得到方针。</td></tr>\n</table>",
+  "additional_answers": [
+    {
+      "aaid": 28,
+      "answer": "重置",
+      "message": "你已经重置了本题状态",
+      "extra": "clear",
+      "not_count": 1
+    }
+  ]
+}

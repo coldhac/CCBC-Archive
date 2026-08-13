@@ -1,0 +1,50 @@
+{
+  "pid": 11,
+  "pgid": 1,
+  "type": 1,
+  "pg_name": "序章",
+  "title": "霓虹七色",
+  "content": "霓虹题所以第一张图就是霓虹国吗……说起霓虹国，你知道日语里“日本”除了 nihon 还有别的念法吗？",
+  "image": "",
+  "html": "<style>\r\n    .psection img {\r\n        height: 300px;\r\n    }\r\n    .enum span {\r\n        width: 50px;\r\n        text-align: center;\r\n        padding: 10px 0;\r\n        display: inline-block;\r\n        border-radius: 0 10px;\r\n    }\r\n    .psection {\r\n        margin: 20px 0;\r\n    }\r\n</style>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/0f10073f01774b28abccca0c14119207.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #9d5143\">十二</span>\r\n        <span style=\"background-color: #64adf0\">三</span>\r\n    </div>\r\n</div>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/d4acaf3a60d746db994b63e43578b189.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #935e56\">五</span>\r\n        <span style=\"background-color: #e5afbf\">六</span>\r\n        <span style=\"background-color: #f9dd89\">十</span>\r\n        <span style=\"background-color: #3b8b91\">七</span>\r\n    </div>\r\n</div>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/2ec578e0540d4e9f92bb07ff01613a82.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #4c6480\">五</span>\r\n        <span style=\"background-color: #b56163\">六</span>\r\n        <span style=\"background-color: #f7f963\">八</span>\r\n        <span style=\"background-color: #ecd7c4\">九</span>\r\n    </div>\r\n</div>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/65c79fe6ec3b4fcbbfb3e2c96049f6c1.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #5e3d4e\">六</span>\r\n        <span style=\"background-color: #c1bec4\">十</span>\r\n        <span style=\"background-color: #6d9971\">五</span>\r\n    </div>\r\n</div>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/52af02e2a99c4de9a8beabe5517aaabb.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #b7c39d\">九</span>\r\n        <span style=\"background-color: #fca62e\">十一</span>\r\n        <span style=\"background-color: #626900\">五</span>\r\n    </div>\r\n</div>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/8a99b57054a74d5eb4eac9f68df9628b.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #d56287\">七</span>\r\n        <span style=\"background-color: #e9c271\">十五</span>\r\n    </div>\r\n</div>\r\n<div class=\"psection\">\r\n    <img src=\"https://static.cipherpuzzles.com/static/images/8a08308bde334b2ea15f98bc23c960c7.webp\">\r\n    <div class=\"enum\">\r\n        <span style=\"background-color: #80aaba\">六</span>\r\n        <span style=\"background-color: #d0b0b1\">十四</span>\r\n        <span style=\"background-color: #749e87\">六</span>\r\n    </div>\r\n</div>\r\n<div>(8 8)</div>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":11,\"imgUrl\":\"93214d39abc7404c80f4d939785906bf.webp\",\"color\":\"#000\",\"top\":\"490px\",\"left\":\"972px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "FURUDATE HARUICHI",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "\n<style>\n.aenum {\nmargin: 5px;\n}\n    .aenum span {\n        width: 40px;\n        text-align: center;\n        padding: 10px 0;\n        display: inline-block;\n        border-radius: 0 10px;\ncolor: black;\n    }\n</style>\n\n首先需要识别每张图里的内容，题目里给出的中文数字是每个字的笔画数帮助确认答案。我们可以得到：\n\n<div class=\"aenum\">\n        <span style=\"background-color: #9d5143\">富</span>\n        <span style=\"background-color: #64adf0\">士</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #935e56\">生</span>\n        <span style=\"background-color: #e5afbf\">如</span>\n        <span style=\"background-color: #f9dd89\">夏</span>\n        <span style=\"background-color: #3b8b91\">花</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #4c6480\">布</span>\n        <span style=\"background-color: #b56163\">达</span>\n        <span style=\"background-color: #f7f963\">拉</span>\n        <span style=\"background-color: #ecd7c4\">宫</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #5e3d4e\">伏</span>\n        <span style=\"background-color: #c1bec4\">特</span>\n        <span style=\"background-color: #6d9971\">加</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #b7c39d\">哈</span>\n        <span style=\"background-color: #fca62e\">蜜</span>\n        <span style=\"background-color: #626900\">瓜</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #d56287\">花</span>\n        <span style=\"background-color: #e9c271\">蕊</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #80aaba\">许</span>\n        <span style=\"background-color: #d0b0b1\">愿</span>\n        <span style=\"background-color: #749e87\">池</span>\n</div>\n\n其次是找到这些答案的共同之处。一个办法是把所有的词丢进搜索引擎，取决于搜索引擎，也许可以直接找到需要的网站。另一个办法则是看风味文本里提到的日语里“日本”在nihon之外的另一种发音，也就是nippon。将颜色跟nippon联系起来，可以联想到或者搜到立邦涂料（Nippon Paint）。其实每个词正是立邦油漆颜色的一种，标题里的“七色”不但说的是这里有七种颜色，其实也是谐音“漆色”。所以我们提取符合油漆颜色的字，得到\n\n<div class=\"aenum\">\n        <span style=\"background-color: #9d5143\">富</span>\n        <span style=\"background-color: #e5afbf\">如</span>\n        <span style=\"background-color: #b56163\">达</span>\n        <span style=\"background-color: #c1bec4\">特</span>\n        <span style=\"background-color: #b7c39d\">哈</span>\n        <span style=\"background-color: #e9c271\">蕊</span>\n        <span style=\"background-color: #749e87\">池</span>\n</div>\n\n考虑到最后的提取 (8 8)，把汉字转化成拼音可得一位霓虹国漫画家的名字`FURUDATE HARUICHI`。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我找到了这些中文词，但是不知道下一步",
+      "content": "这些词都是同一个集合中的一些元素，你可以试着同时搜索这些词。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "该如何提取",
+      "content": "将正确颜色的字转换成拼音。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "ft说啥呢？",
+      "content": "霓虹就是日本，日本就是nippon，nippon就是立邦",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "\n<style>\n.aenum {\nmargin: 5px;\n}\n    .aenum span {\n        width: 40px;\n        text-align: center;\n        padding: 10px 0;\n        display: inline-block;\n        border-radius: 0 10px;\ncolor: black;\n    }\n</style>\n\n首先需要识别每张图里的内容，题目里给出的中文数字是每个字的笔画数帮助确认答案。我们可以得到：\n\n<div class=\"aenum\">\n        <span style=\"background-color: #9d5143\">富</span>\n        <span style=\"background-color: #64adf0\">士</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #935e56\">生</span>\n        <span style=\"background-color: #e5afbf\">如</span>\n        <span style=\"background-color: #f9dd89\">夏</span>\n        <span style=\"background-color: #3b8b91\">花</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #4c6480\">布</span>\n        <span style=\"background-color: #b56163\">达</span>\n        <span style=\"background-color: #f7f963\">拉</span>\n        <span style=\"background-color: #ecd7c4\">宫</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #5e3d4e\">伏</span>\n        <span style=\"background-color: #c1bec4\">特</span>\n        <span style=\"background-color: #6d9971\">加</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #b7c39d\">哈</span>\n        <span style=\"background-color: #fca62e\">蜜</span>\n        <span style=\"background-color: #626900\">瓜</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #d56287\">花</span>\n        <span style=\"background-color: #e9c271\">蕊</span>\n</div>\n\n<div class=\"aenum\">\n        <span style=\"background-color: #80aaba\">许</span>\n        <span style=\"background-color: #d0b0b1\">愿</span>\n        <span style=\"background-color: #749e87\">池</span>\n</div>\n\n其次是找到这些答案的共同之处。一个办法是把所有的词丢进搜索引擎，取决于搜索引擎，也许可以直接找到需要的网站。另一个办法则是看风味文本里提到的日语里“日本”在nihon之外的另一种发音，也就是nippon。将颜色跟nippon联系起来，可以联想到或者搜到立邦涂料（Nippon Paint）。其实每个词正是立邦油漆颜色的一种，标题里的“七色”不但说的是这里有七种颜色，其实也是谐音“漆色”。所以我们提取符合油漆颜色的字，得到\n\n<div class=\"aenum\">\n        <span style=\"background-color: #9d5143\">富</span>\n        <span style=\"background-color: #e5afbf\">如</span>\n        <span style=\"background-color: #b56163\">达</span>\n        <span style=\"background-color: #c1bec4\">特</span>\n        <span style=\"background-color: #b7c39d\">哈</span>\n        <span style=\"background-color: #e9c271\">蕊</span>\n        <span style=\"background-color: #749e87\">池</span>\n</div>\n\n考虑到最后的提取 (8 8)，把汉字转化成拼音可得一位霓虹国漫画家的名字`FURUDATE HARUICHI`。",
+  "additional_answers": []
+}

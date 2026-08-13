@@ -1,0 +1,772 @@
+{
+  "puzzleAreas": [
+    {
+      "pgid": 1,
+      "title": "序章",
+      "desc": "{\"route\":\"spaceship\",\"colorConfig\":{\"main\":{\"bg\":[\"#0E2657\",\"#251a31\",\"#3B0D0A\"]},\"nav\":{\"bg\":\"#000\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#1aa4ca\"}},\"list\":{\"bg\":\"#dff6ff\",\"border\":\"#dff6ff\",\"item\":{\"bg\":{\"unsolved\":\"#B9E5F1\",\"solved\":\"#1ACA95\"},\"border\":\"#dff6ff\"}},\"pz\":{\"bg\":\"#1aa4ca\",\"inner\":\"#fff\",\"text\":\"#000\"}}}",
+      "difficulty": 1,
+      "slug": "",
+      "stage": null,
+      "puzzles": [
+        {
+          "pid": 1,
+          "title": "一笔画",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 2,
+          "title": "四方谜",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 3,
+          "title": "小题大做",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 4,
+          "title": "五音俱全",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 5,
+          "title": "通用机器人",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 6,
+          "title": "举🚩不定",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 7,
+          "title": "数字",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 8,
+          "title": "恶魔斯基",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 9,
+          "title": "相辅相成",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 10,
+          "title": "当立",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 11,
+          "title": "霓虹七色",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 12,
+          "title": "星之所在",
+          "desc": "",
+          "answer_type": 1
+        }
+      ],
+      "config": {
+        "route": "spaceship",
+        "colorConfig": {
+          "main": {
+            "bg": [
+              "#0E2657",
+              "#251a31",
+              "#3B0D0A"
+            ]
+          },
+          "nav": {
+            "bg": "#000",
+            "text": "#fff",
+            "btn": {
+              "bg": "#1aa4ca"
+            }
+          },
+          "list": {
+            "bg": "#dff6ff",
+            "border": "#dff6ff",
+            "item": {
+              "bg": {
+                "unsolved": "#B9E5F1",
+                "solved": "#1ACA95"
+              },
+              "border": "#dff6ff"
+            }
+          },
+          "pz": {
+            "bg": "#1aa4ca",
+            "inner": "#fff",
+            "text": "#000"
+          }
+        }
+      }
+    },
+    {
+      "pgid": 2,
+      "title": "指南",
+      "desc": "{\"route\":\"compass\",\"imgHash\":\"1c826ea8703049f386ae6865405b77b3.webp\",\"position\":[1,2],\"colorConfig\":{\"main\":{\"bg\":[\"#00044b\",\"#084e96\",\"#0f97e0\"]},\"nav\":{\"bg\":\"#2B5ECD\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#DF6F3D\"}},\"list\":{\"bg\":\"#DF6F3D\",\"border\":\"#DF6F3D\",\"item\":{\"bg\":{\"unsolved\":\"#B9E5F1\",\"solved\":\"#00044B\"},\"border\":\"#DF6F3D\"}},\"pz\":{\"bg\":\"#1b459e\",\"inner\":\"#fff\",\"text\":\"#000\"}}}",
+      "difficulty": 1,
+      "slug": "",
+      "stage": null,
+      "puzzles": [
+        {
+          "pid": 13,
+          "title": "浮想联翩",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 14,
+          "title": "●■★▲",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 15,
+          "title": "三星Galaxy",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 16,
+          "title": "你想Roll出怎样的比赛",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 17,
+          "title": "Link It All",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 18,
+          "title": "就是为了这点醋",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 19,
+          "title": "周而复始",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 20,
+          "title": "复习资料",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 21,
+          "title": "笑点解析",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 22,
+          "title": "打卡",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 23,
+          "title": "高楼大厦",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 24,
+          "title": "一位参赛者……",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 25,
+          "title": "指南",
+          "desc": "",
+          "answer_type": 1
+        }
+      ],
+      "config": {
+        "route": "compass",
+        "colorConfig": {
+          "main": {
+            "bg": [
+              "#00044b",
+              "#084e96",
+              "#0f97e0"
+            ]
+          },
+          "nav": {
+            "bg": "#2B5ECD",
+            "text": "#fff",
+            "btn": {
+              "bg": "#DF6F3D"
+            }
+          },
+          "list": {
+            "bg": "#DF6F3D",
+            "border": "#DF6F3D",
+            "item": {
+              "bg": {
+                "unsolved": "#B9E5F1",
+                "solved": "#00044B"
+              },
+              "border": "#DF6F3D"
+            }
+          },
+          "pz": {
+            "bg": "#1b459e",
+            "inner": "#fff",
+            "text": "#000"
+          }
+        }
+      }
+    },
+    {
+      "pgid": 3,
+      "title": "印刷",
+      "desc": "{\"route\":\"printing\",\"imgHash\":\"2c0a03569b0242c5aa4189954a6c93ff.webp\",\"position\":[2,1],\"colorConfig\":{\"main\":{\"bg\":[\"#56D562\",\"#56D562\",\"#56D562\"]},\"nav\":{\"bg\":\"#DF7126\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#000\"}},\"list\":{\"bg\":\"#DFF6FF\",\"border\":\"#000\",\"item\":{\"bg\":{\"unsolved\":\"#C1DFFF\",\"solved\":\"#56D562\"},\"border\":\"#000\"}},\"pz\":{\"bg\":\"#4CA1FE\",\"inner\":\"#fff\",\"text\":\"#000\"}}}",
+      "difficulty": 1,
+      "slug": "",
+      "stage": null,
+      "puzzles": [
+        {
+          "pid": 26,
+          "title": "图寻",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 27,
+          "title": "烫烫烫",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 101,
+          "title": "五谷丰登",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 28,
+          "title": "五彩斑斓的无字天书",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 29,
+          "title": "只说明书",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 102,
+          "title": "科学计数法",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 30,
+          "title": "氏毛米页",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 31,
+          "title": "先有鸡还是先有蛋？",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 103,
+          "title": "度日如年",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 32,
+          "title": "只剩提取",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 104,
+          "title": "最后致意",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+            "pid": 1001,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1001,\"imgUrl\":\"d188285e7c2d4d5ba9dca87161109399.webp\",\"color\":\"#000\",\"top\":\"500px\",\"left\":\"1590px\"}"
+        },
+        {
+            "pid": 1002,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1002,\"imgUrl\":\"db197c3ac7a74751af5db4d2c7fe37a4.webp\",\"color\":\"#000\",\"top\":\"350px\",\"left\":\"1640px\"}"
+        },
+        {
+            "pid": 1003,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1003,\"imgUrl\":\"1ef4af104372458cb975c845c3905f41.webp\",\"color\":\"#000\",\"top\":\"360px\",\"left\":\"1510px\"}"
+        },
+        {
+            "pid": 1004,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1004,\"imgUrl\":\"6b7ece8f09744247b3e64253e8c502f9.webp\",\"color\":\"#000\",\"top\":\"370px\",\"left\":\"1340px\"}"
+        },
+        {
+            "pid": 1005,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1005,\"imgUrl\":\"b5f6571c472e40b592f8fc80e3cc8c08.webp\",\"color\":\"#000\",\"top\":\"220px\",\"left\":\"1410px\"}"
+        },
+        {
+            "pid": 1006,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1006,\"imgUrl\":\"e6eae1bef28845f8aef76f876a2ffd6d.webp\",\"color\":\"#000\",\"top\":\"290px\",\"left\":\"1588px\"}"
+        },
+        {
+            "pid": 1007,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1007,\"imgUrl\":\"ef1fd196292d4f4f92978b6ec5cbe59f.webp\",\"color\":\"#000\",\"top\":\"180px\",\"left\":\"1490px\"}"
+        },
+        {
+            "pid": 1008,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1008,\"imgUrl\":\"1274ae90bec4446587d93ec36889ac75.webp\",\"color\":\"#000\",\"top\":\"250px\",\"left\":\"1650px\"}"
+        },
+        {
+            "pid": 1009,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1009,\"imgUrl\":\"2cd3870de6cb4939bd3b7667662a835b.webp\",\"color\":\"#000\",\"top\":\"160px\",\"left\":\"1360px\"}"
+        },
+        {
+            "pid": 1010,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1010,\"imgUrl\":\"1274ae90bec4446587d93ec36889ac75.webp\",\"color\":\"#000\",\"top\":\"330px\",\"left\":\"1480px\"}"
+        },
+        {
+            "pid": 1011,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1011,\"imgUrl\":\"1274ae90bec4446587d93ec36889ac75.webp\",\"color\":\"#000\",\"top\":\"250px\",\"left\":\"1310px\"}"
+        },
+        {
+            "pid": 1012,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1012,\"imgUrl\":\"1274ae90bec4446587d93ec36889ac75.webp\",\"color\":\"#000\",\"top\":\"260px\",\"left\":\"1080px\"}"
+        },
+        {
+            "pid": 1013,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1013,\"imgUrl\":\"1274ae90bec4446587d93ec36889ac75.webp\",\"color\":\"#000\",\"top\":\"200px\",\"left\":\"1030px\"}"
+        },
+        {
+            "pid": 1014,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1014,\"imgUrl\":\"1274ae90bec4446587d93ec36889ac75.webp\",\"color\":\"#000\",\"top\":\"230px\",\"left\":\"960px\"}"
+        },
+        {
+            "pid": 1015,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1015,\"imgUrl\":\"2cd3870de6cb4939bd3b7667662a835b.webp\",\"color\":\"#000\",\"top\":\"220px\",\"left\":\"1160px\"}"
+        },
+        {
+            "pid": 1016,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1016,\"imgUrl\":\"2cd3870de6cb4939bd3b7667662a835b.webp\",\"color\":\"#000\",\"top\":\"220px\",\"left\":\"880px\"}"
+        },
+        {
+            "pid": 1017,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1017,\"imgUrl\":\"ef1fd196292d4f4f92978b6ec5cbe59f.webp\",\"color\":\"#000\",\"top\":\"280px\",\"left\":\"1140px\"}"
+        },
+        {
+            "pid": 1018,
+            "title": "█████",
+            "answer_type": 0,
+            "desc": "",
+            "is_unlocked": 0,
+            "extend_data": "{\"pid\":1018,\"imgUrl\":\"e6eae1bef28845f8aef76f876a2ffd6d.webp\",\"color\":\"#000\",\"top\":\"200px\",\"left\":\"1220px\"}"
+       },
+        {
+          "pid": 33,
+          "title": "印刷",
+          "desc": "",
+          "answer_type": 1
+        }
+      ],
+      "config": {
+        "route": "printing",
+        "colorConfig": {
+          "main": {
+            "bg": [
+              "#56D562",
+              "#56D562",
+              "#56D562"
+            ]
+          },
+          "nav": {
+            "bg": "#DF7126",
+            "text": "#fff",
+            "btn": {
+              "bg": "#000"
+            }
+          },
+          "list": {
+            "bg": "#DFF6FF",
+            "border": "#000",
+            "item": {
+              "bg": {
+                "unsolved": "#C1DFFF",
+                "solved": "#56D562"
+              },
+              "border": "#000"
+            }
+          },
+          "pz": {
+            "bg": "#4CA1FE",
+            "inner": "#fff",
+            "text": "#000"
+          }
+        }
+      }
+    },
+    {
+      "pgid": 4,
+      "title": "火药",
+      "desc": "{\"route\":\"gunpowder\",\"imgHash\":\"06e87d8be04849f7827cb3b44e09b438.webp\",\"position\":[2,3],\"colorConfig\":{\"main\":{\"bg\":[\"#000\",\"#000\",\"#000\"]},\"nav\":{\"bg\":\"#9A53CE\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#F21500\"}},\"list\":{\"bg\":\"#fff\",\"border\":\"#fff\",\"item\":{\"bg\":{\"unsolved\":\"#CDCDCD\",\"solved\":\"#F21500\"},\"border\":\"#fff\"}},\"pz\":{\"bg\":\"#000\",\"inner\":\"#fff\",\"text\":\"#000\"}}}",
+      "difficulty": 1,
+      "slug": "",
+      "stage": null,
+      "puzzles": [
+        {
+          "pid": 34,
+          "title": "五色方圆",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 35,
+          "title": "代入演算",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 36,
+          "title": "淡黄又蓬松",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 37,
+          "title": "柏拉图式相爱",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 38,
+          "title": "？？？式相爱",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 39,
+          "title": "汉字方阵·后半",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 40,
+          "title": "原来你也是厨神",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 41,
+          "title": "福尔摩斯探案集",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 42,
+          "title": "元元元……元谜题",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 43,
+          "title": "Galileo's Escapement Room",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 44,
+          "title": "火药",
+          "desc": "",
+          "answer_type": 1
+        }
+      ],
+      "config": {
+        "route": "gunpowder",
+        "colorConfig": {
+          "main": {
+            "bg": [
+              "#000",
+              "#000",
+              "#000"
+            ]
+          },
+          "nav": {
+            "bg": "#9A53CE",
+            "text": "#fff",
+            "btn": {
+              "bg": "#F21500"
+            }
+          },
+          "list": {
+            "bg": "#fff",
+            "border": "#fff",
+            "item": {
+              "bg": {
+                "unsolved": "#CDCDCD",
+                "solved": "#F21500"
+              },
+              "border": "#fff"
+            }
+          },
+          "pz": {
+            "bg": "#000",
+            "inner": "#fff",
+            "text": "#000"
+          }
+        }
+      }
+    },
+    {
+      "pgid": 5,
+      "title": "造纸",
+      "desc": "{\"route\":\"papermaking\",\"imgHash\":\"6a4ab16aad1540198b58fa7d5022f306.webp\",\"position\":[3,2],\"colorConfig\":{\"main\":{\"bg\":[\"#262523\",\"#4c6772\",\"#e2d1b5\"]},\"nav\":{\"bg\":\"#2A2C2B\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#917F64\"}},\"list\":{\"bg\":\"#C7B59A\",\"border\":\"#C7B59A\",\"item\":{\"bg\":{\"unsolved\":\"#C9C9C9\",\"solved\":\"#917F64\"},\"border\":\"#C7B59A\"}},\"pz\":{\"bg\":\"#E2D1B5\",\"inner\":\"#fff\",\"text\":\"#000\"}}}",
+      "difficulty": 1,
+      "slug": "",
+      "stage": null,
+      "puzzles": [
+        {
+          "pid": 45,
+          "title": "叶子戏",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 46,
+          "title": "三字谜",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 47,
+          "title": "2025年度解谜能力测试",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 48,
+          "title": "你说话带括号",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 49,
+          "title": "千字谜",
+          "desc": "",
+          "answer_type": 0
+        },
+        {
+          "pid": 50,
+          "title": "造纸",
+          "desc": "",
+          "answer_type": 1
+        }
+      ],
+      "config": {
+        "route": "papermaking",
+        "colorConfig": {
+          "main": {
+            "bg": [
+              "#262523",
+              "#4c6772",
+              "#e2d1b5"
+            ]
+          },
+          "nav": {
+            "bg": "#2A2C2B",
+            "text": "#fff",
+            "btn": {
+              "bg": "#917F64"
+            }
+          },
+          "list": {
+            "bg": "#C7B59A",
+            "border": "#C7B59A",
+            "item": {
+              "bg": {
+                "unsolved": "#C9C9C9",
+                "solved": "#917F64"
+              },
+              "border": "#C7B59A"
+            }
+          },
+          "pz": {
+            "bg": "#E2D1B5",
+            "inner": "#fff",
+            "text": "#000"
+          }
+        }
+      }
+    },
+    {
+      "pgid": 6,
+      "title": "终章",
+      "desc": "{\"route\":\"seed\",\"imgHash\":\"badec07195ca40d58496b7819946ad5f.webp\",\"position\":[2,2],\"colorConfig\":{\"main\":{\"bg\":[\"#000\",\"#000\",\"#000\"]},\"nav\":{\"bg\":\"#310F0C\",\"text\":\"#fff\",\"btn\":{\"bg\":\"#841920\"}},\"list\":{\"bg\":\"#841920\",\"border\":\"#841920\",\"item\":{\"bg\":{\"unsolved\":\"#F2BE97\",\"solved\":\"#D79E00\"},\"border\":\"#841920\"}},\"pz\":{\"bg\":\"#000\",\"inner\":\"rgba(0, 0, 0, 0.8)\",\"text\":\"#fff\"}}}",
+      "difficulty": 1,
+      "slug": "",
+      "stage": null,
+      "puzzles": [
+        {
+          "pid": 51,
+          "title": "指南树",
+          "desc": "指南树",
+          "answer_type": 0
+        },
+        {
+          "pid": 52,
+          "title": "印刷树",
+          "desc": "印刷树",
+          "answer_type": 0
+        },
+        {
+          "pid": 53,
+          "title": "火药树",
+          "desc": "火药树",
+          "answer_type": 0
+        },
+        {
+          "pid": 54,
+          "title": "造纸树",
+          "desc": "造纸树",
+          "answer_type": 0
+        },
+        {
+          "pid": 55,
+          "title": "最后的谜题",
+          "desc": "",
+          "answer_type": 3
+        }
+      ],
+      "config": {
+        "route": "seed",
+        "colorConfig": {
+          "main": {
+            "bg": [
+              "#000",
+              "#000",
+              "#000"
+            ]
+          },
+          "nav": {
+            "bg": "#310F0C",
+            "text": "#fff",
+            "btn": {
+              "bg": "#841920"
+            }
+          },
+          "list": {
+            "bg": "#841920",
+            "border": "#841920",
+            "item": {
+              "bg": {
+                "unsolved": "#F2BE97",
+                "solved": "#D79E00"
+              },
+              "border": "#841920"
+            }
+          },
+          "pz": {
+            "bg": "#000",
+            "inner": "rgba(0, 0, 0, 0.8)",
+            "text": "#fff"
+          }
+        }
+      }
+    }
+  ]
+}

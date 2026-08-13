@@ -1,0 +1,34 @@
+{
+  "pid": 1,
+  "pgid": 1,
+  "type": 0,
+  "pg_name": "序章",
+  "title": "一笔画",
+  "content": "你知道吗？所有的汉字都可以一笔画。",
+  "image": "https://static.cipherpuzzles.com/static/images/f1c0057ec14a4ceb96a06c4b672e4ff2.webp",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":1,\"imgUrl\":\"a6692a3f15a542a2bffb02b0f702963d.webp\",\"color\":\"#000\",\"top\":\"150px\",\"left\":\"452px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "霹雳一声暴动",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "这题是将每个汉字里的笔画按照笔顺首尾相连得到的“一笔画”，经过观察可以得出这些字是“西江月秋收起义末句六字”，从而得到本题答案`霹雳一声暴动`。\n\n作为参考以下是分开笔画的断点位置：\n\n![image](https://static.cipherpuzzles.com/static/images/6aeb93a0e1bf4efabea06a041d2a59c8.webp)",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "每条线都是一个汉字的笔画按照笔顺首尾相连得到的“一笔画”。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "这题是将每个汉字里的笔画按照笔顺首尾相连得到的“一笔画”，经过观察可以得出这些字是“西江月秋收起义末句六字”，从而得到本题答案`霹雳一声暴动`。\n\n作为参考以下是分开笔画的断点位置：\n\n![image](https://static.cipherpuzzles.com/static/images/6aeb93a0e1bf4efabea06a041d2a59c8.webp)",
+  "additional_answers": []
+}

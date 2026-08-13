@@ -1,0 +1,45 @@
+---
+record_id: "ccbc12:problem:f-p1771"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线F"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/f/p1771.yaml"
+---
+
+# #1771 消失的文字 - CCBC 12
+
+## 题面
+
+好多字都被剪切了，不知道被黏贴到哪里去了呢？
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/9c331a3fd4384804a68627fb6cc21876.webp" width="800px"/>
+
+## 答案
+
+`EMPHASIS`
+
+## 解析
+
+首先找到部分被剪掉的字，比如古典音乐、谋权篡位、村上春树、起早贪黑、一把辛酸泪等等。可以发现，一些字拥有相同的部分，而且可以分成三个一组，使得他们能够合并成一个有三个部分的字，其中去掉任意一个部分都能组成一个字：比如，“章”有三个部分，其中两两组合可以得到“音”、“早”、“辛”三个字。找出所有八个组合后的字后按左侧排序，用数字提取拼音字母得到答案：**EMPHASIS**。
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1771.png)
+
+## 提示
+
+### 1. 我毫无头绪
+
+这些黑框代表的字每三个是一组，需要找到右边的字中哪些跟左边的是一组。
+
+### 2. 该如何提取
+
+每一组汉字合起来也对应一个汉字（比如其中一个字是“树”），根据数字提取这个字拼音中的字母。
+
+
+## 本地附件
+
+- [f-1771.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-1771.png)
+- [9c331a3fd4384804a68627fb6cc21876.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/9c331a3fd4384804a68627fb6cc21876.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/f/p1771.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/f/p1771.yaml)

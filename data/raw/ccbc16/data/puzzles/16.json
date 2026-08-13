@@ -1,0 +1,42 @@
+{
+  "pid": 16,
+  "pgid": 2,
+  "type": 2,
+  "pg_name": "指南",
+  "title": "你想Roll出怎样的比赛",
+  "content": "",
+  "image": "",
+  "html": "<template>\r\n    <div id=\"novel\">\r\n      <div class=\"chapter\" v-for=\"chapter in backRes.chapters\">\r\n        <div class=\"text\" v-html=\"chapter.text\"></div>\r\n        <div v-if=\"chapter.final\" class=\"ending\">\r\n          {{ chapter.ending }}\r\n          <div class=\"restart\">\r\n            <button class=\"el-button el-button--primary\" @click=\"restart()\">重新开始</button>\r\n          </div>\r\n        </div>\r\n        <div v-else>\r\n          <div v-if=\"chapter.hasOwnProperty('choices')\">\r\n            <div class=\"prompt\">\r\n              <p>拿出你的 D{{ chapter.roll }}，{{ chapter.chooseText }}：</p>\r\n              <button class=\"el-button el-button--primary\" v-if=\"!chapter.rolled\" @click=\"roll()\">掷骰子</button>\r\n              <div v-else v-html=\"chapter.outcome\"></div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"bookmark\">\r\n        <div id=\"bookmarkTitle\">书签</div>\r\n      \r\n        <div class=\"el-input\" style=\"width: 150px; margin-right: 5px;\">\r\n            <div class=\"el-input__wrapper\">\r\n                <input class=\"el-input__inner\" id=\"bookmarkInput\" type=\"text\" v-model=\"backRes.bookmark\">\r\n            </div>\r\n        </div>\r\n\r\n      <button class=\"el-button el-button--primary\" @click=\"jumpToBookmark()\">跳转</button>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    .prompt p {\r\n      margin: 0\r\n    }\r\n    .prompt, .outcome {\r\n      background-color: cornsilk;\r\n      padding: 20px;\r\n      border: 2px dashed burlywood;\r\n    }\r\n    .ending {\r\n      background-color: lightblue;\r\n      padding: 20px;\r\n      border: 2px dashed navy;\r\n    }\r\n    .restart {\r\n      margin-top:30px\r\n    }\r\n    .chapter {\r\n      margin: 20px 0;\r\n    }\r\n    .text {\r\n      margin: 10px 0;\r\n    }\r\n    .thoughts {\r\n      font-style: italic;\r\n      color: #666;\r\n    }\r\n    #novel {\r\n      max-width: 800px;\r\n      margin-bottom: 80px;      \r\n    }\r\n    #bookmark {\r\n      position: fixed;\r\n      bottom: 90px;\r\n      right: 6.5vw;\r\n      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);\r\n      padding: 10px;\r\n      border-radius: 5px;\r\n      background-color: rgba(255, 255, 255, 0.75)\r\n    }\r\n    #bookmarkTitle {\r\n        font-weight: bold;\r\n        margin-bottom: 10px;\r\n    }\r\n</style>",
+  "script": "const { ref, reactive, inject, onMounted, nextTick } = Vue; //Vue已被导入到作用域全局对象。使用 const { xxx } = Vue 代替 import { xxx } from 'vue'\r\n\r\n\r\n//必须存在一个全局导出对象 export default {} ，此对象作为当前页面Vue的实例对象。因此，这里只能使用options语法。\r\nexport default {\r\n    //建议参考Vue 3.0 官方文档中setup函数写法，将所有逻辑都写在setup函数内。这样你就可以在setup函数内使用好用的vue3.0语法。\r\n    setup() {\r\n        const backRes = reactive({\r\n            chapters: [],\r\n            bookmark: \"\",\r\n            bookmarkError: false,\r\n        });\r\n\r\n        const backend = inject(\"backend\");\r\n        const message = inject(\"message\")\r\n        // message.notify({\r\n        //     title: \"提示\",\r\n        //     message: \"好像哪里的门被打开了。\",\r\n        //     type: \"info\",\r\n        // })\r\n\r\n        const jumpToBookmark = () => {\r\n            let bookmark = document.getElementById(\"bookmarkInput\").value;\r\n            processBackend(3, bookmark);\r\n        }\r\n\r\n        const roll = () => {\r\n            processBackend(1);\r\n        }\r\n        const restart = () => {\r\n            processBackend(2);\r\n        }\r\n        const processBackend = async (type, bookmark = \"\") => {\r\n            let data = await backend(\"c16-novel\", {\r\n                type: type,\r\n                bookmark: bookmark,\r\n            });\r\n            backRes.chapters = data.chapters;\r\n            backRes.bookmark = data.bookmark;\r\n            backRes.bookmarkError = data.bookmarkError;\r\n            nextTick(() => {\r\n                let chapters = document.getElementsByClassName(\"chapter\")\r\n                chapters[chapters.length - 1].scrollIntoView({ behavior: \"smooth\" });\r\n            });\r\n        }\r\n\r\n        //onMounted是VUE提供的生命周期钩子，它会在整个VUE组件渲染好以后自动调用。更多生命周期钩子请参考VUE官方文档\r\n        //我们这里使用onMounted，一般是为了初始化。当然初始化也可以放在其他的生命周期里。\r\n        onMounted(() => {\r\n            processBackend(0);\r\n        });\r\n\r\n        //所有在页面上使用的对象，都需要这里return出去\r\n        return {\r\n            backRes,\r\n            roll,\r\n            restart,\r\n            jumpToBookmark,\r\n        }\r\n    }\r\n}",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":16,\"imgUrl\":\"35abaa0fa0f447179ad1db05483b2339.svg\",\"color\":\"#000\",\"top\":\"89px\",\"left\":\"1448px\",\"veryFirst\":false}",
+  "extend_content": "成功解开谜题后，量子星云影响的设备恢复正常，同时从中浮现出一张碎纸片。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/88bfb2c6ae8e415f9927b98e53330aae.webp\" alt=\"fragment\" style=\"max-width: 100%\" />",
+  "adda": 0,
+  "answer": "SWAP COIN",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "ES8730、welkin25",
+  "analysis": "故事分支流程如下：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/2112964097ed4b05b833eebdf6cb099c.webp\" style=\"width: 700px\">\n\n抵达结局1-8分别对应 19%, 23%, 1%, 16%, 3%, 15%, 9%, 14%，A1Z26 可得答案 `SWAP COIN`。\n\n计算概率的办法：\n- 用程序模拟多次随机结果\n- 将不同节点之间的跳跃用马尔可夫的转移矩阵 T 描述，计算当 n→∞ 时 x·(T^n) 的极限（其中x=(1,0,...,0)代表起始节点）。标准的线性代数方法是计算T的特征子空间分解，然后算出x在“对应于特征值1的特征子空间”中的那一部分。\n- 利用马尔可夫转移矩阵的特性，有一个更简单的办法：T可以写成分块矩阵(A B; 0 I), 其中A代表中间剧情节点之间的转移矩阵，而B代表从剧情节点到结局节点的转移矩阵。这时不难证明 lim_{n→∞}T^n = (0 (I-A)^{-1}B; 0 I), 所以最后要求的结局概率分布其实就是(I-A)^{-1}B的第一行。\n- 当然，更节省脑细胞的方法是将 n 设为稍大一点的数字，算出 T^n 后看数值接近的整数百分比。\n- 为了减小计算规模，可以分别处理故事的两个大分支。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我不知道到底要做什么",
+      "content": "根据剧情分支用的概率，求出到达每个结局的概率。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我知道要干什么，但我不知道怎么算",
+      "content": "使用马尔可夫的转移矩阵可以计算，或者可以尝试AI工具辅助，用程序模拟这个过程数千次，看概率的百分比。",
+      "desc": "",
+      "point_cost": 500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "故事分支流程如下：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/2112964097ed4b05b833eebdf6cb099c.webp\" style=\"width: 700px\">\n\n抵达结局1-8分别对应 19%, 23%, 1%, 16%, 3%, 15%, 9%, 14%，A1Z26 可得答案 `SWAP COIN`。\n\n计算概率的办法：\n- 用程序模拟多次随机结果\n- 将不同节点之间的跳跃用马尔可夫的转移矩阵 T 描述，计算当 n→∞ 时 x·(T^n) 的极限（其中x=(1,0,...,0)代表起始节点）。标准的线性代数方法是计算T的特征子空间分解，然后算出x在“对应于特征值1的特征子空间”中的那一部分。\n- 利用马尔可夫转移矩阵的特性，有一个更简单的办法：T可以写成分块矩阵(A B; 0 I), 其中A代表中间剧情节点之间的转移矩阵，而B代表从剧情节点到结局节点的转移矩阵。这时不难证明 lim_{n→∞}T^n = (0 (I-A)^{-1}B; 0 I), 所以最后要求的结局概率分布其实就是(I-A)^{-1}B的第一行。\n- 当然，更节省脑细胞的方法是将 n 设为稍大一点的数字，算出 T^n 后看数值接近的整数百分比。\n- 为了减小计算规模，可以分别处理故事的两个大分支。",
+  "additional_answers": []
+}

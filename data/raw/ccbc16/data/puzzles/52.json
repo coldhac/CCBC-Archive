@@ -1,0 +1,50 @@
+{
+  "pid": 52,
+  "pgid": 6,
+  "type": 0,
+  "pg_name": "终章",
+  "title": "印刷树",
+  "content": "ES走到树边，对@{##u##}说道：「这就是传说中的印刷树了，相传这棵树长成后，割开树皮就能取得五色缤纷的墨水，用这种墨水印刷出来的题目永不可能出错……咦，我为什么要说题目？」\n\n@{##u##}若有所思：「居然有这么神奇的墨水吗……」",
+  "image": "https://static.cipherpuzzles.com/static/images/4b809a7366904078858da34b565f9449.webp",
+  "html": "<img src=\"\" style=\"width:500px\">",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":52,\"imgUrl\":\"1bf7699b3b784c60afcf247342e17fea.webp\",\"color\":\"#000\",\"top\":\"21px\",\"left\":\"780px\"}",
+  "extend_content": "@{##u##}突然明白过来，这种神奇的墨水原来子虚乌有。确实，怎么可能用了某种墨水就能保证永不出错呢？奇迹从来都不存在，只有靠自己的细心和努力。",
+  "adda": 0,
+  "answer": "子虚乌有",
+  "attempts_count": 20,
+  "desc": "印刷树",
+  "author": "welkin25",
+  "analysis": "图片里的红字像是书法描红的字帖，对应印刷区meta的答案`THE MISSING INK`。缺少的墨水和FT里的“五色”合在一起可以搜到墨分五色：焦、浓、重、淡、清，而观察题目里的字则可发现每个字恰好可以跟这五个字之一组词：\n<style>\n#ink_sol th {\nwidth: 100px;\ntext-align: left;\n}\n</style>\n<table id=\"ink_sol\">\n<tr><th>组词</th><th></th><th>排序</th><th></th><th>棋盘字母</th></tr>\n<tr><td>对焦</td><td>重视</td><td>1</td><td>3</td><td>C</td></tr>\n<tr><td>浓艳</td><td>重阳</td><td>2</td><td>3</td><td>H</td></tr>\n<tr><td>枯焦</td><td>清寂</td><td>1</td><td>5</td><td>E</td></tr>\n<tr><td>繁重</td><td>重复</td><td>3</td><td>3</td><td>N</td></tr>\n<tr><td>浓烟</td><td>浓雾</td><td>2</td><td>2</td><td>G</td></tr>\n<tr><td>清单</td><td>淡薄</td><td>5</td><td>4</td><td>Y</td></tr>\n<tr><td>恬淡</td><td>清静</td><td>4</td><td>5</td><td>U</td></tr>\n<tr><td>清晨</td><td>清风</td><td>5</td><td>5</td><td>Z</td></tr>\n<tr><td>清流</td><td>重量</td><td>5</td><td>3</td><td>X</td></tr>\n<tr><td>清明</td><td>浓艳</td><td>5</td><td>2</td><td>W</td></tr>\n<tr><td>肃清</td><td>淡然</td><td>5</td><td>4</td><td>Y</td></tr>\n</table>\n\n将焦、浓、重、淡、清这五个字分别对应1-5后，用棋盘密码可以提取得 CHENG YU（成语） ZXWY，指的便是以 ZXWY 开头的成语`子虚乌有`，也就是本题答案。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "每个字都可以跟墨水的五色之一组词。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "要用什么版本的【数据删除】啊？",
+      "content": "需要用的是拼音首字母为JNZDQ的版本。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "该如何提取？",
+      "content": "以J为1，Q为5，用棋盘密码翻译成英文字母，可以得到一句提示，用中文理解。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "图片里的红字像是书法描红的字帖，对应印刷区meta的答案`THE MISSING INK`。缺少的墨水和FT里的“五色”合在一起可以搜到墨分五色：焦、浓、重、淡、清，而观察题目里的字则可发现每个字恰好可以跟这五个字之一组词：\n<style>\n#ink_sol th {\nwidth: 100px;\ntext-align: left;\n}\n</style>\n<table id=\"ink_sol\">\n<tr><th>组词</th><th></th><th>排序</th><th></th><th>棋盘字母</th></tr>\n<tr><td>对焦</td><td>重视</td><td>1</td><td>3</td><td>C</td></tr>\n<tr><td>浓艳</td><td>重阳</td><td>2</td><td>3</td><td>H</td></tr>\n<tr><td>枯焦</td><td>清寂</td><td>1</td><td>5</td><td>E</td></tr>\n<tr><td>繁重</td><td>重复</td><td>3</td><td>3</td><td>N</td></tr>\n<tr><td>浓烟</td><td>浓雾</td><td>2</td><td>2</td><td>G</td></tr>\n<tr><td>清单</td><td>淡薄</td><td>5</td><td>4</td><td>Y</td></tr>\n<tr><td>恬淡</td><td>清静</td><td>4</td><td>5</td><td>U</td></tr>\n<tr><td>清晨</td><td>清风</td><td>5</td><td>5</td><td>Z</td></tr>\n<tr><td>清流</td><td>重量</td><td>5</td><td>3</td><td>X</td></tr>\n<tr><td>清明</td><td>浓艳</td><td>5</td><td>2</td><td>W</td></tr>\n<tr><td>肃清</td><td>淡然</td><td>5</td><td>4</td><td>Y</td></tr>\n</table>\n\n将焦、浓、重、淡、清这五个字分别对应1-5后，用棋盘密码可以提取得 CHENG YU（成语） ZXWY，指的便是以 ZXWY 开头的成语`子虚乌有`，也就是本题答案。",
+  "additional_answers": []
+}

@@ -1,0 +1,74 @@
+{
+  "pid": 38,
+  "pgid": 4,
+  "type": 1,
+  "pg_name": "火药",
+  "title": "？？？式相爱",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">修改于 2025/08/11 12:57</span>\n<span>增加了一条文字内容</span>\n</div>",
+  "image": "",
+  "html": "{20} -> (5 4 2 8) -> (6)\r\n<br><br>\r\n<div class=\"info-block custom-block\">\r\n  <span class=\"custom-block-title\">注:</span>\r\n  <span>本题前半部分涉及数字不超过300，后半部分不超过256</span>\r\n</div>\r\n<div class=\"info-block custom-block\">\r\n  <span class=\"custom-block-title\">注:</span>\r\n  <span>k为整数，p为质数，n为该条件所指之数</span>\r\n</div>\r\n",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":38,\"imgUrl\":\"205b82d64a984c68a253174cbe3c0853.svg\",\"color\":\"#000\",\"top\":\"432px\",\"left\":\"898px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "BANANA",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "ES8730、welkin25",
+  "analysis": "<style>\n#ol_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#ol_solution  td {\nwidth: 200px;\n}\n#ol_solution  th {\ntext-align: left;\n}\n</style>\n本题由以下几个碎片组成：\n<div id=\"ol_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/34159a94d08f4df2834362395396db2f.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/a6599abb63d0425b95a9e77ba6f4f9c4.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/1c24c81b21224784b42808d87822c340.webp\">\n\n如果已经做了火药区另外一题“柏拉图式相爱”拼出了柏拉图多面体之一的正十二面体，本题标题“？？？式相爱”实际上是在提示这一题需要拼的不是柏拉图多面体。除了正十二面体外，十二个五边形还能穿插拼成大十二面体（开普勒-庞索特多面体）：\n\n<img style=\"width: 300px\" src=\"https://static.cipherpuzzles.com/static/images/4f954c3e56a24721a3e166719e533f7f.webp\">\n\n拼的规则为五边形每条边上的要求必须符合该边相邻的另一五边形中心的数字。满足所有的条件时，可以拼出这样的多面体：<a href=\"https://static.cipherpuzzles.com/static/images/2efaebcd2e6e4857b10c718918d65d98.glb\">下载GLB 3D模型</a>。\n\n如果设备没有打开以上文件的软件，可以使用 <a href=\"https://gltf-viewer.donmccurdy.com/\" target=\"_blank\">glTF Viewer 网站</a>。\n\n由提取提示里的 {20}，我们知道先需要找到一组20的东西。大十二面体相当于在一个正二十面体的每个面上挖了个三角形的坑，也就是说像下图红色标出的这样的三角形恰有20个：\n\n![img-Screenshot 2025-07-19 100301.png](https://static.cipherpuzzles.com/static/images/9208b31dc80e4a46a7a5cea2e48b4c9e.png)\n\n如何从20个三角形里提取呢？如果我们想象图中这个红色标出的三角是一个面，那与其相邻的三个五边形边上写的则是“平方数”“偶数”和（这张图里看不到，在“分割数”相邻的另一面的）“斐波那契数”，而同时符合这三个条件且如题中所说不超过 300 的数字为 144。以此类推我们可以得到20个数字：\n\n<table>\n<tr><th>条件1</th><th>条件2</th><th>条件3</th><th>300以内符合的数字</th><th>与前一个数字差</th></tr>\n<tr><td>4进制1结尾</td><td>各位数字和为3</td><td>三角数</td><td>21</td></tr>\n<tr><td>9的倍数</td><td>2p+1</td><td>立方数</td><td>27</td><td>6</td></tr>\n<tr><td>三角数</td><td>15的倍数</td><td>9的倍数</td><td>45</td><td>18</td></tr>\n<tr><td>三角数</td><td>偶数</td><td>11的倍数</td><td>66</td><td>21</td></tr>\n<tr><td>2p+1</td><td>4进制1开头</td><td>15的倍数</td><td>75</td><td>9</td></tr>\n<tr><td>各位数字和为14</td><td>2p+1</td><td>微软视窗版本号</td><td>95</td><td>20</td></tr>\n<tr><td>模3余2</td><td>< 200</td><td>n,n+1,...,n+10皆非质数</td><td>116</td><td>21</td></tr>\n<tr><td>分割数</td><td>不是11的倍数</td><td>9的倍数</td><td>135</td><td>19</td></tr>\n<tr><td>7的倍数</td><td>10的倍数</td><td>前k个平方之和</td><td>140</td><td>5</td></tr>\n<tr><td>偶数</td><td>平方数</td><td>斐波那契数</td><td>144</td><td>4</td></tr>\n<tr><td>三角数</td><td>17的倍数</td><td>9的倍数</td><td>153</td><td>9</td></tr>\n<tr><td>各位数字和为14</td><td>2p+1</td><td>不含5</td><td>167</td><td>14</td></tr>\n<tr><td>10的倍数</td><td>平方数加一</td><td>17的倍数</td><td>170</td><td>3</td></tr>\n<tr><td>各位数字和为14</td><td>奇数</td><td>555的约数</td><td>185</td><td>15</td></tr>\n<tr><td>11的倍数</td><td>n-1和n+1皆为质数</td><td>9的倍数</td><td>198</td><td>13</td></tr>\n<tr><td>各位数字和为5</td><td>7的倍数</td><td>贝尔数</td><td>203</td><td>5</td></tr>\n<tr><td>9的倍数</td><td>>200</td><td>2p+1</td><td>207</td><td>4</td></tr>\n<tr><td>9的倍数</td><td>立方数</td><td>3进制含有2</td><td>216</td><td>9</td></tr>\n<tr><td>立方数加一</td><td>>10</td><td>中心六角形数</td><td>217</td><td>1</td></tr>\n<tr><td>分割数</td><td>三角数</td><td>7的倍数</td><td>231</td><td>14</td></tr>\n</table>\n\n有了这20个数字，下一步是将其变成提取提示里的 (5 4 2 8)，注意这几个数字之和为19，很自然地我们可以将这20个数字排序后取差（见上表），然后 A1Z26 得到 FRUIT USED IN COMEDIAN。\n\nComedian指的是概念艺术品《喜剧演员》，“是意大利艺术家毛里齐奥·卡特兰在2019年创作的艺术品。版本有三，是根用布胶带粘在墙上的新鲜香蕉”，因此最终的答案是 `BANANA`。\n\n</div>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "？？？是谁？",
+      "content": "开普勒。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "本题要做什么？",
+      "content": "把提供的五边形拼成一个多面体，使得每条边上的要求必须符合该边相邻的另一五边形中心的数字。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "本题要用到哪些碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/1c24c81b21224784b42808d87822c340.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/a6599abb63d0425b95a9e77ba6f4f9c4.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/34159a94d08f4df2834362395396db2f.webp\">\n</div>",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "这题跟《柏拉图式相爱》有什么区别？",
+      "content": "这题需要拼的是一个<b>大十二面体</b> (great dodecahedron)。",
+      "desc": "",
+      "point_cost": 4000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "第一步完成之后干什么？",
+      "content": "60个条件可以三个一组地确定20个新的数。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "我已经有了 {20}，如何得到 (5 4 2 8) 这个部分",
+      "content": "数字按照从小到大排序后求相邻两项的差。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#ol_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#ol_solution  td {\nwidth: 200px;\n}\n#ol_solution  th {\ntext-align: left;\n}\n</style>\n本题由以下几个碎片组成：\n<div id=\"ol_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/34159a94d08f4df2834362395396db2f.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/a6599abb63d0425b95a9e77ba6f4f9c4.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/1c24c81b21224784b42808d87822c340.webp\">\n\n如果已经做了火药区另外一题“柏拉图式相爱”拼出了柏拉图多面体之一的正十二面体，本题标题“？？？式相爱”实际上是在提示这一题需要拼的不是柏拉图多面体。除了正十二面体外，十二个五边形还能穿插拼成大十二面体（开普勒-庞索特多面体）：\n\n<img style=\"width: 300px\" src=\"https://static.cipherpuzzles.com/static/images/4f954c3e56a24721a3e166719e533f7f.webp\">\n\n拼的规则为五边形每条边上的要求必须符合该边相邻的另一五边形中心的数字。满足所有的条件时，可以拼出这样的多面体：<a href=\"https://static.cipherpuzzles.com/static/images/2efaebcd2e6e4857b10c718918d65d98.glb\">下载GLB 3D模型</a>。\n\n如果设备没有打开以上文件的软件，可以使用 <a href=\"https://gltf-viewer.donmccurdy.com/\" target=\"_blank\">glTF Viewer 网站</a>。\n\n由提取提示里的 {20}，我们知道先需要找到一组20的东西。大十二面体相当于在一个正二十面体的每个面上挖了个三角形的坑，也就是说像下图红色标出的这样的三角形恰有20个：\n\n![img-Screenshot 2025-07-19 100301.png](https://static.cipherpuzzles.com/static/images/9208b31dc80e4a46a7a5cea2e48b4c9e.png)\n\n如何从20个三角形里提取呢？如果我们想象图中这个红色标出的三角是一个面，那与其相邻的三个五边形边上写的则是“平方数”“偶数”和（这张图里看不到，在“分割数”相邻的另一面的）“斐波那契数”，而同时符合这三个条件且如题中所说不超过 300 的数字为 144。以此类推我们可以得到20个数字：\n\n<table>\n<tr><th>条件1</th><th>条件2</th><th>条件3</th><th>300以内符合的数字</th><th>与前一个数字差</th></tr>\n<tr><td>4进制1结尾</td><td>各位数字和为3</td><td>三角数</td><td>21</td></tr>\n<tr><td>9的倍数</td><td>2p+1</td><td>立方数</td><td>27</td><td>6</td></tr>\n<tr><td>三角数</td><td>15的倍数</td><td>9的倍数</td><td>45</td><td>18</td></tr>\n<tr><td>三角数</td><td>偶数</td><td>11的倍数</td><td>66</td><td>21</td></tr>\n<tr><td>2p+1</td><td>4进制1开头</td><td>15的倍数</td><td>75</td><td>9</td></tr>\n<tr><td>各位数字和为14</td><td>2p+1</td><td>微软视窗版本号</td><td>95</td><td>20</td></tr>\n<tr><td>模3余2</td><td>< 200</td><td>n,n+1,...,n+10皆非质数</td><td>116</td><td>21</td></tr>\n<tr><td>分割数</td><td>不是11的倍数</td><td>9的倍数</td><td>135</td><td>19</td></tr>\n<tr><td>7的倍数</td><td>10的倍数</td><td>前k个平方之和</td><td>140</td><td>5</td></tr>\n<tr><td>偶数</td><td>平方数</td><td>斐波那契数</td><td>144</td><td>4</td></tr>\n<tr><td>三角数</td><td>17的倍数</td><td>9的倍数</td><td>153</td><td>9</td></tr>\n<tr><td>各位数字和为14</td><td>2p+1</td><td>不含5</td><td>167</td><td>14</td></tr>\n<tr><td>10的倍数</td><td>平方数加一</td><td>17的倍数</td><td>170</td><td>3</td></tr>\n<tr><td>各位数字和为14</td><td>奇数</td><td>555的约数</td><td>185</td><td>15</td></tr>\n<tr><td>11的倍数</td><td>n-1和n+1皆为质数</td><td>9的倍数</td><td>198</td><td>13</td></tr>\n<tr><td>各位数字和为5</td><td>7的倍数</td><td>贝尔数</td><td>203</td><td>5</td></tr>\n<tr><td>9的倍数</td><td>>200</td><td>2p+1</td><td>207</td><td>4</td></tr>\n<tr><td>9的倍数</td><td>立方数</td><td>3进制含有2</td><td>216</td><td>9</td></tr>\n<tr><td>立方数加一</td><td>>10</td><td>中心六角形数</td><td>217</td><td>1</td></tr>\n<tr><td>分割数</td><td>三角数</td><td>7的倍数</td><td>231</td><td>14</td></tr>\n</table>\n\n有了这20个数字，下一步是将其变成提取提示里的 (5 4 2 8)，注意这几个数字之和为19，很自然地我们可以将这20个数字排序后取差（见上表），然后 A1Z26 得到 FRUIT USED IN COMEDIAN。\n\nComedian指的是概念艺术品《喜剧演员》，“是意大利艺术家毛里齐奥·卡特兰在2019年创作的艺术品。版本有三，是根用布胶带粘在墙上的新鲜香蕉”，因此最终的答案是 `BANANA`。\n\n</div>",
+  "additional_answers": []
+}

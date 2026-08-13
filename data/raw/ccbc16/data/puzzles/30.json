@@ -1,0 +1,122 @@
+{
+  "pid": 30,
+  "pgid": 3,
+  "type": 1,
+  "pg_name": "印刷",
+  "title": "氏毛米页",
+  "content": "",
+  "image": "",
+  "html": "<a href=\"https://static.cipherpuzzles.com/static/images/5ee0573155ad4b86b277f599a63545ef.pdf\" target=\"_blank\">下载 PDF 文档</a>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":30,\"imgUrl\":\"cd03a72454d34726b0bc519723e2e533.webp\",\"color\":\"#000\",\"top\":\"552px\",\"left\":\"1310px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "LETO",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus（dodomos、The Celestial Force、落葉子）",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n本题的机制是：每题都被遮盖住一些信息，但是可以补充这些信息，使得题目存在唯一解。对于大多数小题，存在唯一方式补充信息得到唯一解。对于另一些小题 （Akari 和 Moon or Sun），有多种不同的方式得到唯一解，但是所有这些唯一解都是相同的。利用唯一性可以解出所有小题。\n\n求出前九个小题的提交行后，用这些提交行在 7x20 的网格内做 Scrabble，象形得到最终答案 `LETO`。\n\n<table id=\"answerkey\">\n<tr><th>标题</th><th>提交行</th></tr>\n<tr><td>Easy as C16 简单字符</td><td>CX6X1</td></tr>\n<tr><td>Pyramid Climbers 攀登金字塔</td><td>XUUATII</td></tr>\n<tr><td>Akari 美术馆</td><td>X415261</td></tr>\n<tr><td>Numberlink 数连</td><td>XBBDDFC</td></tr>\n<tr><td>Moon or Sun 日月交替</td><td>XILLLIL</td></tr>\n<tr><td>Pentominous 五格拼版</td><td>INXXXIXXXW</td></tr>\n<tr><td>Simple Loop 简单回路</td><td>ACBED</td></tr>\n<tr><td>Statue Park 雕像公园</td><td>YNNZZZI</td></tr>\n<tr><td>Heywake 数间</td><td>XOOOOOOXOOXOOOX</td></tr>\n<tr><td>Scrabble 拼词</td><td>LETO</td></tr>\n</table>\n\n以下解析每道题的做法。\n\n## Easy as C16 简单字符\n\n被遮住的位置只有三种可能，枚举即可。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5282405869124082b4ed306cf7181f54.webp\" style=\"width: 250px\" />\n\n## Pyramid Climbers 攀登金字塔\n\n猜测或利用唯一性可以确定第五行左侧的两个字母是 U 和 C。据此可以推出大半盘面。剩余部分继续使用唯一性。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/0d017087aebc47a1b06d3a3d96771f15.webp\" style=\"width: 300px\" />\n\n## Akari 美术馆\n\n使用给出的线索可以确定大部分盘面。剩余部分使用唯一性。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/e9517de80fd34da18c917509f902ed4a.webp\" style=\"width: 300px\" />\n\n## Numberlink 数连\n\n右下的 E 必须从下方向左侧连出，否则局部显然不唯一。之后都比较简单。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/fb4e6cb674f142e5acd57a08c3098654.webp\" style=\"width: 300px\" />\n\n## Moon or Sun 日月交替\n\n利用唯一性可以逻辑解。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/b338df138e3d45b890bb1cf54d632baa.webp\" style=\"width: 300px\" />\n\n## Pentominous 五格拼版\n\n根据对于 Pentominous 题型的理解，可以猜测上方被遮盖的线索是 I，因为这样会强制中间的两个 X 分开，使得题目唯一的可能性较大。据此可以确定四分之三的盘面。\n此时右侧被遮盖的线索只有两种可能性 （W 和 N），只有 W 能够使得题目唯一。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/b12e6a2f1bfb4e00a0f5463eadf463fd.webp\" style=\"width: 400px\" />\n\n## Simple Loop 简单回路\n\n左上和左中最多有两个线索。因为所有线索的奇偶性应当平衡，所以线索总数至多为 8。\n根据对 Simple Loop 的理解，如果只有6个线索，那么很有可能非唯一解。因此猜测线索总数为8。\n据此可以推出中下的两个线索必须都留下来，并且左上和左中的两个线索只有唯一的选取方式。之后都比较简单。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/08cb2fdf8a3041659982fe510b62c77e.webp\" style=\"width: 400px\" />\n\n## Statue Park 雕像公园\n\n可以将12个五格拼版分为4组，每组3个。每组有两种（互相对称的）方式可以填入 5x5-1 的角落中。因此给出的线索必须能够区分这两种对称的方式。\n据此可以依次确定左下区域的线索必须为白，右上区域的线索必须为黑，右下区域的线索必须为黑。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/3c3ec38372db4029bb64cbd59fcae636.webp\" style=\"width: 400px\" />\n\n## Heywake 数间\n\n本题使用 penalty 理论。通过计算可以发现线索等于 75 时 penalty 取满，并且可逻辑推出唯一解。线索不等于75时都显然不唯一。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5aec4bc6f7114915918ac654b5c593cc.webp\" style=\"width: 600px\" />\n\n## Scrabble 拼词\n\n猜测字符串集合是所有的提交行。观察给出的网格角落可以发现比例是 7:20，猜测给出的网格是 7x20。解出 Scrabble 之后，象形得到最终答案 `LETO`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/a2420272376a40d793888c8fe0b24483.webp\" style=\"width: 600px\" />\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "在被墨迹遮盖之前，所有的纸笔谜题均有唯一解。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "Scrabble 的题面是什么？",
+      "content": "Scrabble 的题面是7x20的网格，使用的字符串集合是前九题的提交行。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "heyawake太难了！",
+      "content": "这些可能会有帮助：\nhttps://puzz.link/p?heyawake\nhttps://semiexp.net/apps/cspuz-solver2/index.html",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "能否给我所有小题的题面？",
+      "content": "Easy as C16 被挡住的是 C\n\n金字塔被挡住的是 UCXII\n\n美术馆墨水没有挡住任何黑块或数字。\n\nnumberlink 三个小墨水挡住的从上到下是 A C E，大墨水挡住的是 BDGF\n\n\n日月的日月分布为：\n\n空空月空日空空\n\n日空日空空空月\n\n空空空日空日日\n\n日空月月空空空\n\n空空空空月日空\n\n日月日空空空空\n\n空空空空日空日\n\n\n\n五格拼版被挡住的是I和W\n\n简单回路里的黑格在：第二行第3，6格；第四行最后一格；第六行第1格；第八行第7，10格；第九行第3、6格。\n\n\n雕像公园左下区域的线索为白，右上区域的线索为黑，右下区域的线索为黑。\n\n\n\n数间左上角数字是75.",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n本题的机制是：每题都被遮盖住一些信息，但是可以补充这些信息，使得题目存在唯一解。对于大多数小题，存在唯一方式补充信息得到唯一解。对于另一些小题 （Akari 和 Moon or Sun），有多种不同的方式得到唯一解，但是所有这些唯一解都是相同的。利用唯一性可以解出所有小题。\n\n求出前九个小题的提交行后，用这些提交行在 7x20 的网格内做 Scrabble，象形得到最终答案 `LETO`。\n\n<table id=\"answerkey\">\n<tr><th>标题</th><th>提交行</th></tr>\n<tr><td>Easy as C16 简单字符</td><td>CX6X1</td></tr>\n<tr><td>Pyramid Climbers 攀登金字塔</td><td>XUUATII</td></tr>\n<tr><td>Akari 美术馆</td><td>X415261</td></tr>\n<tr><td>Numberlink 数连</td><td>XBBDDFC</td></tr>\n<tr><td>Moon or Sun 日月交替</td><td>XILLLIL</td></tr>\n<tr><td>Pentominous 五格拼版</td><td>INXXXIXXXW</td></tr>\n<tr><td>Simple Loop 简单回路</td><td>ACBED</td></tr>\n<tr><td>Statue Park 雕像公园</td><td>YNNZZZI</td></tr>\n<tr><td>Heywake 数间</td><td>XOOOOOOXOOXOOOX</td></tr>\n<tr><td>Scrabble 拼词</td><td>LETO</td></tr>\n</table>\n\n以下解析每道题的做法。\n\n## Easy as C16 简单字符\n\n被遮住的位置只有三种可能，枚举即可。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5282405869124082b4ed306cf7181f54.webp\" style=\"width: 250px\" />\n\n## Pyramid Climbers 攀登金字塔\n\n猜测或利用唯一性可以确定第五行左侧的两个字母是 U 和 C。据此可以推出大半盘面。剩余部分继续使用唯一性。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/0d017087aebc47a1b06d3a3d96771f15.webp\" style=\"width: 300px\" />\n\n## Akari 美术馆\n\n使用给出的线索可以确定大部分盘面。剩余部分使用唯一性。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/e9517de80fd34da18c917509f902ed4a.webp\" style=\"width: 300px\" />\n\n## Numberlink 数连\n\n右下的 E 必须从下方向左侧连出，否则局部显然不唯一。之后都比较简单。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/fb4e6cb674f142e5acd57a08c3098654.webp\" style=\"width: 300px\" />\n\n## Moon or Sun 日月交替\n\n利用唯一性可以逻辑解。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/b338df138e3d45b890bb1cf54d632baa.webp\" style=\"width: 300px\" />\n\n## Pentominous 五格拼版\n\n根据对于 Pentominous 题型的理解，可以猜测上方被遮盖的线索是 I，因为这样会强制中间的两个 X 分开，使得题目唯一的可能性较大。据此可以确定四分之三的盘面。\n此时右侧被遮盖的线索只有两种可能性 （W 和 N），只有 W 能够使得题目唯一。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/b12e6a2f1bfb4e00a0f5463eadf463fd.webp\" style=\"width: 400px\" />\n\n## Simple Loop 简单回路\n\n左上和左中最多有两个线索。因为所有线索的奇偶性应当平衡，所以线索总数至多为 8。\n根据对 Simple Loop 的理解，如果只有6个线索，那么很有可能非唯一解。因此猜测线索总数为8。\n据此可以推出中下的两个线索必须都留下来，并且左上和左中的两个线索只有唯一的选取方式。之后都比较简单。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/08cb2fdf8a3041659982fe510b62c77e.webp\" style=\"width: 400px\" />\n\n## Statue Park 雕像公园\n\n可以将12个五格拼版分为4组，每组3个。每组有两种（互相对称的）方式可以填入 5x5-1 的角落中。因此给出的线索必须能够区分这两种对称的方式。\n据此可以依次确定左下区域的线索必须为白，右上区域的线索必须为黑，右下区域的线索必须为黑。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/3c3ec38372db4029bb64cbd59fcae636.webp\" style=\"width: 400px\" />\n\n## Heywake 数间\n\n本题使用 penalty 理论。通过计算可以发现线索等于 75 时 penalty 取满，并且可逻辑推出唯一解。线索不等于75时都显然不唯一。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5aec4bc6f7114915918ac654b5c593cc.webp\" style=\"width: 600px\" />\n\n## Scrabble 拼词\n\n猜测字符串集合是所有的提交行。观察给出的网格角落可以发现比例是 7:20，猜测给出的网格是 7x20。解出 Scrabble 之后，象形得到最终答案 `LETO`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/a2420272376a40d793888c8fe0b24483.webp\" style=\"width: 600px\" />\n",
+  "additional_answers": [
+    {
+      "aaid": 69,
+      "answer": "XOOOOOOXOOXOOOX",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 70,
+      "answer": "YNNZZZI",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 71,
+      "answer": "XILLLIL",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 72,
+      "answer": "X415261",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 73,
+      "answer": "CX6X1",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 74,
+      "answer": "INXXXIXXXW",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 75,
+      "answer": "XBBDDFC",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 76,
+      "answer": "XUUATII",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 77,
+      "answer": "ACBED",
+      "message": "正确的中间答案。\t",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

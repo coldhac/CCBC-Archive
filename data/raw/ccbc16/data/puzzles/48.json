@@ -1,0 +1,306 @@
+{
+  "pid": 48,
+  "pgid": 5,
+  "type": 3,
+  "pg_name": "造纸",
+  "title": "你说话带括号",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "https://static.cipherpuzzles.com/static/images/3cfc7d96722049f9abe08dcbc890d4a4.vue",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":48,\"imgUrl\":\"320398c9d0084679ae55e48627b0d209.webp\",\"color\":\"#000\",\"top\":\"334px\",\"left\":\"1200px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "*（无）*",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n    min-width: 3ex;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n    min-width: 50px;\n}\n</style>\n\n<h1>括号作用</h1>\n<table id = \"answerkey\">\n<tr><th>括号</th><th>作用</th></tr>\n<tr><td>〈〉</td><td>减字</td></tr>\n<tr><td>《》</td><td>增字</td></tr>\n<tr><td>＜＞</td><td>重排</td></tr>\n<tr><td>［］</td><td>部分</td></tr>\n<tr><td>〚〛</td><td>整体</td></tr>\n<tr><td>「」</td><td>下位概念</td></tr>\n<tr><td>『』</td><td>上位概念</td></tr>\n<tr><td>（）</td><td>替换一字</td></tr>\n<tr><td>｟｠</td><td>组词另一半</td></tr>\n<tr><td>﹙﹚</td><td>补全缩写</td></tr>\n<tr><td>〔〕</td><td>同音</td></tr>\n<tr><td>〘〙</td><td>谐音</td></tr>\n<tr><td>﹝﹞</td><td>押韵</td></tr>\n<tr><td>〖〗</td><td>同义</td></tr>\n<tr><td>【】</td><td>反义</td></tr>\n<tr><td>｛｝</td><td>逐字</td></tr>\n<tr><td>﹛﹜</td><td>拆字</td></tr>\n</table>\n有多行题目时，每行得到的答案相同。<br>\n两侧括号不同时，将词从某处分为两半后分别处理，此时的｛｝括号不产生作用。（单纯逐字并不会产生影响）<br>\n<br>\n\n<h1>答案</h1>\n<table id = \"answerkey\">\n<tr><th>题面</th><th>答案</th></tr>\n<tr><td>复制</td><td>复制</td></tr>\n<tr><td>粘贴</td><td>粘贴</td></tr>\n<tr><td>恒等</td><td>恒等</td></tr>\n<tr><td>变换</td><td>变换</td></tr>\n<tr><td>〈涂改液〉</td><td>涂改</td></tr>\n<tr><td>《添加》</td><td>添加剂</td></tr>\n<tr><td>〈异亮氨酸〉</td><td>亮氨酸</td></tr>\n<tr><td>〈哈萨克斯坦〉</td><td>萨克斯</td></tr>\n<tr><td>《生意气》</td><td>书生意气</td></tr>\n<tr><td>《分解反应》</td><td>复分解反应</td></tr>\n<tr><td>《三角函数》</td><td>反三角函数</td></tr>\n<tr><td>＜牛奶＞</td><td>奶牛</td></tr>\n<tr><td>＜蜂蜜＞</td><td>蜜蜂</td></tr>\n<tr><td>＜调音＞</td><td>音调</td></tr>\n<tr><td>＜藏宝＞</td><td>宝藏</td></tr>\n<tr><td>＜酱牛肉＞</td><td>牛肉酱</td></tr>\n<tr><td>＜电压高＞</td><td>高压电</td></tr>\n<tr><td>＜打飞鸡蛋＞</td><td>鸡飞蛋打</td></tr>\n<tr><td>＜转运来时＞</td><td>时来运转</td></tr>\n<tr><td>＜水电发力＞</td><td>水力发电</td></tr>\n<tr><td>＜一不口心＞</td><td>心口不一</td></tr>\n<tr><td>＜主不自由＞</td><td>不由自主</td></tr>\n<tr><td>［太阳系］｜〈太阳系〉</td><td>太阳</td></tr>\n<tr><td>〚刹车〛｜〈刹车〉</td><td>车</td></tr>\n<tr><td>「金属」｜〈金属〉</td><td>金</td></tr>\n<tr><td>『充电器』｜〈充电器〉</td><td>电器</td></tr>\n<tr><td>［分子］｜〚夸克〛</td><td>原子</td></tr>\n<tr><td>〚分子〛｜「数」</td><td>分数</td></tr>\n<tr><td>「『中提琴』」</td><td>低音提琴</td></tr>\n<tr><td>『「长方形」』</td><td>菱形</td></tr>\n<tr><td>（二五一十）｜《〈二五一十〉》</td><td>一五一十</td></tr>\n<tr><td>（麦旋风）｜［手机］</td><td>麦克风</td></tr>\n<tr><td>（多媒体）｜『三棱柱』</td><td>多面体</td></tr>\n<tr><td>（南腔北调）</td><td>南水北调</td></tr>\n<tr><td>（一丝不挂）</td><td>一丝不苟</td></tr>\n<tr><td>（（原神启动））｜「成语」</td><td>原封不动</td></tr>\n<tr><td>（（我不直道））｜「成语」</td><td>微不足道</td></tr>\n<tr><td>（（真有意思））｜「成语」</td><td>若有所思</td></tr>\n<tr><td>（（鹿目圆香））｜「成语」</td><td>怒目圆睁</td></tr>\n<tr><td>（（五八四十））｜「成语」</td><td>五湖四海</td></tr>\n<tr><td>（（冰糖雪梨））｜「成语」</td><td>冰天雪地</td></tr>\n<tr><td>（（你完蛋了））｜「成语」</td><td>没完没了</td></tr>\n<tr><td>（（一拜天地））｜「成语」</td><td>一败涂地</td></tr>\n<tr><td>（（下大巴车））｜「成语」</td><td>下里巴人</td></tr>\n<tr><td>（（粉蒸排骨））｜「成语」</td><td>粉身碎骨</td></tr>\n<tr><td>｟加斯加｠｜〈《加斯加》〉</td><td>马达</td></tr>\n<tr><td>｟一五｠｜｟二五｠</td><td>一十</td></tr>\n<tr><td>｟天时｠｜｟奥｠</td><td>地利</td></tr>\n<tr><td>｟落花｠｜｟行云｠</td><td>流水</td></tr>\n<tr><td>｟｟舍生｠｠</td><td>断章</td></tr>\n<tr><td>｟｟为人｠｠</td><td>出</td></tr>\n<tr><td>｟｟显山｠｠</td><td>花</td></tr>\n<tr><td>｟｟夜行｠｠</td><td>卫</td></tr>\n<tr><td>｟｟危地｠｠</td><td>松</td></tr>\n<tr><td>｟｟三百六｠｠</td><td>一目</td></tr>\n<tr><td>｟＜｟＜｟懵懂｠＞｠＞｠</td><td>由衷</td></tr>\n<tr><td>﹙记本脑﹚｜〈《记本脑》〉</td><td>笔电</td></tr>\n<tr><td>﹙大利﹚</td><td>意面</td></tr>\n<tr><td>﹙共识分子﹚</td><td>公知</td></tr>\n<tr><td>﹙会性亡﹚</td><td>社死</td></tr>\n<tr><td>﹙工产﹚</td><td>人流</td></tr>\n<tr><td>﹙分必﹚</td><td>充要条件</td></tr>\n<tr><td>〔子进程〕</td><td>紫禁城</td></tr>\n<tr><td>〔雇工〕</td><td>故宫</td></tr>\n<tr><td>〔焦灼〕</td><td>胶着</td></tr>\n<tr><td>〔十堰市〕</td><td>实验室</td></tr>\n<tr><td>〔〈单缝衍射〉〕</td><td>丹凤眼</td></tr>\n<tr><td>〔〈绝世武功〉〕</td><td>爵士舞</td></tr>\n<tr><td>〔〈建筑设计〉〕</td><td>注射剂</td></tr>\n<tr><td>〔〈却之不恭〉〕</td><td>织布工</td></tr>\n<tr><td>〔〈干燥指数〉〕</td><td>造纸术</td></tr>\n<tr><td>〔〈互争雄长〉〕</td><td>蒸熊掌</td></tr>\n<tr><td>〘通信员〙</td><td>同心圆</td></tr>\n<tr><td>〘筑基丹〙</td><td>煮鸡蛋</td></tr>\n<tr><td>〘〈爱屋及乌〉〙</td><td>无机物</td></tr>\n<tr><td>〘〈俯拾即是〉〙</td><td>腐蚀剂</td></tr>\n<tr><td>〘〈莫衷一是〉〙</td><td>中医师</td></tr>\n<tr><td>〘〈始终如一〉〙</td><td>石钟乳</td></tr>\n<tr><td>〘〈小肚鸡肠〉〙</td><td>消毒剂</td></tr>\n<tr><td>〘〈一无是处〉〙</td><td>医务室</td></tr>\n<tr><td>〖背道而驰〗</td><td>南辕北辙</td></tr>\n<tr><td>〖坐享其成〗</td><td>不劳而获</td></tr>\n<tr><td>〖鱼目混珠〗</td><td>滥竽充数</td></tr>\n<tr><td>【阳春白雪】</td><td>下里巴人</td></tr>\n<tr><td>【有机可乘】</td><td>无懈可击</td></tr>\n<tr><td>【不孚众望】</td><td>不负众望</td></tr>\n<tr><td>﹝寄宿制﹞｜﹝艺术日﹞</td><td>闭幕式</td></tr>\n<tr><td>﹝注意力﹞｜［导航地图］</td><td>目的地</td></tr>\n<tr><td>﹝虎虎生风﹞｜「锦囊牌」</td><td>五谷丰登</td></tr>\n<tr><td>﹝振荡电路﹞｜「神经递质」</td><td>肾上腺素</td></tr>\n<tr><td>﹝功利主义﹞｜《空》</td><td>空气阻力</td></tr>\n<tr><td>﹝公共服务﹞｜【充实】</td><td>空洞无物</td></tr>\n<tr><td>﹝呜呜呜﹞｜［楼］</td><td>出租屋</td></tr>\n<tr><td>﹝咦咦咦﹞｜「作业」</td><td>习题集</td></tr>\n<tr><td>﹝呓呓呓﹞</td><td>记忆力</td></tr>\n<tr><td>〘＜基础＞〙｜〖基础〗</td><td>初级</td></tr>\n<tr><td>〘＜经纬线＞〙</td><td>显微镜</td></tr>\n<tr><td>〘＜奠基石＞〙</td><td>电视机</td></tr>\n<tr><td>〘＜无意识＞〙</td><td>医务室</td></tr>\n<tr><td>〘＜形式主义＞〙</td><td>衣食住行</td></tr>\n<tr><td>〘＜闭一只眼＞〙</td><td>一言蔽之</td></tr>\n<tr><td>〘＜不够意思＞〙</td><td>一丝不苟</td></tr>\n<tr><td>〘＜取之不尽＞〙</td><td>不知进取</td></tr>\n<tr><td>〘＜显微技术＞〙</td><td>县委书记</td></tr>\n<tr><td>〘＜一蓑烟雨＞〙</td><td>伊索寓言</td></tr>\n<tr><td>〘＜小玩意儿＞〙</td><td>莞尔一笑</td></tr>\n<tr><td>〘＜军事地理＞〙</td><td>势均力敌</td></tr>\n<tr><td>【早点｝</td><td>晚点</td></tr>\n<tr><td>【去世｝</td><td>来世</td></tr>\n<tr><td>【轻生｝</td><td>重生</td></tr>\n<tr><td>【借口｝</td><td>还口</td></tr>\n<tr><td>【奇遇｝</td><td>偶遇</td></tr>\n<tr><td>【先生｝</td><td>后生</td></tr>\n<tr><td>【公交｝</td><td>私交</td></tr>\n<tr><td>【开心｝</td><td>关心</td></tr>\n<tr><td>【开怀｝</td><td>关怀</td></tr>\n<tr><td>【正切｝</td><td>反切</td></tr>\n<tr><td>｛推文】</td><td>推理</td></tr>\n<tr><td>｛变量】</td><td>变质</td></tr>\n<tr><td>｛出师】</td><td>出生</td></tr>\n<tr><td>｛咖啡果】</td><td>咖啡因</td></tr>\n<tr><td>〖目光｝</td><td>眼光</td></tr>\n<tr><td>｛鼓手〗</td><td>鼓掌</td></tr>\n<tr><td>【｛天文｝】</td><td>地理</td></tr>\n<tr><td>【｛本月｝】</td><td>末日</td></tr>\n<tr><td>【｛幼时｝】</td><td>长空</td></tr>\n<tr><td>【｛幼师｝】</td><td>长生</td></tr>\n<tr><td>【｛反感｝】</td><td>同理</td></tr>\n<tr><td>【｛返回｝】</td><td>往来</td></tr>\n<tr><td>【｛合理｝】</td><td>分文</td></tr>\n<tr><td>【｛空手｝】</td><td>满足</td></tr>\n<tr><td>【｛实地｝】</td><td>虚空</td></tr>\n<tr><td>【｛歪理｝】</td><td>正文</td></tr>\n<tr><td>【｛外教｝】</td><td>中学</td></tr>\n<tr><td>【｛伪满｝】</td><td>真空</td></tr>\n<tr><td>【｛无理｝】</td><td>有感</td></tr>\n<tr><td>【｛邪恶｝】</td><td>正好</td></tr>\n<tr><td>【｛水手｝】</td><td>火腿</td></tr>\n<tr><td>【｛昨夕｝】</td><td>明朝</td></tr>\n<tr><td>〖｛老舍｝〗</td><td>故居</td></tr>\n<tr><td>〖｛再测｝〗</td><td>重量</td></tr>\n<tr><td>〈﹛｛怙恃｝﹜〉</td><td>古寺</td></tr>\n<tr><td>〈﹛｛怔忡｝﹜〉</td><td>正中</td></tr>\n<tr><td>〈﹛｛猞猁｝﹜〉</td><td>舍利</td></tr>\n<tr><td>〈﹛｛咄嗟｝﹜〉</td><td>出差</td></tr>\n<tr><td>《﹛｛上下｝﹜》</td><td>忐忑</td></tr>\n<tr><td>《﹛｛原音｝﹜》</td><td>愿意</td></tr>\n<tr><td>《﹛｛木马｝﹜》</td><td>检验</td></tr>\n<tr><td>《﹛｛也门｝﹜》</td><td>他们</td></tr>\n<tr><td>《﹛｛加沙｝﹜》</td><td>袈裟</td></tr>\n<tr><td>《﹛｛白丁｝﹜》</td><td>拍打</td></tr>\n<tr><td>《﹛｛朝夕｝﹜》</td><td>潮汐</td></tr>\n<tr><td>《﹛｛元首｝﹜》</td><td>远道</td></tr>\n<tr><td>《﹛｛用户｝﹜》</td><td>拥护</td></tr>\n<tr><td>《﹛｛周长｝﹜》</td><td>惆怅</td></tr>\n<tr><td>《﹛｛秋田｝﹜》</td><td>愁思</td></tr>\n<tr><td>《﹛｛昆虫｝﹜》</td><td>混浊</td></tr>\n<tr><td>《﹛｛波罗｝﹜》</td><td>菠萝</td></tr>\n<tr><td>＜《﹛｛由于｝﹜》＞</td><td>宇宙</td></tr>\n<tr><td>＜《﹛｛白虎｝﹜》＞</td><td>琥珀</td></tr>\n<tr><td>＜《﹛｛日月｝﹜》＞</td><td>阴阳</td></tr>\n<tr><td>＜《﹛｛员工｝﹜》＞</td><td>功勋</td></tr>\n<tr><td>＜《﹛｛白云｝﹜》＞</td><td>魂魄</td></tr>\n<tr><td>《〈﹛｛琵琶｝﹜〉》</td><td>枇杷</td></tr>\n<tr><td>《〈﹛｛浮游｝﹜〉》</td><td>蜉蝣</td></tr>\n<tr><td>〔｛长大｝〕｜｟一反｠</td><td>常态</td></tr>\n<tr><td>〔｛趁机｝〕｜｟啧啧｠</td><td>称奇</td></tr>\n<tr><td>〔｛禁航区｝〕｜「音乐」</td><td>进行曲</td></tr>\n<tr><td>〔｛炮兵｝〕｜「甜点」</td><td>刨冰</td></tr>\n<tr><td>〔｛闭校｝〕｜「宗教」</td><td>佛教</td></tr>\n<tr><td>〔｛成语｝〕｜【恶名】</td><td>盛誉</td></tr>\n<tr><td>＜〔意见〕＞｜〖意见〗</td><td>建议</td></tr>\n<tr><td>〘震惊〙｜【震惊】</td><td>镇静</td></tr>\n<tr><td>〘刻意〙｜〖刻意〗</td><td>可疑</td></tr>\n<tr><td>〔切记〕｜【切记】</td><td>切忌</td></tr>\n<tr><td>［手表］｜［｛手表｝］</td><td>指针</td></tr>\n<tr><td>【正应力｝</td><td>反应力</td></tr>\n<tr><td>〖交付〗〖原因〗｜［车］</td><td>发动机</td></tr>\n<tr><td>〖泄露〗｜「作品」</td><td>外传</td></tr>\n<tr><td>《「省份」》｜「成语」</td><td>东躲西藏</td></tr>\n<tr><td>〔（恍然大悟）〕</td><td>庞然大物</td></tr>\n<tr><td>｟〔｟不笑娼｠〕｠</td><td>东施</td></tr>\n<tr><td>﹙【｛﹙庭师﹚｝】﹚</td><td>中科院</td></tr>\n<tr><td>﹙查理﹚｜〖维护〗</td><td>检修</td></tr>\n<tr><td>〚十分】</td><td>百合</td></tr>\n<tr><td>＜（（笑贫不笑娼））＞</td><td>皮笑肉不笑</td></tr>\n<tr><td>〖｛一个｝〗｜『亿』</td><td>单位</td></tr>\n<tr><td>「『眼光｝｝</td><td>耳光</td></tr>\n<tr><td>｛［｛体面｝］］</td><td>面点</td></tr>\n<tr><td>恭喜通关</td><td>恭喜通关</td></tr>\n</table>",
+  "check_answer_type": 1,
+  "check_answer_function": "c16-checkanswer-noanswer",
+  "tips": [
+    {
+      "num": 1,
+      "title": "调整增加次数价格",
+      "content": "",
+      "desc": "add_attempts_count",
+      "point_cost": 0,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "〈〉是什么意思！",
+      "content": "删去若干字。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "《》是什么意思！",
+      "content": "给括号里的词语增加若干字；与｛｝配合时则是对每字增加相同部件。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "＜＞是什么意思！",
+      "content": "将字重新排列。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "［］是什么意思！",
+      "content": "答案是括号内事物的一部分。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "〚〛是什么意思！",
+      "content": "括号内事物是答案的一部分。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "「」是什么意思！",
+      "content": "下位概念，即答案是括号内事物的一个分类或个例。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "『』是什么意思！",
+      "content": "上位概念，即括号内事物是答案的一个分类或个例。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 9,
+      "title": "（）是什么意思！",
+      "content": "替换一个字。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 10,
+      "title": "｟｠是什么意思！",
+      "content": "答案可以跟括号内连起来成为新的词。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 11,
+      "title": "﹙﹚是什么意思！",
+      "content": "括号内是一个词去掉了缩写后的部分，需要的答案就是缩写。例如“当欧尼！”的答案是“别酱了”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 12,
+      "title": "〔〕是什么意思？",
+      "content": "同音词。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 13,
+      "title": "〘〙是什么意思！",
+      "content": "谐音，音调可以不一样。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 14,
+      "title": "﹝﹞是什么意思！",
+      "content": "押韵，音调需要一致。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 15,
+      "title": "〖〗是什么意思！",
+      "content": "同义词。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 16,
+      "title": "【】是什么意思！",
+      "content": "反义词。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 17,
+      "title": "｛｝是什么意思！",
+      "content": "逐字进行相同的处理，而非把括号内当作一个整体理解。例如“上海”逐字的反义词可能是“下山”。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 18,
+      "title": "﹛﹜是什么意思！",
+      "content": "在部件层面进行处理。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 19,
+      "title": "多行题目是什么意思！",
+      "content": "每行均能得出同一个答案。",
+      "desc": "",
+      "point_cost": 500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 20,
+      "title": "两侧括号不同是什么意思！",
+      "content": "两侧括号不同时，将词从某处分为两半后分别处理，此时的｛｝括号不产生作用。",
+      "desc": "",
+      "point_cost": 500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 21,
+      "title": "『「长某某」』答案是什么？",
+      "content": "菱形",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 22,
+      "title": "｟｟夜某｠｠的答案是什么",
+      "content": "卫",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 23,
+      "title": "﹙分某﹚的答案是什么",
+      "content": "充要条件",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 24,
+      "title": "﹝寄某某﹞｜﹝艺某某﹞的答案是什么",
+      "content": "闭幕式",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 25,
+      "title": "﹝某某某﹞｜［楼］的答案是什么",
+      "content": "出租屋",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 26,
+      "title": "｛咖某某】的答案是什么",
+      "content": "咖啡因",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 27,
+      "title": "【｛某师｝】的答案是什么",
+      "content": "长生",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 28,
+      "title": "【｛合某｝】的答案是什么",
+      "content": "分文",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 29,
+      "title": "〖｛某测｝〗的答案是什么",
+      "content": "重量",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 30,
+      "title": "《﹛｛木某｝﹜》的答案是什么",
+      "content": "检验",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 31,
+      "title": "〔｛成某｝〕｜【某某】的答案是什么",
+      "content": "盛誉",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 32,
+      "title": "〖泄某〗｜「某某」的答案是什么",
+      "content": "外传",
+      "desc": "",
+      "point_cost": 9000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 33,
+      "title": "〖交某〗〖某某〗｜［某］的答案是什么",
+      "content": "发动机",
+      "desc": "",
+      "point_cost": 9000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 34,
+      "title": "﹙【｛﹙庭师﹚｝】﹚的答案是什么",
+      "content": "中科院",
+      "desc": "",
+      "point_cost": 9000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n    min-width: 3ex;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n    min-width: 50px;\n}\n</style>\n\n<h1>括号作用</h1>\n<table id = \"answerkey\">\n<tr><th>括号</th><th>作用</th></tr>\n<tr><td>〈〉</td><td>减字</td></tr>\n<tr><td>《》</td><td>增字</td></tr>\n<tr><td>＜＞</td><td>重排</td></tr>\n<tr><td>［］</td><td>部分</td></tr>\n<tr><td>〚〛</td><td>整体</td></tr>\n<tr><td>「」</td><td>下位概念</td></tr>\n<tr><td>『』</td><td>上位概念</td></tr>\n<tr><td>（）</td><td>替换一字</td></tr>\n<tr><td>｟｠</td><td>组词另一半</td></tr>\n<tr><td>﹙﹚</td><td>补全缩写</td></tr>\n<tr><td>〔〕</td><td>同音</td></tr>\n<tr><td>〘〙</td><td>谐音</td></tr>\n<tr><td>﹝﹞</td><td>押韵</td></tr>\n<tr><td>〖〗</td><td>同义</td></tr>\n<tr><td>【】</td><td>反义</td></tr>\n<tr><td>｛｝</td><td>逐字</td></tr>\n<tr><td>﹛﹜</td><td>拆字</td></tr>\n</table>\n有多行题目时，每行得到的答案相同。<br>\n两侧括号不同时，将词从某处分为两半后分别处理，此时的｛｝括号不产生作用。（单纯逐字并不会产生影响）<br>\n<br>\n\n<h1>答案</h1>\n<table id = \"answerkey\">\n<tr><th>题面</th><th>答案</th></tr>\n<tr><td>复制</td><td>复制</td></tr>\n<tr><td>粘贴</td><td>粘贴</td></tr>\n<tr><td>恒等</td><td>恒等</td></tr>\n<tr><td>变换</td><td>变换</td></tr>\n<tr><td>〈涂改液〉</td><td>涂改</td></tr>\n<tr><td>《添加》</td><td>添加剂</td></tr>\n<tr><td>〈异亮氨酸〉</td><td>亮氨酸</td></tr>\n<tr><td>〈哈萨克斯坦〉</td><td>萨克斯</td></tr>\n<tr><td>《生意气》</td><td>书生意气</td></tr>\n<tr><td>《分解反应》</td><td>复分解反应</td></tr>\n<tr><td>《三角函数》</td><td>反三角函数</td></tr>\n<tr><td>＜牛奶＞</td><td>奶牛</td></tr>\n<tr><td>＜蜂蜜＞</td><td>蜜蜂</td></tr>\n<tr><td>＜调音＞</td><td>音调</td></tr>\n<tr><td>＜藏宝＞</td><td>宝藏</td></tr>\n<tr><td>＜酱牛肉＞</td><td>牛肉酱</td></tr>\n<tr><td>＜电压高＞</td><td>高压电</td></tr>\n<tr><td>＜打飞鸡蛋＞</td><td>鸡飞蛋打</td></tr>\n<tr><td>＜转运来时＞</td><td>时来运转</td></tr>\n<tr><td>＜水电发力＞</td><td>水力发电</td></tr>\n<tr><td>＜一不口心＞</td><td>心口不一</td></tr>\n<tr><td>＜主不自由＞</td><td>不由自主</td></tr>\n<tr><td>［太阳系］｜〈太阳系〉</td><td>太阳</td></tr>\n<tr><td>〚刹车〛｜〈刹车〉</td><td>车</td></tr>\n<tr><td>「金属」｜〈金属〉</td><td>金</td></tr>\n<tr><td>『充电器』｜〈充电器〉</td><td>电器</td></tr>\n<tr><td>［分子］｜〚夸克〛</td><td>原子</td></tr>\n<tr><td>〚分子〛｜「数」</td><td>分数</td></tr>\n<tr><td>「『中提琴』」</td><td>低音提琴</td></tr>\n<tr><td>『「长方形」』</td><td>菱形</td></tr>\n<tr><td>（二五一十）｜《〈二五一十〉》</td><td>一五一十</td></tr>\n<tr><td>（麦旋风）｜［手机］</td><td>麦克风</td></tr>\n<tr><td>（多媒体）｜『三棱柱』</td><td>多面体</td></tr>\n<tr><td>（南腔北调）</td><td>南水北调</td></tr>\n<tr><td>（一丝不挂）</td><td>一丝不苟</td></tr>\n<tr><td>（（原神启动））｜「成语」</td><td>原封不动</td></tr>\n<tr><td>（（我不直道））｜「成语」</td><td>微不足道</td></tr>\n<tr><td>（（真有意思））｜「成语」</td><td>若有所思</td></tr>\n<tr><td>（（鹿目圆香））｜「成语」</td><td>怒目圆睁</td></tr>\n<tr><td>（（五八四十））｜「成语」</td><td>五湖四海</td></tr>\n<tr><td>（（冰糖雪梨））｜「成语」</td><td>冰天雪地</td></tr>\n<tr><td>（（你完蛋了））｜「成语」</td><td>没完没了</td></tr>\n<tr><td>（（一拜天地））｜「成语」</td><td>一败涂地</td></tr>\n<tr><td>（（下大巴车））｜「成语」</td><td>下里巴人</td></tr>\n<tr><td>（（粉蒸排骨））｜「成语」</td><td>粉身碎骨</td></tr>\n<tr><td>｟加斯加｠｜〈《加斯加》〉</td><td>马达</td></tr>\n<tr><td>｟一五｠｜｟二五｠</td><td>一十</td></tr>\n<tr><td>｟天时｠｜｟奥｠</td><td>地利</td></tr>\n<tr><td>｟落花｠｜｟行云｠</td><td>流水</td></tr>\n<tr><td>｟｟舍生｠｠</td><td>断章</td></tr>\n<tr><td>｟｟为人｠｠</td><td>出</td></tr>\n<tr><td>｟｟显山｠｠</td><td>花</td></tr>\n<tr><td>｟｟夜行｠｠</td><td>卫</td></tr>\n<tr><td>｟｟危地｠｠</td><td>松</td></tr>\n<tr><td>｟｟三百六｠｠</td><td>一目</td></tr>\n<tr><td>｟＜｟＜｟懵懂｠＞｠＞｠</td><td>由衷</td></tr>\n<tr><td>﹙记本脑﹚｜〈《记本脑》〉</td><td>笔电</td></tr>\n<tr><td>﹙大利﹚</td><td>意面</td></tr>\n<tr><td>﹙共识分子﹚</td><td>公知</td></tr>\n<tr><td>﹙会性亡﹚</td><td>社死</td></tr>\n<tr><td>﹙工产﹚</td><td>人流</td></tr>\n<tr><td>﹙分必﹚</td><td>充要条件</td></tr>\n<tr><td>〔子进程〕</td><td>紫禁城</td></tr>\n<tr><td>〔雇工〕</td><td>故宫</td></tr>\n<tr><td>〔焦灼〕</td><td>胶着</td></tr>\n<tr><td>〔十堰市〕</td><td>实验室</td></tr>\n<tr><td>〔〈单缝衍射〉〕</td><td>丹凤眼</td></tr>\n<tr><td>〔〈绝世武功〉〕</td><td>爵士舞</td></tr>\n<tr><td>〔〈建筑设计〉〕</td><td>注射剂</td></tr>\n<tr><td>〔〈却之不恭〉〕</td><td>织布工</td></tr>\n<tr><td>〔〈干燥指数〉〕</td><td>造纸术</td></tr>\n<tr><td>〔〈互争雄长〉〕</td><td>蒸熊掌</td></tr>\n<tr><td>〘通信员〙</td><td>同心圆</td></tr>\n<tr><td>〘筑基丹〙</td><td>煮鸡蛋</td></tr>\n<tr><td>〘〈爱屋及乌〉〙</td><td>无机物</td></tr>\n<tr><td>〘〈俯拾即是〉〙</td><td>腐蚀剂</td></tr>\n<tr><td>〘〈莫衷一是〉〙</td><td>中医师</td></tr>\n<tr><td>〘〈始终如一〉〙</td><td>石钟乳</td></tr>\n<tr><td>〘〈小肚鸡肠〉〙</td><td>消毒剂</td></tr>\n<tr><td>〘〈一无是处〉〙</td><td>医务室</td></tr>\n<tr><td>〖背道而驰〗</td><td>南辕北辙</td></tr>\n<tr><td>〖坐享其成〗</td><td>不劳而获</td></tr>\n<tr><td>〖鱼目混珠〗</td><td>滥竽充数</td></tr>\n<tr><td>【阳春白雪】</td><td>下里巴人</td></tr>\n<tr><td>【有机可乘】</td><td>无懈可击</td></tr>\n<tr><td>【不孚众望】</td><td>不负众望</td></tr>\n<tr><td>﹝寄宿制﹞｜﹝艺术日﹞</td><td>闭幕式</td></tr>\n<tr><td>﹝注意力﹞｜［导航地图］</td><td>目的地</td></tr>\n<tr><td>﹝虎虎生风﹞｜「锦囊牌」</td><td>五谷丰登</td></tr>\n<tr><td>﹝振荡电路﹞｜「神经递质」</td><td>肾上腺素</td></tr>\n<tr><td>﹝功利主义﹞｜《空》</td><td>空气阻力</td></tr>\n<tr><td>﹝公共服务﹞｜【充实】</td><td>空洞无物</td></tr>\n<tr><td>﹝呜呜呜﹞｜［楼］</td><td>出租屋</td></tr>\n<tr><td>﹝咦咦咦﹞｜「作业」</td><td>习题集</td></tr>\n<tr><td>﹝呓呓呓﹞</td><td>记忆力</td></tr>\n<tr><td>〘＜基础＞〙｜〖基础〗</td><td>初级</td></tr>\n<tr><td>〘＜经纬线＞〙</td><td>显微镜</td></tr>\n<tr><td>〘＜奠基石＞〙</td><td>电视机</td></tr>\n<tr><td>〘＜无意识＞〙</td><td>医务室</td></tr>\n<tr><td>〘＜形式主义＞〙</td><td>衣食住行</td></tr>\n<tr><td>〘＜闭一只眼＞〙</td><td>一言蔽之</td></tr>\n<tr><td>〘＜不够意思＞〙</td><td>一丝不苟</td></tr>\n<tr><td>〘＜取之不尽＞〙</td><td>不知进取</td></tr>\n<tr><td>〘＜显微技术＞〙</td><td>县委书记</td></tr>\n<tr><td>〘＜一蓑烟雨＞〙</td><td>伊索寓言</td></tr>\n<tr><td>〘＜小玩意儿＞〙</td><td>莞尔一笑</td></tr>\n<tr><td>〘＜军事地理＞〙</td><td>势均力敌</td></tr>\n<tr><td>【早点｝</td><td>晚点</td></tr>\n<tr><td>【去世｝</td><td>来世</td></tr>\n<tr><td>【轻生｝</td><td>重生</td></tr>\n<tr><td>【借口｝</td><td>还口</td></tr>\n<tr><td>【奇遇｝</td><td>偶遇</td></tr>\n<tr><td>【先生｝</td><td>后生</td></tr>\n<tr><td>【公交｝</td><td>私交</td></tr>\n<tr><td>【开心｝</td><td>关心</td></tr>\n<tr><td>【开怀｝</td><td>关怀</td></tr>\n<tr><td>【正切｝</td><td>反切</td></tr>\n<tr><td>｛推文】</td><td>推理</td></tr>\n<tr><td>｛变量】</td><td>变质</td></tr>\n<tr><td>｛出师】</td><td>出生</td></tr>\n<tr><td>｛咖啡果】</td><td>咖啡因</td></tr>\n<tr><td>〖目光｝</td><td>眼光</td></tr>\n<tr><td>｛鼓手〗</td><td>鼓掌</td></tr>\n<tr><td>【｛天文｝】</td><td>地理</td></tr>\n<tr><td>【｛本月｝】</td><td>末日</td></tr>\n<tr><td>【｛幼时｝】</td><td>长空</td></tr>\n<tr><td>【｛幼师｝】</td><td>长生</td></tr>\n<tr><td>【｛反感｝】</td><td>同理</td></tr>\n<tr><td>【｛返回｝】</td><td>往来</td></tr>\n<tr><td>【｛合理｝】</td><td>分文</td></tr>\n<tr><td>【｛空手｝】</td><td>满足</td></tr>\n<tr><td>【｛实地｝】</td><td>虚空</td></tr>\n<tr><td>【｛歪理｝】</td><td>正文</td></tr>\n<tr><td>【｛外教｝】</td><td>中学</td></tr>\n<tr><td>【｛伪满｝】</td><td>真空</td></tr>\n<tr><td>【｛无理｝】</td><td>有感</td></tr>\n<tr><td>【｛邪恶｝】</td><td>正好</td></tr>\n<tr><td>【｛水手｝】</td><td>火腿</td></tr>\n<tr><td>【｛昨夕｝】</td><td>明朝</td></tr>\n<tr><td>〖｛老舍｝〗</td><td>故居</td></tr>\n<tr><td>〖｛再测｝〗</td><td>重量</td></tr>\n<tr><td>〈﹛｛怙恃｝﹜〉</td><td>古寺</td></tr>\n<tr><td>〈﹛｛怔忡｝﹜〉</td><td>正中</td></tr>\n<tr><td>〈﹛｛猞猁｝﹜〉</td><td>舍利</td></tr>\n<tr><td>〈﹛｛咄嗟｝﹜〉</td><td>出差</td></tr>\n<tr><td>《﹛｛上下｝﹜》</td><td>忐忑</td></tr>\n<tr><td>《﹛｛原音｝﹜》</td><td>愿意</td></tr>\n<tr><td>《﹛｛木马｝﹜》</td><td>检验</td></tr>\n<tr><td>《﹛｛也门｝﹜》</td><td>他们</td></tr>\n<tr><td>《﹛｛加沙｝﹜》</td><td>袈裟</td></tr>\n<tr><td>《﹛｛白丁｝﹜》</td><td>拍打</td></tr>\n<tr><td>《﹛｛朝夕｝﹜》</td><td>潮汐</td></tr>\n<tr><td>《﹛｛元首｝﹜》</td><td>远道</td></tr>\n<tr><td>《﹛｛用户｝﹜》</td><td>拥护</td></tr>\n<tr><td>《﹛｛周长｝﹜》</td><td>惆怅</td></tr>\n<tr><td>《﹛｛秋田｝﹜》</td><td>愁思</td></tr>\n<tr><td>《﹛｛昆虫｝﹜》</td><td>混浊</td></tr>\n<tr><td>《﹛｛波罗｝﹜》</td><td>菠萝</td></tr>\n<tr><td>＜《﹛｛由于｝﹜》＞</td><td>宇宙</td></tr>\n<tr><td>＜《﹛｛白虎｝﹜》＞</td><td>琥珀</td></tr>\n<tr><td>＜《﹛｛日月｝﹜》＞</td><td>阴阳</td></tr>\n<tr><td>＜《﹛｛员工｝﹜》＞</td><td>功勋</td></tr>\n<tr><td>＜《﹛｛白云｝﹜》＞</td><td>魂魄</td></tr>\n<tr><td>《〈﹛｛琵琶｝﹜〉》</td><td>枇杷</td></tr>\n<tr><td>《〈﹛｛浮游｝﹜〉》</td><td>蜉蝣</td></tr>\n<tr><td>〔｛长大｝〕｜｟一反｠</td><td>常态</td></tr>\n<tr><td>〔｛趁机｝〕｜｟啧啧｠</td><td>称奇</td></tr>\n<tr><td>〔｛禁航区｝〕｜「音乐」</td><td>进行曲</td></tr>\n<tr><td>〔｛炮兵｝〕｜「甜点」</td><td>刨冰</td></tr>\n<tr><td>〔｛闭校｝〕｜「宗教」</td><td>佛教</td></tr>\n<tr><td>〔｛成语｝〕｜【恶名】</td><td>盛誉</td></tr>\n<tr><td>＜〔意见〕＞｜〖意见〗</td><td>建议</td></tr>\n<tr><td>〘震惊〙｜【震惊】</td><td>镇静</td></tr>\n<tr><td>〘刻意〙｜〖刻意〗</td><td>可疑</td></tr>\n<tr><td>〔切记〕｜【切记】</td><td>切忌</td></tr>\n<tr><td>［手表］｜［｛手表｝］</td><td>指针</td></tr>\n<tr><td>【正应力｝</td><td>反应力</td></tr>\n<tr><td>〖交付〗〖原因〗｜［车］</td><td>发动机</td></tr>\n<tr><td>〖泄露〗｜「作品」</td><td>外传</td></tr>\n<tr><td>《「省份」》｜「成语」</td><td>东躲西藏</td></tr>\n<tr><td>〔（恍然大悟）〕</td><td>庞然大物</td></tr>\n<tr><td>｟〔｟不笑娼｠〕｠</td><td>东施</td></tr>\n<tr><td>﹙【｛﹙庭师﹚｝】﹚</td><td>中科院</td></tr>\n<tr><td>﹙查理﹚｜〖维护〗</td><td>检修</td></tr>\n<tr><td>〚十分】</td><td>百合</td></tr>\n<tr><td>＜（（笑贫不笑娼））＞</td><td>皮笑肉不笑</td></tr>\n<tr><td>〖｛一个｝〗｜『亿』</td><td>单位</td></tr>\n<tr><td>「『眼光｝｝</td><td>耳光</td></tr>\n<tr><td>｛［｛体面｝］］</td><td>面点</td></tr>\n<tr><td>恭喜通关</td><td>恭喜通关</td></tr>\n</table>",
+  "additional_answers": [
+    {
+      "aaid": 48,
+      "answer": "重置",
+      "message": "成功重置了状态",
+      "extra": "clear",
+      "not_count": 1
+    }
+  ]
+}

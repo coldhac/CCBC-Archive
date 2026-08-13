@@ -1,0 +1,58 @@
+{
+  "pid": 24,
+  "pgid": 2,
+  "type": 1,
+  "pg_name": "指南",
+  "title": "一位参赛者……",
+  "content": "……参加了CCBC16，TA的大脑是这样变化的：\n\n————变化指的是学会了单词吗？",
+  "image": "",
+  "html": "<style>\r\n#participant .comp td {\r\n    height: 30px;\r\n    width: 30px;\r\n    border: 1px solid;\r\n    text-align: center;\r\n}\r\n#participant .comp_gray {\r\n    background-color: gray;\r\n}\r\n#participant .comp_empty {\r\n    border: 0;\r\n}\r\n#participant .comp {\r\n    border-collapse: collapse;\r\n}\r\n#participant img {\r\n  padding: 5px; /* Some padding */\r\n  width: 150px; /* Set a small width */\r\n}\r\n</style>\r\n<div id=\"participant\">\r\n<img src=\"https://static.cipherpuzzles.com/static/images/dfb4605608354ea09759e94536861bfe.webp\"></img>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/195f9aa460864eeaa874a02a2cf6f642.webp\"></img>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/6d45777dd0a44efdab914050f7b25991.webp\"></img><br>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/30646c6d50de4746ad48d94295e7d5cb.webp\"></img>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/cb8c6bbbbb9c490e8f0010ac976c3caf.webp\"></img>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/4acd19d0d2524becbec885b373af2b06.webp\"></img><br>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/4c4d46847a624a67aa7e6b04777a8a9f.webp\"></img>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/47a57c0e664d4aec884b7a83677c1902.webp\"></img>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/b46fc4fd77c04837a2a8695b015c8f01.webp\"></img>\r\n\r\n<table class=\"comp\">\r\n    <tr>\r\n        <td>🩸</td>\r\n        <td colspan=\"2\">⬆️</td>\r\n        <td colspan=\"2\">⬇️</td>\r\n    </tr>\r\n    <tr>\r\n        <td>1️⃣1️⃣</td>\r\n        <td>4</td>\r\n        <td></td>\r\n        <td></td>\r\n        <td>5</td>\r\n    </tr>\r\n    <tr>\r\n        <td>1️⃣9️⃣</td>\r\n        <td class=\"comp_gray\" colspan=\"2\"></td>\r\n        <td>1</td>\r\n        <td>9</td>\r\n    </tr>\r\n    <tr>\r\n        <td>2️⃣0️⃣</td>\r\n        <td>2</td>\r\n        <td></td>\r\n        <td></td>\r\n        <td>3</td>\r\n    </tr>\r\n    <tr>\r\n        <td>🍬</td>\r\n        <td></td>\r\n        <td>10</td>\r\n        <td>6</td>\r\n        <td>11</td>\r\n    </tr>\r\n    <tr style=\"height: 30px;\" class=\"comp_empty\">\r\n    </tr>\r\n    <tr>\r\n        <td></td>\r\n        <td colspan=\"2\">🐇</td>\r\n        <td colspan=\"2\">🐢</td>\r\n    </tr>\r\n    <tr>\r\n        <td>♥️</td>\r\n        <td>7</td>\r\n        <td>8</td>\r\n        <td>12</td>\r\n        <td></td>\r\n    </tr>\r\n</table>\r\n\r\n<p>\r\n-3 0 -2 +1 -4 +4 +3 +5 -1 -5 +2 +6\r\n(9)\r\n</div>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":24,\"imgUrl\":\"a12ce9aaf35d4211af8750ac0cab44d7.svg\",\"color\":\"#000\",\"top\":\"56px\",\"left\":\"1370px\",\"veryFirst\":false}",
+  "extend_content": "成功解开谜题后，量子星云影响的设备恢复正常，同时从中浮现出一张碎纸片。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/853f495cc78e43ada41524162c9375be.webp\" alt=\"fragment\" style=\"max-width: 100%\" />",
+  "adda": 0,
+  "answer": "OSTEOLOGY",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "ES8730",
+  "analysis": "将9张图的物品数量转字母得到`CHUBBYEMU`，然后注意到物品都可以对应到ChubbyEmu的视频。列举出每个视频中介绍的医学单词和患者名字，可以将名字填入下方表格，提取相应位置的字母并移位后得到`STUDY OF BONES`，即答案`OSTEOLOGY`。\n\n<style>\ntable, th, td {\n  border: 1px solid black; \n  border-collapse: collapse;\n  text-align: center;\n}\n</style>\n\n\n|数量 |转字母| 物品   | （B站）视频         | 患者名字 | 视频中(第一个)详细介绍的词 |\n|:----:|:-:|:------------:|:--------------:|:-------:|--------------------------------|\n|3|C| 熔岩灯     | <a href=\"https://www.bilibili.com/video/BV1vr4y1k7QY\" target=\"_blank\">链接</a> | AW     | Hypocalcemia                   |\n|8|H| 香蕉       | <a href=\"https://www.bilibili.com/video/BV1R54y1E7vj\" target=\"_blank\">链接</a>| KC     | Hypoglycemia                   |\n|21|U| 水         | <a href=\"https://www.bilibili.com/video/BV16q4y1K7Un\" target=\"_blank\">链接</a>| KC     | Hyponatremia             |\n|2|B| 比特币     | <a href=\"https://www.bilibili.com/video/BV1w54y1V78y\" target=\"_blank\">链接</a>| CW     | Tachycardia                    |\n|2|B| 维生素软糖 | <a href=\"https://www.bilibili.com/video/BV1e3411279e\" target=\"_blank\">链接</a>| TJ     | Hypercalcemia                  |\n|25|Y| 能量饮料   | <a href=\"https://www.bilibili.com/video/BV1zq4y1f7Yo\" target=\"_blank\">链接</a>| JS     | Hyperglycemia                  |\n|5|E| 甘草糖     | <a href=\"https://www.bilibili.com/video/BV1864y1D7Bo\" target=\"_blank\">链接</a>| VP     | Hypokalemia                    |\n|13|M| 酱油       | <a href=\"https://www.bilibili.com/video/BV17P4y1G7YY\" target=\"_blank\">链接</a>| CG     | Hypernatremia            |\n|21|U| 饼干       | <a href=\"https://www.bilibili.com/video/BV1a64y1B7VX\" target=\"_blank\">链接</a>| MJ     | Bradycardia                    |\n\n\n<p><table>\n    <tr>\n        <td>血 -emia</td><td colspan=\"2\">高  Hyper- </td><td colspan=\"2\">低  Hypo-</td>\n    </tr>\n    <tr>\n        <td>钠 -natr-</td><td>4C</td><td>G</td><td>K</td><td>5C</td>\n    </tr>\n    <tr>\n        <td>钾 -kal-</td><td  colspan=\"2\"></td><td>1V</td><td>9P</td>\n    </tr>\n    <tr>\n        <td>钙 -calc-</td><td>2T</td><td>J</td><td>A</td><td>3W</td>\n    </tr>\n    <tr>\n        <td>糖 -glyc-</td><td>J</td><td>10S</td><td>6K</td><td>11C</td>\n    </tr>\n</table>\n\n\n<p><table>\n    <tr>\n        <td></td><td colspan=\"2\">快 Tachy- </td><td colspan=\"2\">慢 Brady-</td>\n    </tr>\n    <tr>\n        <td>心 -cardia</td><td>7C</td><td>8W</td><td>12M</td><td>J</td>\n    </tr>\n</table>\n\n`V-3 T+0 W-2 C+1 C-4 K+4 C+3 W+5 P-1 S-5 C+2 M+6 = STUDY OF BONES = OSTEOLOGY`",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "数一下每张图的东西个数，它们会引导你到某个视频博主。在B站就能找到他",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "已经找到了9张图片代表的东西，下一步是？",
+      "content": "查看每个视频里用词根拆分的形式教的第一个医学术语，并且对应到下面的表格里。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我知道要用什么，但是不知道1-12的格子里要填什么",
+      "content": "主人公的2字母代号。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "将9张图的物品数量转字母得到`CHUBBYEMU`，然后注意到物品都可以对应到ChubbyEmu的视频。列举出每个视频中介绍的医学单词和患者名字，可以将名字填入下方表格，提取相应位置的字母并移位后得到`STUDY OF BONES`，即答案`OSTEOLOGY`。\n\n<style>\ntable, th, td {\n  border: 1px solid black; \n  border-collapse: collapse;\n  text-align: center;\n}\n</style>\n\n\n|数量 |转字母| 物品   | （B站）视频         | 患者名字 | 视频中(第一个)详细介绍的词 |\n|:----:|:-:|:------------:|:--------------:|:-------:|--------------------------------|\n|3|C| 熔岩灯     | <a href=\"https://www.bilibili.com/video/BV1vr4y1k7QY\" target=\"_blank\">链接</a> | AW     | Hypocalcemia                   |\n|8|H| 香蕉       | <a href=\"https://www.bilibili.com/video/BV1R54y1E7vj\" target=\"_blank\">链接</a>| KC     | Hypoglycemia                   |\n|21|U| 水         | <a href=\"https://www.bilibili.com/video/BV16q4y1K7Un\" target=\"_blank\">链接</a>| KC     | Hyponatremia             |\n|2|B| 比特币     | <a href=\"https://www.bilibili.com/video/BV1w54y1V78y\" target=\"_blank\">链接</a>| CW     | Tachycardia                    |\n|2|B| 维生素软糖 | <a href=\"https://www.bilibili.com/video/BV1e3411279e\" target=\"_blank\">链接</a>| TJ     | Hypercalcemia                  |\n|25|Y| 能量饮料   | <a href=\"https://www.bilibili.com/video/BV1zq4y1f7Yo\" target=\"_blank\">链接</a>| JS     | Hyperglycemia                  |\n|5|E| 甘草糖     | <a href=\"https://www.bilibili.com/video/BV1864y1D7Bo\" target=\"_blank\">链接</a>| VP     | Hypokalemia                    |\n|13|M| 酱油       | <a href=\"https://www.bilibili.com/video/BV17P4y1G7YY\" target=\"_blank\">链接</a>| CG     | Hypernatremia            |\n|21|U| 饼干       | <a href=\"https://www.bilibili.com/video/BV1a64y1B7VX\" target=\"_blank\">链接</a>| MJ     | Bradycardia                    |\n\n\n<p><table>\n    <tr>\n        <td>血 -emia</td><td colspan=\"2\">高  Hyper- </td><td colspan=\"2\">低  Hypo-</td>\n    </tr>\n    <tr>\n        <td>钠 -natr-</td><td>4C</td><td>G</td><td>K</td><td>5C</td>\n    </tr>\n    <tr>\n        <td>钾 -kal-</td><td  colspan=\"2\"></td><td>1V</td><td>9P</td>\n    </tr>\n    <tr>\n        <td>钙 -calc-</td><td>2T</td><td>J</td><td>A</td><td>3W</td>\n    </tr>\n    <tr>\n        <td>糖 -glyc-</td><td>J</td><td>10S</td><td>6K</td><td>11C</td>\n    </tr>\n</table>\n\n\n<p><table>\n    <tr>\n        <td></td><td colspan=\"2\">快 Tachy- </td><td colspan=\"2\">慢 Brady-</td>\n    </tr>\n    <tr>\n        <td>心 -cardia</td><td>7C</td><td>8W</td><td>12M</td><td>J</td>\n    </tr>\n</table>\n\n`V-3 T+0 W-2 C+1 C-4 K+4 C+3 W+5 P-1 S-5 C+2 M+6 = STUDY OF BONES = OSTEOLOGY`",
+  "additional_answers": [
+    {
+      "aaid": 22,
+      "answer": "CHUBBYEMU",
+      "message": "加油！",
+      "extra": "",
+      "not_count": 1
+    }
+  ]
+}

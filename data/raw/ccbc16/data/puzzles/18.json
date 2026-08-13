@@ -1,0 +1,163 @@
+{
+  "pid": 18,
+  "pgid": 2,
+  "type": 1,
+  "pg_name": "指南",
+  "title": "就是为了这点醋",
+  "content": "",
+  "image": "",
+  "html": "<style>\r\n    #summary {\r\n        border-collapse: collapse;\r\n        margin-bottom: 20px;\r\n    }\r\n    #summary td {\r\n        border: 1px solid #ccc;\r\n        padding: 5px 10px;\r\n    }\r\n    #ingredients {\r\n        display:grid;\r\n        grid-template-columns: auto auto auto auto\r\n    }\r\n    @media (max-width: 945px) {\r\n        #ingredients {\r\n            display: grid;\r\n            grid-template-columns: auto auto auto;\r\n        }\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n        #ingredients {\r\n            display: grid;\r\n            grid-template-columns: auto auto;\r\n        }\r\n    }\r\n</style>\r\n<table id=\"summary\">\r\n    <tr><td rowspan=\"8\">二进制饺子</td><td>脱口而出</td><td>八样材料</td></tr>\r\n    <tr><td>双消音</td><td>四样材料</td></tr>\r\n    <tr><td>同声相应</td><td>四样材料</td></tr>\r\n    <tr><td>数数数字</td><td>四样材料</td></tr>\r\n    <tr><td>对“古詩”</td><td>四样材料</td></tr>\r\n    <tr><td>实名制</td><td>四样材料</td></tr>\r\n    <tr><td>拼好字</td><td>两样材料</td></tr>\r\n    <tr><td>成双成对</td><td>五样材料</td></tr>\r\n</table>\r\n<ul id=\"ingredients\">\r\n<li>黯淡</li>\t<li>八仙过海各显神通</li>\t<li>不计其数</li>\t<li>渡口尚余景</li>\t<li>夺泥燕口</li>\r\n<li>飞去飞来烟雨秋</li>\t<li>惯子如杀子</li>\t<li>罕达罕河</li>\t<li>红芪</li>\t<li>虎头燕额</li>\r\n<li>回旋现象</li>\t<li>积极参加</li>\t<li>空话连篇</li>\t<li>空口无凭</li>\t<li>离居经三春</li>\r\n<li>您</li>\t<li>青口白舌</li>\t<li>青梅竹马</li>\t<li>让再让三</li>\t<li>入寺钟未歇</li>\r\n<li>三缄其口</li>\t<li>三歧真巨口鱼</li>\t<li>十载常独坐</li>\t<li>铁砂</li>\t<li>王诩</li>\r\n<li>王右军</li>\t<li>羞答答</li>\t<li>玄发看成一把丝</li>\t<li>言路倚忠直</li>\t<li>蝇营蚁聚</li>\r\n<li>玉米钻心虫</li>\t<li>纸盒子</li>\t<li>中华树蟋</li>\t<li>洲际弹道导弹</li>\t<li>捉襟见肘</li>\r\n</ul>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":18,\"imgUrl\":\"2c9dc9d8db22471785d7fb068f3f81e0.svg\",\"color\":\"#000\",\"top\":\"392px\",\"left\":\"830px\",\"veryFirst\":false}",
+  "extend_content": "成功解开谜题后，量子星云影响的设备恢复正常，同时从中浮现出一张碎纸片。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/688e99e045ea4a628884c72229e0528e.webp\" alt=\"fragment\" style=\"max-width: 100%\" />",
+  "adda": 0,
+  "answer": "CHAMPION",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n本题为META MATCHING题，需要自行将每个词对应至某题，由此得到每题答案。\n\n<h1>脱口而出</h1>\n\n可以找到四对成语，每对均在某一位有相同字。先根据`口`的位置提取另一成语中的字得到`话梅`和`数额`；再重复一次，使用`话`和`额`中的`口`提取另一字，得到`母女`。\n<table id=\"answerkey\">\n<tr><th>成语1</th><th>成语2</th><th>提取1</th><th>提取2</th></tr>\n<tr><td>空话连篇</td><td>空口无凭</td><td>话</td><td rowspan=2>母</td></tr>\n<tr><td>青梅竹马</td><td>青口白舌</td><td>梅</td></tr>\n<tr><td>不计其数</td><td>三缄其口</td><td>数</td><td rowspan=2>女</td></tr>\n<tr><td>虎头燕额</td><td>夺泥燕口</td><td>额</td></tr>\n</table>\n<br>\n\n<h1>双消音</h1>\n\n可以找到长度递增的四个词，它们的拼音除了某一字母外均出现两次。提取只出现一次的字母得到`IDEA`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>拼音</th><th>提取</th></tr>\n<tr><td>您</td><td>NIN</td><td>I</td></tr>\n<tr><td>黯淡</td><td>AN DAN</td><td>D</td></tr>\n<tr><td>纸盒子</td><td>ZHI HE ZI</td><td>E</td></tr>\n<tr><td>捉襟见肘</td><td>ZHUO JIN JIAN ZHOU</td><td>A</td></tr>\n</table>\n<br>\n\n<h1>同声相应</h1>\n\n可以找到四个词，它们的声母只有一字不同。提取此字，按照出现位置排序，谐音得到回答`餐具`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>提取</th><th>谐音</th></tr>\n<tr><td>回旋现象</td><td>回</td><td>回</td></tr>\n<tr><td>罕达罕河</td><td>达</td><td>答</td></tr>\n<tr><td>积极参加</td><td>参</td><td>餐</td></tr>\n<tr><td>蝇营蚁聚</td><td>聚</td><td>具</td></tr>\n</table>\n<br>\n\n<h1>数数数字</h1>\n\n可以找到长度递减的四个词，它们均含有一个数字。根据数字提取对应位置，得到`通玄真经`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>数字</th><th>提取</th></tr>\n<tr><td>八仙过海各显神通</td><td>八</td><td>通</td></tr>\n<tr><td>玄发看成一把丝</td><td>一</td><td>玄</td></tr>\n<tr><td>三歧真巨口鱼</td><td>三</td><td>真</td></tr>\n<tr><td>离居经三春</td><td>三</td><td>经</td></tr>\n</table>\n<br>\n\n<h1>对“古詩”</h1>\n\n可以找到四句诗，其中分别含有`十口言寺`四个字。找到其上下句，取对应位置的字按同样方式组装得到`朵玛`。\n<table id=\"answerkey\">\n<tr><th>诗</th><th>上下句</th><th>提取</th></tr>\n<tr><td>十载常独坐</td><td>十载常独坐，几人知此心。</td><td>几</td></tr>\n<tr><td>渡口尚余景</td><td>渡口尚余景，乔木故乡陌。</td><td>木</td></tr>\n<tr><td>言路倚忠直</td><td>王所切经纶，言路倚忠直。</td><td>王</td></tr>\n<tr><td>入寺钟未歇</td><td>上马鸡始鸣，入寺钟未歇。</td><td>马</td></tr>\n</table>\n<br>\n\n<h1>实名制</h1>\n\n可以找到长度递减的四个词，它们均有另一个名字。按顺序提取最后一字得到`螟蛉之子`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>别名</th><th>提取</th></tr>\n<tr><td>玉米钻心虫</td><td>玉米螟</td><td>螟</td></tr>\n<tr><td>中华树蟋</td><td>竹蛉</td><td>蛉</td></tr>\n<tr><td>王右军</td><td>王羲之</td><td>之</td></tr>\n<tr><td>王诩</td><td>鬼谷子</td><td>子</td></tr>\n</table>\n<br>\n\n<h1>拼好字</h1>\n\n可以找到两个词`红芪`和`铁砂`，它们两字各取一半可以组成新字，由此得到`纸钞`。\n<br>\n<br>\n\n<h1>成双成对</h1>\n\n可以找到长度递减的五个词，它们均有一个字重复。按顺序提取得到答`让子弹飞`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>提取</th></tr>\n<tr><td>羞答答</td><td>答</td></tr>\n<tr><td>让再让三</td><td>让</td></tr>\n<tr><td>惯子如杀子</td><td>子</td></tr>\n<tr><td>洲际弹道导弹</td><td>弹</td></tr>\n<tr><td>飞去飞来烟雨秋</td><td>飞</td></tr>\n</table>\n<br>\n\n<h1>二进制饺子</h1>\n\n可以发现每个答案均对应某个以`子`结尾的词。将`饺`分割成五部分，根据第一个字是否包含某部分对应为五位二进制，可以得到`CHAMPION`。\n<table id=\"answerkey\">\n<tr><th>题目</th><th>答案</th><th>〇子</th><th>饣</th><th>丶</th><th>一</th><th>八</th><th>乂</th><th>五位二进制</th><th>对应字母</th></tr>\n<tr><td>脱口而出</td><td>母女</td><td>父子</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>00011</td><td>C</td></tr>\n<tr><td>双消音</td><td>IDEA</td><td>丶子（点子）</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>01000</td><td>H</td></tr>\n<tr><td>同声相应</td><td>餐具</td><td>乂子（叉子）</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>00001</td><td>A</td></tr>\n<tr><td>数数数字</td><td>通玄真经</td><td>文子</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>01101</td><td>M</td></tr>\n<tr><td>对“古詩”</td><td>朵玛</td><td>饣子（食子）</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10000</td><td>P</td></tr>\n<tr><td>实名制</td><td>螟蛉之子</td><td>义子</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>01001</td><td>I</td></tr>\n<tr><td>拼好字</td><td>纸钞</td><td>交子</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>01111</td><td>O</td></tr>\n<tr><td>成双成对</td><td>让子弹飞</td><td>六子</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>01110</td><td>N</td></tr>\n</table>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "「脱口而出」该怎么做！",
+      "content": "四对词中每对有一个含有「口」，根据「口」的位置提取另一个词。得到两个词后以相似的规则再次重复。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "「双消音」该怎么做！",
+      "content": "转换成拼音后，将重复字母消去。排序是按字数递增。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "「同声相应」该怎么做！",
+      "content": "提取唯一一个声母不同的字后谐音。排序是这个字的出现位置。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "「数数数字」该怎么做！",
+      "content": "根据词中数字提取第N位的字。排序是按字数递减。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "「对“古詩”」该怎么做！",
+      "content": "找到古诗所在的上下句，取「十口言寺」的对应位置，重新组成两个字。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "「实名制」该怎么做！",
+      "content": "找到其别名，取最后一字。排序是按字数递减。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "「拼好字」该怎么做！",
+      "content": "两个字各取一半拼成新字。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "「成双成对」该怎么做！",
+      "content": "取词中出现两次的字。排序是按字数递增。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 9,
+      "title": "「二进制饺子」看不明白！",
+      "content": "每个答案都与一个以“子”结尾的词有关。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 10,
+      "title": "「二进制饺子」不会提取！",
+      "content": "将“饺”这个字分割成五部分：饣（食）丶一八乂，根据是否包含每个部分对应为五位二进制。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n本题为META MATCHING题，需要自行将每个词对应至某题，由此得到每题答案。\n\n<h1>脱口而出</h1>\n\n可以找到四对成语，每对均在某一位有相同字。先根据`口`的位置提取另一成语中的字得到`话梅`和`数额`；再重复一次，使用`话`和`额`中的`口`提取另一字，得到`母女`。\n<table id=\"answerkey\">\n<tr><th>成语1</th><th>成语2</th><th>提取1</th><th>提取2</th></tr>\n<tr><td>空话连篇</td><td>空口无凭</td><td>话</td><td rowspan=2>母</td></tr>\n<tr><td>青梅竹马</td><td>青口白舌</td><td>梅</td></tr>\n<tr><td>不计其数</td><td>三缄其口</td><td>数</td><td rowspan=2>女</td></tr>\n<tr><td>虎头燕额</td><td>夺泥燕口</td><td>额</td></tr>\n</table>\n<br>\n\n<h1>双消音</h1>\n\n可以找到长度递增的四个词，它们的拼音除了某一字母外均出现两次。提取只出现一次的字母得到`IDEA`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>拼音</th><th>提取</th></tr>\n<tr><td>您</td><td>NIN</td><td>I</td></tr>\n<tr><td>黯淡</td><td>AN DAN</td><td>D</td></tr>\n<tr><td>纸盒子</td><td>ZHI HE ZI</td><td>E</td></tr>\n<tr><td>捉襟见肘</td><td>ZHUO JIN JIAN ZHOU</td><td>A</td></tr>\n</table>\n<br>\n\n<h1>同声相应</h1>\n\n可以找到四个词，它们的声母只有一字不同。提取此字，按照出现位置排序，谐音得到回答`餐具`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>提取</th><th>谐音</th></tr>\n<tr><td>回旋现象</td><td>回</td><td>回</td></tr>\n<tr><td>罕达罕河</td><td>达</td><td>答</td></tr>\n<tr><td>积极参加</td><td>参</td><td>餐</td></tr>\n<tr><td>蝇营蚁聚</td><td>聚</td><td>具</td></tr>\n</table>\n<br>\n\n<h1>数数数字</h1>\n\n可以找到长度递减的四个词，它们均含有一个数字。根据数字提取对应位置，得到`通玄真经`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>数字</th><th>提取</th></tr>\n<tr><td>八仙过海各显神通</td><td>八</td><td>通</td></tr>\n<tr><td>玄发看成一把丝</td><td>一</td><td>玄</td></tr>\n<tr><td>三歧真巨口鱼</td><td>三</td><td>真</td></tr>\n<tr><td>离居经三春</td><td>三</td><td>经</td></tr>\n</table>\n<br>\n\n<h1>对“古詩”</h1>\n\n可以找到四句诗，其中分别含有`十口言寺`四个字。找到其上下句，取对应位置的字按同样方式组装得到`朵玛`。\n<table id=\"answerkey\">\n<tr><th>诗</th><th>上下句</th><th>提取</th></tr>\n<tr><td>十载常独坐</td><td>十载常独坐，几人知此心。</td><td>几</td></tr>\n<tr><td>渡口尚余景</td><td>渡口尚余景，乔木故乡陌。</td><td>木</td></tr>\n<tr><td>言路倚忠直</td><td>王所切经纶，言路倚忠直。</td><td>王</td></tr>\n<tr><td>入寺钟未歇</td><td>上马鸡始鸣，入寺钟未歇。</td><td>马</td></tr>\n</table>\n<br>\n\n<h1>实名制</h1>\n\n可以找到长度递减的四个词，它们均有另一个名字。按顺序提取最后一字得到`螟蛉之子`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>别名</th><th>提取</th></tr>\n<tr><td>玉米钻心虫</td><td>玉米螟</td><td>螟</td></tr>\n<tr><td>中华树蟋</td><td>竹蛉</td><td>蛉</td></tr>\n<tr><td>王右军</td><td>王羲之</td><td>之</td></tr>\n<tr><td>王诩</td><td>鬼谷子</td><td>子</td></tr>\n</table>\n<br>\n\n<h1>拼好字</h1>\n\n可以找到两个词`红芪`和`铁砂`，它们两字各取一半可以组成新字，由此得到`纸钞`。\n<br>\n<br>\n\n<h1>成双成对</h1>\n\n可以找到长度递减的五个词，它们均有一个字重复。按顺序提取得到答`让子弹飞`。\n<table id=\"answerkey\">\n<tr><th>词</th><th>提取</th></tr>\n<tr><td>羞答答</td><td>答</td></tr>\n<tr><td>让再让三</td><td>让</td></tr>\n<tr><td>惯子如杀子</td><td>子</td></tr>\n<tr><td>洲际弹道导弹</td><td>弹</td></tr>\n<tr><td>飞去飞来烟雨秋</td><td>飞</td></tr>\n</table>\n<br>\n\n<h1>二进制饺子</h1>\n\n可以发现每个答案均对应某个以`子`结尾的词。将`饺`分割成五部分，根据第一个字是否包含某部分对应为五位二进制，可以得到`CHAMPION`。\n<table id=\"answerkey\">\n<tr><th>题目</th><th>答案</th><th>〇子</th><th>饣</th><th>丶</th><th>一</th><th>八</th><th>乂</th><th>五位二进制</th><th>对应字母</th></tr>\n<tr><td>脱口而出</td><td>母女</td><td>父子</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>00011</td><td>C</td></tr>\n<tr><td>双消音</td><td>IDEA</td><td>丶子（点子）</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>01000</td><td>H</td></tr>\n<tr><td>同声相应</td><td>餐具</td><td>乂子（叉子）</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>00001</td><td>A</td></tr>\n<tr><td>数数数字</td><td>通玄真经</td><td>文子</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>01101</td><td>M</td></tr>\n<tr><td>对“古詩”</td><td>朵玛</td><td>饣子（食子）</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10000</td><td>P</td></tr>\n<tr><td>实名制</td><td>螟蛉之子</td><td>义子</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>01001</td><td>I</td></tr>\n<tr><td>拼好字</td><td>纸钞</td><td>交子</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>01111</td><td>O</td></tr>\n<tr><td>成双成对</td><td>让子弹飞</td><td>六子</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>01110</td><td>N</td></tr>\n</table>",
+  "additional_answers": [
+    {
+      "aaid": 1,
+      "answer": "母女",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 2,
+      "answer": "IDEA",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 3,
+      "answer": "餐具",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 4,
+      "answer": "通玄真经",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 5,
+      "answer": "朵玛",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 6,
+      "answer": "螟蛉之子",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 7,
+      "answer": "纸钞",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 8,
+      "answer": "让子弹飞",
+      "message": "这是小题答案之一。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

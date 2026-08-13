@@ -1,0 +1,74 @@
+{
+  "pid": 39,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "汉字方阵·后半",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":39,\"imgUrl\":\"72d9ec12586246da9cce3726efc8c873.svg\",\"color\":\"#000\",\"top\":\"252px\",\"left\":\"792px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "USSR",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#grid_solution img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#grid_solution b {\ncolor: #c00;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"grid_solution\">\n<img src=\"https://static.cipherpuzzles.com/static/images/8d28cd61083a4db08b9a1044debc0f79.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/65b0a1f818084c3da4e6ea997df8e58f.webp\">\n\n本题似乎是crossword，但是很快便会发现横与纵并不在相同的字处相交。继而可以观察到相交位置的字虽然不一样，但是押韵且声调一致（标题里的“后半”即是说拼音后半一致）。可以解得：\n\n横：\n\n<table>\n<tr><td>朱</td><td>古</td><td>力</td><td>蚍</td><td>蜉</td><td>撼</td><td>树</td><td>害</td><td>人</td><td>终</td><td>害</td><td>己</td></tr>\n<tr><td>草</td><td>莓</td><td>酱</td><td>夏</td><td>至</td><td>线</td><td>展</td><td>翅</td><td>高</td><td>飞</td><td>祥</td><td>和</td></tr>\n<tr><td>天</td><td>工</td><td>开</td><td>物</td><td>贵</td><td>妃</td><td>醉</td><td>酒</td><td>毕</td><td>业</td><td>典</td><td>礼</td></tr>\n<tr><td>邀</td><td>请</td><td>赛</td><td>赫</td><td>鲁</td><td>晓</td><td>夫</td><td>虞</td><td>美</td><td>人</td><td>硬</td><td>币</td></tr>\n<tr><td>白</td><td>门</td><td>警</td><td>犬</td><td>队</td><td>曹</td><td>冲</td><td>称</td><td>象</td><td>米</td><td>哈</td><td>游</td></tr>\n<tr><td>包</td><td>子</td><td>铺</td><td>听</td><td>小</td><td>骨</td><td>酒</td><td>杯</td><td>暗</td><td>送</td><td>秋</td><td>波</td></tr>\n<tr><td>发</td><td>散</td><td>级</td><td>数</td><td>变</td><td>速</td><td>器</td><td>应</td><td>急</td><td>灯</td><td>报</td><td>酬</td></tr>\n<tr><td>风</td><td>里</td><td>来</td><td>雨</td><td>里</td><td>去</td><td>传</td><td>送</td><td>门</td><td>佛</td><td>手</td><td>酥</td></tr>\n<tr><td>对</td><td>立</td><td>事</td><td>件</td><td>超</td><td>预</td><td>告</td><td>篇</td><td>核</td><td>反</td><td>应</td><td>堆</td></tr>\n<tr><td>步</td><td>步</td><td>错</td><td>顶</td><td>不</td><td>住</td><td>登</td><td>山</td><td>杖</td><td>魔</td><td>导</td><td>士</td></tr>\n<tr><td>体</td><td>验</td><td>版</td><td>浅</td><td>尝</td><td>辄</td><td>止</td><td>戏</td><td>剧</td><td>性</td><td>田</td><td>径</td></tr>\n<tr><td>烈</td><td>士</td><td>陵</td><td>园</td><td>施</td><td>氏</td><td>食</td><td>狮</td><td>史</td><td>暴</td><td>风</td><td>城</td></tr>\n</table>\n\n纵：\n\n<table>\n<tr><td>出</td><td>五</td><td>气</td><td>皮</td><td>浮</td><td>但</td><td>负</td><td>败</td><td>焚</td><td>空</td><td>太</td><td>几</td></tr>\n<tr><td>老</td><td>雷</td><td>象</td><td>下</td><td>世</td><td>见</td><td>反</td><td>事</td><td>膏</td><td>悲</td><td>阳</td><td>何</td></tr>\n<tr><td>千</td><td>轰</td><td>灾</td><td>注</td><td>绘</td><td>悲</td><td>馈</td><td>有</td><td>继</td><td>切</td><td>眼</td><td>体</td></tr>\n<tr><td>招</td><td>顶</td><td>害</td><td>射</td><td>主</td><td>鸟</td><td>粗</td><td>余</td><td>晷</td><td>晨</td><td>镜</td><td>地</td></tr>\n<tr><td>财</td><td>沉</td><td>醒</td><td>远</td><td>对</td><td>号</td><td>中</td><td>丰</td><td>降</td><td>起</td><td>沙</td><td>球</td></tr>\n<tr><td>猫</td><td>滓</td><td>木</td><td>星</td><td>角</td><td>古</td><td>有</td><td>碑</td><td>半</td><td>动</td><td>丘</td><td>缩</td></tr>\n<tr><td>嘎</td><td>泛</td><td>棋</td><td>物</td><td>线</td><td>木</td><td>细</td><td>命</td><td>旗</td><td>征</td><td>绕</td><td>头</td></tr>\n<tr><td>嘣</td><td>起</td><td>牌</td><td>语</td><td>体</td><td>郁</td><td>环</td><td>中</td><td>人</td><td>铎</td><td>口</td><td>乌</td></tr>\n<tr><td>脆</td><td>闭</td><td>室</td><td>电</td><td>操</td><td>郁</td><td>绕</td><td>天</td><td>和</td><td>软</td><td>令</td><td>龟</td></tr>\n<tr><td>傅</td><td>路</td><td>扩</td><td>影</td><td>服</td><td>不</td><td>声</td><td>干</td><td>抗</td><td>磨</td><td>宝</td><td>事</td></tr>\n<tr><td>里</td><td>电</td><td>展</td><td>演</td><td>唐</td><td>得</td><td>史</td><td>地</td><td>锯</td><td>硬</td><td>莲</td><td>竟</td></tr>\n<tr><td>叶</td><td>视</td><td>名</td><td>员</td><td>诗</td><td>志</td><td>实</td><td>支</td><td>齿</td><td>泡</td><td>灯</td><td>成</td></tr>\n</table>\n\n其中纵5线索里的“本题需要提取的位置”答案是“主对角线”，沿着主对角线可以得到“ū éi āi è uì ǔ ì òng é ó ián éng”，与此押韵的是“苏维埃社会主义共和国联盟”，因此答案就是 `USSR`。\n\n</div>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "这道题需要哪些碎片！",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n<img src=\"https://static.cipherpuzzles.com/static/images/8d28cd61083a4db08b9a1044debc0f79.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/65b0a1f818084c3da4e6ea997df8e58f.webp\">\n</div>\n",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "填不进去！怎么想都填不进去！",
+      "content": "每格中填的并不是同一个字，而是押韵的两个字（包括音调）。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我几乎都填好了，但是本题需要提取的位置我想不出！",
+      "content": "前两个字的声母是Zh和D。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "我知道提取的位置了，但我答不出来！",
+      "content": "答案前两个字的声母是SW。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "横纵提示的词要填哪里？有格子吗？",
+      "content": "需要填满一个12x12的方阵。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#grid_solution img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#grid_solution b {\ncolor: #c00;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"grid_solution\">\n<img src=\"https://static.cipherpuzzles.com/static/images/8d28cd61083a4db08b9a1044debc0f79.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/65b0a1f818084c3da4e6ea997df8e58f.webp\">\n\n本题似乎是crossword，但是很快便会发现横与纵并不在相同的字处相交。继而可以观察到相交位置的字虽然不一样，但是押韵且声调一致（标题里的“后半”即是说拼音后半一致）。可以解得：\n\n横：\n\n<table>\n<tr><td>朱</td><td>古</td><td>力</td><td>蚍</td><td>蜉</td><td>撼</td><td>树</td><td>害</td><td>人</td><td>终</td><td>害</td><td>己</td></tr>\n<tr><td>草</td><td>莓</td><td>酱</td><td>夏</td><td>至</td><td>线</td><td>展</td><td>翅</td><td>高</td><td>飞</td><td>祥</td><td>和</td></tr>\n<tr><td>天</td><td>工</td><td>开</td><td>物</td><td>贵</td><td>妃</td><td>醉</td><td>酒</td><td>毕</td><td>业</td><td>典</td><td>礼</td></tr>\n<tr><td>邀</td><td>请</td><td>赛</td><td>赫</td><td>鲁</td><td>晓</td><td>夫</td><td>虞</td><td>美</td><td>人</td><td>硬</td><td>币</td></tr>\n<tr><td>白</td><td>门</td><td>警</td><td>犬</td><td>队</td><td>曹</td><td>冲</td><td>称</td><td>象</td><td>米</td><td>哈</td><td>游</td></tr>\n<tr><td>包</td><td>子</td><td>铺</td><td>听</td><td>小</td><td>骨</td><td>酒</td><td>杯</td><td>暗</td><td>送</td><td>秋</td><td>波</td></tr>\n<tr><td>发</td><td>散</td><td>级</td><td>数</td><td>变</td><td>速</td><td>器</td><td>应</td><td>急</td><td>灯</td><td>报</td><td>酬</td></tr>\n<tr><td>风</td><td>里</td><td>来</td><td>雨</td><td>里</td><td>去</td><td>传</td><td>送</td><td>门</td><td>佛</td><td>手</td><td>酥</td></tr>\n<tr><td>对</td><td>立</td><td>事</td><td>件</td><td>超</td><td>预</td><td>告</td><td>篇</td><td>核</td><td>反</td><td>应</td><td>堆</td></tr>\n<tr><td>步</td><td>步</td><td>错</td><td>顶</td><td>不</td><td>住</td><td>登</td><td>山</td><td>杖</td><td>魔</td><td>导</td><td>士</td></tr>\n<tr><td>体</td><td>验</td><td>版</td><td>浅</td><td>尝</td><td>辄</td><td>止</td><td>戏</td><td>剧</td><td>性</td><td>田</td><td>径</td></tr>\n<tr><td>烈</td><td>士</td><td>陵</td><td>园</td><td>施</td><td>氏</td><td>食</td><td>狮</td><td>史</td><td>暴</td><td>风</td><td>城</td></tr>\n</table>\n\n纵：\n\n<table>\n<tr><td>出</td><td>五</td><td>气</td><td>皮</td><td>浮</td><td>但</td><td>负</td><td>败</td><td>焚</td><td>空</td><td>太</td><td>几</td></tr>\n<tr><td>老</td><td>雷</td><td>象</td><td>下</td><td>世</td><td>见</td><td>反</td><td>事</td><td>膏</td><td>悲</td><td>阳</td><td>何</td></tr>\n<tr><td>千</td><td>轰</td><td>灾</td><td>注</td><td>绘</td><td>悲</td><td>馈</td><td>有</td><td>继</td><td>切</td><td>眼</td><td>体</td></tr>\n<tr><td>招</td><td>顶</td><td>害</td><td>射</td><td>主</td><td>鸟</td><td>粗</td><td>余</td><td>晷</td><td>晨</td><td>镜</td><td>地</td></tr>\n<tr><td>财</td><td>沉</td><td>醒</td><td>远</td><td>对</td><td>号</td><td>中</td><td>丰</td><td>降</td><td>起</td><td>沙</td><td>球</td></tr>\n<tr><td>猫</td><td>滓</td><td>木</td><td>星</td><td>角</td><td>古</td><td>有</td><td>碑</td><td>半</td><td>动</td><td>丘</td><td>缩</td></tr>\n<tr><td>嘎</td><td>泛</td><td>棋</td><td>物</td><td>线</td><td>木</td><td>细</td><td>命</td><td>旗</td><td>征</td><td>绕</td><td>头</td></tr>\n<tr><td>嘣</td><td>起</td><td>牌</td><td>语</td><td>体</td><td>郁</td><td>环</td><td>中</td><td>人</td><td>铎</td><td>口</td><td>乌</td></tr>\n<tr><td>脆</td><td>闭</td><td>室</td><td>电</td><td>操</td><td>郁</td><td>绕</td><td>天</td><td>和</td><td>软</td><td>令</td><td>龟</td></tr>\n<tr><td>傅</td><td>路</td><td>扩</td><td>影</td><td>服</td><td>不</td><td>声</td><td>干</td><td>抗</td><td>磨</td><td>宝</td><td>事</td></tr>\n<tr><td>里</td><td>电</td><td>展</td><td>演</td><td>唐</td><td>得</td><td>史</td><td>地</td><td>锯</td><td>硬</td><td>莲</td><td>竟</td></tr>\n<tr><td>叶</td><td>视</td><td>名</td><td>员</td><td>诗</td><td>志</td><td>实</td><td>支</td><td>齿</td><td>泡</td><td>灯</td><td>成</td></tr>\n</table>\n\n其中纵5线索里的“本题需要提取的位置”答案是“主对角线”，沿着主对角线可以得到“ū éi āi è uì ǔ ì òng é ó ián éng”，与此押韵的是“苏维埃社会主义共和国联盟”，因此答案就是 `USSR`。\n\n</div>\n",
+  "additional_answers": [
+    {
+      "aaid": 30,
+      "answer": "苏维埃社会主义共和国联盟",
+      "message": "正确，请提交英文缩写。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

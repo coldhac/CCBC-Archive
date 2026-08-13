@@ -1,0 +1,124 @@
+{
+  "pid": 2,
+  "pgid": 1,
+  "type": 3,
+  "pg_name": "序章",
+  "title": "四方谜",
+  "content": "这不是去年的题吗？怎么又拿出来了。不对啊，那 FINAL META 不就变了吗……",
+  "image": "",
+  "html": "",
+  "script": "https://static.cipherpuzzles.com/static/images/752fe1029484441ab3ef13d7568d949a.vue",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":2,\"imgUrl\":\"9ffc0b873fc54633a813717e0b1dc6e2.webp\",\"color\":\"#000\",\"top\":\"150px\",\"left\":\"712px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "我欲因之梦吴越",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "本题是对一年前发表在密码菌公众号上的日谜系列《四方谜》的复用，需要了解原《四方谜》FINAL META解析的请看<a href=\"https://mp.weixin.qq.com/s/rRX01j874WQavBmf2njGgw\" target=\"_blank\">这里</a>。\n\n根据文本“FINAL META 不就变了吗”的提示，我们可以注意观察原四方谜的 <a href=\"https://mp.weixin.qq.com/s/kyhx-GGqJtEc7GAxjdXDow\" target=\"_blank\">FINAL META</a> 如果放在今年（2025年）会有什么变化。\n\n通过观察<a href=\"https://mp.weixin.qq.com/s/rRX01j874WQavBmf2njGgw\" target=\"_blank\">原来的四方谜 FINAL META 解析</a>，我们可以发现随着年份变化，7月份星期几分别对应的日期也变了。用原解析里的例子来说明：\n> <span style=\"color:#aaa\">十二生肖之首的鼠，是北宫×日曜交叉处的“虚日鼠”。日曜日是星期天，本月星期天对应的日期为 7日、14日、21日、28日，而其中参与到北方 META 的则是 21 日的题目</span>\n\n然而到了2025年，7月份星期天对应的日期变成了 6日、13日、20日、27日，其中参与到北方 META 的是 13 日的题目：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/978805b155cd42eda64faf4f8c9fdc79.webp\" style=\"width:600px\">\n\nFINAL META 解法没有变，仍然提取这题的黑色元素填入1格，也就是那两个重叠的正方形。\n\n重复该步骤，我们将所有十二生肖对应的图片元素填入格子后，可以得到下图：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/7abc9986f791495d8c6e914e3a19b627.webp\" style=\"width:600px\">\n\n最左侧四个方框状的符号 ⿵、⿷、⿴、⿻ 都是表意文字描述字符，用来描述如何组合后面两个部件。\n\n第一行：⿵ 流星 城堡，流星飞过城堡上空，是迪士尼的标识图案，填 `DISNEY`\n<br>第二行：⿷ 贝壳 白圆，贝壳夹住珍珠，填 `PEARL`\n<br>第三行：⿴ 六边形 三条短线，苯的结构式，填 `BENZENE`\n<br>第四行：⿻ S 两条竖线，重叠后组成 $ （注：取决于字体，$ 可以有一道或者两道竖线），填 `DOLLAR`\n\n填完之后读箭头所指的两竖列，得到需要提交的内容 `SEND NAZO`。\n\n之后进入第二阶段的互动题，提交了符合要求的日谜并通过审核后就可以得到最终答案 `我欲因之梦吴越`。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "查看密码菌去年的《四方谜》系列 Final Meta 的解法，用今年的七月日历重新解一遍。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我得到了一些方块状的东西，但我不懂是什么意思",
+      "content": "他们都是表意文字描述字符，用来描述如何组合后面两个部件。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我已经进行到了最后一步，但是看不出第一行拼出的东西是什么",
+      "content": "⿵ 流星 城堡，流星飞过城堡上空，是【迪士尼】的标识图案",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "我已经进行到了最后一步，但是看不出第二行拼出的东西是什么",
+      "content": "⿷ 贝壳 白圆，贝壳夹住【珍珠】",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "我已经进行到了最后一步，但是看不出第三行拼出的东西是什么",
+      "content": "⿴ 六边形 三条短线，【苯】的结构式",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "我已经进行到了最后一步，但是看不出第四行拼出的东西是什么",
+      "content": "⿻ S 两条竖线，重叠后组成 $ （注：取决于字体，$ 可以有一道或者两道竖线），也就是【美元】符号",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "本题是对一年前发表在密码菌公众号上的日谜系列《四方谜》的复用，需要了解原《四方谜》FINAL META解析的请看<a href=\"https://mp.weixin.qq.com/s/rRX01j874WQavBmf2njGgw\" target=\"_blank\">这里</a>。\n\n根据文本“FINAL META 不就变了吗”的提示，我们可以注意观察原四方谜的 <a href=\"https://mp.weixin.qq.com/s/kyhx-GGqJtEc7GAxjdXDow\" target=\"_blank\">FINAL META</a> 如果放在今年（2025年）会有什么变化。\n\n通过观察<a href=\"https://mp.weixin.qq.com/s/rRX01j874WQavBmf2njGgw\" target=\"_blank\">原来的四方谜 FINAL META 解析</a>，我们可以发现随着年份变化，7月份星期几分别对应的日期也变了。用原解析里的例子来说明：\n> <span style=\"color:#aaa\">十二生肖之首的鼠，是北宫×日曜交叉处的“虚日鼠”。日曜日是星期天，本月星期天对应的日期为 7日、14日、21日、28日，而其中参与到北方 META 的则是 21 日的题目</span>\n\n然而到了2025年，7月份星期天对应的日期变成了 6日、13日、20日、27日，其中参与到北方 META 的是 13 日的题目：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/978805b155cd42eda64faf4f8c9fdc79.webp\" style=\"width:600px\">\n\nFINAL META 解法没有变，仍然提取这题的黑色元素填入1格，也就是那两个重叠的正方形。\n\n重复该步骤，我们将所有十二生肖对应的图片元素填入格子后，可以得到下图：\n\n<img src=\"https://static.cipherpuzzles.com/static/images/7abc9986f791495d8c6e914e3a19b627.webp\" style=\"width:600px\">\n\n最左侧四个方框状的符号 ⿵、⿷、⿴、⿻ 都是表意文字描述字符，用来描述如何组合后面两个部件。\n\n第一行：⿵ 流星 城堡，流星飞过城堡上空，是迪士尼的标识图案，填 `DISNEY`\n<br>第二行：⿷ 贝壳 白圆，贝壳夹住珍珠，填 `PEARL`\n<br>第三行：⿴ 六边形 三条短线，苯的结构式，填 `BENZENE`\n<br>第四行：⿻ S 两条竖线，重叠后组成 $ （注：取决于字体，$ 可以有一道或者两道竖线），填 `DOLLAR`\n\n填完之后读箭头所指的两竖列，得到需要提交的内容 `SEND NAZO`。\n\n之后进入第二阶段的互动题，提交了符合要求的日谜并通过审核后就可以得到最终答案 `我欲因之梦吴越`。",
+  "additional_answers": [
+    {
+      "aaid": 20,
+      "answer": "SEND NAZO",
+      "message": "所以请给我们发送一张谜题吧！",
+      "extra": "set 1stStage 1",
+      "not_count": 1
+    },
+    {
+      "aaid": 21,
+      "answer": "重置",
+      "message": "已重置",
+      "extra": "clear",
+      "not_count": 1
+    },
+    {
+      "aaid": 31,
+      "answer": "NAZO",
+      "message": "请提交\"SEND NAZO\"",
+      "extra": "",
+      "not_count": 1
+    },
+    {
+      "aaid": 90,
+      "answer": "DISNEY",
+      "message": "这是第一行的正确答案",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 91,
+      "answer": "PEARL",
+      "message": "这是第二行的正确答案",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 92,
+      "answer": "BENZENE",
+      "message": "这是第三行的正确答案",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 93,
+      "answer": "DOLLAR",
+      "message": "这是第四行的正确答案",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

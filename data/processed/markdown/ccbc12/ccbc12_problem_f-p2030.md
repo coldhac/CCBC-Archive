@@ -1,0 +1,101 @@
+---
+record_id: "ccbc12:problem:f-p2030"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线F"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/f/p2030.yaml"
+---
+
+# #2030 虚拟现实 - CCBC 12
+
+## 题面
+
+你走在2030年的街头，随手拍下一些图片准备发朋友圈。
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/35a8d598adca4762860e51b8bafe8129.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/4b7d63895ccd4671bb3bfdd7e4bedfcc.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/9df792578efc4ddc83b0e9d4b945700e.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/c00519f676044eacbee8c472c316b88e.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/998637a1e2a64c6b84640cea8a6214f2.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/5adf8f6ec5bd4ac18370c42855777d91.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/b897107d1b8c4115ab83b60442962740.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/a0ee9caee4014293ab2f08258ce6d360.webp" width="800px"/>
+<br><br>
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/a24140523372470998f161c2a8cb9f94.webp" width="800px"/>
+
+## 答案
+
+`AGE INCREMENT`
+
+## 解析
+
+简易版“网络迷踪”。可以根据地上的方向箭头、拼合的照片等常见特征推测，所有街景图片均来自于百度实景地图，需要根据街景图片中的线索寻找到这些实景的位置：
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-1.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-2.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-3.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-4.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-5.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-6.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-7.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-8.png" style="width: 400px" />
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-9.png" style="width: 400px" />
+
+对比所有建筑上的原字母与图片中的字母，发现每组字母均有1-2个字母没有变动，提取这些字母后按图片顺序连起来可得答案：**AGE INCREMENT**。
+
+## 提示
+
+### 1. 我毫无头绪
+
+这是2030年的街景，和现在的街景基本相同。所有的街景都能在百度地图中找到。
+
+### 2. 能简化一下吗
+
+九张街景所在的城市分别为上海、广州、天津、深圳、厦门、重庆、杭州、长沙、北京。
+
+### 3. 该如何提取
+
+找找和现实版有什么不一样的？不一样的中又有什么是一样的？
+
+顺带一提，这道题的答案不止九个字母。
+
+
+## 本地附件
+
+- [f-2030-1.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-1.png)
+- [f-2030-2.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-2.png)
+- [f-2030-3.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-3.png)
+- [f-2030-4.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-4.png)
+- [f-2030-5.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-5.png)
+- [f-2030-6.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-6.png)
+- [f-2030-7.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-7.png)
+- [f-2030-8.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-8.png)
+- [f-2030-9.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/f-2030-9.png)
+- [35a8d598adca4762860e51b8bafe8129.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/35a8d598adca4762860e51b8bafe8129.webp)
+- [4b7d63895ccd4671bb3bfdd7e4bedfcc.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/4b7d63895ccd4671bb3bfdd7e4bedfcc.webp)
+- [5adf8f6ec5bd4ac18370c42855777d91.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/5adf8f6ec5bd4ac18370c42855777d91.webp)
+- [998637a1e2a64c6b84640cea8a6214f2.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/998637a1e2a64c6b84640cea8a6214f2.webp)
+- [9df792578efc4ddc83b0e9d4b945700e.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/9df792578efc4ddc83b0e9d4b945700e.webp)
+- [a0ee9caee4014293ab2f08258ce6d360.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/a0ee9caee4014293ab2f08258ce6d360.webp)
+- [a24140523372470998f161c2a8cb9f94.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/a24140523372470998f161c2a8cb9f94.webp)
+- [b897107d1b8c4115ab83b60442962740.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/b897107d1b8c4115ab83b60442962740.webp)
+- [c00519f676044eacbee8c472c316b88e.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/f/c00519f676044eacbee8c472c316b88e.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/f/p2030.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/f/p2030.yaml)

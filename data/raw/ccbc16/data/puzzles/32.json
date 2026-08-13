@@ -1,0 +1,146 @@
+{
+  "pid": 32,
+  "pgid": 3,
+  "type": 3,
+  "pg_name": "印刷",
+  "title": "只剩提取",
+  "content": "<div class=\"info-block custom-block show-on-mobile\">\n    <span class=\"custom-block-title\">📱提示</span>\n    <span>本题无移动端适配，推荐在桌面浏览器中查看。</span>\n</div>\n<style>\n.show-on-mobile {\n    display: none;\n}\n@media (max-width: 600px) {\n    .show-on-mobile {\n        display: block;\n    }\n}\n</style>",
+  "image": "",
+  "html": "",
+  "script": "https://static.cipherpuzzles.com/static/images/3f5d78afb08944a1ac773cee990798ca.vue",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":32,\"imgUrl\":\"3222d4d53ae64fdc9833cceb6a7639df.webp\",\"color\":\"#000\",\"top\":\"400px\",\"left\":\"990px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "COT",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n三列分别为三组题。\n\n<h1>第一组</h1>\n\n图片被墨水覆盖了几乎九成，上方应有的题面无法看见，只能通过下方得到答案。每个圆圈数字对应不同字母，且圆圈数字的变换会作用在对应的字母上。答案分别为自上而下分别为`CLASSICAL`，`SUBSTITUTE`，`EERIE`，`COCOON`，`ELF`，`RIDE`，`LAVA`，`KEEPER`，`YUMMY`，`NAVVY`，`OZONE`。<br>\n本组META按顺序从每组提取编号对应的字母，即可得到`ABECEDARIAN`。<br>\n<br>\n\n<h1>第二组</h1>\n\n与第一组相似，但本组提取出的均为密文，需解密得到答案。可以根据每题开头的A猜出此题使用加密。\n<table id=\"answerkey\">\n<tr><th>加密</th><th>答案</th></tr>\n<tr><td>电码</td><td>MAIN</td></tr>\n<tr><td>二进制</td><td>PENTA</td></tr>\n<tr><td>A1Z26</td><td>BADLUCK</td></tr>\n<tr><td>九键</td><td>SINCE</td></tr>\n<tr><td>跳舞小人</td><td>DOXXING</td></tr>\n<tr><td>旗语</td><td>PUFFIN</td></tr>\n<tr><td>猪圈</td><td>AUGUST</td></tr>\n<tr><td>盲文</td><td>WARM UP</td></tr>\n</table>\n\nMETA做法同第一组，可以得到`INDEX NUM`。\n<br>\n\n<h1>第三组</h1>\n\n本组没有墨水，看似是提取的红色圆圈数字其实就是题面，由此得到每题答案。\n<table id=\"answerkey\">\n<tr><th>解法</th><th>答案</th></tr>\n<tr><td>取两个数字英文的共有字母</td><td>FIRST</td></tr>\n<tr><td>取颜色英文的第N个字母</td><td>LED</td></tr>\n<tr><td>数字象形</td><td>HUE</td></tr>\n<tr><td>数字英文均为三个字母，对角线提取</td><td>TIE</td></tr>\n<tr><td>取形状英文的第N个字母</td><td>ART</td></tr>\n<tr><td>数字为自然底数E的小数形式</td><td>E</td></tr>\n<tr><td>数字外的圈象形</td><td>COLOUR</td></tr>\n</table>\n\nMETA做法同前两组，可以得到`FIRST LETTER`。\n\n<h1>③①②</h1>\n\n提交上述三个答案后会得到三个均写有③①②的题目。根据三个答案的提示，使用三种不同的做法，可以得到新的三个答案。最后一道③①②为META，也和前三组的META做法相同，可以得到最终答案是`COT`。\n<table id=\"answerkey\">\n<tr><th>每组答案</th><th>解法</th><th>答案</th></tr>\n<tr><td>ABECEDARIAN</td><td>按A1Z26转换</td><td>CAB</td></tr>\n<tr><td>INDEX NUM</td><td>取THREE第三位，ONE第一位，TWO第二位</td><td>ROW</td></tr>\n<tr><td>FIRST LETTER</td><td>取THREE，ONE，TWO的第一位字母</td><td>TOT</td></tr>\n</table>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "新出现的三个题不会做！",
+      "content": "每一列的规则都是独立的。前面得到的答案提示了对应题目的具体做法。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "第一列怎么做？",
+      "content": "每个圆圈数字对应不同字母，且圆圈数字的变换会作用在对应的字母上。举例来说，第一个答案是CLASSICAL",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "第二列怎么做？",
+      "content": "本组提取出的均为密文，需要用某种密码来解密。举例来说，第二列第一题是电码。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "第二列到底都是什么密码？",
+      "content": "自上而下分别是电码、二进制、A1Z26、九键、跳舞小人、旗语、猪圈、盲文",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "第三列第一题怎么做？",
+      "content": "取两个数字英文的共有字母",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "第三列第二题怎么做？",
+      "content": "取颜色英文的第N个字母",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "第三列第三题怎么做？",
+      "content": "数字象形",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "第三列第四题怎么做",
+      "content": "数字英文均为三个字母，对角线提取",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 9,
+      "title": "第三列第五题怎么做？",
+      "content": "取形状英文的第N个字母",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 10,
+      "title": "第三列第六题怎么做",
+      "content": "数字为自然底数e的小数形式",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 11,
+      "title": "第三列第七题怎么做？",
+      "content": "数字外的圈象形",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 12,
+      "title": "新出现的三个题的第一个怎么说也不会做！",
+      "content": "对③①②按A1Z26转换",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 13,
+      "title": "新出现的三个题的第二个怎么说也不会做！",
+      "content": "取THREE第三位，ONE第一位，TWO第二位",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 14,
+      "title": "新出现的三个题的第三个怎么说也不会做！",
+      "content": "取THREE，ONE，TWO的第一位字母",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 15,
+      "title": "又出了新一题，不会做！",
+      "content": "按照与先前三道小META相同的做法，从第一个答案提取③，从第二个答案提取①，从第三个答案提取②。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n三列分别为三组题。\n\n<h1>第一组</h1>\n\n图片被墨水覆盖了几乎九成，上方应有的题面无法看见，只能通过下方得到答案。每个圆圈数字对应不同字母，且圆圈数字的变换会作用在对应的字母上。答案分别为自上而下分别为`CLASSICAL`，`SUBSTITUTE`，`EERIE`，`COCOON`，`ELF`，`RIDE`，`LAVA`，`KEEPER`，`YUMMY`，`NAVVY`，`OZONE`。<br>\n本组META按顺序从每组提取编号对应的字母，即可得到`ABECEDARIAN`。<br>\n<br>\n\n<h1>第二组</h1>\n\n与第一组相似，但本组提取出的均为密文，需解密得到答案。可以根据每题开头的A猜出此题使用加密。\n<table id=\"answerkey\">\n<tr><th>加密</th><th>答案</th></tr>\n<tr><td>电码</td><td>MAIN</td></tr>\n<tr><td>二进制</td><td>PENTA</td></tr>\n<tr><td>A1Z26</td><td>BADLUCK</td></tr>\n<tr><td>九键</td><td>SINCE</td></tr>\n<tr><td>跳舞小人</td><td>DOXXING</td></tr>\n<tr><td>旗语</td><td>PUFFIN</td></tr>\n<tr><td>猪圈</td><td>AUGUST</td></tr>\n<tr><td>盲文</td><td>WARM UP</td></tr>\n</table>\n\nMETA做法同第一组，可以得到`INDEX NUM`。\n<br>\n\n<h1>第三组</h1>\n\n本组没有墨水，看似是提取的红色圆圈数字其实就是题面，由此得到每题答案。\n<table id=\"answerkey\">\n<tr><th>解法</th><th>答案</th></tr>\n<tr><td>取两个数字英文的共有字母</td><td>FIRST</td></tr>\n<tr><td>取颜色英文的第N个字母</td><td>LED</td></tr>\n<tr><td>数字象形</td><td>HUE</td></tr>\n<tr><td>数字英文均为三个字母，对角线提取</td><td>TIE</td></tr>\n<tr><td>取形状英文的第N个字母</td><td>ART</td></tr>\n<tr><td>数字为自然底数E的小数形式</td><td>E</td></tr>\n<tr><td>数字外的圈象形</td><td>COLOUR</td></tr>\n</table>\n\nMETA做法同前两组，可以得到`FIRST LETTER`。\n\n<h1>③①②</h1>\n\n提交上述三个答案后会得到三个均写有③①②的题目。根据三个答案的提示，使用三种不同的做法，可以得到新的三个答案。最后一道③①②为META，也和前三组的META做法相同，可以得到最终答案是`COT`。\n<table id=\"answerkey\">\n<tr><th>每组答案</th><th>解法</th><th>答案</th></tr>\n<tr><td>ABECEDARIAN</td><td>按A1Z26转换</td><td>CAB</td></tr>\n<tr><td>INDEX NUM</td><td>取THREE第三位，ONE第一位，TWO第二位</td><td>ROW</td></tr>\n<tr><td>FIRST LETTER</td><td>取THREE，ONE，TWO的第一位字母</td><td>TOT</td></tr>\n</table>",
+  "additional_answers": []
+}

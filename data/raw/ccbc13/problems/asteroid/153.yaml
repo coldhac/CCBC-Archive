@@ -1,0 +1,34 @@
+answer: HOLY TRINITY
+content:
+- |
+  <div class="ccbcstylewrapper">
+    <table>
+      <tr><td style="width: 200px">Hermione</td><td>Ron</td></tr>
+      <tr><td>Acute</td><td>Right</td></tr>
+      <tr><td>Solid</td><td>Gas</td></tr>
+      <tr><td>Day</td><td>Month</td></tr>
+      <tr><td style="height:30px"></td><td></td></tr>
+      <tr><td>Today</td><td>Yesterday</td></tr>
+      <tr><td>Paper</td><td>Scissors</td></tr>
+      <tr><td>Ego</td><td>Superego</td></tr>
+      <tr><td>Scroll</td><td>Caps</td></tr>
+      <tr><td>Bold</td><td>Underline</td></tr>
+      <tr><td>Tac</td><td>Toe</td></tr>
+      <tr><td>Cyan</td><td>Magenta</td></tr>
+    </table>
+  </div>
+content-type: 1
+desc: Lyn
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 每一行都是某个三元组中的两个，所以要找出第三个
+  title: 我毫无思路
+title: ⭐
+type: problem

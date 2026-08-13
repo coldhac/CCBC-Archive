@@ -1,0 +1,74 @@
+{
+  "pid": 40,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "原来你也是厨神",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":40,\"imgUrl\":\"5281729386934dd2b80004f67c003b30.svg\",\"color\":\"#000\",\"top\":\"135px\",\"left\":\"922px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "CULINARY",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "<style>\n#cook_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#cook_solution table {\nborder-spacing: 0;\nmargin: 30px 0;\n}\n#cook_solution .cook_theader td, #cook_solution .cook_theader2 td {\nfont-weight: bold;\n}\n#cook_solution .cook_theader td:nth-child(1) {\nwidth: 600px;\n}\n#cook_solution tr:nth-child(odd) {\nbackground-color: #ddd;\n}\n#cook_solution td {\nvertical-align: top;\npadding: 5px 10px;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"cook_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/3286c03bd53a4dcb8107fe44b5993c2c.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/887f9fad57a44eb7b0b1821c02f599a6.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/94d138b995984f44b4c23c7338619832.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c53be3b2dda7434fab8f12d20e1ecc3c.webp\">\n\n通过标题“原……神”我们可以想到这些都是原神食谱。题目里描述了真实世界的烹饪步骤，有些比较简单可以直接看出是什么并且将其原料对应到字母，有些可能需要知道原料后再搜索食谱。虽然原神食谱很多，但是在看出几个食谱后就能注意到，这些都是能通过某一角色获得特殊版本的普通料理，以此可以大大缩小搜索范围。\n\n食物与字母的对应如下：\n\n<table>\n<tr><td>A</td><td>糖</td></tr>\n<tr><td>B</td><td>莲蓬</td></tr>\n<tr><td>C</td><td>蘑菇</td></tr>\n<tr><td>D</td><td>胡萝卜</td></tr>\n<tr><td>E</td><td>黄油</td></tr>\n<tr><td>F</td><td>盐</td></tr>\n<tr><td>G</td><td>茉洁草</td></tr>\n<tr><td>H</td><td>杏仁</td></tr>\n<tr><td>I</td><td>海草</td></tr>\n<tr><td>J</td><td>奶酪</td></tr>\n<tr><td>K</td><td>番茄</td></tr>\n<tr><td>L</td><td>豆腐</td></tr>\n<tr><td>M</td><td>面粉</td></tr>\n<tr><td>N</td><td>薄荷</td></tr>\n<tr><td>O</td><td>土豆</td></tr>\n<tr><td>P</td><td>兽肉</td></tr>\n<tr><td>Q</td><td>颗粒果</td></tr>\n<tr><td>R</td><td>鱼肉</td></tr>\n<tr><td>S</td><td>咖啡豆</td></tr>\n<tr><td>T</td><td>鸟蛋</td></tr>\n<tr><td>U</td><td>禽肉</td></tr>\n<tr><td>V</td><td>稻米</td></tr>\n<tr><td>W</td><td>竹笋</td></tr>\n<tr><td>X</td><td>洋葱</td></tr>\n<tr><td>Y</td><td>胡椒</td></tr>\n<tr><td>Z</td><td>树莓</td></tr>\n</table>\n\n四个碎片的菜谱依次为：\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>将稻米煮熟，小火翻炒后盛出。将鸟蛋打散，倒入热锅摊平后盖在炒好的稻米上。将番茄煮熟后打碎加入少许糖搅匀成酱汁，挤在最上面。</td><td>蛋包饭</td><td>久岐忍</td><td>Kuki Shinobu</td><td>1</td><td>K</td></tr>\n<tr><td>将兽肉和洋葱一起剁碎混合，放在盘子里用模具塑形后，在上面放上鸟蛋的中心部分，加茉洁草点缀调味。</td><td>生肉塔塔</td><td>阿蕾奇诺</td><td>Arlecchino</td><td>1</td><td>A</td></tr>\n<tr><td>将面粉和少量泡打粉在一起搅匀。将鸟蛋和糖一起打发，拌入面粉，再加入融化的黄油后倒入有纹样装饰的模具，放入烤箱里烤好。</td><td>晶螺糕</td><td>琳妮特</td><td>Lynette</td><td>4</td><td>E</td></tr>\n<tr><td>首先煮好鱼肉并切碎。煮熟稻米后先取一半，在上面挖一个坑后放入鱼肉，再用另一半盖上。塑形后用干海草包裹四周。</td><td>饭团</td><td>早柚</td><td>Sayu</td><td>3</td><td>Y</td></tr>\n<tr><td>将颗粒果的果实研磨成粉末，加水后搅匀，摊成圆饼状后在锅里煮熟后切成三角状，再将这些小三角炸脆。将禽肉炒熟后撕碎，和奶酪一起铺在炸好的小三角上，再放入烤箱烤至奶酪融化。</td><td>粒果片片</td><td>卡齐娜</td><td>Kachina</td><td>2</td><td>A</td></tr>\n</table>\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>将胡椒研磨成粉末，均匀涂抹在兽肉两面，再将兽肉放在锅里煎出酥脆外层，放入烤箱烤熟。装盘后佐以茉洁草点缀。</td><td>香烤肋排</td><td>莱欧斯利</td><td>Wriothesley</td><td>5</td><td>T</td></tr>\n<tr><td>将鱼肉和土豆煮熟后碾成泥状再按成圆形。洋葱横切成环形，禽肉剁碎也捏成环形。最后将一切放在油锅里炸至金黄。</td><td>圈圈圆圆</td><td>夏沃蕾</td><td>Chevreuse</td><td>2</td><td>H</td></tr>\n<tr><td>鸟蛋打散，加面粉和水和少量泡打粉搅匀，煎至成型后翻面再煎一两分钟后盛出，在上面放一个树莓作为点缀。</td><td>庄园烤松饼</td><td>诺艾尔</td><td>Noelle</td><td>2</td><td>O</td></tr>\n<tr><td>取一长方形锅，锅底刷油加热。将鸟蛋打散后倒一部分进锅铺成浅浅一层，稍微成型后将它卷到一边，再倒一层鸟蛋。如此反复直至用完所有的鸟蛋。将煎好的鸟蛋卷取出切成长方形，放在煮好的稻米上。</td><td>鸟蛋寿司</td><td>珊瑚宫心海</td><td>Sangonomiya Kokomi</td><td>8</td><td>M</td></tr>\n<tr><td>将鸟蛋分为中心和外围两个部分。将杏仁研磨成粉，跟面粉和鸟蛋中心一起搅匀。将鸟蛋外围打发，拌入之前的糊糊，再一起放入烤箱烤好取出切成三份为①。再取一些鸟蛋打散，将咖啡豆研磨成粉后溶于水里，煮开后跟打好的鸟蛋混合成膏状为②。把②涂抹在①上后三份①叠在一起。</td><td>致水神</td><td>芙宁娜</td><td>Furina</td><td>6</td><td>A</td></tr>\n</table>\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>兽肉和竹笋剁碎后加入鸟蛋和盐，一起搅拌均匀后分成球状。油锅加热后将圆球炸成金黄色后，再加水和酱油等佐料烧至入味。</td><td>红烧肉圆</td><td>闲云</td><td>Xianyun</td><td>3</td><td>A</td></tr>\n<tr><td>将兽肉剁碎后炒熟。将面粉，黄油，少量泡打粉和水一起混合成团，分成两部分各自擀平后将炒好的兽肉裹在两层之中，将鸟蛋打散后在上面涂上一层，最后送入烤箱烤至金黄。</td><td>月亮派</td><td>优菈</td><td>Eula</td><td>3</td><td>L</td></tr>\n<tr><td>面粉和水混合后擀成薄薄的一片，用刀切成细条后下水煮好备用。油锅烧热后加入切好的兽肉，炒至变色后加入酱油等佐料，再加蘑菇一起翻炒，最后连汁一起浇在之前煮好的面粉细条上。</td><td>山珍热卤面</td><td>重云</td><td>Chongyun</td><td>3</td><td>O</td></tr>\n<tr><td>将稻米煮熟。拿一个干净的碗，碗底铺上莲蓬去了芯的种子，切碎的胡萝卜，以及树莓，再将煮好的稻米填入碗里。上锅蒸好后倒扣在盘子上。</td><td>四方和平</td><td>甘雨</td><td>Ganyu</td><td>4</td><td>Y</td></tr>\n</table>\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>鱼肉上划上数刀，均匀涂抹一层盐后放置一段时间，然后在炭炉上烤至两面焦黄即可。</td><td>干烧香鱼</td><td>枫原万叶</td><td>Kaedehara Kazuha</td><td>4</td><td>D</td></tr>\n<tr><td>稻米加水浸泡后打成浆状，倒入平底容器里形成薄薄一层，放入蒸锅蒸一两分钟取出，放凉后切成长条状放在碗里，再在上面整齐地码上煮好的兽肉、鱼肉、豆腐。</td><td>来来菜</td><td>七七</td><td>Qiqi</td><td>2</td><td>I</td></tr>\n<tr><td>面粉加水混合后揉拉成细条状切好备用。将鸟蛋煮六分钟备用。将兽肉放入锅里加水煮几个小时至汤变成乳白色。加入面粉细条以及腌制好的竹笋煮熟后，再将之前煮好的鸟蛋切开放在上面。</td><td>兽骨拉面</td><td>五郎</td><td>Gorou</td><td>4</td><td>O</td></tr>\n<tr><td>莲蓬的种子去芯后浸泡，然后煮至变软。鸟蛋和糖一起搅拌后倒入碗里，上锅蒸好后加上莲蓬种子点缀。</td><td>莲子禽蛋羹</td><td>云堇</td><td>Yun Jin</td><td>3</td><td>N</td></tr>\n<tr><td>将颗粒果的果实部分剥下煮熟，跟切好的番茄、洋葱、薄荷一起搅拌均匀。</td><td>多彩之森</td><td>伊安珊</td><td>Iansan</td><td>2</td><td>A</td></tr>\n</table>\n\n每个碎片里以星号个数在特殊料理角色的英文名里提取字母可以得到 Kaeya（凯亚），Thoma（托马）， Aloy（埃洛伊），和 Diona（迪奥娜），他们各自的特殊料理和需要的食材是：\n<table>\n<tr class=\"cook_theader2\"><td>人物</td><td>普通料理</td><td>特殊料理</td><td>需要的食材</td></tr>\n<tr><td>Kaeya</td><td>野菇鸡肉串</td><td>果香串烤</td><td>蘑菇（C）、禽肉（U）</td></tr>\n<tr><td>Thoma</td><td>味噌汤</td><td>「暖意」</td><td>豆腐（L）、海草（I）</td></tr>\n<tr><td>Aloy</td><td>薄荷果冻</td><td>饱腹感凝胶</td><td>薄荷（N）、糖（A）</td></tr>\n<tr><td>Diona</td><td>蒙德烤鱼</td><td>绝对不是下酒菜</td><td>鱼肉（R）、胡椒（Y）</td></tr>\n</table>\n\n将每个人需要的食材换回之前对应的字母，连起来得到本题答案`CULINARY`。\n</div>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": " 这道题需要哪些碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/94d138b995984f44b4c23c7338619832.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c53be3b2dda7434fab8f12d20e1ecc3c.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/887f9fad57a44eb7b0b1821c02f599a6.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/3286c03bd53a4dcb8107fe44b5993c2c.webp\">\n</div>\n",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我毫无头绪",
+      "content": "这些都是原神食谱现实版本的制作方式。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我找到了正确的资料，但是数据库太大了，能稍微缩小搜索范围吗？",
+      "content": "这些都是有特殊版本的普通版本。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "该如何提取",
+      "content": "每个碎片的内容对应一个人物，查看该人物需要的食材。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "我不会做饭！能帮我认一些食材吗？",
+      "content": "D\t胡萝卜，J\t奶酪，X\t洋葱，Y\t胡椒",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "星星有什么用？",
+      "content": "每个菜谱找到正确的角色后，用星号的个数在英文名字里提取字母。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#cook_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#cook_solution table {\nborder-spacing: 0;\nmargin: 30px 0;\n}\n#cook_solution .cook_theader td, #cook_solution .cook_theader2 td {\nfont-weight: bold;\n}\n#cook_solution .cook_theader td:nth-child(1) {\nwidth: 600px;\n}\n#cook_solution tr:nth-child(odd) {\nbackground-color: #ddd;\n}\n#cook_solution td {\nvertical-align: top;\npadding: 5px 10px;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"cook_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/3286c03bd53a4dcb8107fe44b5993c2c.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/887f9fad57a44eb7b0b1821c02f599a6.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/94d138b995984f44b4c23c7338619832.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c53be3b2dda7434fab8f12d20e1ecc3c.webp\">\n\n通过标题“原……神”我们可以想到这些都是原神食谱。题目里描述了真实世界的烹饪步骤，有些比较简单可以直接看出是什么并且将其原料对应到字母，有些可能需要知道原料后再搜索食谱。虽然原神食谱很多，但是在看出几个食谱后就能注意到，这些都是能通过某一角色获得特殊版本的普通料理，以此可以大大缩小搜索范围。\n\n食物与字母的对应如下：\n\n<table>\n<tr><td>A</td><td>糖</td></tr>\n<tr><td>B</td><td>莲蓬</td></tr>\n<tr><td>C</td><td>蘑菇</td></tr>\n<tr><td>D</td><td>胡萝卜</td></tr>\n<tr><td>E</td><td>黄油</td></tr>\n<tr><td>F</td><td>盐</td></tr>\n<tr><td>G</td><td>茉洁草</td></tr>\n<tr><td>H</td><td>杏仁</td></tr>\n<tr><td>I</td><td>海草</td></tr>\n<tr><td>J</td><td>奶酪</td></tr>\n<tr><td>K</td><td>番茄</td></tr>\n<tr><td>L</td><td>豆腐</td></tr>\n<tr><td>M</td><td>面粉</td></tr>\n<tr><td>N</td><td>薄荷</td></tr>\n<tr><td>O</td><td>土豆</td></tr>\n<tr><td>P</td><td>兽肉</td></tr>\n<tr><td>Q</td><td>颗粒果</td></tr>\n<tr><td>R</td><td>鱼肉</td></tr>\n<tr><td>S</td><td>咖啡豆</td></tr>\n<tr><td>T</td><td>鸟蛋</td></tr>\n<tr><td>U</td><td>禽肉</td></tr>\n<tr><td>V</td><td>稻米</td></tr>\n<tr><td>W</td><td>竹笋</td></tr>\n<tr><td>X</td><td>洋葱</td></tr>\n<tr><td>Y</td><td>胡椒</td></tr>\n<tr><td>Z</td><td>树莓</td></tr>\n</table>\n\n四个碎片的菜谱依次为：\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>将稻米煮熟，小火翻炒后盛出。将鸟蛋打散，倒入热锅摊平后盖在炒好的稻米上。将番茄煮熟后打碎加入少许糖搅匀成酱汁，挤在最上面。</td><td>蛋包饭</td><td>久岐忍</td><td>Kuki Shinobu</td><td>1</td><td>K</td></tr>\n<tr><td>将兽肉和洋葱一起剁碎混合，放在盘子里用模具塑形后，在上面放上鸟蛋的中心部分，加茉洁草点缀调味。</td><td>生肉塔塔</td><td>阿蕾奇诺</td><td>Arlecchino</td><td>1</td><td>A</td></tr>\n<tr><td>将面粉和少量泡打粉在一起搅匀。将鸟蛋和糖一起打发，拌入面粉，再加入融化的黄油后倒入有纹样装饰的模具，放入烤箱里烤好。</td><td>晶螺糕</td><td>琳妮特</td><td>Lynette</td><td>4</td><td>E</td></tr>\n<tr><td>首先煮好鱼肉并切碎。煮熟稻米后先取一半，在上面挖一个坑后放入鱼肉，再用另一半盖上。塑形后用干海草包裹四周。</td><td>饭团</td><td>早柚</td><td>Sayu</td><td>3</td><td>Y</td></tr>\n<tr><td>将颗粒果的果实研磨成粉末，加水后搅匀，摊成圆饼状后在锅里煮熟后切成三角状，再将这些小三角炸脆。将禽肉炒熟后撕碎，和奶酪一起铺在炸好的小三角上，再放入烤箱烤至奶酪融化。</td><td>粒果片片</td><td>卡齐娜</td><td>Kachina</td><td>2</td><td>A</td></tr>\n</table>\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>将胡椒研磨成粉末，均匀涂抹在兽肉两面，再将兽肉放在锅里煎出酥脆外层，放入烤箱烤熟。装盘后佐以茉洁草点缀。</td><td>香烤肋排</td><td>莱欧斯利</td><td>Wriothesley</td><td>5</td><td>T</td></tr>\n<tr><td>将鱼肉和土豆煮熟后碾成泥状再按成圆形。洋葱横切成环形，禽肉剁碎也捏成环形。最后将一切放在油锅里炸至金黄。</td><td>圈圈圆圆</td><td>夏沃蕾</td><td>Chevreuse</td><td>2</td><td>H</td></tr>\n<tr><td>鸟蛋打散，加面粉和水和少量泡打粉搅匀，煎至成型后翻面再煎一两分钟后盛出，在上面放一个树莓作为点缀。</td><td>庄园烤松饼</td><td>诺艾尔</td><td>Noelle</td><td>2</td><td>O</td></tr>\n<tr><td>取一长方形锅，锅底刷油加热。将鸟蛋打散后倒一部分进锅铺成浅浅一层，稍微成型后将它卷到一边，再倒一层鸟蛋。如此反复直至用完所有的鸟蛋。将煎好的鸟蛋卷取出切成长方形，放在煮好的稻米上。</td><td>鸟蛋寿司</td><td>珊瑚宫心海</td><td>Sangonomiya Kokomi</td><td>8</td><td>M</td></tr>\n<tr><td>将鸟蛋分为中心和外围两个部分。将杏仁研磨成粉，跟面粉和鸟蛋中心一起搅匀。将鸟蛋外围打发，拌入之前的糊糊，再一起放入烤箱烤好取出切成三份为①。再取一些鸟蛋打散，将咖啡豆研磨成粉后溶于水里，煮开后跟打好的鸟蛋混合成膏状为②。把②涂抹在①上后三份①叠在一起。</td><td>致水神</td><td>芙宁娜</td><td>Furina</td><td>6</td><td>A</td></tr>\n</table>\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>兽肉和竹笋剁碎后加入鸟蛋和盐，一起搅拌均匀后分成球状。油锅加热后将圆球炸成金黄色后，再加水和酱油等佐料烧至入味。</td><td>红烧肉圆</td><td>闲云</td><td>Xianyun</td><td>3</td><td>A</td></tr>\n<tr><td>将兽肉剁碎后炒熟。将面粉，黄油，少量泡打粉和水一起混合成团，分成两部分各自擀平后将炒好的兽肉裹在两层之中，将鸟蛋打散后在上面涂上一层，最后送入烤箱烤至金黄。</td><td>月亮派</td><td>优菈</td><td>Eula</td><td>3</td><td>L</td></tr>\n<tr><td>面粉和水混合后擀成薄薄的一片，用刀切成细条后下水煮好备用。油锅烧热后加入切好的兽肉，炒至变色后加入酱油等佐料，再加蘑菇一起翻炒，最后连汁一起浇在之前煮好的面粉细条上。</td><td>山珍热卤面</td><td>重云</td><td>Chongyun</td><td>3</td><td>O</td></tr>\n<tr><td>将稻米煮熟。拿一个干净的碗，碗底铺上莲蓬去了芯的种子，切碎的胡萝卜，以及树莓，再将煮好的稻米填入碗里。上锅蒸好后倒扣在盘子上。</td><td>四方和平</td><td>甘雨</td><td>Ganyu</td><td>4</td><td>Y</td></tr>\n</table>\n<table>\n<tr class=\"cook_theader\"><td>菜谱</td><td>菜名</td><td>特殊料理角色</td><td>英文名</td><td>星数</td><td>提取字母</td></tr>\n<tr><td>鱼肉上划上数刀，均匀涂抹一层盐后放置一段时间，然后在炭炉上烤至两面焦黄即可。</td><td>干烧香鱼</td><td>枫原万叶</td><td>Kaedehara Kazuha</td><td>4</td><td>D</td></tr>\n<tr><td>稻米加水浸泡后打成浆状，倒入平底容器里形成薄薄一层，放入蒸锅蒸一两分钟取出，放凉后切成长条状放在碗里，再在上面整齐地码上煮好的兽肉、鱼肉、豆腐。</td><td>来来菜</td><td>七七</td><td>Qiqi</td><td>2</td><td>I</td></tr>\n<tr><td>面粉加水混合后揉拉成细条状切好备用。将鸟蛋煮六分钟备用。将兽肉放入锅里加水煮几个小时至汤变成乳白色。加入面粉细条以及腌制好的竹笋煮熟后，再将之前煮好的鸟蛋切开放在上面。</td><td>兽骨拉面</td><td>五郎</td><td>Gorou</td><td>4</td><td>O</td></tr>\n<tr><td>莲蓬的种子去芯后浸泡，然后煮至变软。鸟蛋和糖一起搅拌后倒入碗里，上锅蒸好后加上莲蓬种子点缀。</td><td>莲子禽蛋羹</td><td>云堇</td><td>Yun Jin</td><td>3</td><td>N</td></tr>\n<tr><td>将颗粒果的果实部分剥下煮熟，跟切好的番茄、洋葱、薄荷一起搅拌均匀。</td><td>多彩之森</td><td>伊安珊</td><td>Iansan</td><td>2</td><td>A</td></tr>\n</table>\n\n每个碎片里以星号个数在特殊料理角色的英文名里提取字母可以得到 Kaeya（凯亚），Thoma（托马）， Aloy（埃洛伊），和 Diona（迪奥娜），他们各自的特殊料理和需要的食材是：\n<table>\n<tr class=\"cook_theader2\"><td>人物</td><td>普通料理</td><td>特殊料理</td><td>需要的食材</td></tr>\n<tr><td>Kaeya</td><td>野菇鸡肉串</td><td>果香串烤</td><td>蘑菇（C）、禽肉（U）</td></tr>\n<tr><td>Thoma</td><td>味噌汤</td><td>「暖意」</td><td>豆腐（L）、海草（I）</td></tr>\n<tr><td>Aloy</td><td>薄荷果冻</td><td>饱腹感凝胶</td><td>薄荷（N）、糖（A）</td></tr>\n<tr><td>Diona</td><td>蒙德烤鱼</td><td>绝对不是下酒菜</td><td>鱼肉（R）、胡椒（Y）</td></tr>\n</table>\n\n将每个人需要的食材换回之前对应的字母，连起来得到本题答案`CULINARY`。\n</div>\n",
+  "additional_answers": []
+}

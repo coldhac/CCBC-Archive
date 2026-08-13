@@ -1,0 +1,50 @@
+{
+  "pid": 28,
+  "pgid": 3,
+  "type": 1,
+  "pg_name": "印刷",
+  "title": "五彩斑斓的无字天书",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">修改于 2025/08/09 16:07:31</span>\n<span>删去了第14行第M列和第15行第M列之间的横线</span>\n</div>\n",
+  "image": "",
+  "html": "<a href=\"https://static.cipherpuzzles.com/static/images/6a3dd69fdec64cb0848f86188fc12eb0.pdf\" target=\"_blank\">下载 PDF 文档</a><br>\r\n<a href=\"https://docs.qq.com/sheet/DVVFhT291aFJXY0JP?tab=000001\" target=\"_blank\">腾讯文档链接</a><br>\r\n<a href=\"https://docs.google.com/spreadsheets/d/1F8t2vnFuNqBL-T-SDRgHVmDAUYkkAZ-CNqpS28RelDs/edit?usp=sharing\" target=\"_blank\">Google Sheets 链接</a><br>\r\n题目内容请以PDF版为准。",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":28,\"imgUrl\":\"4023948e36d84cada06c454dc64e2a90.webp\",\"color\":\"#000\",\"top\":\"602px\",\"left\":\"1460px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "METIS",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus、落葉子",
+  "analysis": "切入点是右侧中间的“不分青红皂白”。每行填入俗语，对应颜色的字已给出颜色，但是由于被灰度打印，因此无法判断颜色，需要一边推进一边推断。相邻的字符之间有分割线当且仅当这两个字符不同。\n\n填完后按顺序读①到⑧得到“九号小行星五字母”，得到最终答案 `METIS`。填完后的情况如下图所示：\n\n<a href=\"https://static.cipherpuzzles.com/static/images/2d809f8cd2b542efabc42d8d58875ef0.webp\" target=\"_blank\"><img src=\"https://static.cipherpuzzles.com/static/images/2d809f8cd2b542efabc42d8d58875ef0.webp\" style=\"width:1600px\"></a>\n\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "题目本应是五彩斑斓的，但是却被黑白打印而灰度化了。\n格中填入汉字。一个可能的切入点是右侧中间的连续四个带颜色的格子。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我应该填什么？",
+      "content": "填俗语。右侧中间是“不分青红皂白”。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我填了一些了，但盘面太大还是很难，能不能再给我一个切入口",
+      "content": "《》里的两个字是“论语”",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "切入点是右侧中间的“不分青红皂白”。每行填入俗语，对应颜色的字已给出颜色，但是由于被灰度打印，因此无法判断颜色，需要一边推进一边推断。相邻的字符之间有分割线当且仅当这两个字符不同。\n\n填完后按顺序读①到⑧得到“九号小行星五字母”，得到最终答案 `METIS`。填完后的情况如下图所示：\n\n<a href=\"https://static.cipherpuzzles.com/static/images/2d809f8cd2b542efabc42d8d58875ef0.webp\" target=\"_blank\"><img src=\"https://static.cipherpuzzles.com/static/images/2d809f8cd2b542efabc42d8d58875ef0.webp\" style=\"width:1600px\"></a>\n\n",
+  "additional_answers": []
+}

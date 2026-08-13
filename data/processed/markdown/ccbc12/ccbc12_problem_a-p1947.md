@@ -1,0 +1,107 @@
+---
+record_id: "ccbc12:problem:a-p1947"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线A"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/a/p1947.yaml"
+---
+
+# #1947 书法 - CCBC 12
+
+## 题面
+
+这不知是哪位书法大家的作品，但内容却似乎只是些幼儿启蒙读物。
+<style>
+.pz-img-wrapper {
+    width: 400px;
+    height: 803px;
+    position: relative;
+}
+.pz-img-wrapper > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pz-inner-text {
+    position: absolute;
+    writing-mode: vertical-rl;
+    font-size: 30px;
+    top: 107px;
+    right: 71px;
+    letter-spacing: 13px;
+    line-height: 16px;
+    color: transparent;
+}
+.pz-inner-text *::selection {
+    background: rgba(30, 30, 57, 0.3);
+}
+.pz-sp {
+    margin-top: 39px;
+}
+</style>
+<div class="pz-img-wrapper">
+    <img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/a/45fecf20a8ce4174892776c849eef5d5.webp" width="100%"/>
+    <div class="pz-inner-text">
+        <p><span>南北混</span><span class="pz-sp">美人挾趙瑟</span><span class="pz-sp">黄天玄地</span></p>
+        <p><span>能溫席</span><span class="pz-sp">亦蘊韓娥音</span><span class="pz-sp">洪宇荒宙</span></p>
+        <p><span>我教子</span><span class="pz-sp">統衛吏兵軍</span><span class="pz-sp">昃日盈月</span></p>
+        <p><span>絲與竹</span><span class="pz-sp">漢主追韓信</span><span class="pz-sp">張宿辰列</span></p>
+        <p><span>孟子者</span><span class="pz-sp">試涉霸王略</span><span class="pz-sp">往寒暑來</span></p>
+    </div>
+</div>
+
+## 答案
+
+`RATIONAL THOUGHT`
+
+## 解析
+
+每段文字右上角的篆体印章为“三”、“百”、“千”，结合内容可知这些文字分别对应古典启蒙读物“三百千”中的“三字经”、“百家姓”和“千字文”。
+
+三字经部分：每句经文对应的另外半句均含有一个数字，转字母得：R I A H G（从右至左）
+
+```
+孟子者      丝与竹      我教子      能温席      南北混
+七篇止      乃八音      唯一经      香九龄      十八传
+G           H           A           I           R
+```
+
+百家姓部分：每句诗句中仅含有唯一的百家姓姓氏，根据在百家姓中的顺序转字母得：A O L O H（从右至左）
+
+```
+试涉霸王略  汉主追韩信  统卫吏兵军  亦蕴韩娥音  美人挟赵瑟
+H           O           L           O           A
+```
+
+千字文部分：原文的四字顺序为1234记为A，调乱后1243记为B，1324记为C，1342记为D，1423记为E...如第一句原文为”天地玄黄“=1234，题中”黄天玄地“=4132记为T，以此类推得：T N T U T（从右至左）
+
+```
+往寒暑来    张宿辰列    昃日盈月    洪宇荒宙    黄天玄地
+4132        4213        4132        3142      4132
+T           U           T           N         T
+```
+
+最后将三部分连起来，从上到下、从右至左读取答案：**RATIONAL THOUGHT**
+
+## 提示
+
+### 1. 我毫无头绪
+
+每段文字右上角的篆体印章“三”、“百”、“千”，都是该段所对应的原文标题的第一个字，也可以把这三个篆体印章中的文字连起来，得到这三段文字的统称。这三段文字分别是独立的小谜题，分别可以得到五个字母。
+
+### 2. 这些文字怎么处理
+
+有些文字需要【去上下文中寻找数字】；有些文字需要【提取某个关键字的序号】；有些文字需要【对应原顺序（将原顺序视为1234），再把所有文字组合的顺序从小到大排序，并确定题中文字排列方式的序号】，然后把得到的所有数字/序号按字母表顺序转换成字母。
+
+### 3. 该如何提取
+
+按照古文书写习惯，从上到下，从右至左排序所有字母。
+
+
+## 本地附件
+
+- [45fecf20a8ce4174892776c849eef5d5.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/a/45fecf20a8ce4174892776c849eef5d5.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/a/p1947.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/a/p1947.yaml)

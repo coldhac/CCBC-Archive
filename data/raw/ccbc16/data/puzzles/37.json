@@ -1,0 +1,66 @@
+{
+  "pid": 37,
+  "pgid": 4,
+  "type": 1,
+  "pg_name": "火药",
+  "title": "柏拉图式相爱",
+  "content": "遥远的星球的另一端，你我之间相差几何？",
+  "image": "",
+  "html": "{12} -> {6} -> (6)\r\n<br><br>\r\n<div class=\"info-block custom-block\">\r\n  <span class=\"custom-block-title\">注:</span>\r\n  <span>k为整数，p为质数，n为该条件所指之数</span>\r\n</div>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":37,\"imgUrl\":\"d470eb12ba994fb6b5f08215aee98e94.svg\",\"color\":\"#000\",\"top\":\"224px\",\"left\":\"686px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "COMICS",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "ES8730",
+  "analysis": "<style>\n#dodec_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#dodec_solution  td {\nwidth: 100px;\n}\n#dodec_solution  th {\ntext-align: left;\n}\n</style>\n本题由以下几个碎片组成：\n<div id=\"dodec_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c7de5d26b231470bb7a5d1bf67be47d1.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/93ea16de1497448f8a09346906737221.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/92d60a9e6e3f4c6ca1b378d490c10770.webp\">\n\n本题标题“柏拉图式相爱”在提示这一题需要拼出一个正多面体（柏拉图多面体），这里自然是正十二面体。\n\n拼的规则为五边形每条边上的要求必须符合该边相邻的另一五边形中心的数字。满足所有的条件时，可以拼出这样的多面体：<a href=\"https://static.cipherpuzzles.com/static/images/7eb3ecefaf0e479bae5fe667881775e3.glb\">下载GLB 3D模型</a>。\n\n如果设备没有打开以上文件的软件，可以使用 <a href=\"https://gltf-viewer.donmccurdy.com/\" target=\"_blank\">glTF Viewer 网站</a>。\n\n然后{12} -> {6} 意味着我们需要将12个面上的数转化为6个，由FT中的“星球的另一端”和“相差几何”很容易想到取相对面上的数之差，即：\n128-125=3, 65-17=48, 83-11=72, 42-12=30, 610-2=608, 111-59=52.\n\n得到的六个数 {3, 48, 72, 30, 608, 52} 该怎样转化六个字母呢？注意到它们似乎都有很小的素因子，于是尝试写出分解式：\n\n| | |\n|--|--|\n|3|2^0·3|\n|48|2^4·3|\n|72|2^3·9|\n|30|2^1·15|\n|608|2^5·19|\n|52|2^2·13|\n\n于是按2的幂次排列并将奇数部分按A1Z26转字母得到最终答案`COMICS`.\n\n\n</div>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "本题要做什么？",
+      "content": "把提供的五边形拼成一个多面体，使得每条边上的要求必须符合该边相邻的另一五边形中心的数字。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "本题要用到哪几个碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c7de5d26b231470bb7a5d1bf67be47d1.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/93ea16de1497448f8a09346906737221.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/92d60a9e6e3f4c6ca1b378d490c10770.webp\">\n</div>",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "该如何排序和提取？",
+      "content": "将得到的六个数进行因子分解，按2的个数排序，并将剩下的部分A1Z26。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "{12} -> {6} 是怎么做到的",
+      "content": "由FT中的“星球的另一端”和“相差几何”很容易想到取相对面上的数之差",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "分割数是什么？",
+      "content": "https://oeis.org/A000041",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#dodec_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n#dodec_solution  td {\nwidth: 100px;\n}\n#dodec_solution  th {\ntext-align: left;\n}\n</style>\n本题由以下几个碎片组成：\n<div id=\"dodec_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c7de5d26b231470bb7a5d1bf67be47d1.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/93ea16de1497448f8a09346906737221.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/92d60a9e6e3f4c6ca1b378d490c10770.webp\">\n\n本题标题“柏拉图式相爱”在提示这一题需要拼出一个正多面体（柏拉图多面体），这里自然是正十二面体。\n\n拼的规则为五边形每条边上的要求必须符合该边相邻的另一五边形中心的数字。满足所有的条件时，可以拼出这样的多面体：<a href=\"https://static.cipherpuzzles.com/static/images/7eb3ecefaf0e479bae5fe667881775e3.glb\">下载GLB 3D模型</a>。\n\n如果设备没有打开以上文件的软件，可以使用 <a href=\"https://gltf-viewer.donmccurdy.com/\" target=\"_blank\">glTF Viewer 网站</a>。\n\n然后{12} -> {6} 意味着我们需要将12个面上的数转化为6个，由FT中的“星球的另一端”和“相差几何”很容易想到取相对面上的数之差，即：\n128-125=3, 65-17=48, 83-11=72, 42-12=30, 610-2=608, 111-59=52.\n\n得到的六个数 {3, 48, 72, 30, 608, 52} 该怎样转化六个字母呢？注意到它们似乎都有很小的素因子，于是尝试写出分解式：\n\n| | |\n|--|--|\n|3|2^0·3|\n|48|2^4·3|\n|72|2^3·9|\n|30|2^1·15|\n|608|2^5·19|\n|52|2^2·13|\n\n于是按2的幂次排列并将奇数部分按A1Z26转字母得到最终答案`COMICS`.\n\n\n</div>",
+  "additional_answers": []
+}

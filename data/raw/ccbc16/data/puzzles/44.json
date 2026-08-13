@@ -1,0 +1,74 @@
+{
+  "pid": 44,
+  "pgid": 4,
+  "type": 1,
+  "pg_name": "火药",
+  "title": "火药",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">修改于 2025-08-09 21:44</span>\n<span>对风味文本内容进行了优化</span>\n</div>\n\n这片黑色的焦土之上，火烧过后，竟开出了各色的花朵。\n\n你在解谜终端里找到了一封电报，打开后发现这样的花卉图鉴：",
+  "image": "",
+  "html": "<style>\r\n    #gunpowder_meta {\r\n        background-color: black;\r\n        border-radius: 20px;\r\n        display: inline-block;\r\n        padding: 30px;\r\n        width: 800px;\r\n    }\r\n\r\n    .pimg {\r\n        width: 100%;\r\n    }\r\n    @media (max-width: 1060px) {\r\n        #gunpowder_meta {\r\n            width: calc(100% - 50px);\r\n        }\r\n    }\r\n    @media (max-width: 600px) {\r\n        #gunpowder_meta {\r\n            width: calc(100% - 70px);\r\n        }\r\n    }\r\n</style>\r\n\r\n<div id=\"gunpowder_meta\">\r\n<img src=\"https://static.cipherpuzzles.com/static/images/03456ad7b426435ea0d8a4cf02df029c.webp\" class=\"pimg\" alt=\"黑 蓝 黄 橙 绿 紫 红 白\" title=\"黑 蓝 黄 橙 绿 紫 红 白\">\r\n</div>",
+  "script": "",
+  "answer_type": 1,
+  "extend_data": "{\"pid\":44,\"imgUrl\":\"0c333cbadb414f708109d19d7a5fc9c3.svg\",\"color\":\"#000\",\"top\":\"625px\",\"left\":\"924px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "给他一点焰色看看",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "本区每个小题都由2-4块碎片组成，并且答案长度都是碎片个数*2，不难想到每个碎片都可以分配两个字母。有些碎片每个就给答案提供两个字母（例如“福尔摩斯探案集”这题里每个碎片有两张图，每个图提供一个字母），那两个字母很自然地就应该被分配给该碎片。有些碎片虽然没有明确提供答案哪些字母，但是题目使用碎片都是有顺序的（例如“淡黄又蓬松”里音频被切成了三段），则按照碎片被使用的顺序分配字母。\n\n将答案两个字母两个字母地切开分配后，可以看出不少双字母都是元素名字，联系主题“火药”，可以想到不同元素有不同焰色。\n\n最后按照页面的4x8排列可得：\n\n![img-Screenshot 2025-07-18 163158.png](https://static.cipherpuzzles.com/static/images/460c85c5de9949549cd7b404ba900008.webp)\n\n根据题目里花朵颜色和花瓣数量的对应，可以将每个颜色对应到一个数字（如果双字母不是元素，理解为黑色空地，数字为0）：\n\n![img-Screenshot 2025-07-18 210804.png](https://static.cipherpuzzles.com/static/images/abbc2e66b01f4f9bb9a4eeb033440ed1.webp)\n\n每行四个一组为中文电报码，可以翻译得到最后的答案 `给他一点焰色看看`。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "注意每个小题的答案长度以及小题用到的碎片个数。",
+      "desc": "",
+      "point_cost": 4000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 2,
+      "title": "请直接告诉我第一步要做什么",
+      "content": "把小题答案填入碎片，每个碎片填入两个字母。例如如果题目有三个碎片而答案是 ANSWER，则在第一个碎片里填入AN，第二个碎片里填入SW，第三个碎片里填入ER。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 3,
+      "title": "花卉图鉴是什么意思？",
+      "content": "花卉图鉴是为了给出焰色到数字的对应。与花色相同的焰色通过花瓣数量对应一个数字，例如，蓝色为1，黄色为2。按行转四位数字，再通过中文电码提取答案。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 4,
+      "title": "请给我所有碎片和题目的对应关系以及顺序",
+      "content": "<img alt=\"碎片和题目的对应关系以及顺序\" src=\"https://static.cipherpuzzles.com/static/images/9e4aa5da83444cdb99fe4820a2d096ec.webp\" width=\"20%\" style=\"min-width: 200px\"/>\n\n其中题目【福尔摩斯探案集】用到的碎片顺序未给出，请自行根据题目答案自行对应",
+      "desc": "",
+      "point_cost": 8000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 5,
+      "title": "我已经知道我需要找到【数据删除】，请给我它们和花朵颜色的具体对应",
+      "content": "请在答案提交框里提交你需要的东西（两个字）以获得对应列表。",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "本区每个小题都由2-4块碎片组成，并且答案长度都是碎片个数*2，不难想到每个碎片都可以分配两个字母。有些碎片每个就给答案提供两个字母（例如“福尔摩斯探案集”这题里每个碎片有两张图，每个图提供一个字母），那两个字母很自然地就应该被分配给该碎片。有些碎片虽然没有明确提供答案哪些字母，但是题目使用碎片都是有顺序的（例如“淡黄又蓬松”里音频被切成了三段），则按照碎片被使用的顺序分配字母。\n\n将答案两个字母两个字母地切开分配后，可以看出不少双字母都是元素名字，联系主题“火药”，可以想到不同元素有不同焰色。\n\n最后按照页面的4x8排列可得：\n\n![img-Screenshot 2025-07-18 163158.png](https://static.cipherpuzzles.com/static/images/460c85c5de9949549cd7b404ba900008.webp)\n\n根据题目里花朵颜色和花瓣数量的对应，可以将每个颜色对应到一个数字（如果双字母不是元素，理解为黑色空地，数字为0）：\n\n![img-Screenshot 2025-07-18 210804.png](https://static.cipherpuzzles.com/static/images/abbc2e66b01f4f9bb9a4eeb033440ed1.webp)\n\n每行四个一组为中文电报码，可以翻译得到最后的答案 `给他一点焰色看看`。",
+  "additional_answers": [
+    {
+      "aaid": 95,
+      "answer": "焰色",
+      "message": "Co = 白色；Na = 黄色；Li = 红色；Sr = 红色；Ca = 橙色；In = 蓝色；Se = 蓝色；Ba = 绿色；Cu = 绿色；Cs = 紫色。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

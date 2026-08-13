@@ -1,0 +1,43 @@
+---
+record_id: "ccbc12:problem:c-p1738"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线C"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/c/p1738.yaml"
+---
+
+# #1738 剪影 - CCBC 12
+
+## 题面
+
+形状十分不规则的剪影，就像是出了故障的电脑显示屏一般。
+
+<img src="../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/eded9d6731ad41dda1a6aab9315b134f.webp" width="800px"/>
+
+## 答案
+
+`AMERICAN BEAUTY`
+
+## 解析
+
+不难看出图片由若干字母叠加而成，通过搜索可以得知这是光栅动画的底片。在没有遮盖的光栅板时，我们依然可以通过仔细观察得到一些字母，比如有不少竖栏对应字母A，而且对应A的竖栏是以14列为一周期（每个周期里有三个），所以判断一共有14个字母（其中有三个A）。通过自行制作光栅板或者观察每隔14列的竖栏拼出来的字母，可以按照顺序得到最终答案：**AMERICAN BEAUTY**。
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/c-1738.gif)
+
+视频版：https://www.bilibili.com/video/BV1XD4y1z7Pd
+
+## 提示
+
+### 1. 我毫无头绪
+
+这是一个光栅动画，其中每一条缝的宽度为5像素，每一条黑线的宽度是65像素。答案一共有14个字母，其中有三个是A。
+
+
+## 本地附件
+
+- [c-1738.gif](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/c-1738.gif)
+- [eded9d6731ad41dda1a6aab9315b134f.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/eded9d6731ad41dda1a6aab9315b134f.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/c/p1738.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/c/p1738.yaml)

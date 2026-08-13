@@ -1,0 +1,50 @@
+{
+  "pid": 35,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "代入演算",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":35,\"imgUrl\":\"67880ddb5077464ca88d0be134c62503.svg\",\"color\":\"#000\",\"top\":\"36px\",\"left\":\"890px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "EXCUSE",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n\n#lambda_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n\n本题由以下几个碎片组成：\n<div id=\"lambda_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/a2878c4c675f451791ad148de6d1b96e.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/1424e3712cfc420a84f96e82a0faa70d.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/83bb25000e0948129e41e54ed0a4da8c.webp\">\n\n本题标题提示了本题主题是λ演算。通过仿照例子手动演算理解、寻找运行工具、或是与已有表达式进行对比，可以确定每行的作用。对每部分进行计算可以得到`SUBMIT EXCUSE`，最终答案为`EXCUSE`。\n\n<table id=\"answerkey\">\n<tr><th>编号</th><th>λ演算表达式（不含最后两行）</th><th>数学算式（含最后偏移）</th><th>计算结果</th><th>答案</th><th>解释</th></tr>\n<tr><td>①</td><td>3 2 3</td><td>3^2^3 -4656</td><td>1905</td><td>SE</td><td>式子(a b)就是计算b^a</td></tr>\n<tr><td>②</td><td>(λx.xxx(xxxx)xx) B 6 2 3 11</td><td>2^6*3*11 +12</td><td>2124</td><td>UX</td><td>(λxyz.x(yz))即B，原式化简可得到(B(B(6 2)3)11)；同时B也表示乘法，即(B a b)是计算a*b</td></tr>\n<tr><td>③</td><td>ADD (6 2) (2 3) SUC (3 5)</td><td>2^6+3^2+5^3 +5</td><td>203</td><td>BC</td><td>第一行是加法，第四行是后继；(ADD a b)和(a SUC b)都是计算a+b</td></tr>\n<tr><td>④</td><td>SUB (11 2) (6 3)</td><td>2^11-3^6 +2</td><td>1321</td><td>MU</td><td>第一行是减法，(SUB a b)是计算a-b</td></tr>\n<tr><td>⑤</td><td>B DIV3 3 (B 2 7)</td><td>CEIL((2*7)^3/3) +4</td><td>919</td><td>IS</td><td>第二行是除以三向上取整，(DIV3 a)即CEIL(a/3)</td></tr>\n<tr><td>⑥</td><td>B B FAC 6 3</td><td>6!*3 -155</td><td>2005</td><td>TE</td><td>第三行是阶乘，(FAC a)即a!</td></tr>\n</table>\n</div>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "这道题需要哪些碎片！",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n<img src=\"https://static.cipherpuzzles.com/static/images/1424e3712cfc420a84f96e82a0faa70d.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/83bb25000e0948129e41e54ed0a4da8c.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/a2878c4c675f451791ad148de6d1b96e.webp\">\n</div>\n",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "这是什么！看不懂！",
+      "content": "这是使用λ演算计算邱奇数。可以使用下方网站进行尝试。\nhttps://dallaylaen.github.io/ski-interpreter/",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "还是做不明白……有没有每组提示！",
+      "content": "每组新介绍了一种运算。1到6组分别为幂、乘、加、减、除、阶乘。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n\n#lambda_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n\n本题由以下几个碎片组成：\n<div id=\"lambda_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/a2878c4c675f451791ad148de6d1b96e.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/1424e3712cfc420a84f96e82a0faa70d.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/83bb25000e0948129e41e54ed0a4da8c.webp\">\n\n本题标题提示了本题主题是λ演算。通过仿照例子手动演算理解、寻找运行工具、或是与已有表达式进行对比，可以确定每行的作用。对每部分进行计算可以得到`SUBMIT EXCUSE`，最终答案为`EXCUSE`。\n\n<table id=\"answerkey\">\n<tr><th>编号</th><th>λ演算表达式（不含最后两行）</th><th>数学算式（含最后偏移）</th><th>计算结果</th><th>答案</th><th>解释</th></tr>\n<tr><td>①</td><td>3 2 3</td><td>3^2^3 -4656</td><td>1905</td><td>SE</td><td>式子(a b)就是计算b^a</td></tr>\n<tr><td>②</td><td>(λx.xxx(xxxx)xx) B 6 2 3 11</td><td>2^6*3*11 +12</td><td>2124</td><td>UX</td><td>(λxyz.x(yz))即B，原式化简可得到(B(B(6 2)3)11)；同时B也表示乘法，即(B a b)是计算a*b</td></tr>\n<tr><td>③</td><td>ADD (6 2) (2 3) SUC (3 5)</td><td>2^6+3^2+5^3 +5</td><td>203</td><td>BC</td><td>第一行是加法，第四行是后继；(ADD a b)和(a SUC b)都是计算a+b</td></tr>\n<tr><td>④</td><td>SUB (11 2) (6 3)</td><td>2^11-3^6 +2</td><td>1321</td><td>MU</td><td>第一行是减法，(SUB a b)是计算a-b</td></tr>\n<tr><td>⑤</td><td>B DIV3 3 (B 2 7)</td><td>CEIL((2*7)^3/3) +4</td><td>919</td><td>IS</td><td>第二行是除以三向上取整，(DIV3 a)即CEIL(a/3)</td></tr>\n<tr><td>⑥</td><td>B B FAC 6 3</td><td>6!*3 -155</td><td>2005</td><td>TE</td><td>第三行是阶乘，(FAC a)即a!</td></tr>\n</table>\n</div>\n",
+  "additional_answers": []
+}

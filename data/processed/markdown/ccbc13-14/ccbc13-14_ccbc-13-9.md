@@ -1,0 +1,243 @@
+---
+record_id: "ccbc13-14:ccbc-13-9"
+event_id: "ccbc13-14"
+editions: ["CCBC 13"]
+year: 2023
+area: "CCBC-13"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc13/problems/CCBC-13/9.yaml"
+---
+
+# 宇宙航线
+
+## 题面
+
+跟随着这些似曾相识的航线标记的指引，你终于到达了你的目的地：AB C。
+
+提示：本题需要用到飞船收集的88颗小行星（不一定全部要用到）。
+
+操作提示：拖动查看航线图的更多部分，也可通过“按住SHIFT + 滚轮”横向滚动。题目内的横线上可以填入字母，并且与所有队友实时共享。
+
+## 交互源码
+
+### vue_template
+
+```html
+<template>
+    <button type="button" class="btn btn-outline-secondary fullscreen-btn" @click="fullscreen = true"></button>
+    <button type="button" class="btn btn-outline-secondary btn-exitfullscreen" v-if="fullscreen" @click="fullscreen = false">退出全屏</button>
+    <div class="bg-wrapper" id="spbg-box" @mousedown="startDrag" @mousemove="dragMove" @mouseup="endDrag" :class="{'bg-wrapper-fullscreen': fullscreen}">
+        <div class="bg">
+            <extreme-input v-for="w in src" :key="'t-' + w.i" :data-id="w.i"
+                class="bs" :style="{top: w.y + 'px', left: w.x + 'px'}" 
+                v-model="d.text[w.i]" :wordLength="w.w" :highlightIndex="w.h" :focus="void(0)"
+ ></extreme-input>
+        </div>
+    </div>
+</template>
+
+<style>
+.fullscreen-btn {
+    background-image: url("../../../assets/archive.cipherpuzzles.com/ccbc13/images/CCBC-13/94676b8caec74a77976a567f7277b8b7.webp");
+    width: 66px;
+    height: 26px;
+    background-size: contain;
+    margin-bottom: 10px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.fullscreen-btn:hover {
+    box-shadow: 0px 0px 3px 3px #0d0d94;
+}
+.bg {
+    background-image: url("../../../assets/archive.cipherpuzzles.com/ccbc13/images/CCBC-13/658e1649b8de46258b2faab7535f836f.webp");
+    width: 3959px;
+    height: 1980px;
+    position: relative;
+}
+.bg-wrapper-fullscreen {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    z-index: 1031;
+}
+.btn-exitfullscreen {
+    position: fixed;
+    z-index: 1032;
+    right: 22px;
+    top: 66px;
+}
+.bg-wrapper {
+    width: 100%;
+    height: 900px;
+    overflow-x: auto;
+    border: 3px solid #0d0d94;
+    cursor: move;
+}
+.bg-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.bs {
+    position: absolute !important;
+}
+</style>
+```
+
+### vue_script
+
+```text
+const { ref, reactive, inject, onMounted, onBeforeUnmount } = Vue;
+
+const sourceData = JSON.parse(`[{"i":"1","x":"1321","y":"67","h":[3,4,8],"w":[11]},{"i":"2","x":"3417","y":"80","h":[1,2,3],"w":[7]},{"i":"3","x":"2592","y":"142","h":[0,1,2],"w":[5]},{"i":"4","x":"3713","y":"300","h":[0,1,2],"w":[7]},{"i":"5","x":"1338","y":"330","h":[0,1,2],"w":[4]},{"i":"6","x":"1880","y":"400","h":[1,5,6],"w":[9]},{"i":"7","x":"163","y":"455","h":[1,2,3],"w":[9]},{"i":"8","x":"392","y":"534","h":[0,1,11],"w":[8,6]},{"i":"9","x":"792","y":"600","h":[1,3,5],"w":[7]},{"i":"10","x":"142","y":"796","h":[0,1,3],"w":[7]},{"i":"11","x":"555","y":"667","h":[0,4,6],"w":[7]},{"i":"12","x":"763","y":"767","h":[0,3,4],"w":[7]},{"i":"13","x":"463","y":"834","h":[2,6,11],"w":[13]},{"i":"14","x":"188","y":"917","h":[1,10,11],"w":[3,2,2,9]},{"i":"15","x":"617","y":"992","h":[1,3,9],"w":[11]},{"i":"16","x":"1042","y":"675","h":[3,4,5],"w":[6]},{"i":"17","x":"1371","y":"530","h":[0,1,2],"w":[11]},{"i":"18","x":"1284","y":"655","h":[0,2,3],"w":[6]},{"i":"19","x":"1750","y":"559","h":[0,2,5],"w":[6]},{"i":"20","x":"1325","y":"880","h":[2,4,5],"w":[6]},{"i":"21","x":"1734","y":"755","h":[2,5,6],"w":[1,10]},{"i":"22","x":"2205","y":"625","h":[1,3,4],"w":[9]},{"i":"23","x":"2501","y":"492","h":[2,3,8],"w":[4,7]},{"i":"24","x":"2184","y":"838","h":[2,3,8],"w":[10]},{"i":"25","x":"184","y":"1034","h":[1,3,11],"w":[7,6]},{"i":"26","x":"34","y":"1359","h":[0,9,15],"w":[10,2,5]},{"i":"27","x":"88","y":"1521","h":[8,9,11],"w":[4,2,6]},{"i":"28","x":"38","y":"1730","h":[0,5,16],"w":[3,4,2,3,7]},{"i":"29","x":"455","y":"1234","h":[2,3,4],"w":[6]},{"i":"30","x":"484","y":"1409","h":[0,1,2],"w":[4]},{"i":"31","x":"238","y":"1625","h":[4,11,12],"w":[6,6]},{"i":"32","x":"755","y":"1300","h":[0,4,5],"w":[8]},{"i":"33","x":"659","y":"1580","h":[0,2,4],"w":[3,9]},{"i":"34","x":"650","y":"1684","h":[2,7,10],"w":[12]},{"i":"35","x":"750","y":"1121","h":[3,6,9],"w":[5,7]},{"i":"36","x":"767","y":"1463","h":[7,8,9],"w":[12]},{"i":"37","x":"967","y":"1617","h":[2,3,7],"w":[5,5]},{"i":"38","x":"1280","y":"1605","h":[1,2,3],"w":[5]},{"i":"39","x":"1171","y":"1734","h":[5,6,8],"w":[10]},{"i":"40","x":"1275","y":"1834","h":[1,5,10],"w":[11]},{"i":"41","x":"1509","y":"1738","h":[0,1,2],"w":[6]},{"i":"42","x":"1400","y":"1484","h":[1,5,6],"w":[4,2]},{"i":"43","x":"1342","y":"1134","h":[3,4,7],"w":[10]},{"i":"44","x":"1592","y":"1088","h":[8,13,14],"w":[7,2,5]},{"i":"45","x":"1792","y":"1521","h":[1,3,5],"w":[6]},{"i":"46","x":"1963","y":"1625","h":[0,3,9],"w":[11]},{"i":"47","x":"1800","y":"1775","h":[0,2,8],"w":[9]},{"i":"48","x":"1984","y":"1921","h":[7,8,11],"w":[5,6]},{"i":"49","x":"2188","y":"1825","h":[0,1,5],"w":[7]},{"i":"50","x":"2213","y":"988","h":[0,1,2],"w":[6]},{"i":"51","x":"2046","y":"1113","h":[0,1,4],"w":[5]},{"i":"52","x":"1780","y":"1184","h":[0,4,9],"w":[11]},{"i":"53","x":"2142","y":"1375","h":[2,5,7],"w":[11]},{"i":"54","x":"2446","y":"1392","h":[0,1,4],"w":[5]},{"i":"55","x":"2334","y":"1542","h":[1,2,4],"w":[11]},{"i":"56","x":"2446","y":"1675","h":[0,1,2],"w":[6]},{"i":"57","x":"2496","y":"1780","h":[4,8,15],"w":[10,5]},{"i":"58","x":"2680","y":"934","h":[0,2,3],"w":[5]},{"i":"59","x":"2755","y":"1059","h":[0,1,2],"w":[6]},{"i":"60","x":"2946","y":"963","h":[1,3,7],"w":[11]},{"i":"61","x":"2751","y":"1250","h":[0,2,4],"w":[9]},{"i":"62","x":"3092","y":"1171","h":[0,1,3],"w":[7]},{"i":"63","x":"2634","y":"1392","h":[0,1,2],"w":[5]},{"i":"64","x":"2913","y":"1405","h":[0,2,7],"w":[9]},{"i":"65","x":"3196","y":"1255","h":[1,2,3],"w":[9]},{"i":"66","x":"3146","y":"1463","h":[1,2,4],"w":[5]},{"i":"67","x":"3005","y":"1588","h":[0,2,3],"w":[5]},{"i":"68","x":"2988","y":"1696","h":[0,1,6],"w":[8]},{"i":"69","x":"2909","y":"1859","h":[2,8,9],"w":[11]},{"i":"70","x":"3292","y":"509","h":[3,4,5],"w":[11]},{"i":"71","x":"3663","y":"633","h":[7,8,12],"w":[3,11]},{"i":"72","x":"3763","y":"538","h":[1,2,3],"w":[4,4]},{"i":"73","x":"3521","y":"721","h":[0,4,7],"w":[9]},{"i":"74","x":"3126","y":"775","h":[1,2,5],"w":[8]},{"i":"75","x":"3796","y":"909","h":[0,2,3],"w":[6]},{"i":"76","x":"3713","y":"1130","h":[0,3,5],"w":[6]},{"i":"77","x":"3396","y":"1367","h":[7,8,10],"w":[6,4]},{"i":"78","x":"3776","y":"1300","h":[0,1,10],"w":[7,3]},{"i":"79","x":"3271","y":"1567","h":[1,2,7],"w":[10]},{"i":"80","x":"3696","y":"1488","h":[0,8,9],"w":[3,2,3,3]},{"i":"81","x":"3417","y":"1805","h":[5,9,12],"w":[4,5,4]},{"i":"82","x":"3255","y":"1692","h":[1,2,6],"w":[4,5]},{"i":"83","x":"1105","y":"1371","h":[6,7,8],"w":[3,10]},{"i":"84","x":"2934","y":"559","h":[1,3,5],"w":[6]},{"i":"85","x":"2488","y":"792","h":[2,4,10],"w":[6,5,8]},{"i":"86","x":"2746","y":"763","h":[0,1,4],"w":[6]},{"i":"87","x":"2267","y":"1221","h":[2,3,6],"w":[11]},{"i":"88","x":"1005","y":"988","h":[0,1,11],"w":[7,5]}]`);
+
+export default {
+    setup() {
+        const PUZZLE_KEY = "spaceroute";
+        const ySync = inject("ysync");
+
+        //页面上使用的数据源
+        const src = ref(sourceData);
+        const d = reactive({
+            text: [...new Array(sourceData.length + 1)].map(i => ""),
+            aware: []
+        });
+
+        const mouseStatus = reactive({
+            isMouseDown: false,
+            startX: 0,
+            startY: 0
+        });
+        const fullscreen = ref(false);
+
+        const startDrag = (e) => {
+            mouseStatus.isMouseDown = true;
+            mouseStatus.startX = e.offsetX;
+            mouseStatus.startY = e.offsetY;
+        }
+        const dragMove = (e) => {
+            if (mouseStatus.isMouseDown) {
+                let bgBoxEl = document.getElementById("spbg-box");
+
+                let offsetX = e.offsetX - mouseStatus.startX;
+                let offsetY = e.offsetY - mouseStatus.startY;
+
+                bgBoxEl.scrollTop -= offsetY;
+                bgBoxEl.scrollLeft -= offsetX;
+            }
+        }
+        const endDrag = (e) => {
+            mouseStatus.isMouseDown = false;
+        }
+
+        return {
+            src,
+            d,
+                        fullscreen,
+            startDrag,
+            dragMove,
+            endDrag
+        }
+    }
+}
+```
+
+
+## 答案
+
+`OUTSIDE FORCE`
+
+## 解析
+
+首先需要将所有 88 小行星的答案填入空格，在填了几个长度特征明显的答案（例如 YES OR NO QUESTIONS）后，很快就能注意到每个答案里三个红色的字母都是一个星座的三字母缩写。小行星的总个数 88 也无疑印证了这一点。可以观察到我们给出的航线图其实是星座区域划分图，相邻的星座之间有连线。
+
+填完了航线上的答案后，我们就可以从 STAR 出发了。注意题目里写的“似曾相识的航线标记的指引”，这指的是航线开端的几个宇宙飞船图标。每一道航线上面的题目都使用了这个图标作为箭头来表示某种变换，所以我们需要从 STAR 开始，跟着航线，每经过一个星座就对当前的单词做同样的处理。为了确认，过程中的单词长度都已经在题目中给出（航线上的白色数字）。
+
+<style>
+.ak {
+border: 1px solid #ccc;
+margin: 20px;
+}
+.ak td, .ak th {
+padding: 5px 10px;
+}
+.ak b {
+font-size: 20px;
+}
+</style>
+
+<table class="ak">
+<tr><th style="color: yellow">黄色航线</th><th>途经</th><th>变换</th></tr>
+<tr><td>STAR</td><td>LIB</td><td>凯撒成一个单词</td></tr>
+<tr><td>TUBS</td><td>SCO</td><td>去掉 S</td></tr>
+<tr><td>TUB</td><td>SGR</td><td>凯撒 -6 （注意与 LIB 不同，SGR 题目图里是单箭头不是双箭头，所以凯撒位数是固定的）</td></tr>
+<tr><td>NOV</td><td>CAP</td><td>扩展缩写</td></tr>
+<tr><td>NOVEMBER</td><td>AQR</td><td>NATO -5</td></tr>
+<tr><td>INDIA</td><td>PSC</td><td>国家 2 字母缩写</td></tr>
+<tr><td>IN</td><td>ARI</td><td>反义词</td></tr>
+<tr><td>OUT</td><td><b>终点 A</b></td></tr>
+</table>
+
+<table class="ak">
+<tr><th style="color: green">绿色航线</th><th>途经</th><th>变换</th></tr>
+<tr><td>STAR</td><td>CEN</td><td>塔罗牌 -2</td></tr>
+<tr><td>DEVIL</td><td>CAR</td><td>去首字母</td></tr>
+<tr><td>EVIL</td><td>PIC</td><td>倒序</td></tr>
+<tr><td>LIVE</td><td>CAE</td><td>加 S</td></tr>
+<tr><td>LIVES</td><td>ERI</td><td>反义词</td></tr>
+<tr><td>DIES</td><td>CET</td><td>重组</td></tr>
+<tr><td>SIDE</td><td><b>终点 B</b></tr>
+</table>
+
+<table class="ak">
+<tr><th style="color: CornflowerBlue">蓝色航线</th><th>途经</th><th>变换</th></tr>
+<tr><td>STAR</td><td>HYA</td><td>键盘符号取下面的</td></tr>
+<tr><td>EIGHT</td><td>CNC</td><td>减半</td></tr>
+<tr><td>FOUR</td><td>GEM</td><td>同音词</td></tr>
+<tr><td>FOR</td></tr>
+</table>
+
+<table class="ak">
+<tr><th style="color: red">红色航线</th><th>途经</th><th>变换</th></tr>
+<tr><td>STAR</td><td>LUP</td><td>倒序</td></tr>
+<tr><td>RATS</td><td>SCO</td><td>去掉 S</td></tr>
+<tr><td>RAT</td><td>OPH</td><td>十二生肖 +7</td></tr>
+<tr><td>RAM</td><td>HER</td><td>十二星座象征物 -3 （从白羊座到摩羯座）</td></tr>
+<tr><td>GOAT</td><td>DRA</td><td>去掉第三字母</td></tr>
+<tr><td>GOT</td><td>CAM</td><td>把 O 变成 E</td></tr>
+<tr><td>GET</td></tr>
+</table>
+
+<table class="ak">
+<tr><th style="color: mediumpurple">紫色航线</th><th>途经</th><th>变换</th></tr>
+<tr><td>FORGET （合并蓝色和红色航线）</td><td>AUR</td><td>去尾字母</td></tr>
+<tr><td>FORGE</td><td>TAU</td><td>碱基对应 C <-> G</td></tr>
+<tr><td>FORCE</td><td><b>终点 C</b></td></tr>
+</table>
+
+将三个终点的词合在一起就是最终答案 `OUTSIDE FORCE`。
+
+## 提示
+
+### 1. 图中的空怎么填？
+
+需要把小行星的答案填到这些空里，可以先从几个长度比较特殊的开始填起。
+
+
+一共有 88 个小行星答案，正好有 88 个星座，所以每个答案对应一个星座。这是一张星座的地图，图里的区域正是星座的区域，填入正确的答案后每三个红色字母对应相应位置的星座的缩写。
+
+例如左上角应该填入 BLACKBIRD，红色是 LAC，蝎虎座的简称。
+
+### 2. 填得差不多了，航线图怎么理解？
+
+回顾一下路线上的答案对应的小题题面，看看在形式上有什么共同点？
+从STAR的四个角落开始依次使用这些小题的机制吧。
+
+
+## 本地附件
+
+- [658e1649b8de46258b2faab7535f836f.webp](../../../assets/archive.cipherpuzzles.com/ccbc13/images/CCBC-13/658e1649b8de46258b2faab7535f836f.webp)
+- [94676b8caec74a77976a567f7277b8b7.webp](../../../assets/archive.cipherpuzzles.com/ccbc13/images/CCBC-13/94676b8caec74a77976a567f7277b8b7.webp)
+
+来源：[https://archive.cipherpuzzles.com/ccbc13/problems/CCBC-13/9.yaml](https://archive.cipherpuzzles.com/ccbc13/problems/CCBC-13/9.yaml)

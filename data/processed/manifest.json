@@ -1,0 +1,397 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-13T10:55:06+00:00",
+  "scope": [
+    "CCBC 2",
+    "CCBC 3",
+    "CCBC 4",
+    "CCBC 11",
+    "CCBC 12",
+    "CCBC 13/14",
+    "CCBC 15",
+    "CCBC 16"
+  ],
+  "record_count": 1471,
+  "pair_count": 720,
+  "solution_reference_count": 513,
+  "records_by_event": {
+    "ccbc11": 40,
+    "ccbc12": 92,
+    "ccbc13-14": 123,
+    "ccbc15": 75,
+    "ccbc16": 1054,
+    "ccbc2": 14,
+    "ccbc3": 41,
+    "ccbc4": 32
+  },
+  "records_by_kind": {
+    "final_meta": 7,
+    "meta": 25,
+    "puzzle": 420,
+    "subpuzzle": 1019
+  },
+  "solution_status_counts": {
+    "answer_only": 32,
+    "available": 727,
+    "available_via_parent": 513,
+    "available_without_question": 10,
+    "external_only": 7,
+    "missing_official": 180,
+    "not_applicable_inactive": 2
+  },
+  "content_format_counts": {
+    "interactive": 25,
+    "media_or_markup": 602,
+    "missing": 28,
+    "text": 805,
+    "text_missing_inputs": 1,
+    "text_missing_media": 9,
+    "title_only": 1
+  },
+  "records_missing_question": 28,
+  "records_incomplete_question": 11,
+  "records_missing_solution": 180,
+  "records_external_solution_only": 7,
+  "records_answer_only": 32,
+  "records_solution_without_question": 10,
+  "asset_count": 1748,
+  "asset_bytes": 517359532,
+  "failed_asset_count": 0,
+  "orphan_asset_files_removed": 0,
+  "records_complete": true,
+  "asset_mode": "downloaded",
+  "assets_complete": true,
+  "corpus_complete": true,
+  "source_content_complete": false,
+  "external_link_count": 132,
+  "raw_file_count": 478,
+  "fetch_stats": {
+    "raw_cache_hits": 443,
+    "http_404": 20
+  },
+  "known_exclusions": {
+    "ccbc1": "The surviving official announcement does not contain the full puzzle set and solutions.",
+    "ccbc5": "The surviving official repost explicitly omits interactive puzzles and has no complete official solutions.",
+    "ccbc6_to_10": "No currently retrievable complete official puzzle-and-solution corpus was found; CCBC X only has a broken archive index.",
+    "ccbc16_navigation_placeholders": [
+      {
+        "pid": 1001,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1002,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1003,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1004,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1005,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1006,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1007,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1008,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1009,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1010,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1011,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1012,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1013,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1014,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1015,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1016,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1017,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      },
+      {
+        "pid": 1018,
+        "title": "█████",
+        "reason": "navigation placeholder without puzzle JSON"
+      }
+    ]
+  },
+  "historical_recovery": {
+    "source_type": "official Tieba posts recovered through the public app protobuf endpoint",
+    "snapshot_mode": "all visible posts, paginated until has_more=false",
+    "normalized_selection": "posts by verified CCBC organizer author IDs",
+    "protocol_definition_source": "https://github.com/lumina37/aiotieba/tree/bae68256fd250d5178e1447899ffa155c77eda38",
+    "threads": {
+      "c2_questions": {
+        "thread_id": 619770728,
+        "title": "【CCBC2】CCBC2大赛出题楼",
+        "source_url": "https://tieba.baidu.com/p/619770728?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/619770728/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/619770728/all/page-2.pb",
+          "data/raw/ccbc-history/tieba/619770728/all/page-3.pb",
+          "data/raw/ccbc-history/tieba/619770728/all/page-4.pb",
+          "data/raw/ccbc-history/tieba/619770728/all/page-5.pb"
+        ],
+        "visible_official_post_count": 16,
+        "visible_all_post_count": 78
+      },
+      "c2_solutions": {
+        "thread_id": 626759569,
+        "title": ":CCBC2答案详解",
+        "source_url": "https://tieba.baidu.com/p/626759569?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/626759569/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/626759569/all/page-2.pb"
+        ],
+        "visible_official_post_count": 15,
+        "visible_all_post_count": 30
+      },
+      "c3_questions": {
+        "thread_id": 853440395,
+        "title": "【CCBC3】大赛开幕",
+        "source_url": "https://tieba.baidu.com/p/853440395?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/853440395/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/853440395/all/page-2.pb",
+          "data/raw/ccbc-history/tieba/853440395/all/page-3.pb",
+          "data/raw/ccbc-history/tieba/853440395/all/page-4.pb",
+          "data/raw/ccbc-history/tieba/853440395/all/page-5.pb"
+        ],
+        "visible_official_post_count": 7,
+        "visible_all_post_count": 98
+      },
+      "c3_announcements": {
+        "thread_id": 854239358,
+        "title": "【CCBC3】大赛公告专用帖",
+        "source_url": "https://tieba.baidu.com/p/854239358?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/854239358/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/854239358/all/page-2.pb"
+        ],
+        "visible_official_post_count": 38,
+        "visible_all_post_count": 39
+      },
+      "c3_solutions": {
+        "thread_id": 868099569,
+        "title": "【CCBC3】题目答案、名次、积分奖励及相关事宜",
+        "source_url": "https://tieba.baidu.com/p/868099569?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/868099569/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/868099569/all/page-2.pb",
+          "data/raw/ccbc-history/tieba/868099569/all/page-3.pb"
+        ],
+        "visible_official_post_count": 12,
+        "visible_all_post_count": 48
+      },
+      "c3_meta": {
+        "thread_id": 848419725,
+        "title": "【终点】终于到了么？那就恭喜你了",
+        "source_url": "https://tieba.baidu.com/p/848419725?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/848419725/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/848419725/all/page-2.pb"
+        ],
+        "visible_official_post_count": 1,
+        "visible_all_post_count": 24
+      },
+      "c3_index": {
+        "thread_id": 870660395,
+        "title": "【CCBC3】资料索引",
+        "source_url": "https://tieba.baidu.com/p/870660395?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/870660395/all/page-1.pb"
+        ],
+        "visible_official_post_count": 2,
+        "visible_all_post_count": 18
+      },
+      "c4_act1": {
+        "thread_id": 1165694441,
+        "title": "【CCBC4】比赛题目及说明",
+        "source_url": "https://tieba.baidu.com/p/1165694441?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/1165694441/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/1165694441/all/page-2.pb",
+          "data/raw/ccbc-history/tieba/1165694441/all/page-3.pb",
+          "data/raw/ccbc-history/tieba/1165694441/all/page-4.pb",
+          "data/raw/ccbc-history/tieba/1165694441/all/page-5.pb",
+          "data/raw/ccbc-history/tieba/1165694441/all/page-6.pb"
+        ],
+        "visible_official_post_count": 9,
+        "visible_all_post_count": 104
+      },
+      "c4_act2_upper": {
+        "thread_id": 1173852788,
+        "title": "【CCBC4】第二幕",
+        "source_url": "https://tieba.baidu.com/p/1173852788?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/1173852788/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/1173852788/all/page-2.pb",
+          "data/raw/ccbc-history/tieba/1173852788/all/page-3.pb"
+        ],
+        "visible_official_post_count": 11,
+        "visible_all_post_count": 43
+      },
+      "c4_act2_lower": {
+        "thread_id": 1181018380,
+        "title": "【CCBC4】第二幕（下）",
+        "source_url": "https://tieba.baidu.com/p/1181018380?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/1181018380/all/page-1.pb"
+        ],
+        "visible_official_post_count": 10,
+        "visible_all_post_count": 20
+      },
+      "c4_solutions": {
+        "thread_id": 1183192809,
+        "title": "【CCBC4】终章",
+        "source_url": "https://tieba.baidu.com/p/1183192809?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/1183192809/all/page-1.pb",
+          "data/raw/ccbc-history/tieba/1183192809/all/page-2.pb",
+          "data/raw/ccbc-history/tieba/1183192809/all/page-3.pb",
+          "data/raw/ccbc-history/tieba/1183192809/all/page-4.pb"
+        ],
+        "visible_official_post_count": 7,
+        "visible_all_post_count": 59
+      },
+      "c4_index": {
+        "thread_id": 1183087886,
+        "title": "【CCBC4】比赛资料索引",
+        "source_url": "https://tieba.baidu.com/p/1183087886?see_lz=1",
+        "raw_page_paths": [
+          "data/raw/ccbc-history/tieba/1183087886/all/page-1.pb"
+        ],
+        "visible_official_post_count": 3,
+        "visible_all_post_count": 3
+      }
+    },
+    "counts": {
+      "ccbc2": 14,
+      "ccbc3": 41,
+      "ccbc4": 32
+    },
+    "completeness": "partial_due_to_deleted_posts_and_media",
+    "original_event_content_complete": false
+  },
+  "discovery_failures": {
+    "ccbc10": [
+      {
+        "path": "ccbc10/announcements",
+        "url": "https://archive.cipherpuzzles.com/ccbc10/announcements.yaml",
+        "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/announcements.yaml"
+      },
+      {
+        "path": "ccbc10/scoreboard",
+        "url": "https://archive.cipherpuzzles.com/ccbc10/scoreboard.yaml",
+        "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/scoreboard.yaml"
+      },
+      {
+        "path": "ccbc10/pages/prologue",
+        "url": "https://archive.cipherpuzzles.com/ccbc10/pages/prologue.yaml",
+        "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/pages/prologue.yaml"
+      },
+      {
+        "path": "ccbc10/pages/areas",
+        "url": "https://archive.cipherpuzzles.com/ccbc10/pages/areas.yaml",
+        "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/pages/areas.yaml"
+      },
+      {
+        "path": "ccbc10/pages/finalend",
+        "url": "https://archive.cipherpuzzles.com/ccbc10/pages/finalend.yaml",
+        "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/pages/finalend.yaml"
+      }
+    ],
+    "ccbc11": [
+      {
+        "path": "ccbc11/scoreboard",
+        "url": "https://archive.cipherpuzzles.com/ccbc11/scoreboard.yaml",
+        "error": "could not determine a constructor for the tag 'tag:yaml.org,2002:value'\n  in \"<unicode string>\", line 550, column 22:\n          group_profile: =\n                         ^"
+      }
+    ],
+    "ccbc12": [],
+    "ccbc15": []
+  },
+  "download_failures": [
+    {
+      "url": "https://archive.cipherpuzzles.com/ccbc10/announcements.yaml",
+      "category": "yaml_document",
+      "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/announcements.yaml"
+    },
+    {
+      "url": "https://archive.cipherpuzzles.com/ccbc10/scoreboard.yaml",
+      "category": "yaml_document",
+      "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/scoreboard.yaml"
+    },
+    {
+      "url": "https://archive.cipherpuzzles.com/ccbc10/pages/prologue.yaml",
+      "category": "yaml_document",
+      "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/pages/prologue.yaml"
+    },
+    {
+      "url": "https://archive.cipherpuzzles.com/ccbc10/pages/areas.yaml",
+      "category": "yaml_document",
+      "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/pages/areas.yaml"
+    },
+    {
+      "url": "https://archive.cipherpuzzles.com/ccbc10/pages/finalend.yaml",
+      "category": "yaml_document",
+      "error": "HTTP 404: https://archive.cipherpuzzles.com/ccbc10/pages/finalend.yaml"
+    },
+    {
+      "url": "https://archive.cipherpuzzles.com/ccbc11/scoreboard.yaml",
+      "category": "yaml_document",
+      "error": "could not determine a constructor for the tag 'tag:yaml.org,2002:value'\n  in \"<unicode string>\", line 550, column 22:\n          group_profile: =\n                         ^"
+    }
+  ]
+}

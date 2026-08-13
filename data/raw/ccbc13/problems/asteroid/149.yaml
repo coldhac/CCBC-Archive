@@ -1,0 +1,18 @@
+answer: EASTER
+content: []
+content-type: 0
+desc: Ser
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/6cc85102e0b147e0beaab054bc396ede.webp
+tips:
+- content: 每行emoji都提示了某个中国或西方的传统节日
+  title: 我毫无思路
+title: ⭐
+type: problem

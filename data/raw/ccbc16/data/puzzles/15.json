@@ -1,0 +1,58 @@
+{
+  "pid": 15,
+  "pgid": 2,
+  "type": 1,
+  "pg_name": "指南",
+  "title": "三星Galaxy",
+  "content": "",
+  "image": "",
+  "html": "<ul>\r\n    <li>放置一些星星，使得每行每列均有三颗星星。星星不能相邻或对角相邻。</li>\r\n    <li>将所有没有星星的格子划分为一些区域。每个区域均为中心对称，且包含其对称中心。所有对称中心已标出。</li>\r\n</ul>\r\n<a href=\"https://puzz.cipherpuzzles.com/penpa-edit/?m=solve&p=7VZdb+o4EH3nV6z8WkubccintA+U0m7vtlxaQN0SIRRogPQmpJsP2g3q/e21HVgIjCv1YaV9WIWMxmfMeGacM3b2V+GnAQVD/HSNOhoF/jRtXb5g8zF/d88gzKPA/YW2inyZpFyh9HuXzv0oC+i3x+VNO2m9XrT+XNv5aARXWnGtPTxfPp/dx39ch3oKl127d9u7Ddmi9Xv7/M7snJm9IhvmwfouhvPn4Wgw7z0sHPZ3pztqlqPvmvFtNP913Rr+1vC2IYwbHmGEyhfI+GfZ/+kRQs1xY1Peu5ty4nrjd1oO96q9V/vuhsuulCDlo7shzSZxPaBkFqazKJj0+4SyMSUGw2EHhU3ciYnPBk1T4Lgb0BR+wMZxBjhuGThuK+Y7JoozwONkinWZbuF4E68DMxR+DIUfA68DMxV+TB3HFfVhDl5/HfCPRFfUx2AK3MTrYFl4/S0br4Ot43WwTRWO52VbeDy2g+OOop6OIn7HxuvgqPw7eJ1BUxQaQMFqAEUpACzFPxgoyMoUuw+MKWjGDLwewEx8Q4HZKoY7ijV0TbGGDvgmgY5+3bw7XsoeyaQc8BZKS13KCyk1KQ0pb+ScjpQPUralbEppyjmWaMKNhteszhjVw4+i/63/bSs/hPl5S7IkmmRFOvdnwSR482c5caurwKGlhq2KeBqkNShKkpcoXGEedqYaGC5WSRqgJgEGTwuVK2FCXE2T9EnElKfFFn/1o6ieirwl1aCKKjUoT8Pa2E/T5LWGxH6+rAFTP+cXqmwZvtQ9BaujWuZ+LUL/h3+0WLwvxnuDvBH5ejplYrc2peOWLVpeubXLEy3v+N3o1i274mokrlEWbwdxEeXhLIkSvqLAQNLbIzqhtsb1DtdBdg7OdDFBaO3KM5hc74oJGh+I2Y98UO83Zc/1ygElYv1z6UCoJE7WPAHpWo5nSTzlKXrkoEZU54aseEp+FNupINpUq8qiv8uCB6HMwpBOdkkItUpCaCdJVPEepHBTOfpiBuLDy4opEr4zfq92S/vS9XV7TsoCaOIUJML8z432X+rcb1vKJ+knrN8bj2GE+xz9hP4HVgxXMP3Aeoyf8FoEe0ptjiLs5ugxwTl0ynEOntCcYwqmC6/HZBdRSb4fLXXCebHUIe15U5baBw==\" target=\"_blank\">在线做题链接（无答案检查）</a><br>\r\n<img src=\"https://static.cipherpuzzles.com/static/images/ea2dcb4efa374362ad972a45f4603abe.webp\" class=\"pimg\">\r\n<style>\r\n    .pimg {\r\n        width: 600px;\r\n    }\r\n    @media (max-width: 740px) {\r\n        .pimg {\r\n            width: 100%;\r\n        }\r\n    }\r\n</style>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":15,\"imgUrl\":\"47e9268416804784ba588311e65f8b67.svg\",\"color\":\"#000\",\"top\":\"521px\",\"left\":\"768px\",\"veryFirst\":false}",
+  "extend_content": "成功解开谜题后，量子星云影响的设备恢复正常，同时从中浮现出一张碎纸片。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5fa4c6588c35484d9115c8b6bb4b88f0.webp\" alt=\"fragment\" style=\"max-width: 100%\" />",
+  "adda": 0,
+  "answer": "안녕",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "dodomos",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    border: 1px solid black;\n    border-width: thin;\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border: 1px solid black;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n首先按照规则解出纸笔谜题。\n\n<a href=\"https://static.cipherpuzzles.com/static/images/d69791e7390d4e198caa5a8c879e5cef.PNG\" target=\"_blank\"><img src=\"https://static.cipherpuzzles.com/static/images/d69791e7390d4e198caa5a8c879e5cef.PNG\" style=\"width:400px\"></a>\n\n将颜色对应到相应区域的分割线形状，填入提取图片，得到`정답은안녕`，即韩语的「答案是안녕」。所以最终答案为`안녕`。\n\n<table id=\"answerkey\">\n<tr><th>颜色</th><td>红</td><td>橙</td><td>黄</td><td>绿</td><td>青</td><td>蓝</td><td>紫</td><td>褐</td></tr>\n<tr><th>区域分割线形状</th><td>ᄌ</td><td>ᅥ</td><td>ᄃ</td><td>ᅡ</td><td>ᅧ</td><td>ᄂ</td><td>ᄇ</td><td>ᅳ</td></tr>\n</table>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "该如何提取",
+      "content": "将颜色对应到相应区域，描出同色区域的内部边界线的形状。仅保留内部边界线，就是对应颜色的提取。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "纸笔太难了，能简化一下吗？",
+      "content": "好的，星星已全部标出：\n<img src=\"https://static.cipherpuzzles.com/static/images/f70995ad44b643f78be3175845c273ed.webp\" style=\"width:400px\">",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我不理解我提取出的东西",
+      "content": "韩语",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    border: 1px solid black;\n    border-width: thin;\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border: 1px solid black;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n首先按照规则解出纸笔谜题。\n\n<a href=\"https://static.cipherpuzzles.com/static/images/d69791e7390d4e198caa5a8c879e5cef.PNG\" target=\"_blank\"><img src=\"https://static.cipherpuzzles.com/static/images/d69791e7390d4e198caa5a8c879e5cef.PNG\" style=\"width:400px\"></a>\n\n将颜色对应到相应区域的分割线形状，填入提取图片，得到`정답은안녕`，即韩语的「答案是안녕」。所以最终答案为`안녕`。\n\n<table id=\"answerkey\">\n<tr><th>颜色</th><td>红</td><td>橙</td><td>黄</td><td>绿</td><td>青</td><td>蓝</td><td>紫</td><td>褐</td></tr>\n<tr><th>区域分割线形状</th><td>ᄌ</td><td>ᅥ</td><td>ᄃ</td><td>ᅡ</td><td>ᅧ</td><td>ᄂ</td><td>ᄇ</td><td>ᅳ</td></tr>\n</table>\n",
+  "additional_answers": [
+    {
+      "aaid": 86,
+      "answer": "정답은안녕",
+      "message": "这是一个里程碑，“정답은안녕”的意思是“答案是안녕”。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

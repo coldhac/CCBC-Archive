@@ -1,0 +1,34 @@
+{
+  "pid": 8,
+  "pgid": 1,
+  "type": 3,
+  "pg_name": "序章",
+  "title": "恶魔斯基",
+  "content": "<div class=\"tip-block custom-block\">\n  <span class=\"custom-block-title\">💡</span>\n  <span>本题可在emoji后的输入框中输入内容</span>\n</div>",
+  "image": "",
+  "html": "<img src=\"https://static.cipherpuzzles.com/static/images/33dbd56935a24ef3befb6521f006c7a5.webp\" style=\"width:600px\">\r\n\r\n<div>\r\n    方便复制版：\r\n    <pre>\r\n➕➖✖️❓\r\n🎬🎥🔘🟰🟦➕⚪🟰❓\r\n➰➿↔️🌱🍀↔️❗❓\r\n🙂❓🙁\r\n➕➖✖️❓\r\n😀❓🗨️😀\r\n💍🟰®️❓🆖\r\n🟨🔺➕❕🟰❓\r\n❓➡️🛑🈲🚫🙅🏻‍♀\r\n    </pre>\r\n</div>",
+  "script": "https://static.cipherpuzzles.com/static/images/dd2e194821774c3d8f9473d1659f100b.vue",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":8,\"imgUrl\":\"1b4260d135a1401a84c9063917577f3e.webp\",\"color\":\"#000\",\"top\":\"320px\",\"left\":\"1232px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "RECURSANT",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n@font-face {\n  font-family: 'EmojiFont';\n  src: url('https://static.cipherpuzzles.com/static/images/emoji.ttf') format('truetype');\n}\n\n.emoji {\n  font-family: 'EmojiFont', sans-serif;\n}\n\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n每条线索均需填入一个EMOJI。正如标题在“EMOJI”中插入了“摩斯”，根据EMOJI中的点线对应摩斯电码，转换即可得到答案。\n\n<table id=\"answerkey\" class=\"emoji\">\n<tr><th>线索</th><th>答案</th><th>摩斯电码</th><th>对应字母</th></tr>\n<tr><td>➕➖✖️❓</td><td>➗</td><td>.-.</td><td>R</td></tr>\n<tr><td>🗽🇺🇸↔️🗼❓</td><td>🇯🇵</td><td>.</td><td>E</td></tr>\n<tr><td>➰➿↔️🌱🍀↔️❗❓</td><td>‼️</td><td>-.-.</td><td>C</td></tr>\n<tr><td>🙂❓🙁</td><td>😐</td><td>..-</td><td>U</td></tr>\n<tr><td>➕➖✖️❓</td><td>➗</td><td>.-.</td><td>R</td></tr>\n<tr><td>😀❓🗨️😀</td><td>💬</td><td>...</td><td>S</td></tr>\n<tr><td>💍🟰®️❓🆖</td><td>ℹ️</td><td>.-</td><td>A</td></tr>\n<tr><td>🟨🔺➕❕🟰❓</td><td>⚠️</td><td>-.</td><td>N</td></tr>\n<tr><td>❓➡️🛑🈲🚫🙅🏻‍♀</td><td>⛔</td><td>-</td><td>T</td></tr>\n</table>\n\n答案为 <font color = green>RECURSANT</font>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "答完了但不知道怎么提取！",
+      "content": "正如标题在“EMOJI”中插入了“摩斯”，需要根据填入EMOJI中的点线对应摩斯电码。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n@font-face {\n  font-family: 'EmojiFont';\n  src: url('https://static.cipherpuzzles.com/static/images/emoji.ttf') format('truetype');\n}\n\n.emoji {\n  font-family: 'EmojiFont', sans-serif;\n}\n\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n每条线索均需填入一个EMOJI。正如标题在“EMOJI”中插入了“摩斯”，根据EMOJI中的点线对应摩斯电码，转换即可得到答案。\n\n<table id=\"answerkey\" class=\"emoji\">\n<tr><th>线索</th><th>答案</th><th>摩斯电码</th><th>对应字母</th></tr>\n<tr><td>➕➖✖️❓</td><td>➗</td><td>.-.</td><td>R</td></tr>\n<tr><td>🗽🇺🇸↔️🗼❓</td><td>🇯🇵</td><td>.</td><td>E</td></tr>\n<tr><td>➰➿↔️🌱🍀↔️❗❓</td><td>‼️</td><td>-.-.</td><td>C</td></tr>\n<tr><td>🙂❓🙁</td><td>😐</td><td>..-</td><td>U</td></tr>\n<tr><td>➕➖✖️❓</td><td>➗</td><td>.-.</td><td>R</td></tr>\n<tr><td>😀❓🗨️😀</td><td>💬</td><td>...</td><td>S</td></tr>\n<tr><td>💍🟰®️❓🆖</td><td>ℹ️</td><td>.-</td><td>A</td></tr>\n<tr><td>🟨🔺➕❕🟰❓</td><td>⚠️</td><td>-.</td><td>N</td></tr>\n<tr><td>❓➡️🛑🈲🚫🙅🏻‍♀</td><td>⛔</td><td>-</td><td>T</td></tr>\n</table>\n\n答案为 <font color = green>RECURSANT</font>",
+  "additional_answers": []
+}

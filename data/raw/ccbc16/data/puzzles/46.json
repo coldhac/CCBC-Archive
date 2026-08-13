@@ -1,0 +1,162 @@
+{
+  "pid": 46,
+  "pgid": 5,
+  "type": 3,
+  "pg_name": "造纸",
+  "title": "三字谜",
+  "content": "<div  class=\"error-block custom-block\">\n<span class=\"custom-block-title\">修改于 2025/08/11 20:02</span>\n<span>倒数第四行增加了答案长度限制</span>\n</div>",
+  "image": "",
+  "html": "",
+  "script": "https://static.cipherpuzzles.com/static/images/122f330c42fb47ea9d68877c9fce03d2.vue",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":46,\"imgUrl\":\"729da2f2abb1406d828564d19d600b58.webp\",\"color\":\"#000\",\"top\":\"36px\",\"left\":\"1272px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "*（无）*",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n    min-width: 3ex;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n    min-width: 50px;\n}\n</style>\n<table id = \"answerkey\">\n<tr><th>谜题一</th><th>谜答一</th><th>谜题二</th><th>谜答二</th><th>谜题三</th><th>谜答三</th><th>谜题四</th><th>谜答四</th><th>谜题五</th><th>谜答五</th><th>谜题六</th><th>谜答六</th><th>谜讲解</th></tr>\n<tr><td>输入解</td><td>解</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>如字面</td></tr>\n<tr><td>同心结</td><td>心结</td><td>反光灯</td><td>灯光</td><td>非非法</td><td>合法</td><td>非非师</td><td>死|熟</td><td>谐麋鹿</td><td>迷路</td><td>倒宜家</td><td>埃及</td><td>同向读；反向读；单反义；双反义；谐音词；倒放词</td></tr>\n<tr><td>星星星</td><td>三星</td><td>心用用</td><td>一心二用</td><td>狡𠓗窟</td><td>狡兔三窟</td><td>面面刕</td><td>两面三刀</td><td>事事工</td><td>事倍功半</td><td>数数数</td><td>数一数二</td><td>略略略</td></tr>\n<tr><td>梅兰竹</td><td>菊</td><td>北大太</td><td>印</td><td>西红水</td><td>三</td><td>东黄南</td><td>渤</td><td>强引弱</td><td>电磁</td><td>固液气</td><td>等离子</td><td>花四君；四大洋；四名著；四海域；基本力；四物态</td></tr>\n<tr><td>地不熟</td><td>人生</td><td>海知己</td><td>内存</td><td>解三秋</td><td>落叶</td><td>门闻吠</td><td>柴犬</td><td>空白狼</td><td>手套</td><td>成不恨</td><td>钢铁</td><td>前五略；句子反</td></tr>\n<tr><td>一顺风</td><td>一路顺风</td><td>一风顺</td><td>一帆风顺</td><td>为非作</td><td>为非作歹</td><td>作非为</td><td>胡作非为</td><td>说不二</td><td>说一不二</td><td>二不说</td><td>二话不说</td><td>略略略</td></tr>\n<tr><td>椿榎楸</td><td>柊</td><td>离未罔</td><td>两</td><td>氭煵㘳</td><td>洒</td><td>脌昐时</td><td>秒</td><td>艮同失</td><td>易</td><td>三三四</td><td>五</td><td>木四季；四小鬼；四元素；六时间；五金属；一到五</td></tr>\n<tr><td>目田四</td><td>园</td><td>仱仮仪</td><td>估|借</td><td>椎冋乂</td><td>幻</td><td>都本日</td><td>京东</td><td>阳白反</td><td>下巴</td><td>略略略</td><td>略+</td><td>二加儿；今反义；稚同义；日本都；春雪义；略略略</td></tr>\n<tr><td>氧化氢</td><td>水</td><td>千瓦时</td><td>度</td><td>混凝土</td><td>砼</td><td>图书馆</td><td>圕</td><td>狮虎兽</td><td>彪</td><td>人世佳</td><td>飘</td><td>前五略；加上乱</td></tr>\n<tr><td>㋁行星</td><td>火星</td><td>㏢科幻</td><td>三体</td><td>㏩神话</td><td>后羿射日</td><td>㋉㏩字</td><td>朝</td><td>㍼㍜字</td><td>照</td><td>三㍾皮</td><td>面包</td><td>略略略</td></tr>\n<tr><td>答哈鿣</td><td>哈耶克</td><td>㘴填㆟</td><td>坐</td><td>乮前六</td><td>配</td><td>䇂㱐冨</td><td>弋</td><td>㖯㌄㐃</td><td>同仁</td><td>一㔖㌍</td><td>归</td><td>前二略；干支组；缺笔画；取上半；重组字</td></tr>\n<tr><td>交换部</td><td>陪</td><td>重组贺</td><td>勋</td><td>组字㫄</td><td>回</td><td>根包邓</td><td>权限</td><td>镜像匕</td><td>刀</td><td>镜像吡</td><td>OFF</td><td>略略略</td></tr>\n<tr><td>谈讲谓</td><td>说</td><td>吃屋安</td><td>穿</td><td>术米沐</td><td>杰|沭</td><td>卅井丰</td><td>亖</td><td>鵞䳘䳗</td><td>鵝|鹅</td><td>都堵肚</td><td>阴</td><td>说同义、四声调；读拼音、衣食住；略三题；两两交</td></tr>\n<tr><td>亳增一</td><td>毫</td><td>计增一</td><td>讯</td><td>卑减二</td><td>早</td><td>苗变一</td><td>昔</td><td>烦增二</td><td>颊</td><td>牢增二</td><td>牵</td><td>略略略</td></tr>\n<tr><td>五立方</td><td>125</td><td>八选二</td><td>28</td><td>今年根</td><td>45</td><td>光年米</td><td>9460730472580800</td><td>棋盘麦</td><td>18446744073709551615</td><td>忙狸五</td><td>47176870</td><td>略略略</td></tr>\n<tr><td>约三亿</td><td>光速</td><td>九点八</td><td>重力加速度</td><td>七点九</td><td>第一宇宙速度</td><td>六千垓</td><td>阿伏伽德罗常[数量]</td><td>己𠃍旧</td><td>自然对数的底|自然常数|自然底数|欧拉数</td><td>已通过</td><td>已通过</td><td>略略略</td></tr>\n<tr><td>木又寸</td><td>树</td><td>日一里</td><td>量</td><td>石旦寸</td><td>碍</td><td>丶业又</td><td>变</td><td>亻卜丬</td><td>位</td><td>二丬日</td><td>临</td><td>笔画序，组成字</td></tr>\n<tr><td>曌女唐</td><td>武则天</td><td>诗酒剑</td><td>李白</td><td>猹文绍</td><td>鲁迅</td><td>蛋航陆</td><td>哥伦布</td><td>镜苹矮</td><td>白雪公主</td><td>三创秋</td><td>落[葉叶]子</td><td>略略略</td></tr>\n<tr><td>狈甥娑</td><td>狼外婆</td><td>厩脊迪</td><td>马里奥</td><td>贼孤国</td><td>乌托邦</td><td>兜扣俗</td><td>麦克风</td><td>镇动驾</td><td>冰激凌</td><td>超股恤</td><td>BAT|bat|Bat</td><td>略略略</td></tr>\n<tr><td>柯南药</td><td>APTX4869</td><td>宇宙答</td><td>42</td><td>俊杰歌</td><td>编号89757</td><td>冉阿让</td><td>24601</td><td>未找到</td><td>404</td><td>官方群</td><td>488377800</td><td>略略略</td></tr>\n<tr><td>半〇围</td><td>包</td><td>〇横字</td><td>〇|一|二|三|亖</td><td>〇乘〇</td><td>[二三四五六七八九]十</td><td>餐〇〇</td><td>纸巾</td><td>浙〇〇</td><td>江西</td><td>〇太〇</td><td>李白</td><td>略略略</td></tr>\n<tr><td>五字谜</td><td>三三四</td><td>亖字谜</td><td>卅井丰</td><td>三字谜</td><td>西红水</td><td>两字谜</td><td>离未罔</td><td>一字谜</td><td>一横字</td><td>-</td><td>-</td><td>〇横字：回答一</td></tr>\n<tr><td>解为日</td><td>日</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>回开头，改答案，回答日</td></tr>\n<tr><td>〇字谜</td><td>〇横字</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>日三秋：回答一；〇横字：回答〇</td></tr>\n</table>",
+  "check_answer_type": 1,
+  "check_answer_function": "c16-checkanswer-noanswer",
+  "tips": [
+    {
+      "num": 1,
+      "title": "调整增加次数价格",
+      "content": "",
+      "desc": "add_attempts_count",
+      "point_cost": 0,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "五题的　某一行　懂机制　但还是　填不上！",
+      "content": "这行的上一行，有一题的答案可以变。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "一题的　某一行　我完全　没头绪！",
+      "content": "这行的上一行是个提示，表示前面有一题的答案可以变。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "五题的　某一行　不会做！",
+      "content": "X字谜 = 答案是X的字谜",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "一题的　某一行　咋想都　填不上！",
+      "content": "这一题需要回答答案为“〇”的题面。\n某一题的答案可以为“〇”。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "二十行　浙某某　答案何",
+      "content": "江西",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "二十行　某太某　答案何",
+      "content": "李白",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "第八行　人某某　答案何",
+      "content": "飘",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 9,
+      "title": "第十行　某某㐃　答案何",
+      "content": "同仁",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 10,
+      "title": "十一行　某某匕　答案何",
+      "content": "刀",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 11,
+      "title": "十一行　某某吡　答案何",
+      "content": "OFF",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 12,
+      "title": "十三行　牢某某　答案何",
+      "content": "牵",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 13,
+      "title": "十五行　己某某　答案何",
+      "content": "自然常数",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 14,
+      "title": "十六行　二某某　答案何",
+      "content": "临",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 15,
+      "title": "十七行　蛋某某　答案何",
+      "content": "哥伦布",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 16,
+      "title": "十八行　超某某　答案何",
+      "content": "BAT",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 17,
+      "title": "第七行　某某反　答案何",
+      "content": "下巴",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n    min-width: 3ex;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n    min-width: 50px;\n}\n</style>\n<table id = \"answerkey\">\n<tr><th>谜题一</th><th>谜答一</th><th>谜题二</th><th>谜答二</th><th>谜题三</th><th>谜答三</th><th>谜题四</th><th>谜答四</th><th>谜题五</th><th>谜答五</th><th>谜题六</th><th>谜答六</th><th>谜讲解</th></tr>\n<tr><td>输入解</td><td>解</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>如字面</td></tr>\n<tr><td>同心结</td><td>心结</td><td>反光灯</td><td>灯光</td><td>非非法</td><td>合法</td><td>非非师</td><td>死|熟</td><td>谐麋鹿</td><td>迷路</td><td>倒宜家</td><td>埃及</td><td>同向读；反向读；单反义；双反义；谐音词；倒放词</td></tr>\n<tr><td>星星星</td><td>三星</td><td>心用用</td><td>一心二用</td><td>狡𠓗窟</td><td>狡兔三窟</td><td>面面刕</td><td>两面三刀</td><td>事事工</td><td>事倍功半</td><td>数数数</td><td>数一数二</td><td>略略略</td></tr>\n<tr><td>梅兰竹</td><td>菊</td><td>北大太</td><td>印</td><td>西红水</td><td>三</td><td>东黄南</td><td>渤</td><td>强引弱</td><td>电磁</td><td>固液气</td><td>等离子</td><td>花四君；四大洋；四名著；四海域；基本力；四物态</td></tr>\n<tr><td>地不熟</td><td>人生</td><td>海知己</td><td>内存</td><td>解三秋</td><td>落叶</td><td>门闻吠</td><td>柴犬</td><td>空白狼</td><td>手套</td><td>成不恨</td><td>钢铁</td><td>前五略；句子反</td></tr>\n<tr><td>一顺风</td><td>一路顺风</td><td>一风顺</td><td>一帆风顺</td><td>为非作</td><td>为非作歹</td><td>作非为</td><td>胡作非为</td><td>说不二</td><td>说一不二</td><td>二不说</td><td>二话不说</td><td>略略略</td></tr>\n<tr><td>椿榎楸</td><td>柊</td><td>离未罔</td><td>两</td><td>氭煵㘳</td><td>洒</td><td>脌昐时</td><td>秒</td><td>艮同失</td><td>易</td><td>三三四</td><td>五</td><td>木四季；四小鬼；四元素；六时间；五金属；一到五</td></tr>\n<tr><td>目田四</td><td>园</td><td>仱仮仪</td><td>估|借</td><td>椎冋乂</td><td>幻</td><td>都本日</td><td>京东</td><td>阳白反</td><td>下巴</td><td>略略略</td><td>略+</td><td>二加儿；今反义；稚同义；日本都；春雪义；略略略</td></tr>\n<tr><td>氧化氢</td><td>水</td><td>千瓦时</td><td>度</td><td>混凝土</td><td>砼</td><td>图书馆</td><td>圕</td><td>狮虎兽</td><td>彪</td><td>人世佳</td><td>飘</td><td>前五略；加上乱</td></tr>\n<tr><td>㋁行星</td><td>火星</td><td>㏢科幻</td><td>三体</td><td>㏩神话</td><td>后羿射日</td><td>㋉㏩字</td><td>朝</td><td>㍼㍜字</td><td>照</td><td>三㍾皮</td><td>面包</td><td>略略略</td></tr>\n<tr><td>答哈鿣</td><td>哈耶克</td><td>㘴填㆟</td><td>坐</td><td>乮前六</td><td>配</td><td>䇂㱐冨</td><td>弋</td><td>㖯㌄㐃</td><td>同仁</td><td>一㔖㌍</td><td>归</td><td>前二略；干支组；缺笔画；取上半；重组字</td></tr>\n<tr><td>交换部</td><td>陪</td><td>重组贺</td><td>勋</td><td>组字㫄</td><td>回</td><td>根包邓</td><td>权限</td><td>镜像匕</td><td>刀</td><td>镜像吡</td><td>OFF</td><td>略略略</td></tr>\n<tr><td>谈讲谓</td><td>说</td><td>吃屋安</td><td>穿</td><td>术米沐</td><td>杰|沭</td><td>卅井丰</td><td>亖</td><td>鵞䳘䳗</td><td>鵝|鹅</td><td>都堵肚</td><td>阴</td><td>说同义、四声调；读拼音、衣食住；略三题；两两交</td></tr>\n<tr><td>亳增一</td><td>毫</td><td>计增一</td><td>讯</td><td>卑减二</td><td>早</td><td>苗变一</td><td>昔</td><td>烦增二</td><td>颊</td><td>牢增二</td><td>牵</td><td>略略略</td></tr>\n<tr><td>五立方</td><td>125</td><td>八选二</td><td>28</td><td>今年根</td><td>45</td><td>光年米</td><td>9460730472580800</td><td>棋盘麦</td><td>18446744073709551615</td><td>忙狸五</td><td>47176870</td><td>略略略</td></tr>\n<tr><td>约三亿</td><td>光速</td><td>九点八</td><td>重力加速度</td><td>七点九</td><td>第一宇宙速度</td><td>六千垓</td><td>阿伏伽德罗常[数量]</td><td>己𠃍旧</td><td>自然对数的底|自然常数|自然底数|欧拉数</td><td>已通过</td><td>已通过</td><td>略略略</td></tr>\n<tr><td>木又寸</td><td>树</td><td>日一里</td><td>量</td><td>石旦寸</td><td>碍</td><td>丶业又</td><td>变</td><td>亻卜丬</td><td>位</td><td>二丬日</td><td>临</td><td>笔画序，组成字</td></tr>\n<tr><td>曌女唐</td><td>武则天</td><td>诗酒剑</td><td>李白</td><td>猹文绍</td><td>鲁迅</td><td>蛋航陆</td><td>哥伦布</td><td>镜苹矮</td><td>白雪公主</td><td>三创秋</td><td>落[葉叶]子</td><td>略略略</td></tr>\n<tr><td>狈甥娑</td><td>狼外婆</td><td>厩脊迪</td><td>马里奥</td><td>贼孤国</td><td>乌托邦</td><td>兜扣俗</td><td>麦克风</td><td>镇动驾</td><td>冰激凌</td><td>超股恤</td><td>BAT|bat|Bat</td><td>略略略</td></tr>\n<tr><td>柯南药</td><td>APTX4869</td><td>宇宙答</td><td>42</td><td>俊杰歌</td><td>编号89757</td><td>冉阿让</td><td>24601</td><td>未找到</td><td>404</td><td>官方群</td><td>488377800</td><td>略略略</td></tr>\n<tr><td>半〇围</td><td>包</td><td>〇横字</td><td>〇|一|二|三|亖</td><td>〇乘〇</td><td>[二三四五六七八九]十</td><td>餐〇〇</td><td>纸巾</td><td>浙〇〇</td><td>江西</td><td>〇太〇</td><td>李白</td><td>略略略</td></tr>\n<tr><td>五字谜</td><td>三三四</td><td>亖字谜</td><td>卅井丰</td><td>三字谜</td><td>西红水</td><td>两字谜</td><td>离未罔</td><td>一字谜</td><td>一横字</td><td>-</td><td>-</td><td>〇横字：回答一</td></tr>\n<tr><td>解为日</td><td>日</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>回开头，改答案，回答日</td></tr>\n<tr><td>〇字谜</td><td>〇横字</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>日三秋：回答一；〇横字：回答〇</td></tr>\n</table>",
+  "additional_answers": []
+}

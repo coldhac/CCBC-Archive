@@ -1,0 +1,51 @@
+answer: CELEBRATORY EXPLOSIVE
+answer-analysis: |
+  这道题是经典的关灯游戏（Lights Out），不过尺寸从5x5变成了12x10。根据剧情提示，我们需要把所有灯都关掉。这种游戏可以通过解一个在二元域F2下的线性方程得到解法，也可以通过"Light chasing"将情况简化至只剩下最后一行有亮灯的情况（从第二行开始，通过按上一行所有亮灯下面的键使得上面一行没有亮灯，直到最后一行），然后通过试验第一行对最后一行的影响得到解法。
+
+  <img src="/ccbc12/images/answer/f-1876.png" style="width: 400px" />
+
+  PS: 网上有解决这类问题的计算器，例如 https://www.dcode.fr/lights-out-solver
+
+  把所有灯按灭后，我们标注所有按过的按钮（注意按了偶数次和没按是等价的），然后根据剧情里“亮瞎眼”的提示把12x10的表格分成20个3x2的小块，然后通过盲文转成答案：**CELEBRATORY EXPLOSIVE**。
+components:
+- name: LightGame
+content:
+- '<!--use lightgame-->
+
+  这房间怎么这么多灯，亮瞎眼了，快都关掉！'
+content-js: |
+  (function(){
+  const lightInitData =
+  //请将从Excel复制来的内容粘贴在下面↓↓↓
+  [	333	,
+    787	,
+    652	,
+    500	,
+    114	,
+    994	,
+    637	,
+    1023	,
+    963	,
+    336	,
+    761	,
+    891	]
+  //请将从Excel复制来的内容粘贴在上面↑↑↑
+  ;(function (e){
+  if(!window.lightGameInit) {console.log("Warning: no game wrapper."); return;}
+  window.lightGameInit(e, 10);
+  })(lightInitData);
+  })();
+links:
+- path: ccbc12/index
+  title: CCBC12 索引页
+  type: index
+- path: ccbc12/pages/main
+  title: 时光机
+  type: page
+tips:
+- content: 你应该按照指示把灯都关了。第一行中需要按的按钮是第1、2、3、5、7、9个。
+  title: 我毫无头绪
+- content: 把矩阵分成若干个3x2的小长方形，然后把按过的按钮位置按盲文转成字母。
+  title: 该如何提取
+title: '#1876 灯泡矩阵 - CCBC 12'
+type: problem

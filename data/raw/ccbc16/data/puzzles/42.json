@@ -1,0 +1,147 @@
+{
+  "pid": 42,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "元元元……元谜题",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":42,\"imgUrl\":\"284a2c1e4e684fb883a87ba2dc64f952.svg\",\"color\":\"#000\",\"top\":\"272px\",\"left\":\"530px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "BASE CASE",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n\n.metametameta {\n    border-collapse: collapse;\n    margin: 0 30px 0 0;\n}\n.metametameta td {\n    text-align: center;\n    width: 30px;\n    height: 30px;\n    border: 1px solid;\n    /* color: black */\n}\n\n#mmm_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n\n本题由以下几个碎片组成：\n<div id=\"mmm_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/b4c1d4fedb034fbda96a72e8fbdc2bb2.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/40a194bacd6347c8b39ee6b7c998d1f3.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/783f1bc7f6354b76adcb26f2e42fdd3e.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/4e2b2c9c21334732ab04293abebfbef2.webp\">\n\n本题的机制是：每道题都是用到之前所有答案的元ⁿ谜题。例如，「最初的起点」是元⁰谜题(=谜题)，而「元谜题」则是用到元⁰谜题答案的元¹谜题(=元谜题)。每题答案如下表所示：\n\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n<tr><td>6</td><td>挑战书</td><td>ABLE</td></tr>\n<tr><td>7</td><td>置换群</td><td>RESTART</td></tr>\n<tr><td>8</td><td>元元元……元谜题</td><td>BASE CASE</td></tr>\n</table>\n\n以下解析每道题的做法。\n\n## 元<sup>0</sup>谜题：最初的起点\n\n按照题目要求填入八大行星名称。按数字顺序读字母得到 `ANS START`。本题答案即为 `START`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/591088ce0b884f7ea0642d8df32fb166.webp\" style=\"width: 300px\" />\n\n## 元<sup>1</sup>谜题：元谜题\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n</table>\n\n根据例子得到蓝色箭头表示东南西北，红色箭头表示上下左右，数字表示提取该方向的英文单词里第n个字母。\n本题答案为 `ALPINE`。\n\n## 元<sup>2</sup>谜题：以一易一\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n</table>\n\n每个线索对应一个单词。除吸管（法语）外，别的都是英文单词。观察发现，每个单词都是某个答案修改一个字母后重排得到的。读添加的字母得到答案 `MUSICAL`。\n<table id=\"answerkey\">\n<tr><th>线索</th><th>单词</th><th>用到的答案</th><th>减去的字母</th><th>添加的字母</th></tr>\n<tr><td>聪明</td><td>SMART</td><td>START</td><td>T</td><td>M</td></tr>\n<tr><td>阵容</td><td>LINEUP</td><td>ALPLINE</td><td>A</td><td>U</td></tr>\n<tr><td>盐水</td><td>SALINE</td><td>ALPLINE</td><td>P</td><td>S</td></tr>\n<tr><td>特征</td><td>TRAIT</td><td>START</td><td>S</td><td>I</td></tr>\n<tr><td>铅笔</td><td>PENCIL</td><td>ALPLINE</td><td>A</td><td>C</td></tr>\n<tr><td>鞑靼语</td><td>TATAR</td><td>START</td><td>S</td><td>A</td></tr>\n<tr><td>吸管（法语）</td><td>PAILLE</td><td>ALPLINE</td><td>N</td><td>L</td></tr>\n</table>\n\n## 元<sup>3</sup>谜题：加法练习\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n</table>\n\n每个给出的数字可以写成一些分数x/y的和，其中 5 ≤ y ≤ 7, 1 ≤ x ≤ y。这些分数对应某个字母在答案中的所有出现，x/y表示长度为y的答案的第x个字母。答案为 `ARSENIC`。\n<table id=\"answerkey\">\n<tr><th>数字</th><th>分数表示</th><th>对应字母</th></tr>\n<tr><td>1.623...</td><td>3/5+1/6+6/7</td><td>A</td></tr>\n<tr><td>0.8</td><td>4/5</td><td>R</td></tr>\n<tr><td>0.628...</td><td>1/5+3/7</td><td>S</td></tr>\n<tr><td>1</td><td>6/6</td><td>E</td></tr>\n<tr><td>0.833...</td><td>5/6</td><td>N</td></tr>\n<tr><td>1.238...</td><td>4/6+4/7</td><td>I</td></tr>\n<tr><td>0.714...</td><td>5/7</td><td>C</td></tr>\n</table>\n\n## 元<sup>4</sup>谜题：蜿蜒单词\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n</table>\n\n按规则完成纸笔谜题，得到答案 `CARAT`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/271f943dad714307978356ded989cf5d.webp\" style=\"width: 200px\" />\n\n## 元<sup>5</sup>谜题：寻旗\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n</table>\n\n将每个答案转为旗语，按照规则在网格中找到。没有用到的方向成对，按照旗语读出得到答案 `STARVE`。\n<table class=\"metametameta\">\n  <tr>\n    <td style=\"background-color:#EAD1DC\">↗</td>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#EAD1DC\">←</td>\n    <td style=\"background-color:#EAD1DC\">↑</td>\n    <td style=\"background-color:#FF0\">←</td>\n    <td style=\"background-color:#FF0\">↘</td>\n    <td style=\"background-color:#F4CCCC\">←</td>\n    <td style=\"background-color:#F4CCCC\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↓</td>\n  </tr>\n<tbody>\n  <tr>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#FF0\">↑</td>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#EAD1DC\">↖</td>\n    <td style=\"background-color:#EAD1DC\">↓</td>\n    <td style=\"background-color:#D9EAD3\">←</td>\n    <td style=\"background-color:#F4CCCC\">→</td>\n    <td style=\"background-color:#F4CCCC\">←</td>\n    <td style=\"background-color:#F4CCCC\">↘</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#EAD1DC\">↓</td>\n    <td style=\"background-color:#FF0\">↖</td>\n    <td style=\"background-color:#EAD1DC\">↘</td>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#EAD1DC\">↗</td>\n    <td style=\"background-color:#D9EAD3\">↘</td>\n    <td style=\"background-color:#D9EAD3\">↖</td>\n    <td style=\"background-color:#FF0\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↓</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↗</td>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↓</td>\n    <td style=\"background-color:#CFE2F3\">↖</td>\n    <td style=\"background-color:#CFE2F3\">↓</td>\n    <td style=\"background-color:#D9EAD3\">↑</td>\n    <td style=\"background-color:#FF0\">↓</td>\n    <td style=\"background-color:#F4CCCC\">↗</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FF0\">→</td>\n    <td style=\"background-color:#FF0\">←</td>\n    <td style=\"background-color:#FFF2CC\">↓</td>\n    <td style=\"background-color:#CFE2F3\">←</td>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↖</td>\n    <td style=\"background-color:#D9EAD3\">↓</td>\n    <td style=\"background-color:#D9EAD3\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↘</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FFF2CC\">↓</td>\n    <td style=\"background-color:#FFF2CC\">↙</td>\n    <td style=\"background-color:#FFF2CC\">↖</td>\n    <td style=\"background-color:#CFE2F3\">↘</td>\n    <td style=\"background-color:#D9EAD3\">↖</td>\n    <td style=\"background-color:#D9EAD3\">↑</td>\n    <td style=\"background-color:#D9EAD3\">←</td>\n    <td style=\"background-color:#D9EAD3\">→</td>\n    <td style=\"background-color:#F4CCCC\">↙</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FFF2CC\">↖</td>\n    <td style=\"background-color:#FFF2CC\">←</td>\n    <td style=\"background-color:#FFF2CC\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↖</td>\n    <td style=\"background-color:#FF0\">↑</td>\n    <td style=\"background-color:#FF0\">↘</td>\n    <td style=\"background-color:#F4CCCC\">↓</td>\n    <td style=\"background-color:#F4CCCC\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↖</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FFF2CC\">↑</td>\n    <td style=\"background-color:#FFF2CC\">→</td>\n    <td style=\"background-color:#FFF2CC\">↓</td>\n    <td style=\"background-color:#CFE2F3\">↗</td>\n    <td style=\"background-color:#CFE2F3\">→</td>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↖</td>\n    <td style=\"background-color:#FF0\">↗</td>\n    <td style=\"background-color:#FF0\">↓</td>\n  </tr>\n</tbody></table>\n\n## 元<sup>6</sup>谜题：挑战书\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n</table>\n\n注意到六个答案可以分成三对，每对长度分别是5、6、7。挑战书也有三行，长度分别是5、6、7。\n每对答案有一个在相同位置的相同字母。读对应的挑战书中的汉字，得到 `有能力`。\n根据挑战书，这个答案有偶数字母，即为 `ABLE`。\n\n<table id=\"answerkey\">\n<tr><th>组</th><th>答案</th><th>挑战书</th></tr>\n<tr><td rowspan=\"2\">5</td><td>STAR<b style=\"color:red\">T</b></td><td rowspan=\"2\">这个单词<b style=\"color:red\">有</b></td></tr>\n<tr><td>CARA<b style=\"color:red\">T</b></td></tr>\n<tr><td rowspan=\"2\">6</td><td>ALPIN<b style=\"color:red\">E</b></td><td rowspan=\"2\">偶数字母你<b style=\"color:red\">能</b></td></tr>\n<tr><td>STARV<b style=\"color:red\">E</b></td></tr>\n<tr><td rowspan=\"2\">7</td><td>MU<b style=\"color:red\">S</b>ICAL</td><td rowspan=\"2\">凭实<b style=\"color:red\">力</b>找到它吗</td></tr>\n<tr><td>AR<b style=\"color:red\">S</b>ENIC</td></tr>\n</table>\n\n\n## 元<sup>7</sup>谜题：置换群\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n<tr><td>6</td><td>挑战书</td><td>ABLE</td></tr>\n</table>\n\n给出的24个字母分别对应置换群S<sub>4</sub>的元素。给出的例子表示了乘法的规则。计算每个答案的乘积即可得到答案 `RESTART`。\n\n## 元<sup>8</sup>谜题：元元元……元谜题\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n<tr><td>6</td><td>挑战书</td><td>ABLE</td></tr>\n<tr><td>7</td><td>置换群</td><td>RESTART</td></tr>\n</table>\n\n注意到「置换群」的答案是 `RESTART`。将八个答案填入「最初的起点」中的网格，提取得到最终答案 `BASE CASE`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5441aaa0ed854c8a973a9bda46b09124.webp\" style=\"width: 300px\" />\n</div>\n",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": " 这道题需要哪些碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n<img src=\"https://static.cipherpuzzles.com/static/images/4e2b2c9c21334732ab04293abebfbef2.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/b4c1d4fedb034fbda96a72e8fbdc2bb2.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/783f1bc7f6354b76adcb26f2e42fdd3e.webp\">\n<img src=\"https://static.cipherpuzzles.com/static/images/40a194bacd6347c8b39ee6b7c998d1f3.webp\">\n</div>\n",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我毫无头绪",
+      "content": "本题的机制是：每道题都是用到之前所有答案的元ⁿ谜题。例如，「最初的起点」是元⁰谜题(=谜题)，而「元谜题」则是用到元⁰谜题答案的元¹谜题(=元谜题)。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "第二个小题的做法",
+      "content": "蓝色箭头表示东南西北，红色箭头表示上下左右。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "第三个小题的做法",
+      "content": "每个线索对应一个英文单词。每个单词都是某个答案修改一个字母后重排得到的。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "第四个小题的做法",
+      "content": "每个给出的数字可以写成一些分数x/y的和，x/y表示长度为y的答案的第x个字母。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "第七个小题的做法",
+      "content": "六个答案可以分成三对，每对长度分别是5、6、7。挑战书也有三行，长度分别是5、6、7。\n每对答案有一个在相同位置的相同字母。读对应的挑战书中的汉字。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "第八个小题的做法",
+      "content": "给出的24个字母分别对应置换群S<sub>4</sub>的元素。给出的例子表示了乘法的规则。分别计算每个答案的乘积。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "该如何提取",
+      "content": "第八个小题的答案暗示了最后一步，回到最初的起点，将前面八个meta答案填入格子进行最后的提取。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n\n.metametameta {\n    border-collapse: collapse;\n    margin: 0 30px 0 0;\n}\n.metametameta td {\n    text-align: center;\n    width: 30px;\n    height: 30px;\n    border: 1px solid;\n    /* color: black */\n}\n\n#mmm_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n\n本题由以下几个碎片组成：\n<div id=\"mmm_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/b4c1d4fedb034fbda96a72e8fbdc2bb2.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/40a194bacd6347c8b39ee6b7c998d1f3.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/783f1bc7f6354b76adcb26f2e42fdd3e.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/4e2b2c9c21334732ab04293abebfbef2.webp\">\n\n本题的机制是：每道题都是用到之前所有答案的元ⁿ谜题。例如，「最初的起点」是元⁰谜题(=谜题)，而「元谜题」则是用到元⁰谜题答案的元¹谜题(=元谜题)。每题答案如下表所示：\n\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n<tr><td>6</td><td>挑战书</td><td>ABLE</td></tr>\n<tr><td>7</td><td>置换群</td><td>RESTART</td></tr>\n<tr><td>8</td><td>元元元……元谜题</td><td>BASE CASE</td></tr>\n</table>\n\n以下解析每道题的做法。\n\n## 元<sup>0</sup>谜题：最初的起点\n\n按照题目要求填入八大行星名称。按数字顺序读字母得到 `ANS START`。本题答案即为 `START`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/591088ce0b884f7ea0642d8df32fb166.webp\" style=\"width: 300px\" />\n\n## 元<sup>1</sup>谜题：元谜题\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n</table>\n\n根据例子得到蓝色箭头表示东南西北，红色箭头表示上下左右，数字表示提取该方向的英文单词里第n个字母。\n本题答案为 `ALPINE`。\n\n## 元<sup>2</sup>谜题：以一易一\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n</table>\n\n每个线索对应一个单词。除吸管（法语）外，别的都是英文单词。观察发现，每个单词都是某个答案修改一个字母后重排得到的。读添加的字母得到答案 `MUSICAL`。\n<table id=\"answerkey\">\n<tr><th>线索</th><th>单词</th><th>用到的答案</th><th>减去的字母</th><th>添加的字母</th></tr>\n<tr><td>聪明</td><td>SMART</td><td>START</td><td>T</td><td>M</td></tr>\n<tr><td>阵容</td><td>LINEUP</td><td>ALPLINE</td><td>A</td><td>U</td></tr>\n<tr><td>盐水</td><td>SALINE</td><td>ALPLINE</td><td>P</td><td>S</td></tr>\n<tr><td>特征</td><td>TRAIT</td><td>START</td><td>S</td><td>I</td></tr>\n<tr><td>铅笔</td><td>PENCIL</td><td>ALPLINE</td><td>A</td><td>C</td></tr>\n<tr><td>鞑靼语</td><td>TATAR</td><td>START</td><td>S</td><td>A</td></tr>\n<tr><td>吸管（法语）</td><td>PAILLE</td><td>ALPLINE</td><td>N</td><td>L</td></tr>\n</table>\n\n## 元<sup>3</sup>谜题：加法练习\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n</table>\n\n每个给出的数字可以写成一些分数x/y的和，其中 5 ≤ y ≤ 7, 1 ≤ x ≤ y。这些分数对应某个字母在答案中的所有出现，x/y表示长度为y的答案的第x个字母。答案为 `ARSENIC`。\n<table id=\"answerkey\">\n<tr><th>数字</th><th>分数表示</th><th>对应字母</th></tr>\n<tr><td>1.623...</td><td>3/5+1/6+6/7</td><td>A</td></tr>\n<tr><td>0.8</td><td>4/5</td><td>R</td></tr>\n<tr><td>0.628...</td><td>1/5+3/7</td><td>S</td></tr>\n<tr><td>1</td><td>6/6</td><td>E</td></tr>\n<tr><td>0.833...</td><td>5/6</td><td>N</td></tr>\n<tr><td>1.238...</td><td>4/6+4/7</td><td>I</td></tr>\n<tr><td>0.714...</td><td>5/7</td><td>C</td></tr>\n</table>\n\n## 元<sup>4</sup>谜题：蜿蜒单词\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n</table>\n\n按规则完成纸笔谜题，得到答案 `CARAT`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/271f943dad714307978356ded989cf5d.webp\" style=\"width: 200px\" />\n\n## 元<sup>5</sup>谜题：寻旗\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n</table>\n\n将每个答案转为旗语，按照规则在网格中找到。没有用到的方向成对，按照旗语读出得到答案 `STARVE`。\n<table class=\"metametameta\">\n  <tr>\n    <td style=\"background-color:#EAD1DC\">↗</td>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#EAD1DC\">←</td>\n    <td style=\"background-color:#EAD1DC\">↑</td>\n    <td style=\"background-color:#FF0\">←</td>\n    <td style=\"background-color:#FF0\">↘</td>\n    <td style=\"background-color:#F4CCCC\">←</td>\n    <td style=\"background-color:#F4CCCC\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↓</td>\n  </tr>\n<tbody>\n  <tr>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#FF0\">↑</td>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#EAD1DC\">↖</td>\n    <td style=\"background-color:#EAD1DC\">↓</td>\n    <td style=\"background-color:#D9EAD3\">←</td>\n    <td style=\"background-color:#F4CCCC\">→</td>\n    <td style=\"background-color:#F4CCCC\">←</td>\n    <td style=\"background-color:#F4CCCC\">↘</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#EAD1DC\">↓</td>\n    <td style=\"background-color:#FF0\">↖</td>\n    <td style=\"background-color:#EAD1DC\">↘</td>\n    <td style=\"background-color:#EAD1DC\">↙</td>\n    <td style=\"background-color:#EAD1DC\">↗</td>\n    <td style=\"background-color:#D9EAD3\">↘</td>\n    <td style=\"background-color:#D9EAD3\">↖</td>\n    <td style=\"background-color:#FF0\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↓</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↗</td>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↓</td>\n    <td style=\"background-color:#CFE2F3\">↖</td>\n    <td style=\"background-color:#CFE2F3\">↓</td>\n    <td style=\"background-color:#D9EAD3\">↑</td>\n    <td style=\"background-color:#FF0\">↓</td>\n    <td style=\"background-color:#F4CCCC\">↗</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FF0\">→</td>\n    <td style=\"background-color:#FF0\">←</td>\n    <td style=\"background-color:#FFF2CC\">↓</td>\n    <td style=\"background-color:#CFE2F3\">←</td>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↖</td>\n    <td style=\"background-color:#D9EAD3\">↓</td>\n    <td style=\"background-color:#D9EAD3\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↘</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FFF2CC\">↓</td>\n    <td style=\"background-color:#FFF2CC\">↙</td>\n    <td style=\"background-color:#FFF2CC\">↖</td>\n    <td style=\"background-color:#CFE2F3\">↘</td>\n    <td style=\"background-color:#D9EAD3\">↖</td>\n    <td style=\"background-color:#D9EAD3\">↑</td>\n    <td style=\"background-color:#D9EAD3\">←</td>\n    <td style=\"background-color:#D9EAD3\">→</td>\n    <td style=\"background-color:#F4CCCC\">↙</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FFF2CC\">↖</td>\n    <td style=\"background-color:#FFF2CC\">←</td>\n    <td style=\"background-color:#FFF2CC\">↙</td>\n    <td style=\"background-color:#CFE2F3\">↖</td>\n    <td style=\"background-color:#FF0\">↑</td>\n    <td style=\"background-color:#FF0\">↘</td>\n    <td style=\"background-color:#F4CCCC\">↓</td>\n    <td style=\"background-color:#F4CCCC\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↖</td>\n  </tr>\n  <tr>\n    <td style=\"background-color:#FFF2CC\">↑</td>\n    <td style=\"background-color:#FFF2CC\">→</td>\n    <td style=\"background-color:#FFF2CC\">↓</td>\n    <td style=\"background-color:#CFE2F3\">↗</td>\n    <td style=\"background-color:#CFE2F3\">→</td>\n    <td style=\"background-color:#CFE2F3\">↙</td>\n    <td style=\"background-color:#F4CCCC\">↖</td>\n    <td style=\"background-color:#FF0\">↗</td>\n    <td style=\"background-color:#FF0\">↓</td>\n  </tr>\n</tbody></table>\n\n## 元<sup>6</sup>谜题：挑战书\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n</table>\n\n注意到六个答案可以分成三对，每对长度分别是5、6、7。挑战书也有三行，长度分别是5、6、7。\n每对答案有一个在相同位置的相同字母。读对应的挑战书中的汉字，得到 `有能力`。\n根据挑战书，这个答案有偶数字母，即为 `ABLE`。\n\n<table id=\"answerkey\">\n<tr><th>组</th><th>答案</th><th>挑战书</th></tr>\n<tr><td rowspan=\"2\">5</td><td>STAR<b style=\"color:red\">T</b></td><td rowspan=\"2\">这个单词<b style=\"color:red\">有</b></td></tr>\n<tr><td>CARA<b style=\"color:red\">T</b></td></tr>\n<tr><td rowspan=\"2\">6</td><td>ALPIN<b style=\"color:red\">E</b></td><td rowspan=\"2\">偶数字母你<b style=\"color:red\">能</b></td></tr>\n<tr><td>STARV<b style=\"color:red\">E</b></td></tr>\n<tr><td rowspan=\"2\">7</td><td>MU<b style=\"color:red\">S</b>ICAL</td><td rowspan=\"2\">凭实<b style=\"color:red\">力</b>找到它吗</td></tr>\n<tr><td>AR<b style=\"color:red\">S</b>ENIC</td></tr>\n</table>\n\n\n## 元<sup>7</sup>谜题：置换群\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n<tr><td>6</td><td>挑战书</td><td>ABLE</td></tr>\n</table>\n\n给出的24个字母分别对应置换群S<sub>4</sub>的元素。给出的例子表示了乘法的规则。计算每个答案的乘积即可得到答案 `RESTART`。\n\n## 元<sup>8</sup>谜题：元元元……元谜题\n\n本题用到的答案：\n<table id=\"answerkey\">\n<tr><th>元ⁿ谜题</th><th>标题</th><th>答案</th></tr>\n<tr><td>0</td><td>最初的起点</td><td>START</td></tr>\n<tr><td>1</td><td>元谜题</td><td>ALPINE</td></tr>\n<tr><td>2</td><td>以一易一</td><td>MUSICAL</td></tr>\n<tr><td>3</td><td>加法练习</td><td>ARSENIC</td></tr>\n<tr><td>4</td><td>蜿蜒单词</td><td>CARAT</td></tr>\n<tr><td>5</td><td>寻旗</td><td>STARVE</td></tr>\n<tr><td>6</td><td>挑战书</td><td>ABLE</td></tr>\n<tr><td>7</td><td>置换群</td><td>RESTART</td></tr>\n</table>\n\n注意到「置换群」的答案是 `RESTART`。将八个答案填入「最初的起点」中的网格，提取得到最终答案 `BASE CASE`。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/5441aaa0ed854c8a973a9bda46b09124.webp\" style=\"width: 300px\" />\n</div>\n",
+  "additional_answers": [
+    {
+      "aaid": 49,
+      "answer": "START",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 50,
+      "answer": "ALPINE",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 51,
+      "answer": "MUSICAL",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 52,
+      "answer": "ARSENIC",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 53,
+      "answer": "CARAT",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 54,
+      "answer": "STARVE",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 55,
+      "answer": "ABLE",
+      "message": "正确的中间答案。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 56,
+      "answer": "RESTART",
+      "message": "正确的中间答案。\t",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

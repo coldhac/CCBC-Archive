@@ -1,0 +1,20 @@
+answer: MICE
+content: []
+content-type: 0
+desc: Mic
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+problem-image: /ccbc13/images/asteroid/f02ceb2149c846f1a9be5647a57b3c8b.webp
+tips:
+- content: DOG, FLAG, BREAD
+  title: 题目里的图片分别对应什么单词？
+- content: 红蓝两种数字分别代表了七个音符的两种写法。
+  title: 我还是不懂数字什么意思
+title: ⭐
+type: problem

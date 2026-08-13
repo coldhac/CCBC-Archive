@@ -1,0 +1,42 @@
+{
+  "pid": 33,
+  "pgid": 3,
+  "type": 1,
+  "pg_name": "印刷",
+  "title": "印刷",
+  "content": "",
+  "image": "",
+  "html": "<style>\r\n#pm_container {\r\n    display: flex;\r\n    align-items: flex-start;\r\n}\r\n.pmcol {\r\n    margin: 10px;\r\n    border: 2px solid black;\r\n    padding: 20px;\r\n    background-color: white;\r\n    width: 150px;\r\n}\r\n.pmcol div {\r\n    height: 40px;\r\n    margin: 2px;\r\n    background-color: black;\r\n    color: grey;\r\n}\r\n.pmcol div.pm_red {\r\n    background-color: red;\r\n    color: black;\r\n}\r\n</style>\r\n<div id=\"pm_container\">\r\n    <div class=\"pmcol\">\r\n        <div></div>\r\n        <div class=\"pm_red\"></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n    </div>\r\n    <div class=\"pmcol\">\r\n        <div class=\"pm_red\"></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n    </div>\r\n    <div class=\"pmcol\">\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div class=\"pm_red\"></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n    </div>\r\n    <div class=\"pmcol\">\r\n        <div></div>\r\n        <div class=\"pm_red\"></div>\r\n        <div></div>\r\n        <div></div>\r\n    </div>\r\n</div>",
+  "script": "",
+  "answer_type": 1,
+  "extend_data": "{\"pid\":33,\"imgUrl\":\"5f980ebd803e4e5698d755196b983c60.webp\",\"color\":\"#000\",\"top\":\"960px\",\"left\":\"1110px\",\"veryFirst\":true}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "THE MISSING INK",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "Sevenkplus、welkin25",
+  "analysis": "小题答案来自若干集合，分别是宙斯的七位妻子（`LETO`、`METIS`），六个三角函数（`COT`、`TAN`），十二音（`CSHARP`）、文房四宝（`BRUSH`、`PAPER`）。\n\n每个集合都有默认顺序，提取标红的元素可得 THEMIS、SIN、G、INK，连起来即答案 `THE MISSING INK`。\n<style>\n#pm_sol_container {\n    display: flex;\n    align-items: flex-start;\n}\n\n.pm_sol_col div {\n    width: 150px;\n}\n.pm_sol_col div.pm_sol_red{\ncolor: red\n}\n</style>\n<div id=\"pm_sol_container\">\n    <div class=\"pm_sol_col\">\n        <div>METIS</div>\n        <div class=\"pm_sol_red\">THEMIS</div>\n        <div>EURYNOME</div>\n        <div>DEMETER</div>\n        <div>MNEMOSYNE</div>\n        <div>LETO</div>\n        <div>HERA</div>\n    </div>\n    <div class=\"pm_sol_col\">\n        <div class=\"pm_sol_red\">SIN</div>\n        <div>COS</div>\n        <div>TAN</div>\n        <div>COT</div>\n        <div>SEC</div>\n        <div>CSC</div>\n    </div>\n    <div class=\"pm_sol_col\">\n        <div>C</div>\n        <div>C#</div>\n        <div>D</div>\n        <div>D#</div>\n        <div>E</div>\n        <div>F</div>\n        <div>F#</div>\n        <div class=\"pm_sol_red\">G</div>\n        <div>G#</div>\n        <div>A</div>\n        <div>A#</div>\n        <div>B</div>\n    </div>\n    <div class=\"pm_sol_col\">\n        <div>BRUSH</div>\n        <div class=\"pm_sol_red\">INK</div>\n        <div>PAPER</div>\n        <div>INKSTONE</div>\n    </div>\n</div>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "注意到黑格与红格加起来，正好是全部小题的数量（包括没有题面的题目，以及点不开的题目）。每个小题答案都是某个有序集合中的元素。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    },
+    {
+      "num": 2,
+      "title": "该如何提取",
+      "content": "将四块红色部分连起来。例如第四列是中国常见于书房的四样东西，取第二个。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 300.0
+    }
+  ],
+  "solution": "小题答案来自若干集合，分别是宙斯的七位妻子（`LETO`、`METIS`），六个三角函数（`COT`、`TAN`），十二音（`CSHARP`）、文房四宝（`BRUSH`、`PAPER`）。\n\n每个集合都有默认顺序，提取标红的元素可得 THEMIS、SIN、G、INK，连起来即答案 `THE MISSING INK`。\n<style>\n#pm_sol_container {\n    display: flex;\n    align-items: flex-start;\n}\n\n.pm_sol_col div {\n    width: 150px;\n}\n.pm_sol_col div.pm_sol_red{\ncolor: red\n}\n</style>\n<div id=\"pm_sol_container\">\n    <div class=\"pm_sol_col\">\n        <div>METIS</div>\n        <div class=\"pm_sol_red\">THEMIS</div>\n        <div>EURYNOME</div>\n        <div>DEMETER</div>\n        <div>MNEMOSYNE</div>\n        <div>LETO</div>\n        <div>HERA</div>\n    </div>\n    <div class=\"pm_sol_col\">\n        <div class=\"pm_sol_red\">SIN</div>\n        <div>COS</div>\n        <div>TAN</div>\n        <div>COT</div>\n        <div>SEC</div>\n        <div>CSC</div>\n    </div>\n    <div class=\"pm_sol_col\">\n        <div>C</div>\n        <div>C#</div>\n        <div>D</div>\n        <div>D#</div>\n        <div>E</div>\n        <div>F</div>\n        <div>F#</div>\n        <div class=\"pm_sol_red\">G</div>\n        <div>G#</div>\n        <div>A</div>\n        <div>A#</div>\n        <div>B</div>\n    </div>\n    <div class=\"pm_sol_col\">\n        <div>BRUSH</div>\n        <div class=\"pm_sol_red\">INK</div>\n        <div>PAPER</div>\n        <div>INKSTONE</div>\n    </div>\n</div>",
+  "additional_answers": []
+}

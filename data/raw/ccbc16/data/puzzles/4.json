@@ -1,0 +1,34 @@
+{
+  "pid": 4,
+  "pgid": 1,
+  "type": 0,
+  "pg_name": "序章",
+  "title": "五音俱全",
+  "content": "",
+  "image": "https://static.cipherpuzzles.com/static/images/4798a7304858471b8edb07bfa7bd5e10.png",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":4,\"imgUrl\":\"7acc341eabde4421a7af7911a14cb7d7.webp\",\"color\":\"#000\",\"top\":\"150px\",\"left\":\"1232px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "SODA LIME",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "宫商角徵羽大致对应西洋音乐的 do re mi sol la, 所以在五音之下的横线上填入对应的唱名：r<span style=\"color: red\">e mi la do s</span>ol，再按照箭头的顺序逆着读中间的部分得到答案 `SODA LIME`。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "我毫无头绪",
+      "content": "将五音转换成对应的西洋音乐音符唱名。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "宫商角徵羽大致对应西洋音乐的 do re mi sol la, 所以在五音之下的横线上填入对应的唱名：r<span style=\"color: red\">e mi la do s</span>ol，再按照箭头的顺序逆着读中间的部分得到答案 `SODA LIME`。",
+  "additional_answers": []
+}

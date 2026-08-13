@@ -1,0 +1,25 @@
+---
+record_id: "ccbc12:loopstage:24"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "序章"
+kind: "subpuzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/pages/loopstage_main.yaml#problemList-24"
+---
+
+# 序章循环题 24
+
+## 题面
+
+10000 01111 01001 01110 10100
+
+## 答案
+
+`POINT`
+
+## 解析
+
+_官方存档未填写解析。_
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/pages/loopstage_main.yaml#problemList-24](https://archive.cipherpuzzles.com/ccbc12/pages/loopstage_main.yaml#problemList-24)

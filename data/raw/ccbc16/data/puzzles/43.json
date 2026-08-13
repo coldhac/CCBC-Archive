@@ -1,0 +1,105 @@
+{
+  "pid": 43,
+  "pgid": 4,
+  "type": 0,
+  "pg_name": "火药",
+  "title": "Galileo's Escapement Room",
+  "content": "",
+  "image": "",
+  "html": "",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":43,\"imgUrl\":\"7316dec862e84252b7e70e029a0a8066.svg\",\"color\":\"#000\",\"top\":\"299px\",\"left\":\"930px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "CAIN",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25、Seven",
+  "analysis": "<style>\n#escape_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"escape_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c362cede3e1d4476a92621e56d4869e7.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/d53bccc8ef564a98a61ab0edbd620af1.webp\">\n\n首先这是一个以伽利略为主题的密室游戏，通关步骤如下：\n\n1. 调整镜子角度向右，使得光照在壁炉上\n2. 解开8块推盘拿到棱镜（初始状态显示的是太阳的符号围绕地球，考虑到伽利略是日心说的支持者，需要调整成地球符号围绕太阳）\n3. 把棱镜放到壁炉旁边的架子上，使得光线聚焦点燃壁炉\n4. 壁炉让房间升温，会让中间的水缸内的1、4、5、7、9逐渐下降（伽利略温度计）\n5. 在门上输入 14579 的密码，打开第二个房间\n6. 从壁炉里取下水壶，在水池里装上水后放回壁炉\n7. 水蒸气会模糊镜子，调整镜子向左后，纸条上的字大部分被水蒸气模糊，某几处露出 right click tower 的字样\n8. 点击比萨斜塔的模型，模型会倒塌，获取塔的碎片\n9. 点击书架上的小纸条，在空格里填入1-9使等式成立，(x+54)(x-18)=x²+36x-972\n10. 根据小纸条的提示，找到第1排第6本书，翻到第254页，拿到书签\n11. 书签上的POINT是提示看句号那个点，放到显微镜下可以发现句号原来是个微点，写的是 e pur si ?，这是一句伽利略的名言 E pur si muove （地球仍然在转）\n12. 在密码箱上输入 MUOVE 的答案，拿到钟摆\n13. 将塔的碎片作为齿轮装在钟上，装上钟摆，钟开始转动，时间也开始流动（顺便说一句，题目里的 escapement 就是擒纵器的意思）\n14. 从棱镜架子上取回棱镜，装入望远镜\n15. 等到晚上（18点至早上6点）时观察月亮，记下月球表面陨石坑的形状\n16. 在可以点击画圆的盒子上输入陨石坑的形状，拿到自动人偶的发条钥匙\n17. 用钥匙启动自动人偶，获得最后提示\n\n<img src=\"https://static.cipherpuzzles.com/static/images/7b15961f1a3847d0bcf0e1b71622d879.webp\">\n\n最后的提示首字母连起来是 VORONOI，也就是提示需要找到 Voronoi 图的核心。原来两个房间的多边形划分正是 Voronoi 图（泰森多边形）：\n\n![img-sol1.png](https://static.cipherpuzzles.com/static/images/4d6409fea61245cb9658754a72930841.webp)\n\n![img-sol2 (1).png](https://static.cipherpuzzles.com/static/images/730eb0e250b744eb83e0ce97de3bc338.png)\n\n可以看出每个点都坐落在一个旗语上，翻译可得 FIRST SON OF ADAM 的提示。亚当第一个儿子是该隐，因此 `CAIN` 就是本题答案。\n</div>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "这道题需要哪些碎片？",
+      "content": "<style>\n#frag_hint img {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n<div id=\"frag_hint\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c362cede3e1d4476a92621e56d4869e7.webp\">\n和初始时全黑的碎片。\n</div>",
+      "desc": "",
+      "point_cost": 1000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我已经到了最后一步也知道要做什么了，但是我不会做，请给我这一步结果",
+      "content": "提交\"SALTED SHOW ME\" + 最后一步给你的 7 字母单词以获得中间步骤的结果，例如如果最后的单词是 PRODUCT，提交 \"SALTED SHOW ME PRODUCT\"。",
+      "desc": "",
+      "point_cost": 6000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "我已经完成了最后一步并得到了14个点，该如何提取？",
+      "content": "（如果解出的位置正确的话）注意每个点所在的位置的线的方向，旗语。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 4,
+      "title": "我得到了一个B开头的物品，要如何使用",
+      "content": "放在显微镜下仔细找它提示的东西。",
+      "desc": "",
+      "point_cost": 2000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 5,
+      "title": "第一个房间里的华容道的目标状态是什么？",
+      "content": "初始状态显示的是太阳的符号围绕地球，考虑到伽利略是日心说的支持者，需要调整成地球符号围绕太阳。注意最终地球应该放在右下角而不是左上角。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 6,
+      "title": "我找到了一个P开头的五字母单词，但是不知道怎么用？",
+      "content": "它提示了显微镜下面需要找什么东西，能帮你找到密码锁的密码。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 7,
+      "title": "我得到了一个E开头的6字母，不知道怎么用？",
+      "content": "将六字母分为 1字母/3字母/2字母，之间加上空格后搜索。是一句伽利略的名言，补上名言里的最后一个词。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 8,
+      "title": "我得到了一张纸，上面的符号算不出来，请帮帮我",
+      "content": "式子的左半部分为：(x+54)(x-18) 。下方三组由箭头表示的部分，对应要在书架上进行的操作。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#escape_solution img.tn {\nborder: 1px solid black;\nborder-radius: 10px;\n}\n</style>\n本题由以下几个碎片组成：\n\n<div id=\"escape_solution\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/c362cede3e1d4476a92621e56d4869e7.webp\">\n<img class=\"tn\" src=\"https://static.cipherpuzzles.com/static/images/d53bccc8ef564a98a61ab0edbd620af1.webp\">\n\n首先这是一个以伽利略为主题的密室游戏，通关步骤如下：\n\n1. 调整镜子角度向右，使得光照在壁炉上\n2. 解开8块推盘拿到棱镜（初始状态显示的是太阳的符号围绕地球，考虑到伽利略是日心说的支持者，需要调整成地球符号围绕太阳）\n3. 把棱镜放到壁炉旁边的架子上，使得光线聚焦点燃壁炉\n4. 壁炉让房间升温，会让中间的水缸内的1、4、5、7、9逐渐下降（伽利略温度计）\n5. 在门上输入 14579 的密码，打开第二个房间\n6. 从壁炉里取下水壶，在水池里装上水后放回壁炉\n7. 水蒸气会模糊镜子，调整镜子向左后，纸条上的字大部分被水蒸气模糊，某几处露出 right click tower 的字样\n8. 点击比萨斜塔的模型，模型会倒塌，获取塔的碎片\n9. 点击书架上的小纸条，在空格里填入1-9使等式成立，(x+54)(x-18)=x²+36x-972\n10. 根据小纸条的提示，找到第1排第6本书，翻到第254页，拿到书签\n11. 书签上的POINT是提示看句号那个点，放到显微镜下可以发现句号原来是个微点，写的是 e pur si ?，这是一句伽利略的名言 E pur si muove （地球仍然在转）\n12. 在密码箱上输入 MUOVE 的答案，拿到钟摆\n13. 将塔的碎片作为齿轮装在钟上，装上钟摆，钟开始转动，时间也开始流动（顺便说一句，题目里的 escapement 就是擒纵器的意思）\n14. 从棱镜架子上取回棱镜，装入望远镜\n15. 等到晚上（18点至早上6点）时观察月亮，记下月球表面陨石坑的形状\n16. 在可以点击画圆的盒子上输入陨石坑的形状，拿到自动人偶的发条钥匙\n17. 用钥匙启动自动人偶，获得最后提示\n\n<img src=\"https://static.cipherpuzzles.com/static/images/7b15961f1a3847d0bcf0e1b71622d879.webp\">\n\n最后的提示首字母连起来是 VORONOI，也就是提示需要找到 Voronoi 图的核心。原来两个房间的多边形划分正是 Voronoi 图（泰森多边形）：\n\n![img-sol1.png](https://static.cipherpuzzles.com/static/images/4d6409fea61245cb9658754a72930841.webp)\n\n![img-sol2 (1).png](https://static.cipherpuzzles.com/static/images/730eb0e250b744eb83e0ce97de3bc338.png)\n\n可以看出每个点都坐落在一个旗语上，翻译可得 FIRST SON OF ADAM 的提示。亚当第一个儿子是该隐，因此 `CAIN` 就是本题答案。\n</div>",
+  "additional_answers": [
+    {
+      "aaid": 35,
+      "answer": "FIRST SON OF ADAM",
+      "message": "这是一个里程碑。",
+      "extra": "",
+      "not_count": 0
+    },
+    {
+      "aaid": 47,
+      "answer": "SALTED SHOW ME VORONOI",
+      "message": "<img src=\"https://static.cipherpuzzles.com/static/images/4d6409fea61245cb9658754a72930841.webp\"  style=\"width:inherit\" /> <img src=\"https://static.cipherpuzzles.com/static/images/730eb0e250b744eb83e0ce97de3bc338.png\"  style=\"width:inherit\" />",
+      "extra": "",
+      "not_count": 1
+    }
+  ]
+}

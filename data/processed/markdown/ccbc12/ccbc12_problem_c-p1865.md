@@ -1,0 +1,173 @@
+---
+record_id: "ccbc12:problem:c-p1865"
+event_id: "ccbc12"
+editions: ["CCBC 12"]
+year: 2022
+area: "时间线C"
+kind: "puzzle"
+source_url: "https://archive.cipherpuzzles.com/ccbc12/problems/c/p1865.yaml"
+---
+
+# #1865 节目单 - CCBC 12
+
+## 题面
+
+西西比西歌剧院今夜的节目单，居然还有试听功能。
+<br />
+
+<!--
+<table>
+  <tr>
+    <td>Scarpia</td>
+    <td>Avg. Coats (Act 1)</td>
+  </tr>
+  <tr>
+    <td>Escamillo</td>
+    <td>To try, To save (Act 2)</td>
+  </tr>
+  <tr>
+    <td>Radames</td>
+    <td>"I am elected as…" (Act 1)</td>
+  </tr>
+  <tr>
+    <td>Rinaldo</td>
+    <td>Across Napa (Act 1)</td>
+  </tr>
+  <tr>
+    <td>Cherubino</td>
+    <td>"I have to escape!" (Act 2)</td>
+  </tr>
+  <tr>
+    <td>Violetta</td>
+    <td>Sample Berries (Act 1)</td>
+  </tr>
+  <tr>
+    <td>Isolde</td>
+    <td>Middle Utensil (Act 3)</td>
+  </tr>
+</table>
+-->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<style>
+.aplayer {
+    color: black;
+    width: 100%;
+    max-width: 400px;
+}
+</style>
+<div id="aplayer"></div>
+<br>
+<a href="../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/9ef13a7d7d8f4bdba75e766642eae54f.zip" download>将试听的内容传输到个人终端上</a>
+
+## 交互源码
+
+### javascript
+
+```javascript
+(function () {
+    //inject js
+    let a = document.getElementById("contentHtml");
+    let b = document.createElement("script");
+    b.id = "APlayer";
+    b.src = "https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js";
+    a.appendChild(b);
+    //init aplayer
+    b.onload = () => {
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            theme: "#0046FF",
+            audio: [
+                {
+                    name: 'Avg. Coats (Act 1)',
+                    artist: "Scarpia",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/e72a45cbd810434ea616e1e58de1d5aa.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/01a5d901b64d4e4a81ff96f83f0ee2d8.webp'
+                },
+                {
+                    name: 'To try, To save (Act 2)',
+                    artist: "Escamillo",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/80ad8cbb626c4b2f8d7894ef0c7a10c6.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/1f3781d2da8741daae4a5ba56c30d276.webp'
+                },
+                {
+                    name: '"I am elected as…" (Act 1)',
+                    artist: "Radames",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/65f20cd4c7414ca9b5ac9f70cb3ac450.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/48ed665f81c449be90297349dc872386.webp'
+                },
+                {
+                    name: 'Across Napa (Act 1)',
+                    artist: "Rinaldo",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/18d0d8e012864acd8a702c1ea1ee4123.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/31c734c09f8a49e780a1a9a0fe0c7128.webp'
+                },
+                {
+                    name: '"I have to escape!" (Act 2)',
+                    artist: "Cherubino",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/984ada6b8ede4da0b250a3acb6aab1b2.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/1e08b675711b4ff28200e403b2f87a60.webp'
+                },
+                {
+                    name: 'Sample Berries (Act 1)',
+                    artist: "Violetta",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/b332e3eaf1d044c997353918c2bd39c0.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/61cf107f72fd4e0891f587e97bfc07bb.webp'
+                },
+                {
+                    name: 'Middle Utensil (Act 3)',
+                    artist: "Isolde",
+                    url: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/9eb9bda501d64352aa92f6d0db4a8cba.m4a',
+                    cover: '../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/88b66e52e02a40ae88423cd206d66c77.webp'
+                }
+            ]
+        });
+        window.destroyAction(function() {
+            ap.destroy();
+        });
+    }
+})();
+```
+
+
+## 答案
+
+`GYMNAST`
+
+## 解析
+
+根据剧情提示和搜索可以发现节目单上的人名都是某个著名歌剧里的人物，而音频也是这个歌剧中的某一咏叹调选段（歌名里的Act X提示了选段出现的位置，而且这个人物也是这个咏叹调的演唱者）。注意到节目单上的歌名都是对应咏叹调加了一个字母后重新排列的结果，所以把这些添加的字母连起来得到答案：**GYMNAST**。
+
+![答案参考](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/c-1865.png)
+
+## 提示
+
+### 1. 我毫无头绪
+
+每一个人名都是某个著名歌剧里的人物。试听的音频都是由这个人物参与演唱的某个唱段（咏叹调）。
+
+### 2. 该如何提取
+
+每一个节目名都是某个歌剧选段加了一个字母后的重新排列。
+
+
+## 本地附件
+
+- [c-1865.png](../../../assets/archive.cipherpuzzles.com/ccbc12/images/answer/c-1865.png)
+- [01a5d901b64d4e4a81ff96f83f0ee2d8.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/01a5d901b64d4e4a81ff96f83f0ee2d8.webp)
+- [18d0d8e012864acd8a702c1ea1ee4123.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/18d0d8e012864acd8a702c1ea1ee4123.m4a)
+- [1e08b675711b4ff28200e403b2f87a60.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/1e08b675711b4ff28200e403b2f87a60.webp)
+- [1f3781d2da8741daae4a5ba56c30d276.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/1f3781d2da8741daae4a5ba56c30d276.webp)
+- [31c734c09f8a49e780a1a9a0fe0c7128.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/31c734c09f8a49e780a1a9a0fe0c7128.webp)
+- [48ed665f81c449be90297349dc872386.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/48ed665f81c449be90297349dc872386.webp)
+- [61cf107f72fd4e0891f587e97bfc07bb.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/61cf107f72fd4e0891f587e97bfc07bb.webp)
+- [65f20cd4c7414ca9b5ac9f70cb3ac450.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/65f20cd4c7414ca9b5ac9f70cb3ac450.m4a)
+- [80ad8cbb626c4b2f8d7894ef0c7a10c6.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/80ad8cbb626c4b2f8d7894ef0c7a10c6.m4a)
+- [88b66e52e02a40ae88423cd206d66c77.webp](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/88b66e52e02a40ae88423cd206d66c77.webp)
+- [984ada6b8ede4da0b250a3acb6aab1b2.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/984ada6b8ede4da0b250a3acb6aab1b2.m4a)
+- [9eb9bda501d64352aa92f6d0db4a8cba.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/9eb9bda501d64352aa92f6d0db4a8cba.m4a)
+- [9ef13a7d7d8f4bdba75e766642eae54f.zip](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/9ef13a7d7d8f4bdba75e766642eae54f.zip)
+- [b332e3eaf1d044c997353918c2bd39c0.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/b332e3eaf1d044c997353918c2bd39c0.m4a)
+- [e72a45cbd810434ea616e1e58de1d5aa.m4a](../../../assets/archive.cipherpuzzles.com/ccbc12/images/c/e72a45cbd810434ea616e1e58de1d5aa.m4a)
+
+来源：[https://archive.cipherpuzzles.com/ccbc12/problems/c/p1865.yaml](https://archive.cipherpuzzles.com/ccbc12/problems/c/p1865.yaml)

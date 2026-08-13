@@ -1,0 +1,50 @@
+{
+  "pid": 23,
+  "pgid": 2,
+  "type": 1,
+  "pg_name": "指南",
+  "title": "高楼大厦",
+  "content": "",
+  "image": "https://static.cipherpuzzles.com/static/images/6e04097f092e4216a85d84c90f89c85e.webp",
+  "html": "<img src=\"https://static.cipherpuzzles.com/static/images/3bc08585c7494724b2359736aaf0577a.PNG\" class=\"pimg\">\r\n<style>\r\n.pimg {\r\n    width: 500px;\r\n}\r\n@media (max-width: 640px) {\r\n    .pimg {\r\n        width: 100%;\r\n    }\r\n}\r\n</style>",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":23,\"imgUrl\":\"b5263c37c8294d7faa2ea10e97615ae2.svg\",\"color\":\"#000\",\"top\":\"520px\",\"left\":\"1450px\",\"veryFirst\":false}",
+  "extend_content": "成功解开谜题后，量子星云影响的设备恢复正常，同时从中浮现出一张碎纸片。\n\n<img src=\"https://static.cipherpuzzles.com/static/images/e9ba327f29874ee186e7999f3e9e4b3b.png\" alt=\"fragment\" style=\"max-width: 100%\" />",
+  "adda": 0,
+  "answer": "ELEVATION",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "welkin25",
+  "analysis": "首先这是一个用了拉丁方规则的纸笔题，需要每行每列都放入1-7高度的楼，并在等轴测投影下符合给出的图样。需要注意的是，由于使用等轴的原因，一个高度为 n 的楼楼顶跟它身后高度为 n-1 的楼楼顶在投影图里是完全重合的，所以在解拉丁方的时候需要加入你所看到的楼顶究竟属于哪个方块的判断。\n\n用红橙黄绿青蓝紫来代表1-7，我们最终得出的纸笔解为：\n\n![image](https://static.cipherpuzzles.com/static/images/3b385ef226c54113baa11e011949b148.webp)\n\n以下是四个方向能看到的景象：\n\n|从左下方|从左上方|从右上方|从右下方|\n|---|---|---|---|\n|<img src=\"https://static.cipherpuzzles.com/static/images/03a37d35c08f41aa94548cec4573a863.webp\" style=\"width:300px\">|<img src=\"https://static.cipherpuzzles.com/static/images/a5df6a121eb84c8299daf636f6d6a24d.webp\" style=\"width:300px\">|<img src=\"https://static.cipherpuzzles.com/static/images/c1fe6d59c8424466bbaf73d04442f2b2.webp\" style=\"width:300px\">|<img src=\"https://static.cipherpuzzles.com/static/images/084eb60fd6fa4645819dc5ba85d326a8.webp\" style=\"width:300px\">|\n\n通过观察示例，我们可以理解最终答案的提取方式。例如在示例中，第一个标有3的箭头，指的是从该方向（左下角）看过去，最左侧的高度3的楼的3层能全部被看见，中间高度3的楼由于被前面高度2的楼挡住，所以只能看到最高的那1层，右边高度3的楼由于被前面高度1的楼挡住，所以只能第二层和第三层共2层楼，三个楼合起来共能看见 6 层，A1Z26 得到例子里的答案第一个字母 F。标有 1+2 的箭头则是说从该角度总共能看到多少层高度1和高度2的楼。\n\n因此我们用同样的方式可以提取：\n1. 左下方5（青色）方块数量 = 12\n2. 右下方5（青色）方块数量 = 9\n3. 右下方2+6（橙色+蓝色）方块数量 = 3+10 = 13\n4. 右上方6（蓝色）方块数量 = 9\n5. 右上方1（红色）方块数量 = 1\n6. 左上方7-1（紫色-红色）方块数量 = 15-1 = 14\n7. 左下方1+7（红色+紫色）方块数量 = 1+19 = 20\n8. 右下方1+3+7（红色+黄色+紫色）方块数量 = 1+4+16 = 21\n\nA1Z26 可得 LIMIANTU，也就是立面图，翻译成英文 `ELEVATION` 就是最终答案。",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "下面建筑物有些被挡住了，如何得知它们的高度",
+      "content": "这是一个用了拉丁方规则的纸笔题，需要每行每列都放入1-7高度的楼，并在等轴测投影下符合给出的图样。",
+      "desc": "",
+      "point_cost": 1500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我不理解例子里为什么箭头代表 FACE",
+      "content": "以第一个标有3的箭头为例，从该方向（左下角）看过去，最左侧的高度3的楼的3层能全部被看见，中间高度3的楼由于被前面高度2的楼挡住，所以只能看到最高的那1层，右边高度3的楼由于被前面高度1的楼挡住，所以只能第二层和第三层共2层楼，三个楼合起来共能看见 6 层，A1Z26 得到例子里的答案第一个字母 F。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "首先这是一个用了拉丁方规则的纸笔题，需要每行每列都放入1-7高度的楼，并在等轴测投影下符合给出的图样。需要注意的是，由于使用等轴的原因，一个高度为 n 的楼楼顶跟它身后高度为 n-1 的楼楼顶在投影图里是完全重合的，所以在解拉丁方的时候需要加入你所看到的楼顶究竟属于哪个方块的判断。\n\n用红橙黄绿青蓝紫来代表1-7，我们最终得出的纸笔解为：\n\n![image](https://static.cipherpuzzles.com/static/images/3b385ef226c54113baa11e011949b148.webp)\n\n以下是四个方向能看到的景象：\n\n|从左下方|从左上方|从右上方|从右下方|\n|---|---|---|---|\n|<img src=\"https://static.cipherpuzzles.com/static/images/03a37d35c08f41aa94548cec4573a863.webp\" style=\"width:300px\">|<img src=\"https://static.cipherpuzzles.com/static/images/a5df6a121eb84c8299daf636f6d6a24d.webp\" style=\"width:300px\">|<img src=\"https://static.cipherpuzzles.com/static/images/c1fe6d59c8424466bbaf73d04442f2b2.webp\" style=\"width:300px\">|<img src=\"https://static.cipherpuzzles.com/static/images/084eb60fd6fa4645819dc5ba85d326a8.webp\" style=\"width:300px\">|\n\n通过观察示例，我们可以理解最终答案的提取方式。例如在示例中，第一个标有3的箭头，指的是从该方向（左下角）看过去，最左侧的高度3的楼的3层能全部被看见，中间高度3的楼由于被前面高度2的楼挡住，所以只能看到最高的那1层，右边高度3的楼由于被前面高度1的楼挡住，所以只能第二层和第三层共2层楼，三个楼合起来共能看见 6 层，A1Z26 得到例子里的答案第一个字母 F。标有 1+2 的箭头则是说从该角度总共能看到多少层高度1和高度2的楼。\n\n因此我们用同样的方式可以提取：\n1. 左下方5（青色）方块数量 = 12\n2. 右下方5（青色）方块数量 = 9\n3. 右下方2+6（橙色+蓝色）方块数量 = 3+10 = 13\n4. 右上方6（蓝色）方块数量 = 9\n5. 右上方1（红色）方块数量 = 1\n6. 左上方7-1（紫色-红色）方块数量 = 15-1 = 14\n7. 左下方1+7（红色+紫色）方块数量 = 1+19 = 20\n8. 右下方1+3+7（红色+黄色+紫色）方块数量 = 1+4+16 = 21\n\nA1Z26 可得 LIMIANTU，也就是立面图，翻译成英文 `ELEVATION` 就是最终答案。",
+  "additional_answers": [
+    {
+      "aaid": 9,
+      "answer": "LIMIANTU",
+      "message": "正确，请提交“立面图”的 9 字母英文翻译。",
+      "extra": "",
+      "not_count": 0
+    }
+  ]
+}

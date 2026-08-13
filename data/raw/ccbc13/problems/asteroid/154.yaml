@@ -1,0 +1,73 @@
+answer: ATLAS ROCKET
+content:
+- "<div class=\"ccbcstylewrapper\">\n    <table id=\"mytable\"\
+  >\n        <tr><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td></td><td class='yblack'></td><td class='yblack'></td></tr>\n\
+  \        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td\
+  \ class='yblack'></td><td></td><td></td><td></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td></td><td></td><td></td><td></td><td></td><td class='yblack'></td><td></td><td></td></tr>\n\
+  \        <tr><td></td><td class='yblack'></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td></td></tr>\n\
+  \        <tr><td class='yblack'></td><td></td><td class='yblack'></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td></tr>\n\
+  \        <tr><td class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td></tr>\n\
+  \        <tr><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td></tr>\n        <tr><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td class='yblack'></td><td\
+  \ class='yblack'></td><td class='yblack'></td></tr>\n    </table>\n</div>"
+content-css: |
+  #mytable {
+    border-collapse: collapse;
+    border: 3px solid;
+    background-color: #efefe5;
+  }
+  #mytable tr:nth-child(2) td {
+    border-bottom: 2px solid;
+  }
+  #mytable td {
+    width: 30px;
+    height: 25px; 
+    border-radius: 10px;
+  }
+  #mytable td.yblack {
+    background-color: black;
+  }
+content-type: 1
+desc: Oct
+extend-data: null
+links:
+- path: ccbc13/index
+  title: 索引页
+  type: index
+- path: ccbc13/pages/asteroid
+  title: 小行星
+  type: page
+tips:
+- content: 这是算盘的构造，转成数字后每两位数转成字母
+  title: 我毫无思路
+title: ⭐
+type: problem

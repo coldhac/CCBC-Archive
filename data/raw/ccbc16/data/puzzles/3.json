@@ -1,0 +1,50 @@
+{
+  "pid": 3,
+  "pgid": 1,
+  "type": 1,
+  "pg_name": "序章",
+  "title": "小题大做",
+  "content": "",
+  "image": "",
+  "html": "十一世纪下半叶西班牙英雄<br>\r\n百度旗下视频网站平台<br>\r\n论文排版系统<br>\r\n苹果系统<br>\r\n任天堂在线商店<br>\r\n论文预印本网站<br>\r\n克林贡文字<br>\r\nJavaScript中检查是否是非数字值的函数<br>\r\n<br>\r\n(5) and (3) → (6 6)",
+  "script": "",
+  "answer_type": 0,
+  "extend_data": "{\"pid\":3,\"imgUrl\":\"da16af5592a1466a9bdd34d9d14f84f4.webp\",\"color\":\"#000\",\"top\":\"150px\",\"left\":\"972px\"}",
+  "extend_content": "",
+  "adda": 0,
+  "answer": "MIMOSA PUDICA",
+  "attempts_count": 20,
+  "desc": "",
+  "author": "落葉子",
+  "analysis": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n每条线索均对应一个五字母答案，且这五个字母的大小写是确定的。根据大小写对应1和0，使用五位二进制转换即可得到答案。\n\n<table id=\"answerkey\">\n<tr><th>线索</th><th>答案</th><th>五位二进制</th><th>对应字母</th></tr>\n<tr><td>十一世纪下半叶西班牙英雄</td><td>ElCid</td><td>10100</td><td>T</td></tr>\n<tr><td>百度旗下的视频网站平台</td><td>iQIYI</td><td>01111</td><td>O</td></tr>\n<tr><td>论文排版工具</td><td>LaTeX</td><td>10101</td><td>U</td></tr>\n<tr><td>苹果系统</td><td>macOS</td><td>00011</td><td>C</td></tr>\n<tr><td>任天堂的在线商店</td><td>eShop</td><td>01000</td><td>H</td></tr>\n<tr><td>论文预印本网站</td><td>arXiv</td><td>00100</td><td>D</td></tr>\n<tr><td>克林贡文字</td><td>pIqaD</td><td>01001</td><td>I</td></tr>\n<tr><td>JavaScript中检查是否是非数字值的函数</td><td>isNaN</td><td>00101</td><td>E</td></tr>\n</table>\n\n<font color = orange>TOUCH</font> and <font color = orange>DIE</font> → <font color = green>MIMOSA PUDICA</font>",
+  "check_answer_type": 0,
+  "check_answer_function": "",
+  "tips": [
+    {
+      "num": 1,
+      "title": "线索都做完了，但不知道怎么提取！",
+      "content": "每个提示对应一个五字母单词，注意单词里面的大小写，根据大小写对应1和0（大写=1，小写=0），再把这个5位二进制换成数字，最后用 1 = A, 2 = B, ..., 26 = Z 的方式把它们换成字母。",
+      "desc": "",
+      "point_cost": 3000,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 2,
+      "title": "我得到了(5) and (3)， 但没法把它转化成(6 6)！",
+      "content": "可以扔进搜索引擎（推荐google或bing）进行搜索。是一种植物。",
+      "desc": "",
+      "point_cost": 500,
+      "unlock_delay": 0.0
+    },
+    {
+      "num": 3,
+      "title": "(5) and (3), (6 6) 都是什么意思？",
+      "content": "每行可以解出一个字母，(5) and (3) 的意思是 前5个字母 + and + 后3个字母 合起来。(6 6) 的意思是最终答案是两个单词，各自有6字母。",
+      "desc": "",
+      "point_cost": 500,
+      "unlock_delay": 0.0
+    }
+  ],
+  "solution": "<style>\n#answerkey {\n    border-collapse: collapse;\n    border-spacing: 0\n}\n#answerkey th {\n    text-align: center;\n    font-weight: bold;\n    vertical-align: middle;\n    padding: 3px 10px;\n}\n#answerkey td {\n    border-style: solid none;\n    border-width: thin;\n    text-align: center;\n    vertical-align: middle;\n    padding: 3px 9px;\n}\n</style>\n\n每条线索均对应一个五字母答案，且这五个字母的大小写是确定的。根据大小写对应1和0，使用五位二进制转换即可得到答案。\n\n<table id=\"answerkey\">\n<tr><th>线索</th><th>答案</th><th>五位二进制</th><th>对应字母</th></tr>\n<tr><td>十一世纪下半叶西班牙英雄</td><td>ElCid</td><td>10100</td><td>T</td></tr>\n<tr><td>百度旗下的视频网站平台</td><td>iQIYI</td><td>01111</td><td>O</td></tr>\n<tr><td>论文排版工具</td><td>LaTeX</td><td>10101</td><td>U</td></tr>\n<tr><td>苹果系统</td><td>macOS</td><td>00011</td><td>C</td></tr>\n<tr><td>任天堂的在线商店</td><td>eShop</td><td>01000</td><td>H</td></tr>\n<tr><td>论文预印本网站</td><td>arXiv</td><td>00100</td><td>D</td></tr>\n<tr><td>克林贡文字</td><td>pIqaD</td><td>01001</td><td>I</td></tr>\n<tr><td>JavaScript中检查是否是非数字值的函数</td><td>isNaN</td><td>00101</td><td>E</td></tr>\n</table>\n\n<font color = orange>TOUCH</font> and <font color = orange>DIE</font> → <font color = green>MIMOSA PUDICA</font>",
+  "additional_answers": []
+}
