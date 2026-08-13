@@ -77,6 +77,14 @@ try {
   if (await desktop.getByText("CONFLUXES", { exact: true }).count()) {
     throw new Error("The answer stayed visible after refresh");
   }
+  const stickyDetail = await desktop.evaluate(() => {
+    const detail = document.querySelector(".detail-panel");
+    const style = getComputedStyle(detail);
+    return { top: Number.parseFloat(style.top), height: detail.getBoundingClientRect().height, viewportHeight: innerHeight };
+  });
+  if (stickyDetail.top < 50 || Math.abs(stickyDetail.height - (stickyDetail.viewportHeight - stickyDetail.top)) > 2) {
+    throw new Error(`desktop detail panel overlaps the top bar: ${JSON.stringify(stickyDetail)}`);
+  }
   await assertPageFits(desktop, "desktop puzzle");
   await desktop.screenshot({ path: "/tmp/ccbc-handbook-desktop.png", fullPage: false });
 

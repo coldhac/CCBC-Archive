@@ -332,10 +332,10 @@ hr {
 .detail-panel {
   position: sticky;
   z-index: 20;
-  top: 0;
+  top: var(--topbar-height);
   grid-column: 3;
   min-width: 0;
-  height: 100vh;
+  height: calc(100vh - var(--topbar-height));
   padding: 18px;
   overflow: auto;
   border-left: 1px solid var(--line);
