@@ -18,26 +18,27 @@
 
   function shell(active, content, detail = "") {
     const nav = [
-      ["search", "search", "现场检索"],
-      ["quick", "scan-line", "一页速查"],
-      ["mechanisms", "network", "机制索引"],
-      ["puzzles", "library", "历年题库"],
-      ["saved", "bookmark", "收藏与最近"],
-      ["about", "info", "关于资料"],
+      ["mechanisms", "compass", "卡点导航", "卡点"],
+      ["quick", "scan-line", "一页速查", "速查"],
+      ["puzzles", "library", "历年题库", "题库"],
+      ["search", "search", "资料搜索", "搜索"],
+      ["saved", "bookmark", "收藏与最近", "收藏"],
+      ["about", "info", "关于资料", "关于"],
     ];
     const navItems = nav.map(([route, iconName, label]) => `
-      <a class="nav-item ${active === route ? "is-active" : ""}" href="${C.routeHref(route)}" data-nav="${route}">
+      <a class="nav-item ${active === route ? "is-active" : ""}" href="${C.routeHref(route)}" data-nav="${route}" ${active === route ? "aria-current=\"page\"" : ""}>
         ${C.icon(iconName)}<span>${label}</span>
       </a>`).join("");
     const spoilerLabel = C.state.searchMode === "safe" ? "题面检索" : C.state.searchMode === "hints" ? "含提示检索" : "完整剧透检索";
     const spoilerTone = C.state.searchMode === "safe" ? "safe" : "danger";
     return `
       <div class="app-shell">
-        <aside class="sidebar" aria-label="主导航">
-          <a class="brand" href="#/search" aria-label="CCBC 卡题手册首页">
+        <aside class="sidebar" id="main-sidebar" aria-label="主导航">
+          <a class="brand" href="#/mechanisms" aria-label="CCBC 卡题手册首页">
             <span class="brand-mark">C17</span>
             <span class="brand-copy"><strong>卡题手册</strong><small>CCBC FIELD MANUAL</small></span>
           </a>
+          <button class="icon-button mobile-menu-close" type="button" data-action="close-mobile-menu" aria-label="关闭导航">${C.icon("x")}</button>
           <nav class="side-nav">${navItems}</nav>
           <div class="sidebar-footer">
             <button class="spoiler-status spoiler-status-${spoilerTone}" data-action="search-mode" type="button">
@@ -47,12 +48,13 @@
             <p>资料更新于 ${C.escapeHTML(buildDateLabel())}</p>
           </div>
         </aside>
+        <button class="mobile-menu-scrim" type="button" data-action="close-mobile-menu" aria-label="关闭导航"></button>
         <div class="workspace">
           <header class="topbar">
-            <button class="icon-button mobile-menu-button" type="button" data-action="mobile-menu" aria-label="打开导航">${C.icon("menu")}</button>
-            <a class="mobile-brand" href="#/search"><span class="brand-mark">C17</span><strong>卡题手册</strong></a>
+            <button class="icon-button mobile-menu-button" type="button" data-action="mobile-menu" aria-label="打开导航" aria-controls="main-sidebar" aria-expanded="false">${C.icon("menu")}</button>
+            <a class="mobile-brand" href="#/mechanisms"><span class="brand-mark">C17</span><strong>卡题手册</strong></a>
             <button class="top-search-trigger" type="button" data-action="focus-search">
-              ${C.icon("search")}<span>搜索题面、症状或机制</span><kbd>Ctrl K</kbd>
+              ${C.icon("search")}<span>搜索历年题目与资料</span><kbd>Ctrl K</kbd>
             </button>
             <button class="icon-button" type="button" data-action="search-mode" aria-label="切换搜索范围">${C.icon(C.state.searchMode === "safe" ? "shield-check" : "shield-alert")}</button>
           </header>
@@ -61,8 +63,8 @@
             ${detail ? `<aside class="detail-panel">${detail}</aside>` : ""}
           </div>
         </div>
-        <nav class="bottom-nav" aria-label="移动端导航">${nav.filter(([route]) => route !== "about").map(([route, iconName, label]) => `
-          <a class="bottom-nav-item ${active === route ? "is-active" : ""}" href="${C.routeHref(route)}">${C.icon(iconName)}<span>${label.replace("与最近", "")}</span></a>`).join("")}</nav>
+        <nav class="bottom-nav" aria-label="移动端导航">${nav.filter(([route]) => route !== "about").map(([route, iconName, , mobileLabel]) => `
+          <a class="bottom-nav-item ${active === route ? "is-active" : ""}" href="${C.routeHref(route)}" ${active === route ? "aria-current=\"page\"" : ""}>${C.icon(iconName)}<span>${mobileLabel}</span></a>`).join("")}</nav>
       </div>`;
   }
 
@@ -85,7 +87,7 @@
     if (record.contentStatus && record.contentStatus !== "available") badges.push(C.badge(C.statusLabel(record.contentStatus), "warning"));
     return `<article class="result-card puzzle-card">
       <a class="result-card-link" href="${C.routeHref("puzzle", record.id)}" aria-label="打开 ${C.escapeHTML(record.title)}"></a>
-      <div class="result-card-top"><div class="badge-row">${badges.join("")}</div><button class="icon-button favorite-button ${C.state.favorites.has(record.id) ? "is-active" : ""}" type="button" data-action="favorite" data-id="${C.escapeHTML(record.id)}" aria-label="收藏这道题">${C.icon("bookmark")}</button></div>
+      <div class="result-card-top"><div class="badge-row">${badges.join("")}</div><button class="icon-button favorite-button ${C.state.favorites.has(record.id) ? "is-active" : ""}" type="button" data-action="favorite" data-id="${C.escapeHTML(record.id)}" aria-label="${C.state.favorites.has(record.id) ? "取消收藏这道题" : "收藏这道题"}" aria-pressed="${C.state.favorites.has(record.id)}">${C.icon("bookmark")}</button></div>
       <h3>${C.escapeHTML(record.title || "未命名题目")}</h3>
       <p class="result-meta">${C.escapeHTML(record.area || "未标分区")}${record.authors?.length ? ` · ${C.escapeHTML(record.authors.join("、"))}` : ""}</p>
       ${protectedMatch ? `<p class="protected-match">${C.icon("shield-alert")} 命中${C.escapeHTML(matchFieldLabel)}，为避免剧透不显示原文</p>` : result.snippet ? `<p class="result-snippet">${C.escapeHTML(result.snippet)}</p>` : ""}
@@ -124,7 +126,6 @@
     const event = route.query.get("event") || "";
     const kind = route.query.get("kind") || "";
     const includeSubpuzzles = route.query.get("sub") === "1";
-    const symptoms = (window.CCBC_GUIDE?.symptoms || []).slice(0, 8);
     let results = [];
     let guideResults = [];
     if (query) {
@@ -136,7 +137,7 @@
     const events = [...new Set(C.state.catalog.map((record) => record.eventId))].sort();
     const searchModeText = C.state.searchMode === "safe" ? "仅题面" : C.state.searchMode === "hints" ? "题面 + 官方提示" : "题面 + 提示 + 答案与题解";
     const form = `<form class="search-form" data-search-form>
-      <div class="search-box search-box-large">${C.icon("search")}<input id="global-search" name="q" value="${C.escapeHTML(query)}" placeholder="输入你看到的东西：01、六个点、颜色、乱码、不会提取…" autocomplete="off"><button class="icon-button clear-search ${query ? "" : "is-hidden"}" type="button" data-action="clear-search" aria-label="清空搜索">${C.icon("x")}</button><button class="primary-button" type="submit">检索</button></div>
+      <div class="search-box search-box-large">${C.icon("search")}<input id="global-search" name="q" value="${C.escapeHTML(query)}" placeholder="输入题名、分区、作者或题面原文" autocomplete="off"><button class="icon-button clear-search ${query ? "" : "is-hidden"}" type="button" data-action="clear-search" aria-label="清空搜索">${C.icon("x")}</button><button class="primary-button" type="submit">检索</button></div>
       <div class="filter-bar">
         <label><span>届次</span><select name="event"><option value="">全部</option>${events.map((id) => `<option value="${C.escapeHTML(id)}" ${event === id ? "selected" : ""}>${C.escapeHTML(C.formatEvent({ eventId: id }))}</option>`).join("")}</select></label>
         <label><span>类型</span><select name="kind"><option value="">全部</option>${Object.entries(C.KIND_LABELS).map(([id, label]) => `<option value="${id}" ${kind === id ? "selected" : ""}>${label}</option>`).join("")}</select></label>
@@ -147,11 +148,7 @@
 
     let body = "";
     if (!query) {
-      body = `<section class="search-entry-section"><div class="section-header"><div><span class="eyebrow">从卡点开始</span><h2>你现在卡在哪里？</h2></div><a href="#/mechanisms">浏览全部机制</a></div>
-        <div class="symptom-grid">${symptoms.map((item) => `<a class="symptom-chip" href="${C.routeHref("symptom", item.id)}"><span>${C.escapeHTML(item.shortName || item.name)}</span>${C.icon("arrow-up-right")}</a>`).join("")}</div>
-      </section>
-      <section class="signal-shortcuts"><div class="section-header"><h2>描述你看到的信号</h2></div><div class="filter-chip-row">${["一串 0/1", "两位数字一组", "颜色或色块", "长篇文字", "方格与路径", "乱码或中间串", "图片与图标", "音频与节奏"].map((label) => `<a class="filter-chip" href="#/search?q=${encodeURIComponent(label)}">${C.escapeHTML(label)}</a>`).join("")}</div></section>
-      <a class="quick-banner" href="#/quick"><span>${C.icon("scan-line")}</span><div><strong>一页速查</strong><p>先排查排序与提取，再查常用编码。</p></div>${C.icon("arrow-right")}</a>
+      body = `<a class="quick-banner search-navigation-banner" href="#/mechanisms"><span>${C.icon("compass")}</span><div><strong>遇到卡点？从阶段导航开始</strong><p>不依赖自然语言搜索，逐步缩小到下一条可验证路径。</p></div>${C.icon("arrow-right")}</a>
       ${recentAndFavorites()}`;
     } else if (!results.length && !guideResults.length) {
       body = `<div class="empty-state">${C.icon("search-x")}<h2>没有找到直接匹配</h2><p>试着描述可观察现象，不必先猜机制名。例如“每行都有一个颜色”“得到八个无意义字母”。</p><div class="empty-actions"><button class="secondary-button" data-action="clear-filters" type="button">清除筛选</button>${C.state.searchMode === "safe" ? `<button class="danger-button" data-action="enable-hint-search" type="button">允许搜索官方提示</button>` : ""}</div></div>`;
@@ -159,7 +156,7 @@
       body = `${guideResults.length ? `<section class="result-section"><div class="section-header"><div><span class="eyebrow">下一步</span><h2>卡点与机制</h2></div><span>${guideResults.length} 项</span></div><div class="result-list guide-results">${guideResults.map(guideSearchCard).join("")}</div></section>` : ""}
         ${results.length ? `<section class="result-section"><div class="section-header"><div><span class="eyebrow">历史先例</span><h2>历年题目</h2></div><span>按题族折叠 · ${results.length} 项</span></div><div class="result-list">${results.map(resultCard).join("")}</div></section>` : ""}`;
     }
-    return shell("search", `<div class="search-page"><div class="search-intro"><span class="eyebrow">CCBC FIELD MANUAL</span><h1>${query ? "检索结果" : "先描述你看到的东西"}</h1><p>${query ? `当前搜索范围：${searchModeText}` : "从可观察信号出发，找到一个可以马上验证的下一步。历史提示与题解默认不会出现在结果里。"}</p></div>${form}${body}</div>`);
+    return shell("search", `<div class="search-page"><div class="search-intro"><span class="eyebrow">ARCHIVE SEARCH</span><h1>${query ? "检索结果" : "资料搜索"}</h1><p>${query ? `当前搜索范围：${searchModeText}` : "用于查找历年题目和原始资料。没思路时请使用卡点导航；历史提示与题解默认不会出现在结果里。"}</p></div>${form}${body}</div>`);
   }
 
   function quickList(title, items, iconName) {
@@ -182,14 +179,77 @@
   }
 
   function mechanismCard(axis, item) {
-    return `<article class="mechanism-card"><a class="result-card-link" href="${C.routeHref("mechanism", item.id)}"></a><span class="mechanism-code">${C.escapeHTML(item.id.toUpperCase())}</span><h3>${C.escapeHTML(item.name)}</h3><p>${C.escapeHTML(item.description || "")}</p><footer>${(item.signals || []).slice(0, 3).map((signal) => C.badge(signal, "neutral")).join("")}${C.icon("arrow-right")}</footer></article>`;
+    return `<article class="mechanism-card"><a class="result-card-link" href="${C.routeHref("mechanism", item.id)}" aria-label="打开 ${C.escapeHTML(item.name)}"></a><span class="mechanism-icon">${C.icon(item.icon || axis.icon || "route")}</span><span class="mechanism-code">${C.escapeHTML(item.id.toUpperCase())}</span><h3>${C.escapeHTML(item.shortLabel || item.name)}</h3><p>${C.escapeHTML(item.cue || item.description || "")}</p><footer><span>查看快速验证</span>${C.icon("arrow-right")}</footer></article>`;
   }
 
-  function mechanismsView() {
+  function mechanismModeSwitch(view) {
+    return `<nav class="mechanism-mode-switch" aria-label="机制导航方式">
+      <a class="${view === "diagnose" ? "is-active" : ""}" href="#/mechanisms" ${view === "diagnose" ? "aria-current=\"page\"" : ""}>${C.icon("compass")}<span><strong>按卡点找路</strong><small>不知道下一步时</small></span></a>
+      <a class="${view === "atlas" ? "is-active" : ""}" href="#/mechanisms?view=atlas" ${view === "atlas" ? "aria-current=\"page\"" : ""}>${C.icon("library-big")}<span><strong>机制图鉴</strong><small>知道要查哪一类时</small></span></a>
+    </nav>`;
+  }
+
+  function stageCard(group, index) {
+    const symptoms = (group.symptomIds || []).map((id) => C.symptomById(id)).filter(Boolean);
+    return `<a class="stage-card" href="#/mechanisms?stage=${encodeURIComponent(group.id)}">
+      <span class="stage-number">${String(index + 1).padStart(2, "0")}</span>
+      <span class="stage-icon">${C.icon(group.icon || "circle-dot")}</span>
+      <span class="stage-copy"><strong>${C.escapeHTML(group.label)}</strong><small>${C.escapeHTML(group.example || group.description || "")}</small></span>
+      <span class="stage-count">${symptoms.length} 种卡点</span>${C.icon("arrow-right")}
+    </a>`;
+  }
+
+  function diagnoseView(route) {
+    const groups = window.CCBC_GUIDE?.stageGroups || [];
+    const selected = C.stageGroupById(route.query.get("stage"));
+    if (!selected) {
+      return `${pageHeader("现场导航", "你现在卡在哪一步？", "先选阶段，不必先猜题型。每一屏只处理一个问题。")}
+        <div class="stage-flow" aria-label="解题阶段">${groups.map(stageCard).join("")}</div>
+        <aside class="navigation-note">${C.icon("lightbulb")}<div><strong>拿不准阶段？</strong><p>选最接近当前产物的一项。走错不会丢失任何内容，随时可以返回重选。</p></div></aside>`;
+    }
+    const symptoms = (selected.symptomIds || []).map((id) => C.symptomById(id)).filter(Boolean);
+    return `<div class="breadcrumbs"><a href="#/mechanisms">卡点导航</a>${C.icon("chevron-right")}<span>${C.escapeHTML(selected.label)}</span></div>
+      ${pageHeader(`第 ${groups.findIndex((group) => group.id === selected.id) + 1} 阶段`, selected.question, selected.description || "")}
+      <div class="symptom-choice-list">${symptoms.map((item, index) => `<a class="symptom-choice" href="${C.routeHref("symptom", item.id)}">
+        <span class="choice-index">${index + 1}</span><span class="choice-copy"><strong>${C.escapeHTML(item.shortName || item.name)}</strong><small>${C.escapeHTML(item.description || item.nextStep || "")}</small></span><span class="choice-next">${(item.suggestions || []).length} 条候选路径</span>${C.icon("arrow-right")}
+      </a>`).join("")}</div>
+      <a class="back-choice" href="#/mechanisms">${C.icon("arrow-left")} 不是这个阶段，返回重选</a>`;
+  }
+
+  function atlasPreview(axis, item) {
+    if (!item) return "";
+    return `<aside class="atlas-preview">
+      <div class="atlas-preview-heading"><span class="mechanism-icon">${C.icon(item.icon || axis.icon || "route")}</span><span class="mechanism-code">${C.escapeHTML(item.id.toUpperCase())}</span></div>
+      <h2>${C.escapeHTML(item.shortLabel || item.name)}</h2>
+      <p class="atlas-cue">${C.escapeHTML(item.cue || item.description || "")}</p>
+      <div class="atlas-preview-block"><span>看到这些时考虑</span><ul>${(item.signals || []).slice(0, 3).map((signal) => `<li>${C.escapeHTML(signal)}</li>`).join("")}</ul></div>
+      <div class="atlas-preview-test"><span>${C.icon("timer")} 90 秒验证</span><p>${C.escapeHTML(item.quickTest || "取最小样本验证规则能否稳定复现。")}</p></div>
+      <a class="primary-button" href="${C.routeHref("mechanism", item.id)}">查看完整条目 ${C.icon("arrow-right")}</a>
+    </aside>`;
+  }
+
+  function atlasView(route) {
     const axes = window.CCBC_GUIDE?.axes || [];
-    const content = `${pageHeader("机制地图", "从表征到提取", "机制采用多轴标签：同一道题可以同时属于一种载体、一种核心操作和一种提取结构。")}
-      <div class="axis-tabs segmented-control" role="tablist">${axes.map((axis, index) => `<button type="button" role="tab" class="${index === 0 ? "is-active" : ""}" data-action="axis-tab" data-axis="${C.escapeHTML(axis.id)}">${C.escapeHTML(axis.name)}</button>`).join("")}</div>
-      <div class="axis-sections">${axes.map((axis, index) => `<section class="axis-section ${index === 0 ? "is-active" : ""}" data-axis-section="${C.escapeHTML(axis.id)}"><div class="axis-intro"><span>${C.escapeHTML(axis.id.toUpperCase())}</span><div><h2>${C.escapeHTML(axis.name)}</h2><p>${C.escapeHTML(axis.description || "")}</p></div></div><div class="mechanism-grid">${(axis.items || []).map((item) => mechanismCard(axis, item)).join("")}</div></section>`).join("")}</div>`;
+    const axis = C.axisById(route.query.get("axis")) || axes[0];
+    if (!axis) return "";
+    const requestedItem = route.query.get("item");
+    const selectedItem = (axis.items || []).find((item) => item.id === requestedItem) || axis.items?.[0];
+    return `${pageHeader("机制图鉴", "从一个问题开始查", "四个轴不是互斥题型；同一道题通常会同时命中多个轴。")}
+      <nav class="axis-question-grid" aria-label="选择机制轴">${axes.map((entry) => `<a class="axis-question ${entry.id === axis.id ? "is-active" : ""}" href="#/mechanisms?view=atlas&axis=${encodeURIComponent(entry.id)}" ${entry.id === axis.id ? "aria-current=\"page\"" : ""}>
+        ${C.icon(entry.icon || "layers-3")}<span><strong>${C.escapeHTML(entry.userQuestion || entry.name)}</strong><small>${C.escapeHTML(entry.name)}</small></span>${C.icon("chevron-right")}
+      </a>`).join("")}</nav>
+      <div class="atlas-layout">
+        <div class="atlas-groups">${(axis.groups || []).map((group) => {
+          const items = (group.itemIds || []).map((id) => (axis.items || []).find((item) => item.id === id)).filter(Boolean);
+          return `<section class="atlas-group"><header><h2>${C.escapeHTML(group.label)}</h2><p>${C.escapeHTML(group.description || "")}</p></header><div class="atlas-item-list">${items.map((item) => `<a class="atlas-item ${item.id === selectedItem?.id ? "is-active" : ""}" href="#/mechanisms?view=atlas&axis=${encodeURIComponent(axis.id)}&item=${encodeURIComponent(item.id)}" ${item.id === selectedItem?.id ? "aria-current=\"page\"" : ""}><span class="mechanism-icon">${C.icon(item.icon || axis.icon || "route")}</span><span><strong>${C.escapeHTML(item.shortLabel || item.name)}</strong><small>${C.escapeHTML(item.cue || item.description || "")}</small></span>${C.icon("chevron-right")}</a>`).join("")}</div></section>`;
+        }).join("")}</div>
+        ${atlasPreview(axis, selectedItem)}
+      </div>`;
+  }
+
+  function mechanismsView(route) {
+    const view = route?.query?.get("view") === "atlas" ? "atlas" : "diagnose";
+    const content = `${mechanismModeSwitch(view)}${view === "atlas" ? atlasView(route) : diagnoseView(route)}`;
     return shell("mechanisms", content);
   }
 
@@ -203,8 +263,8 @@
     const found = C.mechanismById(id);
     if (!found) return notFoundView("没有这个机制条目");
     const { axis, item } = found;
-    const content = `<div class="breadcrumbs"><a href="#/mechanisms">机制索引</a>${C.icon("chevron-right")}<span>${C.escapeHTML(axis.name)}</span></div>
-      ${pageHeader(axis.name, item.name, item.description || "", `<button class="icon-button favorite-button ${C.state.favorites.has(item.id) ? "is-active" : ""}" type="button" data-action="favorite" data-id="${C.escapeHTML(item.id)}" aria-label="收藏机制">${C.icon("bookmark")}</button>`)}
+    const content = `<div class="breadcrumbs"><a href="#/mechanisms">卡点导航</a>${C.icon("chevron-right")}<a href="#/mechanisms?view=atlas&axis=${encodeURIComponent(axis.id)}&item=${encodeURIComponent(item.id)}">${C.escapeHTML(axis.userQuestion || axis.name)}</a>${C.icon("chevron-right")}<span>${C.escapeHTML(item.shortLabel || item.name)}</span></div>
+      ${pageHeader(axis.name, item.name, item.description || "", `<button class="icon-button favorite-button ${C.state.favorites.has(item.id) ? "is-active" : ""}" type="button" data-action="favorite" data-id="${C.escapeHTML(item.id)}" aria-label="${C.state.favorites.has(item.id) ? "取消收藏机制" : "收藏机制"}" aria-pressed="${C.state.favorites.has(item.id)}">${C.icon("bookmark")}</button>`)}
       <div class="mechanism-detail-grid">
         <section class="detail-block"><span class="block-label">如何认出</span><h2>可观察信号</h2><ul class="check-list">${(item.signals || []).map((signal) => `<li>${C.icon("eye")}<span>${C.escapeHTML(signal)}</span></li>`).join("")}</ul></section>
         <section class="detail-block detail-block-accent"><span class="block-label">90 秒验证</span><h2>先做一个可证伪实验</h2><p>${C.escapeHTML(item.quickTest || "选择一个最短样本，验证候选规则能否稳定复现，而不是只解释一个巧合。")}</p></section>
@@ -217,14 +277,31 @@
   function symptomView(id) {
     const item = C.symptomById(id);
     if (!item) return notFoundView("没有这个卡点条目");
-    const content = `<div class="breadcrumbs"><a href="#/search">现场检索</a>${C.icon("chevron-right")}<span>卡点诊断</span></div>
-      ${pageHeader("卡点诊断", item.name, item.description || item.nextStep || "")}
+    const stage = C.stageGroupForSymptom(id);
+    const stageHref = stage ? `#/mechanisms?stage=${encodeURIComponent(stage.id)}` : "#/mechanisms";
+    const suggestions = (item.suggestions || []).map((suggestion) => {
+      if (suggestion.mechanismId) {
+        const found = C.mechanismById(suggestion.mechanismId);
+        if (!found) return "";
+        return `<a class="path-card" href="${C.routeHref("mechanism", found.item.id)}"><span class="path-icon">${C.icon(found.item.icon || found.axis.icon || "route")}</span><span class="path-copy"><small>${C.escapeHTML(found.axis.name)}</small><strong>${C.escapeHTML(found.item.shortLabel || found.item.name)}</strong><p>${C.escapeHTML(suggestion.why || "")}</p><span class="path-test">${C.icon("timer")} ${C.escapeHTML(found.item.quickTest || "查看最小验证实验")}</span></span>${C.icon("arrow-right")}</a>`;
+      }
+      if (suggestion.axis) {
+        const axis = C.axisById(suggestion.axis);
+        if (!axis) return "";
+        return `<a class="path-card" href="#/mechanisms?view=atlas&axis=${encodeURIComponent(axis.id)}"><span class="path-icon">${C.icon(axis.icon || "layers-3")}</span><span class="path-copy"><small>机制图鉴</small><strong>${C.escapeHTML(suggestion.label || axis.userQuestion || axis.name)}</strong><p>${C.escapeHTML(suggestion.why || "")}</p><span class="path-test">浏览 ${axis.items?.length || 0} 个紧凑条目</span></span>${C.icon("arrow-right")}</a>`;
+      }
+      return `<article class="path-card path-card-action"><span class="path-icon">${C.icon("clipboard-check")}</span><span class="path-copy"><small>现场动作</small><strong>${C.escapeHTML(suggestion.label || "先做一次检查")}</strong><p>${C.escapeHTML(suggestion.why || "")}</p><span class="path-test">${C.icon("check")} 完成后再判断是否需要换方向</span></span></article>`;
+    }).join("");
+    const content = `<div class="breadcrumbs"><a href="#/mechanisms">卡点导航</a>${C.icon("chevron-right")}<a href="${stageHref}">${C.escapeHTML(stage?.label || "选择阶段")}</a>${C.icon("chevron-right")}<span>${C.escapeHTML(item.shortName || item.name)}</span></div>
+      ${pageHeader(stage?.label || "卡点诊断", item.name, item.description || item.nextStep || "")}
       <div class="symptom-detail">
         <section class="detail-block detail-block-accent"><span class="block-label">现在先做</span><h2>下一小步</h2><p>${C.escapeHTML(item.nextStep || "先把可观察事实和自己的猜测分开记录。")}</p></section>
         <section class="detail-block"><span class="block-label">核对</span><h2>问自己这些问题</h2><ul class="check-list">${(item.quickQuestions || item.signals || []).map((question) => `<li>${C.icon("check-square")}<span>${C.escapeHTML(question)}</span></li>`).join("")}</ul></section>
-        <section class="detail-block"><span class="block-label">常见说法</span><h2>你可能会这样描述</h2><div class="tag-cloud">${(item.aliases || []).map((entry) => C.badge(entry, "neutral")).join("")}</div></section>
-      </div>${representativePuzzles(item.representativeIds)}`;
-    return shell("search", content);
+      </div>
+      <section class="path-section"><div class="section-header"><div><span class="eyebrow">候选路径</span><h2>接下来可以试什么</h2></div><span>${(item.suggestions || []).length} 条</span></div><div class="path-list">${suggestions}</div></section>
+      <details class="symptom-aliases"><summary>常见说法与自查步骤</summary><div><div class="tag-cloud">${(item.aliases || []).map((entry) => C.badge(entry, "neutral")).join("")}</div><ol>${(item.steps || []).map((step) => `<li>${C.escapeHTML(step)}</li>`).join("")}</ol></div></details>
+      ${representativePuzzles(item.representativeIds)}`;
+    return shell("mechanisms", content);
   }
 
   function filterPuzzles(route) {
@@ -322,7 +399,7 @@
     const sourceUrl = provenance.sourceUrl || provenance.source_url || core?.sourceUrl || record.sourceUrl;
     const questionHTML = question.html || question.safeHtml || question.markdownHtml || question.markdown_html || core?.questionHtml || core?.question_html;
     const questionText = question.text || core?.questionText || core?.question_text;
-    const actions = `<button class="icon-button favorite-button ${C.state.favorites.has(id) ? "is-active" : ""}" type="button" data-action="favorite" data-id="${C.escapeHTML(id)}" aria-label="收藏题目">${C.icon("bookmark")}</button>`;
+    const actions = `<button class="icon-button favorite-button ${C.state.favorites.has(id) ? "is-active" : ""}" type="button" data-action="favorite" data-id="${C.escapeHTML(id)}" aria-label="${C.state.favorites.has(id) ? "取消收藏题目" : "收藏题目"}" aria-pressed="${C.state.favorites.has(id)}">${C.icon("bookmark")}</button>`;
     const contentHtml = `<div class="breadcrumbs"><a href="#/puzzles">历年题库</a>${C.icon("chevron-right")}<span>${C.escapeHTML(C.formatEvent(record))}</span>${record.area ? `${C.icon("chevron-right")}<span>${C.escapeHTML(record.area)}</span>` : ""}</div>
       <article class="puzzle-detail" data-puzzle-id="${C.escapeHTML(id)}">
         ${pageHeader(record.area || C.kindLabel(record.kind), record.title || "未命名题目", record.authors?.length ? `作者：${record.authors.join("、")}` : "", actions)}
@@ -405,12 +482,12 @@
     const content = `${pageHeader("资料说明", "完整，但不假装均匀", "本手册忠实保存当前能够从官方公开来源恢复的内容；资料缺失会明确标注，不由模型补写。")}
       <div class="stats-strip"><div><strong>${stat(["records", "recordCount", "record_count"], C.state.catalog.length)}</strong><span>规范化记录</span></div><div><strong>${stat(["hints", "hintCount", "hint_count"], "1252")}</strong><span>官方提示</span></div><div><strong>${stat(["assets", "assetCount", "asset_count"], "1748")}</strong><span>本地附件</span></div><div><strong>${stat(["additionalAnswers", "additionalAnswerCount"], "354")}</strong><span>中间答案反馈</span></div></div>
       <div class="about-grid"><section class="detail-block"><h2>覆盖范围</h2><p>CCBC 2–4 的官方历史帖恢复层，以及 CCBC 11、12、13/14、15、16 的现代官方存档。CCBC 1、5–10 当前没有可恢复的完整官方题目与解析。</p></section><section class="detail-block"><h2>防剧透设计</h2><p>安全题面、官方提示、答案与题解物理分开。普通搜索不加载剧透索引；题目详情只有在主动操作后才读取相应内容。</p></section><section class="detail-block"><h2>局限</h2><p>静态分包用于防止误看，不是权限系统。掌握开发者工具的人仍可主动读取本地文件。本手册只适合队内自用或在授权范围内发布。</p></section><section class="detail-block"><h2>权利与来源</h2><p>原题、提示、题解及附件的权利与署名仍归原作者和 CCBC 主办方。本项目不对原内容声明新的许可证；每条题目保留官方来源。</p></section></div>
-      <div class="about-actions"><a class="secondary-button" href="../README.md" target="_blank">${C.icon("file-text")} 查看语料说明</a><button class="danger-button" type="button" data-action="clear-spoilers">${C.icon("shield-x")} 清除本次会话的剧透数据</button></div>`;
+      <div class="about-actions"><a class="secondary-button" href="#/puzzles">${C.icon("library")} 浏览历年题库</a><button class="danger-button" type="button" data-action="clear-spoilers">${C.icon("shield-x")} 清除本次会话的剧透数据</button></div>`;
     return shell("about", content);
   }
 
   function notFoundView(message) {
-    return shell("search", `<div class="empty-state">${C.icon("map-pin-off")}<h1>${C.escapeHTML(message)}</h1><p>链接可能已失效，或本次构建没有收录对应记录。</p><a class="primary-button" href="#/search">返回检索</a></div>`);
+    return shell("mechanisms", `<div class="empty-state">${C.icon("map-pin-off")}<h1>${C.escapeHTML(message)}</h1><p>链接可能已失效，或本次构建没有收录对应记录。</p><a class="primary-button" href="#/mechanisms">返回卡点导航</a></div>`);
   }
 
   function errorView(error) {

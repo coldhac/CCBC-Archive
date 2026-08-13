@@ -813,6 +813,260 @@
       item.description = item.definition;
     });
   });
+
+  // Curated navigation metadata keeps field use focused on one decision at a
+  // time while leaving the complete taxonomy available for reference.
+  guide.stageGroups = [
+    {
+      id: "entry",
+      label: "还没找到入口",
+      question: "还没找到可以动手的入口？",
+      description: "题面不可见，或不知道素材是什么、该从哪里开始。",
+      example: "看不到题 / 没思路 / 认不出 / 查不到准确信息",
+      icon: "compass",
+      symptomIds: ["S0_access_render", "S1_no_entry", "S2_recognition", "S3_source_scope"]
+    },
+    {
+      id: "understand",
+      label: "理解题目",
+      question: "看懂了素材，但不懂怎么组织或操作？",
+      description: "组件已经能辨认，局部规则或整体对应关系仍不清楚。",
+      example: "不懂规则 / 不会分组、配对或填盘",
+      icon: "puzzle",
+      symptomIds: ["S4_rule_inference", "S5_setup_group_map"]
+    },
+    {
+      id: "execute",
+      label: "执行与验证",
+      question: "知道大方向，但做不动或做出了矛盾？",
+      description: "需要找到下一条必然推论、排查错误，或选择合适工具。",
+      example: "推不动 / 矛盾或多解 / 不会执行",
+      icon: "list-checks",
+      symptomIds: ["S6_logic_progress", "S7_contradiction_nonunique", "S8_execution_tool"]
+    },
+    {
+      id: "extract",
+      label: "排序与提取",
+      question: "主体做完了，但答案还没有出现？",
+      description: "对象已经齐全，需要决定顺序、读取方法或校验乱码。",
+      example: "不会排序 / 不会提取 / 结果不对",
+      icon: "scan-line",
+      symptomIds: ["S9_ordering", "S10_extraction", "S11_gibberish_validation"]
+    },
+    {
+      id: "multistage",
+      label: "多阶段与 Meta",
+      question: "拿到中间产物，却不知道怎样接到下一阶段？",
+      description: "机制需要复用，或多个 feeder、Meta 和交互阶段存在依赖。",
+      example: "然后呢 / 不会复用 / Meta 输入或匹配不明",
+      icon: "network",
+      symptomIds: ["S12_intermediate_next", "S13_repeat_recursion", "S14_meta_inputs", "S15_meta_matching_dependency"]
+    },
+    {
+      id: "handoff",
+      label: "提交与接手",
+      question: "解法基本完成，只差提交或恢复进度？",
+      description: "检查答案规范，或整理一份别人能无损接手的检查点。",
+      example: "提交格式不对 / 需要完整检查点",
+      icon: "clipboard-check",
+      symptomIds: ["S16_answer_format_normalization", "S17_need_full_checkpoint"]
+    }
+  ];
+
+  const axisNavigation = {
+    carrier: { userQuestion: "我看到的是什么？", icon: "shapes" },
+    operation: { userQuestion: "题目让我反复做什么？", icon: "wrench" },
+    extraction: { userQuestion: "中间结果怎样变成答案？", icon: "scan-text" },
+    domain: { userQuestion: "需要哪类外部知识？", icon: "book-open" }
+  };
+  const axisGroups = {
+    carrier: [
+      { id: "language", label: "文字与语言", description: "字词、句子、汉字形音本身承载信息。", itemIds: ["A1_text_word", "A2_hanzi_phonology"] },
+      { id: "visual-data", label: "图像与结构", description: "从视觉对象、颜色、网格、表格或数字结构入手。", itemIds: ["A3_visual_symbol", "A5_grid_data_numeric"] },
+      { id: "dynamic-interactive", label: "动态、空间与交互", description: "需要播放、模拟、动手操作或检查页面状态。", itemIds: ["A4_audio_video", "A6_spatial_physical", "A7_web_code_interactive"] }
+    ],
+    operation: [
+      { id: "recognize-transform", label: "识别与转换", description: "先识别素材，再按固定规则解码或改变形式。", itemIds: ["B1_identify_research", "B2_classical_cipher", "B3_lexical_transform", "B4_glyph_transform"] },
+      { id: "reason-simulate", label: "推理与模拟", description: "依靠约束、计算或逐步更新状态求解。", itemIds: ["B5_constraint_logic", "B6_math_formal_compute", "B7_spatial_transform_path"] },
+      { id: "organize-compare", label: "组织与比较", description: "通过分组、配对、排序、集合或叠合发现关系。", itemIds: ["B8_group_match_order", "B9_compare_set_overlay"] },
+      { id: "hidden-flow", label: "隐藏与流程", description: "恢复隐藏信息，或在重复和状态流程中持续推进。", itemIds: ["B10_reconstruct_stego", "B11_iterate_reuse_recursive", "B12_state_game_exploration"] }
+    ],
+    extraction: [
+      { id: "direct-position", label: "直接与位置读取", description: "按自然顺序、序号或固定位置获得字母。", itemIds: ["C1_direct_decode", "C2_indexed_extract", "C3_initial_final_acrostic"] },
+      { id: "residue-render", label: "残留、路径与显像", description: "读取剩余元素、访问路径、位串或最终图形。", itemIds: ["C4_residue_intersection", "C5_read_order_path", "C6_symbol_binary_render", "C7_visual_negative_shape"] },
+      { id: "transform-hunt", label: "二次处理与 Hunt 结构", description: "把中间答案继续变换，或处理 feeder、Meta 和多阶段依赖。", itemIds: ["C8_answer_transform_reapply", "C9_feeder_meta", "C10_meta_matching", "C11_recursive_meta", "C12_interactive_multistage"] }
+    ],
+    domain: [
+      { id: "language", label: "语言与文字", description: "汉字、语言、文学、翻译和词源。", itemIds: ["D1_chinese_linguistics", "D2_language_literature"] },
+      { id: "culture-art", label: "文化与艺术", description: "音乐、舞台、影视、动漫、游戏、艺术和字体。", itemIds: ["D3_music_stage", "D4_pop_culture_games", "D11_art_design_typography"] },
+      { id: "society-life", label: "社会与生活", description: "地理、历史、交通、竞技、品牌和日常物品。", itemIds: ["D5_geography_flags_transport", "D6_history_calendar_culture", "D10_sports_boardgames", "D12_everyday_objects_food"] },
+      { id: "science-tech", label: "科学与技术", description: "数学、逻辑、自然科学、计算机和网络。", itemIds: ["D7_math_logic", "D8_natural_science", "D9_computing_web"] }
+    ]
+  };
+
+  const mechanismPresentation = {
+    A1_text_word: { shortLabel: "文字词汇", icon: "text", cue: "词长、横线或重复句式是主要结构" },
+    A2_hanzi_phonology: { shortLabel: "汉字语音", icon: "languages", cue: "换成同义词就失效，字形或读音本身有用" },
+    A3_visual_symbol: { shortLabel: "图像颜色", icon: "image", cue: "正文很少，颜色、图标或轮廓反复出现" },
+    A4_audio_video: { shortLabel: "音频视频", icon: "audio-lines", cue: "变速、逐帧或看频谱后才出现离散单位" },
+    A5_grid_data_numeric: { shortLabel: "网格数字", icon: "table-2", cue: "行列、坐标或数字汇总形成稳定约束" },
+    A6_spatial_physical: { shortLabel: "空间实物", icon: "box", cue: "折叠、旋转、裁切或相邻关系需要实际模拟" },
+    A7_web_code_interactive: { shortLabel: "网页交互", icon: "code-2", cue: "交互状态、源码或网络资源含可用信息" },
+    B1_identify_research: { shortLabel: "识别检索", icon: "search", cue: "整组素材应落入同一个边界清楚的集合" },
+    B2_classical_cipher: { shortLabel: "密码编码", icon: "key-round", cue: "符号取值数和固定分组长度像标准码表" },
+    B3_lexical_transform: { shortLabel: "词汇变换", icon: "replace", cue: "词之间总能用同一种增删改换互相转换" },
+    B4_glyph_transform: { shortLabel: "字形操作", icon: "shapes", cue: "不读字义，只操作轮廓、笔画或部件" },
+    B5_constraint_logic: { shortLabel: "约束推理", icon: "grid-3x3", cue: "规则能写成约束，盘面存在候选与必然步" },
+    B6_math_formal_compute: { shortLabel: "数学计算", icon: "calculator", cue: "公式或形式规则可以在小样例上复算" },
+    B7_spatial_transform_path: { shortLabel: "路径模拟", icon: "route", cue: "位置、方向或路径会随每步操作更新" },
+    B8_group_match_order: { shortLabel: "分组排序", icon: "layout-list", cue: "对象需恰好使用一次地分组、配对或排序" },
+    B9_compare_set_overlay: { shortLabel: "比较叠合", icon: "blend", cue: "两份相似素材叠合后只剩稀疏差异" },
+    B10_reconstruct_stego: { shortLabel: "隐写重建", icon: "scan-search", cue: "空白、源码、字节或隐藏层里另有结构" },
+    B11_iterate_reuse_recursive: { shortLabel: "重复递归", icon: "repeat-2", cue: "第一轮产物仍像同类输入或操作指令" },
+    B12_state_game_exploration: { shortLabel: "状态探索", icon: "gamepad-2", cue: "每次操作都会改变状态和下一步合法动作" },
+    C1_direct_decode: { shortLabel: "直接读取", icon: "arrow-right", cue: "每个单位已稳定得到字母，顺序也天然明确" },
+    C2_indexed_extract: { shortLabel: "序号提取", icon: "list-ordered", cue: "对象旁有不大于词长的小数字或坐标" },
+    C3_initial_final_acrostic: { shortLabel: "首尾藏头", icon: "pilcrow", cue: "多行结构适合读取首尾或同一固定位置" },
+    C4_residue_intersection: { shortLabel: "剩余差集", icon: "circle-minus", cue: "主体操作用掉大部分元素，只剩少量残留" },
+    C5_read_order_path: { shortLabel: "路径读取", icon: "route", cue: "起点、方向或路线决定唯一访问顺序" },
+    C6_symbol_binary_render: { shortLabel: "位串显字", icon: "binary", cue: "两三类状态能分成固定长度的位串" },
+    C7_visual_negative_shape: { shortLabel: "负空间显像", icon: "scan", cue: "缩小、反色或看负空间后出现字形" },
+    C8_answer_transform_reapply: { shortLabel: "二次变换", icon: "refresh-cw", cue: "得到的是操作说明或机制名，不像最终答案" },
+    C9_feeder_meta: { shortLabel: "Feeder Meta", icon: "network", cue: "小题答案的数量正好匹配 Meta 结构" },
+    C10_meta_matching: { shortLabel: "Meta 匹配", icon: "shuffle", cue: "两组等量输入需要建立唯一的一一匹配" },
+    C11_recursive_meta: { shortLabel: "Meta 链", icon: "git-branch", cue: "多个 Meta 互相引用，需要先画依赖图" },
+    C12_interactive_multistage: { shortLabel: "多阶段交互", icon: "mouse-pointer-click", cue: "页面随操作变化，产物继续进入下一阶段" },
+    D1_chinese_linguistics: { shortLabel: "汉语文字", icon: "languages", cue: "部首、笔画、拼音、声调或汉字编码不可替换" },
+    D2_language_literature: { shortLabel: "语言文学", icon: "book-open", cue: "固定译名、惯用语、词源或多语关系决定结果" },
+    D3_music_stage: { shortLabel: "音乐舞台", icon: "music", cue: "曲目、音高、节奏或舞台作品需要统一识别" },
+    D4_pop_culture_games: { shortLabel: "影视动漫游戏", icon: "clapperboard", cue: "角色、台词或素材来自同一作品或世代" },
+    D5_geography_flags_transport: { shortLabel: "地理交通", icon: "map", cue: "轮廓、坐标、旗帜、站点指向标准地理集合" },
+    D6_history_calendar_culture: { shortLabel: "历史历法", icon: "landmark", cue: "年份、节日或历史时点会改变正确版本" },
+    D7_math_logic: { shortLabel: "数学逻辑", icon: "sigma", cue: "条件适合写成方程、证明或逻辑模型" },
+    D8_natural_science: { shortLabel: "自然科学", icon: "flask-conical", cue: "公式、单位或分类属于专业科学语境" },
+    D9_computing_web: { shortLabel: "计算机网络", icon: "terminal", cue: "代码、协议、编码或网页行为本身是知识对象" },
+    D10_sports_boardgames: { shortLabel: "体育棋类", icon: "trophy", cue: "棋谱、赛制、比分或合法走法需要规则知识" },
+    D11_art_design_typography: { shortLabel: "艺术字体", icon: "palette", cue: "作品、构图、字体或设计体系需要统一识别" },
+    D12_everyday_objects_food: { shortLabel: "日常品牌", icon: "utensils", cue: "配方、品牌、包装或标准布局承载规律" }
+  };
+
+  guide.axes.forEach(function (axis) {
+    Object.assign(axis, axisNavigation[axis.id] || {});
+    axis.groups = axisGroups[axis.id] || [];
+    axis.items.forEach(function (item) {
+      Object.assign(item, mechanismPresentation[item.id] || {
+        shortLabel: item.label,
+        icon: "circle-dot",
+        cue: (item.signals || [item.definition])[0]
+      });
+    });
+  });
+
+  const symptomSuggestions = {
+    S0_access_render: [
+      { action: "check-current-page", label: "先做资源排查", why: "区分加载故障与题目刻意留白，避免在缺失素材上继续推理。" },
+      { mechanismId: "A7_web_code_interactive", why: "自定义页面可能把信息放在交互状态、源码或资源请求中。" },
+      { mechanismId: "B10_reconstruct_stego", why: "页面异常空白或声称什么都没有时，隐藏层本身可能就是入口。" }
+    ],
+    S1_no_entry: [
+      { axis: "carrier", label: "先判断信息载体", why: "先回答信息主要藏在哪里，通常比直接猜题型更容易。" },
+      { mechanismId: "B1_identify_research", why: "若素材可切成同类对象，先从整组识别建立一个可靠锚点。" },
+      { mechanismId: "B8_group_match_order", why: "数量整齐或两侧等量时，分组、配对和排序常是第一步。" },
+      { mechanismId: "B10_reconstruct_stego", why: "可见内容异常少、格式异常多时，先检查是否存在隐藏信息。" }
+    ],
+    S2_recognition: [
+      { mechanismId: "B1_identify_research", why: "先用整组共性限定对象集合，再确认标准名称和版本。" },
+      { axis: "domain", label: "按知识域缩小范围", why: "从语言、文化、社会生活或科学技术中选择最接近的一类。" },
+      { mechanismId: "B8_group_match_order", why: "暂时认不全时，已识别对象之间的分组关系可以反向约束未知项。" }
+    ],
+    S3_source_scope: [
+      { mechanismId: "B1_identify_research", why: "把时点、地区、语言和世代写成检索约束，统一整组数据源。" },
+      { axis: "domain", label: "核对对应知识域", why: "不同知识域的标准版本、命名规则和权威来源差异很大。" },
+      { mechanismId: "D6_history_calendar_culture", why: "若题面给出年份或比赛时点，今天的数据可能不是正确版本。" }
+    ],
+    S4_rule_inference: [
+      { mechanismId: "B3_lexical_transform", why: "若输入输出都是词，先比较增删替换、重排和读音变化。" },
+      { mechanismId: "B4_glyph_transform", why: "若符号作用于字形或图形，暂时忽略语义，只比较部件和轮廓。" },
+      { mechanismId: "B7_spatial_transform_path", why: "箭头和方向更可能描述位置、朝向或逐步移动。" },
+      { mechanismId: "B9_compare_set_overlay", why: "有成对样例时，把变前变后对齐并只看差异。" }
+    ],
+    S5_setup_group_map: [
+      { mechanismId: "B8_group_match_order", why: "先建立候选矩阵，用唯一项和硬约束传播一一对应。" },
+      { mechanismId: "B5_constraint_logic", why: "当局部选择彼此影响时，把映射写成可检查的约束。" },
+      { mechanismId: "C9_feeder_meta", why: "若输入来自多道小题，先核对答案数量和 Meta 容量。" },
+      { mechanismId: "C10_meta_matching", why: "两组等量答案和线索通常需要唯一匹配，而非直接按题号对应。" }
+    ],
+    S6_logic_progress: [
+      { mechanismId: "B5_constraint_logic", why: "重算候选最少处、饱和约束和两类规则的交叉影响。" },
+      { mechanismId: "B6_math_formal_compute", why: "把口头规则形式化后，常能看出遗漏的边界或计数条件。" },
+      { mechanismId: "B12_state_game_exploration", why: "若每步会改变合法动作，记录状态转移而不是只盯当前盘面。" }
+    ],
+    S7_contradiction_nonunique: [
+      { action: "audit-assumptions", label: "回查首个冲突", why: "回到最后一个已验证状态，逐条开关抄录、方向、基准和默认规则。" },
+      { mechanismId: "B5_constraint_logic", why: "把每条原文规则机械检查一遍，确认是否遗漏约束或私自加入熟悉规则。" },
+      { mechanismId: "C2_indexed_extract", why: "索引越界或结果偏一时，优先核对零基、一基和名称版本。" },
+      { mechanismId: "C6_symbol_binary_render", why: "系统性乱码常来自极性、分组或高低位方向错误。" }
+    ],
+    S8_execution_tool: [
+      { mechanismId: "B6_math_formal_compute", why: "先把算法写成一个可手算的小样例，再决定是否批量计算。" },
+      { mechanismId: "B7_spatial_transform_path", why: "用编号和状态表模拟一步，可避免工具批量放大方向错误。" },
+      { mechanismId: "A4_audio_video", why: "音视频任务通常需要变速、频谱、分轨或逐帧等专门视图。" },
+      { mechanismId: "A7_web_code_interactive", why: "网页或代码题先保存原始状态，再用浏览器工具观察变化。" }
+    ],
+    S9_ordering: [
+      { mechanismId: "B8_group_match_order", why: "先清点题面自带的编号、时间、长度、颜色和标准集合顺序。" },
+      { mechanismId: "C5_read_order_path", why: "二维布局、有起点或箭头时，路径可能直接给出阅读顺序。" },
+      { mechanismId: "C3_initial_final_acrostic", why: "多行对象排序后，首尾或固定列常形成可快速验证的片段。" }
+    ],
+    S10_extraction: [
+      { mechanismId: "C2_indexed_extract", why: "仍未使用的小数字、颜色、坐标或年份常用于按位取字。" },
+      { mechanismId: "C3_initial_final_acrostic", why: "多行答案先检查首尾字母、首尾交替和固定列。" },
+      { mechanismId: "C4_residue_intersection", why: "主体步骤若用掉大部分元素，剩余、交集或差异可能就是输出。" },
+      { mechanismId: "C5_read_order_path", why: "空间布局通常还需要题面给定的起点、方向或路线。" },
+      { mechanismId: "C6_symbol_binary_render", why: "两三类状态和固定分组长度适合转成位串或码表。" },
+      { mechanismId: "C7_visual_negative_shape", why: "操作结果呈图形时，缩小、反色或查看负空间可能直接显字。" }
+    ],
+    S11_gibberish_validation: [
+      { action: "audit-output", label: "先做输出校验", why: "先查方向、端序、极性、索引基准、排序和名称版本，不急着换机制。" },
+      { mechanismId: "C2_indexed_extract", why: "长度对但字母错位时，检查索引基准与被索引名称。" },
+      { mechanismId: "C5_read_order_path", why: "字符集合近似正确但顺序混乱时，检查起点、方向和访问路径。" },
+      { mechanismId: "C6_symbol_binary_render", why: "稳定乱码通常值得翻转极性、端序或重新分组。" },
+      { mechanismId: "C8_answer_transform_reapply", why: "可读但不像答案的中间串，可能仍是一条操作指令。" }
+    ],
+    S12_intermediate_next: [
+      { mechanismId: "C8_answer_transform_reapply", why: "先判断中间产物是否是操作说明、机制名或另一题的输入。" },
+      { mechanismId: "B11_iterate_reuse_recursive", why: "若产物形态与原输入相似，尝试把同一操作再执行一轮。" },
+      { mechanismId: "C12_interactive_multistage", why: "页面或系统反馈变化时，记录当前阶段的目标、产物和使用位置。" }
+    ],
+    S13_repeat_recursion: [
+      { mechanismId: "B11_iterate_reuse_recursive", why: "写成每轮输入、操作、输出表，并明确下一轮参数与终止条件。" },
+      { mechanismId: "C8_answer_transform_reapply", why: "区分复用答案和复用机制，检查本轮是否有新增方向或顺序。" },
+      { mechanismId: "C12_interactive_multistage", why: "若每轮伴随页面状态变化，需要同时保存阶段状态和中间产物。" }
+    ],
+    S14_meta_inputs: [
+      { mechanismId: "C9_feeder_meta", why: "列出候选 feeder、标准答案、长度和已解状态，再核对题面容量。" },
+      { mechanismId: "C11_recursive_meta", why: "多个区域或 Meta 互相引用时，先画依赖图确定可用输入层级。" },
+      { mechanismId: "C12_interactive_multistage", why: "若答案会解锁新内容，当前可见状态也决定输入集合。" }
+    ],
+    S15_meta_matching_dependency: [
+      { mechanismId: "C10_meta_matching", why: "分开验证输入选择和匹配规则，用候选矩阵寻找唯一对应。" },
+      { mechanismId: "C9_feeder_meta", why: "先确认 feeder 集合完整且答案已按同一格式归一化。" },
+      { mechanismId: "C11_recursive_meta", why: "看似未使用的答案可能属于更晚层级，或被另一个 Meta 消耗。" }
+    ],
+    S16_answer_format_normalization: [
+      { action: "normalize-answer", label: "检查答案规范", why: "按题面要求依次核对语言、词数、空格、标点、简繁、词形和固定译名。" },
+      { mechanismId: "C8_answer_transform_reapply", why: "若最小规范化都无效，当前结果可能仍是指令或需要二次变换。" }
+    ],
+    S17_need_full_checkpoint: [
+      { action: "prepare-checkpoint", label: "整理可接手检查点", why: "保存原始素材、已验证规则、未知位、完整中间结果和最小下一步。" },
+      { mechanismId: "C12_interactive_multistage", why: "交互题要额外记录页面状态、已触发动作和继续推进的位置。" },
+      { mechanismId: "C11_recursive_meta", why: "Meta 链要标清每层输入来源、依赖和当前完成状态。" }
+    ]
+  };
+  guide.symptoms.forEach(function (symptom) {
+    symptom.suggestions = symptomSuggestions[symptom.id] || [];
+  });
+
   const symptomPriority = [
     "S1_no_entry",
     "S2_recognition",

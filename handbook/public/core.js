@@ -10,7 +10,7 @@
     spoilerCache: new Map(),
     searchCache: new Map(),
     searchMode: "safe",
-    route: { name: "search", params: {}, query: new URLSearchParams() },
+    route: { name: "mechanisms", params: {}, query: new URLSearchParams() },
     favorites: new Set(),
     recents: [],
     puzzlePageSize: 60,
@@ -109,7 +109,7 @@
     if (!path) return "";
     if (/^(https?:|data:|blob:)/i.test(path)) return path;
     if (path.startsWith("/")) return path;
-    if (path.startsWith("data/")) return `../${path}`;
+    if (path.startsWith("data/")) return path;
     return path;
   }
 
@@ -153,6 +153,15 @@
     }));
   }
 
+  function readStoredArray(key) {
+    try {
+      const value = JSON.parse(localStorage.getItem(key) || "[]");
+      return Array.isArray(value) ? value : [];
+    } catch (_error) {
+      return [];
+    }
+  }
+
   async function initData() {
     state.manifest = await fetchJSON("data/manifest.json");
     const [catalogPayload, relationsPayload] = await Promise.all([
@@ -166,8 +175,8 @@
       children: relationsPayload.children || {},
       solutionRefs: relationsPayload.solutionRefs || relationsPayload.solution_refs || {}
     };
-    const storedFavorites = JSON.parse(localStorage.getItem("ccbc-handbook-favorites") || "[]");
-    const storedRecents = JSON.parse(localStorage.getItem("ccbc-handbook-recents") || "[]");
+    const storedFavorites = readStoredArray("ccbc-handbook-favorites");
+    const storedRecents = readStoredArray("ccbc-handbook-recents");
     state.favorites = new Set(storedFavorites.filter((id) => state.byId.has(id) || mechanismById(id)));
     state.recents = storedRecents.filter((id) => state.byId.has(id)).slice(0, 16);
   }
@@ -323,11 +332,11 @@
   }
 
   function parseHash() {
-    const raw = location.hash.replace(/^#/, "") || "/search";
+    const raw = location.hash.replace(/^#/, "") || "/mechanisms";
     const [pathPart, queryPart = ""] = raw.split("?");
     const parts = pathPart.split("/").filter(Boolean).map(decodeURIComponent);
     const query = new URLSearchParams(queryPart);
-    let name = parts[0] || "search";
+    let name = parts[0] || "mechanisms";
     const params = {};
     if (name === "puzzle" && parts[1]) params.id = parts.slice(1).join("/");
     if (name === "mechanism" && parts[1]) params.id = parts[1];
@@ -348,6 +357,18 @@
       if (item) return { axis, item };
     }
     return null;
+  }
+
+  function axisById(id) {
+    return (window.CCBC_GUIDE?.axes || []).find((axis) => axis.id === id) || null;
+  }
+
+  function stageGroupById(id) {
+    return (window.CCBC_GUIDE?.stageGroups || []).find((group) => group.id === id) || null;
+  }
+
+  function stageGroupForSymptom(symptomId) {
+    return (window.CCBC_GUIDE?.stageGroups || []).find((group) => (group.symptomIds || []).includes(symptomId)) || null;
   }
 
   function symptomById(id) {
@@ -408,7 +429,10 @@
       parseHash,
       routeHref,
       mechanismById,
+      axisById,
       symptomById,
+      stageGroupById,
+      stageGroupForSymptom,
       toggleFavorite,
       addRecent,
       resetSpoilers,

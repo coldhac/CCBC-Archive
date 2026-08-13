@@ -7,6 +7,8 @@
   const modalRoot = document.getElementById("modal-root");
   const toastRoot = document.getElementById("toast-root");
   let rendering = false;
+  let renderQueued = false;
+  let modalOpener = null;
 
   function toast(message) {
     const element = document.createElement("div");
@@ -20,16 +22,28 @@
     }, 2200);
   }
 
-  function closeModal(value = false) {
+  function closeModal(value = false, restoreFocus = true) {
     const resolver = modalRoot._resolver;
     modalRoot.replaceChildren();
     modalRoot._resolver = null;
     document.body.classList.remove("modal-open");
+    app.inert = false;
     if (resolver) resolver(value);
+    const opener = modalOpener;
+    modalOpener = null;
+    if (restoreFocus && opener?.isConnected) window.requestAnimationFrame(() => opener.focus());
+  }
+
+  function beginModal() {
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    closeModal(false, false);
+    modalOpener = opener;
+    app.inert = true;
+    document.body.classList.add("modal-open");
   }
 
   function confirmModal({ icon = "shield-alert", eyebrow = "防剧透确认", title, message, confirmLabel = "确认显示", danger = true }) {
-    closeModal(false);
+    beginModal();
     return new Promise((resolve) => {
       modalRoot._resolver = resolve;
       modalRoot.innerHTML = `<div class="modal-backdrop is-open" data-action="dismiss-modal"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" data-modal-panel>
@@ -39,14 +53,13 @@
         <p>${C.escapeHTML(message)}</p>
         <div class="modal-actions"><button class="secondary-button" type="button" data-action="cancel-modal">取消</button><button class="${danger ? "danger-button" : "primary-button"}" type="button" data-action="confirm-modal">${C.escapeHTML(confirmLabel)}</button></div>
       </section></div>`;
-      document.body.classList.add("modal-open");
       C.refreshIcons();
       modalRoot.querySelector("[data-action='cancel-modal']")?.focus();
     });
   }
 
   function searchModeModal() {
-    closeModal(false);
+    beginModal();
     return new Promise((resolve) => {
       modalRoot._resolver = resolve;
       const options = [
@@ -59,28 +72,43 @@
         <div class="mode-options">${options.map(([id, iconName, name, description]) => `<button type="button" class="mode-option ${C.state.searchMode === id ? "is-active" : ""} ${id === "full" ? "is-danger" : ""}" data-action="select-search-mode" data-mode="${id}">${C.icon(iconName)}<span><strong>${name}</strong><small>${description}</small></span>${C.state.searchMode === id ? C.icon("check") : C.icon("chevron-right")}</button>`).join("")}</div>
         <div class="modal-actions"><button class="secondary-button" type="button" data-action="cancel-modal">保持当前范围</button></div>
       </section></div>`;
-      document.body.classList.add("modal-open");
       C.refreshIcons();
       modalRoot.querySelector("[data-action='cancel-modal']")?.focus();
     });
   }
 
   function mediaModal(src, name) {
-    closeModal(false);
+    beginModal();
     modalRoot.innerHTML = `<div class="modal-backdrop media-backdrop is-open" data-action="dismiss-modal"><section class="media-viewer" role="dialog" aria-modal="true" aria-label="查看图片" data-modal-panel><div class="media-toolbar"><span>${C.escapeHTML(name || "题目图片")}</span><a class="icon-button" href="${C.escapeHTML(src)}" download aria-label="下载原图">${C.icon("download")}</a><button class="icon-button" type="button" data-action="cancel-modal" aria-label="关闭">${C.icon("x")}</button></div><div class="media-canvas"><img src="${C.escapeHTML(src)}" alt="${C.escapeHTML(name || "题目图片")}"></div></section></div>`;
-    document.body.classList.add("modal-open");
     C.refreshIcons();
+    modalRoot.querySelector("[data-action='cancel-modal']")?.focus();
+  }
+
+  function setMobileMenu(open, restoreFocus = false) {
+    document.body.classList.toggle("mobile-menu-open", open);
+    const trigger = document.querySelector("[data-action='mobile-menu']");
+    trigger?.setAttribute("aria-expanded", String(open));
+    trigger?.setAttribute("aria-label", open ? "关闭导航" : "打开导航");
+    const workspace = document.querySelector(".workspace");
+    const bottomNav = document.querySelector(".bottom-nav");
+    if (workspace) workspace.inert = open;
+    if (bottomNav) bottomNav.inert = open;
+    if (open) document.querySelector("#main-sidebar a, #main-sidebar button")?.focus();
+    else if (restoreFocus) trigger?.focus();
   }
 
   function activeNav(route) {
     if (["mechanism", "mechanisms"].includes(route.name)) return "mechanisms";
     if (["puzzle", "puzzles"].includes(route.name)) return "puzzles";
-    if (route.name === "symptom") return "search";
+    if (route.name === "symptom") return "mechanisms";
     return route.name;
   }
 
   async function render({ preserveScroll = false } = {}) {
-    if (rendering) return;
+    if (rendering) {
+      renderQueued = true;
+      return;
+    }
     rendering = true;
     const previousRoute = C.state.route;
     if (previousRoute?.name) C.state.scrollPositions.set(`${previousRoute.name}:${previousRoute.params?.id || ""}`, window.scrollY);
@@ -91,7 +119,7 @@
       switch (route.name) {
         case "search": html = await V.searchView(route); break;
         case "quick": html = V.quickView(); break;
-        case "mechanisms": html = V.mechanismsView(); break;
+        case "mechanisms": html = V.mechanismsView(route); break;
         case "mechanism": html = V.mechanismView(route.params.id); break;
         case "symptom": html = V.symptomView(route.params.id); break;
         case "puzzles": html = V.puzzlesView(route); break;
@@ -116,6 +144,10 @@
       C.refreshIcons();
     } finally {
       rendering = false;
+      if (renderQueued) {
+        renderQueued = false;
+        await render();
+      }
     }
   }
 
@@ -239,17 +271,17 @@
     }
     if (action === "clear-filters") { location.hash = "#/search"; return; }
     if (action === "enable-hint-search") { await setSearchMode("hints"); return; }
-    if (action === "axis-tab") {
-      const axis = actionElement.dataset.axis;
-      document.querySelectorAll("[data-action='axis-tab']").forEach((button) => button.classList.toggle("is-active", button.dataset.axis === axis));
-      document.querySelectorAll("[data-axis-section]").forEach((section) => section.classList.toggle("is-active", section.dataset.axisSection === axis));
-      return;
-    }
     if (action === "favorite") {
       event.preventDefault();
       event.stopPropagation();
       const active = C.toggleFavorite(actionElement.dataset.id);
-      actionElement.classList.toggle("is-active", active);
+      document.querySelectorAll("[data-action='favorite']").forEach((button) => {
+        if (button.dataset.id !== actionElement.dataset.id) return;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", String(active));
+        const isMechanism = Boolean(C.mechanismById(button.dataset.id));
+        button.setAttribute("aria-label", active ? `取消收藏${isMechanism ? "机制" : "题目"}` : `收藏${isMechanism ? "机制" : "题目"}`);
+      });
       toast(active ? "已收藏" : "已取消收藏");
       return;
     }
@@ -266,8 +298,12 @@
     if (action === "reveal-spoiler") { await revealSpoiler(actionElement); return; }
     if (action === "next-hint") { await nextHint(actionElement); return; }
     if (action === "copy-answer") {
-      await navigator.clipboard.writeText(actionElement.dataset.answer || "");
-      toast("已复制");
+      try {
+        await navigator.clipboard.writeText(actionElement.dataset.answer || "");
+        toast("已复制");
+      } catch (_error) {
+        toast("复制失败，请手动选择答案");
+      }
       return;
     }
     if (action === "view-media") { mediaModal(actionElement.dataset.src, actionElement.dataset.name); return; }
@@ -283,7 +319,8 @@
       return;
     }
     if (action === "print") { window.print(); return; }
-    if (action === "mobile-menu") { document.body.classList.toggle("mobile-menu-open"); return; }
+    if (action === "mobile-menu") { setMobileMenu(!document.body.classList.contains("mobile-menu-open")); return; }
+    if (action === "close-mobile-menu") { setMobileMenu(false, true); return; }
     if (action === "reload") { location.reload(); return; }
   }
 
@@ -321,18 +358,25 @@
     }
     if (event.key === "Escape") {
       if (modalRoot.firstChild) closeModal(false);
-      else document.body.classList.remove("mobile-menu-open");
+      else setMobileMenu(false, true);
+    }
+    if (event.key === "Tab" && modalRoot.firstChild) {
+      const focusable = [...modalRoot.querySelectorAll("a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), summary, [tabindex]:not([tabindex='-1'])")].filter((element) => element.getClientRects().length);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     }
   }
 
   async function boot() {
     try {
       await C.initData();
-      if (!location.hash) history.replaceState(null, "", "#/search");
+      if (!location.hash) history.replaceState(null, "", "#/mechanisms");
       await render();
       window.addEventListener("hashchange", () => {
-        document.body.classList.remove("mobile-menu-open");
-        C.state.puzzleVisible = C.state.puzzlePageSize;
+        setMobileMenu(false);
         C.state.childVisible = 80;
         render();
       });
