@@ -1,0 +1,12 @@
+{
+  "name": "ccbc-handbook",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline, spoiler-aware CCBC field manual",
+  "scripts": {
+    "test:smoke": "node tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

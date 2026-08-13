@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1f4e5f">
+  <meta name="description" content="从 CCBC 历届官方题目、提示与题解整理的离线卡题手册。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>CCBC 卡题手册</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" aria-live="polite">
+    <div class="boot-screen" role="status">
+      <div class="boot-mark" aria-hidden="true">C17</div>
+      <p>正在整理索引…</p>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite" aria-atomic="true"></div>
+  <script src="vendor/lucide.min.js" defer></script>
+  <script src="content/guide.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="views.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

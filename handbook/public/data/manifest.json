@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0",
+  "sourceSchemaVersion": "1.0",
+  "builtAt": "2026-08-13T19:05:09+00:00",
+  "paths": {
+    "catalog": "data/catalog.json",
+    "relations": "data/relations.json",
+    "assetsSafe": "data/assets.safe.json",
+    "core": {
+      "ccbc11": "data/core/ccbc11.json",
+      "ccbc12": "data/core/ccbc12.json",
+      "ccbc13-14": "data/core/ccbc13-14.json",
+      "ccbc15": "data/core/ccbc15.json",
+      "ccbc16": "data/core/ccbc16.json",
+      "ccbc2": "data/core/ccbc2.json",
+      "ccbc3": "data/core/ccbc3.json",
+      "ccbc4": "data/core/ccbc4.json"
+    },
+    "search": {
+      "safe": "data/search/safe.json",
+      "hints": "data/search/hints.json",
+      "full": "data/search/full.json"
+    },
+    "spoilers": "data/spoilers/",
+    "assets": "data/assets/"
+  },
+  "counts": {
+    "records": 1471,
+    "hints": 1252,
+    "additionalAnswers": 354,
+    "parents": 1019,
+    "solutionRefs": 513,
+    "assets": 1748,
+    "assetFiles": 1748,
+    "assetBytes": 517359532,
+    "events": 8,
+    "coreRecords": 1471,
+    "catalogRecords": 1471,
+    "spoilerFiles": 1471,
+    "safeSearchDocs": 1471,
+    "hintSearchDocs": 1471,
+    "fullSearchDocs": 1471,
+    "safeAssets": 985,
+    "retainedAssets": 1748
+  },
+  "events": [
+    {
+      "id": "ccbc11",
+      "path": "data/core/ccbc11.json",
+      "records": 40
+    },
+    {
+      "id": "ccbc12",
+      "path": "data/core/ccbc12.json",
+      "records": 92
+    },
+    {
+      "id": "ccbc13-14",
+      "path": "data/core/ccbc13-14.json",
+      "records": 123
+    },
+    {
+      "id": "ccbc15",
+      "path": "data/core/ccbc15.json",
+      "records": 75
+    },
+    {
+      "id": "ccbc16",
+      "path": "data/core/ccbc16.json",
+      "records": 1054
+    },
+    {
+      "id": "ccbc2",
+      "path": "data/core/ccbc2.json",
+      "records": 14
+    },
+    {
+      "id": "ccbc3",
+      "path": "data/core/ccbc3.json",
+      "records": 41
+    },
+    {
+      "id": "ccbc4",
+      "path": "data/core/ccbc4.json",
+      "records": 32
+    }
+  ],
+  "search": {
+    "tiersAreCumulative": true,
+    "safeExcludes": [
+      "answer",
+      "hints",
+      "additionalAnswers",
+      "solution",
+      "extended",
+      "interactive",
+      "sourceMetadata"
+    ]
+  },
+  "sanitizer": {
+    "attributesRemoved": 13485,
+    "commentsRemoved": 16,
+    "dangerousTagsRemoved": 174,
+    "interactiveTagsUnwrapped": 7,
+    "resourceUrlsRewritten": 1735,
+    "unknownTagsUnwrapped": 647,
+    "unsafeLinksRemoved": 3
+  },
+  "assetMode": "copy",
+  "files": {
+    "catalog.json": {
+      "bytes": 755378,
+      "sha256": "57bf18605bba22ac4faf22d4874dc7fc4b434a4fa9403eb69a80a713cdbb512a"
+    },
+    "relations.json": {
+      "bytes": 103404,
+      "sha256": "77390e3358be8f439016875cbf6042fdc36cf6b7679481376808bec728f861f0"
+    },
+    "assets.safe.json": {
+      "bytes": 368888,
+      "sha256": "c47970619d5fd57864667a8828f4f89e10518b02de3f102aed505d79df391c0d"
+    },
+    "search/safe.json": {
+      "bytes": 1094741,
+      "sha256": "356e8efffd8c2579db17bb64377c16b627b3a51ef0d5501f0f1890ffdeedf05b"
+    },
+    "search/hints.json": {
+      "bytes": 1265779,
+      "sha256": "e4974a7b78379d2586a10c11d8858463d64c54df3156a21d3329814af61102d6"
+    },
+    "search/full.json": {
+      "bytes": 1832273,
+      "sha256": "917f01e457d530f0eaabfe02d3f20c50c3e19ad675c3ce4662b75d1a093bd7f9"
+    },
+    "core/ccbc11.json": {
+      "bytes": 156595,
+      "sha256": "f1874625407f2250ad497e34bf6ff84b3c3b02174d46bf1719aa02df04207baf"
+    },
+    "core/ccbc12.json": {
+      "bytes": 221470,
+      "sha256": "358dfe9a2fb47a0f338351e6e20c502ec8ef5934415d1f68823e6adc58b03608"
+    },
+    "core/ccbc13-14.json": {
+      "bytes": 405398,
+      "sha256": "57e2f70711c278123794969d3b641bda2af64701f0e1973cb51a098ee604a27d"
+    },
+    "core/ccbc15.json": {
+      "bytes": 238868,
+      "sha256": "bc8005677db76443767206e48bbd5ab0fc0afb7c37e2c496856530619cd29f60"
+    },
+    "core/ccbc16.json": {
+      "bytes": 1690192,
+      "sha256": "1f6997409030480be607951eebf9d4436656091826715b567dc51ddefa45bbb8"
+    },
+    "core/ccbc2.json": {
+      "bytes": 86934,
+      "sha256": "28db6237ef0550f95c0522f8b82fe31b295ebe7fac25cfe5724a8b6d17559abe"
+    },
+    "core/ccbc3.json": {
+      "bytes": 58166,
+      "sha256": "c71dcb1a34c7dc44e8e3c07456d805fc8b1fde7c12718897f220a2dd98f8d535"
+    },
+    "core/ccbc4.json": {
+      "bytes": 50818,
+      "sha256": "ca46287612ffbc12e9a767b8a036bf8831c1a08e9c53441fbcde66a2c7978c27"
+    }
+  }
+}

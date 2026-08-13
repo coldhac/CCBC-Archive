@@ -1,0 +1,2 @@
+# Archived puzzle assets must remain byte-for-byte identical to their sources.
+handbook/public/data/assets/** -diff
