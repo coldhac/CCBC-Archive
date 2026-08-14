@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/group.schema.json",
+  "title": "Puzzle Hunt Dataset v2 group record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "group_id",
+    "hunt_id",
+    "kind",
+    "title",
+    "sort_key",
+    "source_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "group_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "hunt_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "kind": {
+      "enum": [
+        "round",
+        "act",
+        "stage",
+        "track",
+        "location",
+        "phase",
+        "category",
+        "other"
+      ]
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "localized_titles": {
+      "$ref": "common.schema.json#/$defs/localized_titles"
+    },
+    "sort_key": {
+      "$ref": "common.schema.json#/$defs/sort_key"
+    },
+    "source_ids": {
+      "$ref": "common.schema.json#/$defs/source_ids"
+    },
+    "external_ids": {
+      "$ref": "common.schema.json#/$defs/external_ids"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "additionalProperties": false
+}

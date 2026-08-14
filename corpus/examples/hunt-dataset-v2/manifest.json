@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "dataset_id": "hunt-dataset.example",
+  "dataset_version": "2026-08-14",
+  "profile": "content-archive",
+  "title": "Puzzle Hunt Dataset v2 multi-hunt example",
+  "generated_at": "2026-08-14T00:00:00Z",
+  "default_language": "en",
+  "files": {
+    "hunts": {"path": "hunts.jsonl", "records": 2, "bytes": 1046, "sha256": "93f5a992940840b0ba4701e98602db5479efc268ff371b762f8ec8d752f8b45c"},
+    "groups": {"path": "groups.jsonl", "records": 2, "bytes": 414, "sha256": "685636a7495a2439abe4570d43b56598014e7ff407138a6c67b82f15511623bd"},
+    "puzzles": {"path": "puzzles.jsonl", "records": 3, "bytes": 6335, "sha256": "69940ee6ba2739953ace82af2c063d2cfd91c96357f6b62293f64a62aaae7a89"},
+    "relations": {"path": "relations.jsonl", "records": 5, "bytes": 1781, "sha256": "f3e7bbaea916d11dd23148297d1fec4c647005a6cc68eb5095ef5f9f97d85bf8"},
+    "assets": {"path": "assets.jsonl", "records": 2, "bytes": 977, "sha256": "acfcb611ef2fc89181297390586e3874b815828b8a42abbd9df3646a596c4a8f"},
+    "sources": {"path": "sources.jsonl", "records": 2, "bytes": 1137, "sha256": "e8ad9fd48afb49230407933dfa14abeeb9ffe3fa72077d0cdc3c1b4e34fec73c"}
+  },
+  "coverage": [
+    {"hunt_id": "lantern-league.2025", "facet": "puzzles", "status": "complete", "expected": 2, "observed": 2, "missing": 0},
+    {"hunt_id": "lantern-league.2025", "facet": "statements", "status": "complete", "expected": 2, "observed": 2, "missing": 0},
+    {"hunt_id": "lantern-league.2025", "facet": "answers", "status": "complete", "expected": 2, "observed": 2, "missing": 0},
+    {"hunt_id": "lantern-league.2025", "facet": "solutions", "status": "complete", "expected": 2, "observed": 2, "missing": 0},
+    {"hunt_id": "lantern-league.2025", "facet": "hints", "status": "complete", "expected": 1, "observed": 1, "missing": 0},
+    {"hunt_id": "lantern-league.2025", "facet": "assets", "status": "complete", "expected": 2, "observed": 2, "missing": 0},
+    {"hunt_id": "lantern-league.2025", "facet": "sources", "status": "complete", "expected": 1, "observed": 1, "missing": 0},
+    {"hunt_id": "paper-trail.2026", "facet": "puzzles", "status": "complete", "expected": 1, "observed": 1, "missing": 0},
+    {"hunt_id": "paper-trail.2026", "facet": "statements", "status": "complete", "expected": 1, "observed": 1, "missing": 0},
+    {"hunt_id": "paper-trail.2026", "facet": "answers", "status": "partial", "expected": 1, "observed": 0, "missing": 1, "notes": "Only a non-solving intermediate answer is known."},
+    {"hunt_id": "paper-trail.2026", "facet": "solutions", "status": "partial", "expected": 1, "observed": 0, "missing": 1, "notes": "The fixture intentionally has no archived solution."},
+    {"hunt_id": "paper-trail.2026", "facet": "hints", "status": "unknown", "observed": 0, "notes": "The fixture does not establish whether official hints existed."},
+    {"hunt_id": "paper-trail.2026", "facet": "assets", "status": "not_applicable", "expected": 0, "observed": 0, "missing": 0},
+    {"hunt_id": "paper-trail.2026", "facet": "sources", "status": "complete", "expected": 1, "observed": 1, "missing": 0}
+  ],
+  "spoiler_policy": {
+    "model": "cumulative",
+    "levels": [
+      {"level": 0, "name": "public"},
+      {"level": 1, "name": "hint"},
+      {"level": 2, "name": "answer"},
+      {"level": 3, "name": "solution"}
+    ]
+  },
+  "producers": [
+    {"name": "hand-authored-v2-fixture", "version": "1.0.0", "role": "normalizer"}
+  ],
+  "extension_schemas": [],
+  "rights": {
+    "status": "unknown",
+    "notes": "All puzzle content in this fixture is fictitious and exists only to exercise the schema."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/asset.schema.json",
+  "title": "Puzzle Hunt Dataset v2 asset record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "asset_id",
+    "status",
+    "original_urls",
+    "source_ids",
+    "rights"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "asset_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "hunt_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "status": {
+      "enum": [
+        "available",
+        "missing",
+        "external_only"
+      ]
+    },
+    "path": {
+      "$ref": "common.schema.json#/$defs/local_path"
+    },
+    "media_type": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9!#$&^_.+-]+/[A-Za-z0-9!#$&^_.+-]+(?:;.*)?$"
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sha256": {
+      "$ref": "common.schema.json#/$defs/sha256"
+    },
+    "original_urls": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/http_url"
+      },
+      "uniqueItems": true
+    },
+    "source_ids": {
+      "$ref": "common.schema.json#/$defs/source_ids"
+    },
+    "rights": {
+      "$ref": "common.schema.json#/$defs/rights"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "available"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "path",
+          "media_type",
+          "bytes",
+          "sha256"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "path"
+          ]
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

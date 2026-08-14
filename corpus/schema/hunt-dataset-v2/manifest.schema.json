@@ -1,0 +1,398 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/manifest.schema.json",
+  "title": "Puzzle Hunt Dataset v2 manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "dataset_version",
+    "profile",
+    "title",
+    "generated_at",
+    "default_language",
+    "files",
+    "coverage",
+    "spoiler_policy",
+    "producers",
+    "extension_schemas",
+    "rights"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "dataset_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "dataset_version": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "profile": {
+      "const": "content-archive"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "default_language": {
+      "$ref": "common.schema.json#/$defs/language"
+    },
+    "files": {
+      "type": "object",
+      "required": [
+        "hunts",
+        "groups",
+        "puzzles",
+        "relations",
+        "assets",
+        "sources"
+      ],
+      "properties": {
+        "hunts": {
+          "allOf": [
+            {"$ref": "#/$defs/file_entry"},
+            {"properties": {"path": {"const": "hunts.jsonl"}}}
+          ]
+        },
+        "groups": {
+          "allOf": [
+            {"$ref": "#/$defs/file_entry"},
+            {"properties": {"path": {"const": "groups.jsonl"}}}
+          ]
+        },
+        "puzzles": {
+          "allOf": [
+            {"$ref": "#/$defs/file_entry"},
+            {"properties": {"path": {"const": "puzzles.jsonl"}}}
+          ]
+        },
+        "relations": {
+          "allOf": [
+            {"$ref": "#/$defs/file_entry"},
+            {"properties": {"path": {"const": "relations.jsonl"}}}
+          ]
+        },
+        "assets": {
+          "allOf": [
+            {"$ref": "#/$defs/file_entry"},
+            {"properties": {"path": {"const": "assets.jsonl"}}}
+          ]
+        },
+        "sources": {
+          "allOf": [
+            {"$ref": "#/$defs/file_entry"},
+            {"properties": {"path": {"const": "sources.jsonl"}}}
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/coverage_entry"
+      },
+      "minItems": 1
+    },
+    "spoiler_policy": {
+      "$ref": "#/$defs/spoiler_policy"
+    },
+    "producers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/producer"
+      },
+      "minItems": 1
+    },
+    "extension_schemas": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/extension_schema"
+      }
+    },
+    "rights": {
+      "$ref": "common.schema.json#/$defs/rights"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "file_entry": {
+      "type": "object",
+      "required": [
+        "path",
+        "records"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "common.schema.json#/$defs/local_path"
+        },
+        "records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "$ref": "common.schema.json#/$defs/sha256"
+        }
+      },
+      "additionalProperties": false
+    },
+    "coverage_entry": {
+      "type": "object",
+      "required": [
+        "hunt_id",
+        "facet",
+        "status"
+      ],
+      "properties": {
+        "hunt_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "facet": {
+          "enum": [
+            "puzzles",
+            "statements",
+            "answers",
+            "solutions",
+            "hints",
+            "assets",
+            "sources"
+          ]
+        },
+        "status": {
+          "enum": [
+            "complete",
+            "partial",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "expected": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "observed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missing": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"status": {"enum": ["complete", "partial"]}},
+            "required": ["status"]
+          },
+          "then": {"required": ["expected", "observed", "missing"]}
+        },
+        {
+          "if": {
+            "properties": {"status": {"const": "complete"}},
+            "required": ["status"]
+          },
+          "then": {"properties": {"missing": {"const": 0}}}
+        },
+        {
+          "if": {
+            "properties": {"status": {"const": "partial"}},
+            "required": ["status"]
+          },
+          "then": {"properties": {"missing": {"minimum": 1}}}
+        },
+        {
+          "if": {
+            "properties": {"status": {"const": "not_applicable"}},
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "expected": {"const": 0},
+              "observed": {"const": 0},
+              "missing": {"const": 0}
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "spoiler_policy": {
+      "type": "object",
+      "required": [
+        "model",
+        "levels"
+      ],
+      "properties": {
+        "model": {
+          "const": "cumulative"
+        },
+        "levels": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/spoiler_public"
+            },
+            {
+              "$ref": "#/$defs/spoiler_hint"
+            },
+            {
+              "$ref": "#/$defs/spoiler_answer"
+            },
+            {
+              "$ref": "#/$defs/spoiler_solution"
+            }
+          ],
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "additionalProperties": false
+    },
+    "spoiler_public": {
+      "type": "object",
+      "required": [
+        "level",
+        "name"
+      ],
+      "properties": {
+        "level": {
+          "const": 0
+        },
+        "name": {
+          "const": "public"
+        },
+        "description": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "spoiler_hint": {
+      "type": "object",
+      "required": [
+        "level",
+        "name"
+      ],
+      "properties": {
+        "level": {
+          "const": 1
+        },
+        "name": {
+          "const": "hint"
+        },
+        "description": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "spoiler_answer": {
+      "type": "object",
+      "required": [
+        "level",
+        "name"
+      ],
+      "properties": {
+        "level": {
+          "const": 2
+        },
+        "name": {
+          "const": "answer"
+        },
+        "description": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "spoiler_solution": {
+      "type": "object",
+      "required": [
+        "level",
+        "name"
+      ],
+      "properties": {
+        "level": {
+          "const": 3
+        },
+        "name": {
+          "const": "solution"
+        },
+        "description": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "producer": {
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "role"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "version": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "role": {
+          "enum": [
+            "adapter",
+            "aggregator",
+            "normalizer",
+            "validator",
+            "other"
+          ]
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{7,64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "extension_schema": {
+      "type": "object",
+      "required": [
+        "namespace",
+        "version",
+        "schema_uri"
+      ],
+      "properties": {
+        "namespace": {
+          "type": "string",
+          "pattern": "^(?:[a-z][a-z0-9-]*\\.)+[a-z][a-z0-9._-]*$|^[a-z][a-z0-9_-]*$"
+        },
+        "version": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "schema_uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sha256": {
+          "$ref": "common.schema.json#/$defs/sha256"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

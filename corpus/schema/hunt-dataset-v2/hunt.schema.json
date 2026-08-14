@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/hunt.schema.json",
+  "title": "Puzzle Hunt Dataset v2 hunt record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "hunt_id",
+    "title",
+    "languages",
+    "credits",
+    "urls",
+    "rights",
+    "source_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "hunt_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "localized_titles": {
+      "$ref": "common.schema.json#/$defs/localized_titles"
+    },
+    "series": {
+      "$ref": "#/$defs/series"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1900,
+      "maximum": 9999
+    },
+    "start_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "timezone": {
+      "type": "string",
+      "pattern": "^(?:UTC|[A-Za-z_+-]+(?:/[A-Za-z0-9_+-]+)+)$"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/language"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "credits": {
+      "$ref": "common.schema.json#/$defs/credits"
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/typed_url"
+      }
+    },
+    "rights": {
+      "$ref": "common.schema.json#/$defs/rights"
+    },
+    "source_ids": {
+      "$ref": "common.schema.json#/$defs/source_ids"
+    },
+    "external_ids": {
+      "$ref": "common.schema.json#/$defs/external_ids"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "year"
+      ]
+    },
+    {
+      "required": [
+        "start_at"
+      ]
+    }
+  ],
+  "$defs": {
+    "series": {
+      "type": "object",
+      "required": [
+        "name",
+        "edition_labels"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "edition_labels": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/non_empty_string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

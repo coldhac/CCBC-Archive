@@ -2,6 +2,9 @@
 
 本项目从 CCBC 官方公开存档中采集题面、答案、官方解析、提示、中间答案与一方附件，并同时保留原始响应和统一格式，供检索、切分、标注与后续加工使用。
 
+当前生成物使用 CCBC 专用的 records v1 契约。面向其他 puzzle hunt 的通用 v2 目标规范
+见 [`DATASET_SPEC.md`](DATASET_SPEC.md)；v2 在完成双写和消费者迁移前不会替换现有输出。
+
 范围包括 CCBC 2–4 的官方历史帖恢复层，以及 CCBC 11、12、13/14、15、16 的现代官方存档。CCBC 2–4 的部分旧楼层和媒体已被平台删除，记录会逐题标出缺口；CCBC 1、5–10 当前没有可恢复的完整官方题目与解析，不用第三方题解冒充官方原文。
 
 ## 独立运行
@@ -34,12 +37,21 @@ python scripts/scrape_ccbc.py --no-assets
 python -m unittest discover -s tests
 ```
 
+校验 v2 数据包（仓库示例包含两个虚构 hunt）：
+
+```bash
+python scripts/validate_hunt_dataset.py examples/hunt-dataset-v2
+```
+
 抓取器默认把当前项目作为数据根；也可以通过 `--root <path>` 指定另一个输出根。
 
 ## 目录
 
 ```text
 corpus/
+  DATASET_SPEC.md                   多 hunt 的 v2 目标规范与 v1 迁移说明
+  schema/hunt-dataset-v2/          v2 的 JSON Schema Draft 2020-12 定义
+  examples/hunt-dataset-v2/        可通过语义校验的双 hunt 最小示例
   data/
     raw/                            官方 YAML、JSON 与历史接口原始响应
     assets/                         图片、音频、附件和公开交互源码
@@ -54,7 +66,7 @@ corpus/
       external_links.csv            只编目、不镜像的外部依赖
       manifest.json                 范围、数量、失败项与抓取统计
       QUALITY_REPORT.md             可读版质量报告
-  scripts/                          抓取器、历史恢复层与 protobuf 绑定
+  scripts/                          抓取器、v2 校验器、历史恢复层与 protobuf 绑定
   tests/                            抓取与解析回归测试
 ```
 
@@ -91,6 +103,9 @@ corpus/
 - `assets.jsonl` 中每条 `local_path` 指向的本地文件
 
 `local_path` 始终相对于本项目根目录，例如 `data/assets/...`。消费者必须把路径限制在语料根内，不能把它当作任意文件路径执行或读取。
+
+以上是现有 v1 兼容契约，不应作为新 hunt 的扩展模板。新增来源应通过独立 adapter
+规范化到 v2 的 hunt/group/puzzle/relation/source/asset 实体，再由聚合器生成兼容视图。
 
 ## 完整性语义
 

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/relation.schema.json",
+  "title": "Puzzle Hunt Dataset v2 relation record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "relation_id",
+    "hunt_id",
+    "type",
+    "from_id",
+    "to_id",
+    "spoiler_level",
+    "assertion",
+    "source_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "relation_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "hunt_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "type": {
+      "enum": [
+        "member_of",
+        "component_of",
+        "feeds",
+        "requires",
+        "unlocks",
+        "solution_reference",
+        "precedes",
+        "references",
+        "variant_of",
+        "instance_of",
+        "replaces",
+        "other"
+      ]
+    },
+    "from_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "to_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "spoiler_level": {
+      "$ref": "common.schema.json#/$defs/spoiler_level"
+    },
+    "assertion": {
+      "enum": [
+        "official",
+        "extracted",
+        "manual",
+        "inferred"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "label": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "condition": {
+      "$ref": "common.schema.json#/$defs/condition"
+    },
+    "source_ids": {
+      "$ref": "common.schema.json#/$defs/source_ids"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "assertion": {
+            "const": "inferred"
+          }
+        },
+        "required": [
+          "assertion"
+        ]
+      },
+      "then": {
+        "required": [
+          "confidence"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "other"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "anyOf": [
+          {
+            "required": [
+              "label"
+            ]
+          },
+          {
+            "required": [
+              "extensions"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

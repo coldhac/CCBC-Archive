@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/source.schema.json",
+  "title": "Puzzle Hunt Dataset v2 source record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source_id",
+    "title",
+    "kind",
+    "officiality",
+    "status",
+    "adapter",
+    "rights"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "source_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "hunt_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "kind": {
+      "enum": [
+        "webpage",
+        "api",
+        "file",
+        "post",
+        "repository",
+        "manual",
+        "other"
+      ]
+    },
+    "officiality": {
+      "enum": [
+        "official",
+        "organizer",
+        "author",
+        "third_party",
+        "unknown"
+      ]
+    },
+    "canonical_url": {
+      "$ref": "common.schema.json#/$defs/http_url"
+    },
+    "final_url": {
+      "$ref": "common.schema.json#/$defs/http_url"
+    },
+    "status": {
+      "enum": [
+        "available",
+        "redirected",
+        "removed",
+        "unavailable",
+        "unknown"
+      ]
+    },
+    "snapshot": {
+      "$ref": "#/$defs/snapshot"
+    },
+    "adapter": {
+      "$ref": "#/$defs/adapter"
+    },
+    "rights": {
+      "$ref": "common.schema.json#/$defs/rights"
+    },
+    "notes": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "snapshot": {
+      "type": "object",
+      "required": [
+        "retrieved_at",
+        "media_type",
+        "bytes",
+        "sha256",
+        "path"
+      ],
+      "properties": {
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "published_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "modified_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "http_status": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 599
+        },
+        "media_type": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9!#$&^_.+-]+/[A-Za-z0-9!#$&^_.+-]+(?:;.*)?$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "$ref": "common.schema.json#/$defs/sha256"
+        },
+        "path": {
+          "$ref": "common.schema.json#/$defs/local_path"
+        },
+        "etag": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "adapter": {
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "version": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{7,64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "redirected"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "canonical_url",
+          "final_url"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

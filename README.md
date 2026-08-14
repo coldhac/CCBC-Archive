@@ -31,6 +31,9 @@ python scripts/scrape_ccbc.py
 
 数据结构、覆盖范围和完整性说明见 [`corpus/README.md`](corpus/README.md)。
 
+若要接入 CCBC 以外的 puzzle hunt，不要继续扩展当前 v1 的赛事特有字段；目标数据契约、
+实体关系、来源/权利和迁移规则见 [`corpus/DATASET_SPEC.md`](corpus/DATASET_SPEC.md)。
+
 ## 两个项目如何协作
 
 `corpus` 的主要交付物是 `corpus/data/processed/records.jsonl` 和 `assets.jsonl`。`handbook` 可以读取这两个文件，重新生成 `handbook/public/data/`：

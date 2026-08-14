@@ -1,0 +1,746 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puzzle-hunt-dataset.invalid/schema/v2/puzzle.schema.json",
+  "title": "Puzzle Hunt Dataset v2 puzzle record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "puzzle_id",
+    "hunt_id",
+    "kind",
+    "sort_key",
+    "title",
+    "credits",
+    "statements",
+    "answer_status",
+    "answers",
+    "answer_responses",
+    "hints",
+    "solutions",
+    "postsolve",
+    "source_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "puzzle_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "hunt_id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "kind": {
+      "enum": [
+        "puzzle",
+        "meta",
+        "final_meta",
+        "subpuzzle",
+        "runaround",
+        "bonus",
+        "other"
+      ]
+    },
+    "sort_key": {
+      "$ref": "common.schema.json#/$defs/sort_key"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/non_empty_string"
+    },
+    "localized_titles": {
+      "$ref": "common.schema.json#/$defs/localized_titles"
+    },
+    "credits": {
+      "$ref": "common.schema.json#/$defs/credits"
+    },
+    "statements": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/content_block"
+      },
+      "minItems": 1
+    },
+    "answer_status": {
+      "enum": [
+        "available",
+        "partial",
+        "missing",
+        "not_applicable",
+        "unknown"
+      ]
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/answer"
+      }
+    },
+    "answer_responses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/answer_response"
+      }
+    },
+    "hints": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/hint"
+      }
+    },
+    "solutions": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/content_block"
+      },
+      "minItems": 1
+    },
+    "postsolve": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/content_block"
+      }
+    },
+    "interactive": {
+      "$ref": "#/$defs/interactive"
+    },
+    "rights": {
+      "$ref": "common.schema.json#/$defs/rights"
+    },
+    "source_ids": {
+      "$ref": "common.schema.json#/$defs/source_ids"
+    },
+    "external_ids": {
+      "$ref": "common.schema.json#/$defs/external_ids"
+    },
+    "extensions": {
+      "$ref": "common.schema.json#/$defs/extensions"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "answer_status": {
+            "const": "available"
+          }
+        },
+        "required": [
+          "answer_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "answers": {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "final"
+                },
+                "counts_as_solve": {
+                  "const": true
+                }
+              },
+              "required": [
+                "kind",
+                "counts_as_solve"
+              ]
+            },
+            "minContains": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "answer_status": {
+            "const": "partial"
+          }
+        },
+        "required": [
+          "answer_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "answers": {
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "alternate",
+                    "intermediate",
+                    "milestone",
+                    "command"
+                  ]
+                },
+                "counts_as_solve": {
+                  "const": false
+                }
+              },
+              "required": [
+                "kind",
+                "counts_as_solve"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "answer_status": {
+            "enum": [
+              "missing",
+              "not_applicable",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "answer_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "answers": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "answer": {
+      "type": "object",
+      "required": [
+        "answer_id",
+        "kind",
+        "display",
+        "language",
+        "counts_as_solve",
+        "checker",
+        "source_ids"
+      ],
+      "properties": {
+        "answer_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "final",
+            "alternate",
+            "intermediate",
+            "milestone",
+            "command"
+          ]
+        },
+        "display": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "normalized": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "language": {
+          "$ref": "common.schema.json#/$defs/language"
+        },
+        "counts_as_solve": {
+          "type": "boolean"
+        },
+        "response": {
+          "$ref": "common.schema.json#/$defs/content_block"
+        },
+        "checker": {
+          "$ref": "#/$defs/checker"
+        },
+        "source_ids": {
+          "$ref": "common.schema.json#/$defs/source_ids"
+        },
+        "extensions": {
+          "$ref": "common.schema.json#/$defs/extensions"
+        }
+      },
+      "additionalProperties": false
+    },
+    "checker": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/checker_exact"
+        },
+        {
+          "$ref": "#/$defs/checker_normalized"
+        },
+        {
+          "$ref": "#/$defs/checker_regex"
+        },
+        {
+          "$ref": "#/$defs/checker_source"
+        },
+        {
+          "$ref": "#/$defs/checker_external"
+        }
+      ]
+    },
+    "checker_exact": {
+      "type": "object",
+      "required": [
+        "kind",
+        "case_sensitive"
+      ],
+      "properties": {
+        "kind": {
+          "const": "exact"
+        },
+        "case_sensitive": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "checker_normalized": {
+      "type": "object",
+      "required": [
+        "kind",
+        "normalization"
+      ],
+      "properties": {
+        "kind": {
+          "const": "normalized"
+        },
+        "normalization": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "trim",
+              "unicode_nfkc",
+              "casefold",
+              "collapse_whitespace",
+              "remove_whitespace",
+              "remove_punctuation"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "checker_regex": {
+      "type": "object",
+      "required": [
+        "kind",
+        "pattern"
+      ],
+      "properties": {
+        "kind": {
+          "const": "regex"
+        },
+        "pattern": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "flags": {
+          "type": "string",
+          "pattern": "^[imsu]*$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "checker_source": {
+      "type": "object",
+      "required": [
+        "kind",
+        "asset_refs"
+      ],
+      "properties": {
+        "kind": {
+          "const": "source"
+        },
+        "asset_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/asset_ref"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "checker_external": {
+      "type": "object",
+      "required": [
+        "kind",
+        "url"
+      ],
+      "properties": {
+        "kind": {
+          "const": "external"
+        },
+        "url": {
+          "$ref": "common.schema.json#/$defs/http_url"
+        }
+      },
+      "additionalProperties": false
+    },
+    "answer_response": {
+      "type": "object",
+      "required": [
+        "response_id",
+        "order",
+        "kind",
+        "matcher",
+        "content",
+        "source_ids"
+      ],
+      "properties": {
+        "response_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "kind": {
+          "enum": [
+            "near_miss",
+            "incorrect",
+            "informational",
+            "other"
+          ]
+        },
+        "matcher": {
+          "$ref": "#/$defs/response_matcher"
+        },
+        "content": {
+          "$ref": "common.schema.json#/$defs/content_block"
+        },
+        "source_ids": {
+          "$ref": "common.schema.json#/$defs/source_ids"
+        },
+        "extensions": {
+          "$ref": "common.schema.json#/$defs/extensions"
+        }
+      },
+      "additionalProperties": false
+    },
+    "response_matcher": {
+      "type": "object",
+      "required": [
+        "kind",
+        "pattern"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "exact",
+            "normalized",
+            "regex",
+            "other"
+          ]
+        },
+        "pattern": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "case_sensitive": {
+          "type": "boolean"
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "hint": {
+      "type": "object",
+      "required": [
+        "hint_id",
+        "order",
+        "content",
+        "source_ids"
+      ],
+      "properties": {
+        "hint_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "title": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "content": {
+          "$ref": "common.schema.json#/$defs/content_block"
+        },
+        "cost": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "unlock_delay_seconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "published_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "condition": {
+          "$ref": "common.schema.json#/$defs/condition"
+        },
+        "source_ids": {
+          "$ref": "common.schema.json#/$defs/source_ids"
+        },
+        "extensions": {
+          "$ref": "common.schema.json#/$defs/extensions"
+        }
+      },
+      "dependentRequired": {
+        "cost": [
+          "currency"
+        ],
+        "currency": [
+          "cost"
+        ]
+      },
+      "additionalProperties": false
+    },
+    "interactive": {
+      "type": "object",
+      "required": [
+        "mode",
+        "runnable",
+        "completeness",
+        "network_required",
+        "asset_refs",
+        "source_ids",
+        "runtime"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "physical",
+            "client",
+            "server",
+            "external",
+            "source_only"
+          ]
+        },
+        "runnable": {
+          "type": "boolean"
+        },
+        "completeness": {
+          "enum": [
+            "complete",
+            "partial",
+            "missing",
+            "unknown"
+          ]
+        },
+        "network_required": {
+          "type": "boolean"
+        },
+        "network_endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/http_url"
+          },
+          "uniqueItems": true
+        },
+        "bundle_asset_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "entrypoint_asset_id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "asset_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/asset_ref"
+          }
+        },
+        "source_ids": {
+          "$ref": "common.schema.json#/$defs/source_ids"
+        },
+        "runtime": {
+          "$ref": "#/$defs/runtime"
+        },
+        "backend": {
+          "$ref": "#/$defs/backend"
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "extensions": {
+          "$ref": "common.schema.json#/$defs/extensions"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "network_required": {
+                "const": false
+              }
+            },
+            "required": [
+              "network_required"
+            ]
+          },
+          "then": {
+            "properties": {
+              "network_endpoints": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "client"
+              },
+              "runnable": {
+                "const": true
+              }
+            },
+            "required": [
+              "mode",
+              "runnable"
+            ]
+          },
+          "then": {
+            "required": [
+              "bundle_asset_id",
+              "entrypoint_asset_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "source_only"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "properties": {
+              "runnable": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "runnable": {
+                "const": true
+              }
+            },
+            "required": [
+              "runnable"
+            ]
+          },
+          "then": {
+            "properties": {
+              "completeness": {
+                "not": {
+                  "const": "missing"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "runtime": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "browser",
+            "node",
+            "python",
+            "native",
+            "container",
+            "physical",
+            "external",
+            "unknown",
+            "other"
+          ]
+        },
+        "name": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "version": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "platform": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/runtime_dependency"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "runtime_dependency": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        },
+        "version": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "backend": {
+      "type": "object",
+      "required": [
+        "protocol",
+        "snapshot_source_ids"
+      ],
+      "properties": {
+        "protocol": {
+          "enum": [
+            "http",
+            "websocket",
+            "custom",
+            "unknown"
+          ]
+        },
+        "snapshot_source_ids": {
+          "$ref": "common.schema.json#/$defs/source_ids"
+        },
+        "notes": {
+          "$ref": "common.schema.json#/$defs/non_empty_string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
