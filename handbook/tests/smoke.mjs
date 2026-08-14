@@ -144,6 +144,27 @@ try {
   await assertPageFits(mobile, "mobile puzzle table");
 
   await mobile.goto(`${baseURL}#/quick`, { waitUntil: "networkidle" });
+  await mobile.getByRole("heading", { name: "先走一遍现场流程" }).waitFor();
+  if (await mobile.locator(".quick-code-item").count() !== 20 || await mobile.locator(".quick-signal-table tbody tr").count() !== 12 || await mobile.locator(".quick-ladder-no").count() !== 7) {
+    throw new Error("mobile quick reference is missing codes, signal routes, or ladder branches");
+  }
+  const mobileQuick = await mobile.evaluate(() => ({
+    signalRowDisplay: getComputedStyle(document.querySelector(".quick-signal-table tbody tr")).display,
+    jumpHeight: document.querySelector(".quick-jumpbar").getBoundingClientRect().height,
+    quickWidth: document.querySelector(".quick-reference").getBoundingClientRect().width,
+  }));
+  if (mobileQuick.signalRowDisplay !== "block" || mobileQuick.jumpHeight > 58 || mobileQuick.quickWidth > 390) {
+    throw new Error(`mobile quick reference failed: ${JSON.stringify(mobileQuick)}`);
+  }
+  await mobile.getByRole("button", { name: "常用码表" }).click();
+  await mobile.waitForTimeout(500);
+  const mobileQuickTarget = await mobile.evaluate(() => ({
+    focused: document.activeElement.id,
+    top: document.querySelector("#quick-codes").getBoundingClientRect().top,
+  }));
+  if (mobileQuickTarget.focused !== "quick-codes" || mobileQuickTarget.top < 90 || mobileQuickTarget.top > 220) {
+    throw new Error(`mobile quick jump failed: ${JSON.stringify(mobileQuickTarget)}`);
+  }
   await assertPageFits(mobile, "mobile quick reference");
   await mobile.screenshot({ path: "/tmp/ccbc-handbook-mobile.png", fullPage: false });
 
@@ -169,6 +190,17 @@ try {
     throw new Error(`compact puzzle detail failed: ${JSON.stringify(compactDetail)}`);
   }
   await assertPageFits(compact, "compact puzzle detail");
+
+  await compact.goto(`${baseURL}#/quick`, { waitUntil: "networkidle" });
+  await compact.getByRole("heading", { name: "先走一遍现场流程" }).waitFor();
+  const compactQuick = await compact.evaluate(() => ({
+    ladderColumns: getComputedStyle(document.querySelector(".quick-ladder > ol")).gridTemplateColumns.split(" ").length,
+    codeColumns: getComputedStyle(document.querySelector(".quick-code-groups")).gridTemplateColumns.split(" ").length,
+  }));
+  if (compactQuick.ladderColumns !== 2 || compactQuick.codeColumns !== 2) {
+    throw new Error(`compact quick reference failed: ${JSON.stringify(compactQuick)}`);
+  }
+  await assertPageFits(compact, "compact quick reference");
   await compact.close();
 
   console.log(JSON.stringify({

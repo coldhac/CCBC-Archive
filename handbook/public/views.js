@@ -159,22 +159,78 @@
     return shell("search", `<div class="search-page"><div class="search-intro"><span class="eyebrow">ARCHIVE SEARCH</span><h1>${query ? "检索结果" : "资料搜索"}</h1><p>${query ? `当前搜索范围：${searchModeText}` : "用于查找历年题目和原始资料。没思路时请使用卡点导航；历史提示与题解默认不会出现在结果里。"}</p></div>${form}${body}</div>`);
   }
 
-  function quickList(title, items, iconName) {
-    return `<section class="quick-section"><div class="quick-section-title">${C.icon(iconName)}<h2>${C.escapeHTML(title)}</h2></div><ol>${items.map((item) => typeof item === "string" ? `<li>${C.escapeHTML(item)}</li>` : `<li><strong>${C.escapeHTML(item.title || item.signal || "")}</strong>${item.description || item.candidates || item.try ? `<span>${C.escapeHTML(item.description || item.candidates || item.try)}</span>` : ""}</li>`).join("")}</ol></section>`;
+  function quickSectionHeading(number, title, description, iconName) {
+    return `<header class="quick-reference-heading"><span class="quick-reference-icon">${C.icon(iconName)}</span><div><span class="eyebrow">${C.escapeHTML(number)}</span><h2>${C.escapeHTML(title)}</h2>${description ? `<p>${C.escapeHTML(description)}</p>` : ""}</div></header>`;
+  }
+
+  function quickChecklist(items, cueKey) {
+    return `<ol class="quick-checklist">${items.map((item, index) => {
+      const cueValue = item[cueKey];
+      const cue = Array.isArray(cueValue) ? cueValue.join(" · ") : cueValue || "";
+      return `<li><details><summary><span class="quick-check-number">${index + 1}</span><span class="quick-check-summary">${cue ? `<small>${C.escapeHTML(cue)}</small>` : ""}<strong>${C.escapeHTML(item.name || item.title || item.label || "")}</strong></span>${C.icon("chevron-down")}</summary><div class="quick-check-detail"><p>${C.icon("play")}<span>${C.escapeHTML(item.try || item.description || "")}</span></p>${item.check ? `<span class="quick-check-proof">${C.icon("check")} ${C.escapeHTML(item.check)}</span>` : ""}</div></details></li>`;
+    }).join("")}</ol>`;
+  }
+
+  function quickCodeGroups(codes) {
+    const specs = [
+      { id: "letters", label: "字母与文字", icon: "text", names: ["A1Z26", "凯撒 / ROT", "Atbash", "NATO 字母表", "罗马数字"] },
+      { id: "symbols", label: "符号与姿态", icon: "scan", names: ["摩尔斯", "盲文", "旗语", "猪圈密码", "颜色顺序"] },
+      { id: "grids", label: "网格与键位", icon: "table-2", names: ["手机九键", "Polybius / 5×5 棋盘", "Playfair", "键盘位置", "栅栏 / 密码棒"] },
+      { id: "data", label: "数字与数据", icon: "binary", names: ["二进制", "三进制及一般进制", "ASCII", "Unicode", "Base64 / Base32 / 十六进制"] },
+    ];
+    const byName = new Map(codes.map((item) => [item.name, item]));
+    const assigned = new Set(specs.flatMap((group) => group.names));
+    const remaining = codes.filter((item) => !assigned.has(item.name));
+    const groups = remaining.length ? [...specs, { id: "other", label: "其他表示", icon: "braces", names: remaining.map((item) => item.name) }] : specs;
+    return groups.map((group) => `<section class="quick-code-group" data-code-group="${group.id}"><header>${C.icon(group.icon)}<h3>${C.escapeHTML(group.label)}</h3></header><div>${group.names.map((name) => byName.get(name)).filter(Boolean).map((item) => `<details class="quick-code-item"><summary><span><strong>${C.escapeHTML(item.name)}</strong><small>${C.escapeHTML(item.pattern || "")}</small></span>${C.icon("chevron-down")}</summary><div class="quick-code-detail"><p>${C.escapeHTML(item.use || item.description || "")}</p>${item.check ? `<dl><div><dt>校验</dt><dd>${C.escapeHTML(item.check)}</dd></div>${item.pitfalls?.length ? `<div><dt>易错</dt><dd>${C.escapeHTML(item.pitfalls.join("；"))}</dd></div>` : ""}</dl>` : ""}</div></details>`).join("")}</div></section>`).join("");
   }
 
   function quickView() {
     const quick = window.CCBC_GUIDE?.quick || {};
+    const firstMinute = quick.firstMinute || [];
+    const ladder = quick.stuckLadder || [];
+    const sorting = quick.sorting || [];
+    const extraction = quick.extraction || [];
     const signals = quick.signals || [];
     const codes = quick.codes || [];
-    const content = `${pageHeader("现场手册", "一页速查", "排序与提取优先。每做一步，记录输入、参数和输出，保证队友能复现。", `<button class="secondary-button" type="button" data-action="print">${C.icon("printer")} 打印</button>`)}
-      <div class="quick-grid">
-        ${quickList("卡题阶梯", quick.stuckLadder || [], "stairs")}
-        ${quickList("排序检查", quick.sorting || [], "arrow-down-narrow-wide")}
-        ${quickList("提取检查", quick.extraction || [], "scan-text")}
-        <section class="quick-section quick-wide"><div class="quick-section-title">${C.icon("radar")}<h2>信号 → 候选机制</h2></div><div class="data-table-wrap"><table class="data-table"><thead><tr><th>看到什么</th><th>优先怀疑</th><th>最小实验</th></tr></thead><tbody>${signals.map((row) => `<tr><td>${C.escapeHTML(row.signal)}</td><td>${C.escapeHTML(Array.isArray(row.candidates) ? row.candidates.join(" / ") : row.candidates || "")}</td><td>${C.escapeHTML(row.try || row.quickTest || "")}</td></tr>`).join("")}</tbody></table></div></section>
-        <section class="quick-section quick-wide"><div class="quick-section-title">${C.icon("binary")}<h2>常用编码与表示</h2></div><div class="code-reference-grid">${codes.map((row) => `<article><h3>${C.escapeHTML(row.name)}</h3><code>${C.escapeHTML(row.pattern || row.signal || "")}</code><p>${C.escapeHTML(row.use || row.description || "")}</p>${row.check ? `<small>${C.escapeHTML(row.check)}</small>` : ""}</article>`).join("")}</div></section>
-      </div>`;
+    const handoff = quick.teamHandoff || [];
+    const hintLevels = quick.hintLevels || [];
+    const ladderFallbacks = ["检查资源与交互", "识别对象与来源", "重新描述规则", "整理分组与输入", "排查执行与矛盾", "检查排序与提取", "校验结果与格式"];
+    const content = `<article class="quick-reference">
+      ${pageHeader("现场手册", "一页速查", "从当前状态进入对应检查表；先验证最小动作，再扩大尝试。", `<button class="secondary-button" type="button" data-action="print">${C.icon("printer")} 打印</button>`)}
+      <nav class="quick-jumpbar" aria-label="速查目录"><span>跳到</span>
+        <button type="button" data-action="quick-jump" data-target="quick-start" aria-controls="quick-start">${C.icon("route")} 现场流程</button>
+        <button type="button" data-action="quick-jump" data-target="quick-finish" aria-controls="quick-finish">${C.icon("scan-text")} 排序与提取</button>
+        <button type="button" data-action="quick-jump" data-target="quick-signals" aria-controls="quick-signals">${C.icon("radar")} 信号反查</button>
+        <button type="button" data-action="quick-jump" data-target="quick-codes" aria-controls="quick-codes">${C.icon("binary")} 常用码表</button>
+      </nav>
+
+      <section class="quick-reference-section quick-start" id="quick-start" tabindex="-1">
+        ${quickSectionHeading("01 · 起步", "先走一遍现场流程", "拿到题先清点；卡住后从七个问题里找到最早答不上来的一个。", "route")}
+        <div class="quick-first-minute"><h3>拿到题先做</h3><ol>${firstMinute.map((item, index) => `<li><span>${index + 1}</span><div><strong>${C.escapeHTML(item.label)}</strong><p>${C.escapeHTML(item.action)}</p></div></li>`).join("")}</ol></div>
+        <div class="quick-ladder"><h3>卡住后依次问</h3><ol>${ladder.map((item, index) => `<li><details><summary><span class="quick-ladder-step">${item.step || index + 1}</span><span><strong>${C.escapeHTML(item.label || item.title || "")}</strong><small>${C.icon("corner-down-right")} 答不上：${C.escapeHTML(ladderFallbacks[index] || "回查当前步骤")}</small></span>${C.icon("chevron-down")}</summary><div><p>${C.escapeHTML(item.question || item.description || "")}</p>${item.yes ? `<span>${C.icon("check")} 答得上：${C.escapeHTML(item.yes)}</span>` : ""}${item.no ? `<span class="quick-ladder-no">${C.icon("corner-down-right")} 答不上：${C.escapeHTML(item.no)}</span>` : ""}</div></details></li>`).join("")}</ol></div>
+      </section>
+
+      <section class="quick-reference-section" id="quick-finish" tabindex="-1">
+        ${quickSectionHeading("02 · 收束", "主体做完，先排顺序再提取", "不要同时改动顺序和取字规则；每轮只换一个变量。", "scan-text")}
+        <div class="quick-check-columns">
+          <section class="quick-check-panel quick-check-sorting"><header>${C.icon("arrow-down-narrow-wide")}<div><h3>排序检查</h3><span>${sorting.length} 种常见顺序</span></div></header>${quickChecklist(sorting, "signals")}</section>
+          <section class="quick-check-panel quick-check-extraction"><header>${C.icon("scan-line")}<div><h3>提取检查</h3><span>${extraction.length} 种常见出口</span></div></header>${quickChecklist(extraction, "question")}</section>
+        </div>
+      </section>
+
+      <section class="quick-reference-section" id="quick-signals" tabindex="-1">
+        ${quickSectionHeading("03 · 反查", "从可见信号缩小候选机制", "先做最小实验；数量或外观只能生成候选，不能单独证明机制。", "radar")}
+        <div class="quick-signal-table-wrap"><table class="quick-signal-table"><thead><tr><th>看到什么</th><th>优先怀疑</th><th>先试一下</th></tr></thead><tbody>${signals.map((row) => `<tr><th scope="row">${C.escapeHTML(row.signal)}</th><td data-label="候选"><div class="quick-candidate-list">${(Array.isArray(row.candidates) ? row.candidates : [row.candidates]).filter(Boolean).map((candidate) => `<span>${C.escapeHTML(candidate)}</span>`).join("")}</div></td><td data-label="实验"><span class="quick-experiment">${C.icon("flask-conical")} ${C.escapeHTML(row.try || row.quickTest || "")}</span></td></tr>`).join("")}</tbody></table></div>
+      </section>
+
+      <section class="quick-reference-section" id="quick-codes" tabindex="-1">
+        ${quickSectionHeading("04 · 查表", "常用编码与表示", "先按识别特征定位；展开单项查看用法、校验方式和易错点。", "binary")}
+        <div class="quick-code-groups">${quickCodeGroups(codes)}</div>
+      </section>
+
+      <details class="quick-support"><summary>${C.icon("users")}<span><strong>团队交接与提示强度</strong><small>换人接手或请求提示前核对</small></span>${C.icon("chevron-down")}</summary><div class="quick-support-grid"><section><h3>交接最小记录</h3><ul>${handoff.map((item) => `<li>${C.icon("check")}<span>${C.escapeHTML(item)}</span></li>`).join("")}</ul></section><section><h3>提示分级</h3><ol>${hintLevels.map((item) => `<li><strong>${C.escapeHTML(item.level)} · ${C.escapeHTML(item.label)}</strong><span>${C.escapeHTML(item.content)}</span></li>`).join("")}</ol></section></div></details>
+    </article>`;
     return shell("quick", content);
   }
 

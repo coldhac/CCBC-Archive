@@ -295,6 +295,13 @@
       await render({ preserveScroll: true });
       return;
     }
+    if (action === "quick-jump") {
+      const target = document.getElementById(actionElement.dataset.target || "");
+      if (!target) return;
+      target.scrollIntoView({ behavior: "instant", block: "start" });
+      target.focus({ preventScroll: true });
+      return;
+    }
     if (action === "reveal-spoiler") { await revealSpoiler(actionElement); return; }
     if (action === "next-hint") { await nextHint(actionElement); return; }
     if (action === "copy-answer") {
